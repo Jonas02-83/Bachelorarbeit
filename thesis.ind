@@ -15,6 +15,7 @@
 
   \item Einleitung, \hyperpage{1}
   \item Einzelne Phasen, \hyperpage{5}
+  \item einzelne Phasen, \hyperpage{4}
 
   \indexspace
 
@@ -31,13 +32,13 @@
 
   \indexspace
 
+  \item Le Chat, \hyperpage{3}
   \item Limitationen von LLM Tools im Software Engineering Kontext, 
 		\hyperpage{9}
   \item LLM Tools, \hyperpage{3}
 
   \indexspace
 
-  \item Mistral AI, \hyperpage{3}
   \item Motivation, \hyperpage{1}
 
   \indexspace

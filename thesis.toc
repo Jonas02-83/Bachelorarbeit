@@ -15,6 +15,10 @@
 \contentsline {section}{\numberline {3.1}Einzelne Phasen}{5}{section.3.1}%
 \contentsline {chapter}{\numberline {4}Praxisergebnisse und Vergleich}{7}{chapter.4}%
 \contentsline {section}{\numberline {4.1}??????}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}ChatGPT}{7}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Gemini}{7}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Le Chat}{7}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Vergleich}{7}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Herausforderungen und Limitationen}{9}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Technische Herausforderungen}{9}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Limitationen von LLM Tools im Software Engineering Kontext}{9}{section.5.2}%

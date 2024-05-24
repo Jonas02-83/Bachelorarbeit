@@ -815,6 +815,8 @@ INPUT ./thesis.toc
 INPUT ./thesis.toc
 INPUT thesis.toc
 OUTPUT thesis.toc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT ./source/100_introduction.tex
 INPUT ./source/100_introduction.tex
 OUTPUT source/100_introduction.aux
@@ -833,8 +835,6 @@ INPUT source/200_basics.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT ./source/300_usage.tex
 INPUT ./source/300_usage.tex
 OUTPUT source/300_usage.aux

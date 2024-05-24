@@ -9,7 +9,7 @@
 
   \indexspace
 
-  \item ChatGPT, \hyperpage{3}
+  \item ChatGPT, \hyperpage{3}, \hyperpage{7}
 
   \indexspace
 
@@ -19,6 +19,7 @@
 
   \indexspace
 
+  \item Gemini, \hyperpage{7}
   \item Google Gemini, \hyperpage{3}
   \item Grundlagen, \hyperpage{3}
 
@@ -32,7 +33,7 @@
 
   \indexspace
 
-  \item Le Chat, \hyperpage{3}
+  \item Le Chat, \hyperpage{3}, \hyperpage{7}
   \item Limitationen von LLM Tools im Software Engineering Kontext, 
 		\hyperpage{9}
   \item LLM Tools, \hyperpage{3}
@@ -52,6 +53,10 @@
   \indexspace
 
   \item Technische Herausforderungen, \hyperpage{9}
+
+  \indexspace
+
+  \item Vergleich, \hyperpage{7}
 
   \indexspace
 

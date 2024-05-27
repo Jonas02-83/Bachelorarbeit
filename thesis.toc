@@ -30,4 +30,5 @@
 \contentsline {chapter}{\nonumberline Tabellenverzeichnis}{VII}{chapter*.5}%
 \contentsline {chapter}{\nonumberline Quellcodeverzeichnis}{IX}{chapter*.6}%
 \contentsline {chapter}{\nonumberline Stichwortverzeichnis}{XI}{chapter*.7}%
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{XIII}{chapter*.8}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

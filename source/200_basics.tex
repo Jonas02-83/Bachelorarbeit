@@ -5,8 +5,46 @@ TODO!!!!!!!!!
 
 \section{LLM Tools} \index{LLM Tools} \label{LLM Tools}
 
-In dieser Arbeit wird größtenteils mit drei unterschiedlichen LLM-Tools gearbeitet: ChatGPT, Google Gemini und  
-Le Chat. Im Folgenden wird kurz auf die einzelnen Tools eingegangen. Grundlage dazu dient der Ariktel \cite{GrundlagenLLM}
+Unter LLM-Tools versteht man Sprachmodelle, die auf einem Large Language Model (LLM) basieren. Ein LLM ist ein 
+Deep-Learning-Algorithmus, der mit sehr großen Datensätzen trainiert wird. Diese Modelle finden häufig Anwendung im 
+Bereich des Natural Language Processing (NLP), wo sie verwendet werden, um Abfragen in natürlicher Sprache zu beantworten 
+oder Ergebnisse zu liefern. LLMs können neue Inhalte verstehen, zusammenfassen, generieren und vorhersagen. Durch das Training 
+sammeln LLMs Milliarden von Parametern, bei denen es sich um Variablen handelt, die im Modell angepasst werden, um neue 
+Inhalte abzuleiten.\\
+LLMs basieren auf einem Transformer-Modell, das Eingaben in Token umwandelt und dann gleichzeitig mathematische 
+Gleichungen ausführt, um Beziehungen zwischen den Token zu ermitteln. Dadurch kann der Computer Muster erkennen, 
+die auch ein Mensch wahrnehmen würde, wenn ihm die gleiche Frage gestellt wird. Zudem verwenden Transformer-Modelle 
+Selbstaufmerksamkeitsmechanismen, die es dem Modell ermöglichen, schneller zu lernen als herkömmliche Modelle. 
+Dadurch kann das Transformer-Modell verschiedene Teile der Sequenz oder den gesamten Kontext eines Satzes berücksichtigen, 
+um Vorhersagen zu generieren.
+
+Grundsätzlich bestehen LLMs aus vier neuronalen Netzwerkschichten: der wiederkehrenden Ebene, der Einbettungsebene, 
+der Feedforward-Ebene und der Aufmerksamkeitsebene. Diese Schichten arbeiten zusammen, um den Eingabetext zu verarbeiten 
+und Ausgabeinhalte zu generieren.\\
+Die wiederkehrende Ebene dient dazu, die Wörter des Eingabetextes der Reihe nach zu interpretieren und die Beziehungen 
+zwischen den Wörtern in einem Satz zu erfassen. Die Einbettungsebene erfasst die semantische und syntaktische Bedeutung 
+der Eingabe, sodass das Modell den Kontext verstehen kann. Die Feedforward-Schicht besteht aus mehreren vollständig 
+verbundenen Schichten, die die Eingabeeinbettungen transformieren. Dadurch ermöglichen diese Schichten dem Modell, 
+Abstraktionen auf höherer Ebene zu verstehen und somit die Absicht des Benutzers mit der Texteingabe zu erfassen. Die 
+Aufmerksamkeitsebene ermöglicht es dem Sprachmodell, sich auf einzelne Teile des Eingabetextes zu konzentrieren, die für 
+die Aufgabe relevant sind, und dadurch die genausten Ausgaben zu generieren.
+
+Damit ein großes Sprachmodell Texteingaben empfangen und eine Ausgabevorhersage generieren kann, muss es zunächst 
+allgemein geschult und anschließend feinabgestimmt werden, um spezifische Aufgaben ausführen zu können. Für die 
+Schulung werden riesige Datenmengen im Petabyte-Bereich benötigt. Das Training verläuft mehrstufig und beginnt in 
+der Regel mit einem unbeaufsichtigten Lernansatz, bei dem das Modell mit unstrukturierten und unbeschrifteten Daten 
+trainiert wird, da diese in größeren Mengen verfügbar sind. In dieser Phase leitet das Modell Beziehungen zwischen 
+verschiedenen Wörtern und Konzepten ab.\\
+Anschließend erfolgt die Schulung und Feinabstimmung durch eine Form des selbstüberwachten Lernens. Dabei wird eine 
+Datenkennzeichnung durchgeführt, durch die das Modell verschiedene Konzepte besser und genauer identifizieren kann. 
+Im nächsten Schritt durchläuft das LLM den transformatorischen neuronalen Netzwerkprozess im Rahmen des Deep Learning. 
+Die Transformer-Modellarchitektur ermöglicht es dem LLM, mittels eines Selbstaufmerksamkeitsmechanismus Beziehungen 
+und Verbindungen zwischen Wörtern und Konzepten zu erkennen, indem bestimmten Elementen (Token) Bewertungen zugewiesen 
+werden, um die Beziehungen festzulegen.
+
+Entscheidend über die Leistungsfähigkeit und die Qualität des Sprachmodells sind die Datensätze, welche zum trainieren
+benutzt werden. Im folgenden wird auf die drei unterschiedliche LLM-Tools eingeganden, welche in dieser Arbeit näher 
+untersucht werden.
 
 \subsection{ChatGPT} \index{ChatGPT} \label{ChatGPT}
 
@@ -37,12 +75,7 @@ Le Chat bietet derzeit noch sehr wenige Funktionen an. Es stehen Lediglich Texte
 Die Datengrundlage reicht nur bis 2021, weshalb es auch hier, für die Jahre 2022 bis heute, zu der Problematik der  
 Halluzination kommen kann.
 Grundsätzlich kann man zwischen drei Sprachmodellen auswählen: Large, Next und Small. Large bietet überlegene Denkfähigkeit,  
-Next ist ein Prototyp-Modell für erhöhte Kürze und Small arbeitet schnell und kosteneffektiv. !!!!!Da Next ein Prototyp ist, könnte  
-dieses besser arbeiten als Large, kann aber auch zu vermehrten Fehlern führen. Daher wird in der Arbeit mit dem Large  
-Sprachmodell gearbeitet.!!!!! *VERMUTUNG??*
-
-
-https://www.unidigital.news/mistral-ai-franzoesisches-ki-startup-stellt-chatbot-le-chat-und-kooperation-mit-microsoft-azure-vor/
+Next ist ein Prototyp-Modell für erhöhte Kürze und Small arbeitet schnell und kosteneffektiv. \cite{GrundlagenLeChat}
 
 \section{Software Engineering Prozess}
 Test Verweis auf Buch \cite{Sommerville10} Das ist ein Text.

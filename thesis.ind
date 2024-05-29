@@ -15,12 +15,12 @@
 
   \item Einleitung, \hyperpage{1}
   \item Einzelne Phasen, \hyperpage{7}
-  \item einzelne Phasen, \hyperpage{5}
+  \item einzelne Phasen, \hyperpage{6}
 
   \indexspace
 
   \item Gemini, \hyperpage{9}
-  \item Google Gemini, \hyperpage{4}
+  \item Google Gemini, \hyperpage{5}
   \item Grundlagen, \hyperpage{3}
 
   \indexspace
@@ -33,7 +33,7 @@
 
   \indexspace
 
-  \item Le Chat, \hyperpage{4}, \hyperpage{9}
+  \item Le Chat, \hyperpage{5}, \hyperpage{9}
   \item Limitationen von LLM Tools im Software Engineering Kontext, 
 		\hyperpage{11}
   \item LLM Tools, \hyperpage{3}

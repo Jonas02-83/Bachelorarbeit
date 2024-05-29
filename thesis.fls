@@ -1,8 +1,8 @@
-PWD c:/Users/jonij/Desktop/Bachelorarbeit
+PWD c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+INPUT c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
 OUTPUT thesis.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -570,11 +570,6 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/bchart/bchart.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/bchart/bchart.sty
 INPUT c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 INPUT c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
-INPUT c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.cfg
-INPUT c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.cfg
-INPUT c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.cfg
 INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
@@ -584,6 +579,11 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/caption-koma.sto
 INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/caption-koma.sto
 INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.cfg
+INPUT c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.cfg
+INPUT c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.cfg
 INPUT c:/texlive/2024/texmf-dist/tex/latex/abstract/abstract.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/abstract/abstract.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/float/float.sty

@@ -44,17 +44,60 @@ werden, um die Beziehungen festzulegen.
 
 Entscheidend über die Leistungsfähigkeit und die Qualität des Sprachmodells sind die Datensätze, welche zum trainieren
 benutzt werden. Im folgenden wird auf die drei unterschiedliche LLM-Tools eingeganden, welche in dieser Arbeit näher 
-untersucht werden.
+untersucht werden\cite{GrundlagenLLM}. 
 
 \subsection{ChatGPT} \index{ChatGPT} \label{ChatGPT}
 
-ChatGPT wurde von dem Unternehmen OpenAI im Jahr 2022 veröffentlicht. Es gibt eine kostenfreie Version und  
-eine Version, die ein kostenpflichtiges Abo benötigt. In der Arbeit wird mit der kostenfreien Version gearbeitet,  
-um für die Mehrheit relevant zu sein. Die kostenfreie Version ist die GPT-3.5. Diese arbeitet mit Trainingsdaten,  
-die bis Januar 2022 gehen. Man arbeitet lediglich mit Texteingaben und -ausgaben. Außerdem werden die Eingaben  
-zu Trainingszwecken genutzt und gespeichert. Die kostenpflichtige GPT-4-Version arbeitet hingegen mit Daten  
-bis 2023 und kann über Bing auf aktuelle Informationen zugreifen. Außerdem hat sie die Fähigkeit, auch Bilder  
-zu verarbeiten und zu generieren. Daneben hat man auch die Möglichkeit, die Verarbeitung der Eingaben auszuschalten. 
+ChatGPT wurde von dem Unternehmen OpenAI am 30. November 2022 veröffentlicht. Aufgrund der fortschrittlichen generativen 
+KI-Fähigkeiten wurde der Chatbot schnell zu einer internationalen Sensation. Die Beta-Version der Plattform war 
+ursprünglich kostenlos verfügbar, und OpenAI stellte den Nutzern weiterhin eine kostenlose Basisversion der Plattform zur 
+Verfügung. Im Februar 2023 kündigte OpenAI ein kostenpflichtiges Abonnement an, das den Nutzern unbegrenzten Zugriff auf 
+ChatGPT und eine breitere Palette von Funktionen und Diensten bietet.
+Neben begeisterter Kritik löste ChatGPT jedoch auch schnell mehrere Kontroversen aus. Es wurden fehlerbehaftete 
+Antworten ausgegeben, insbesondere wenn sie aufgefordert werden, Schlussfolgerungen zu ziehen, Nuancen zu untersuchen, 
+Meinungen zu analysieren oder Vorhersagen zu treffen. Außerdem äußerten sich Pädagogen auf der ganzen Welt besorgt über 
+den Platz von ChatGPT im Klassenzimmer und auch an Universitäten wurde der Einsatz von ChatGPT kritisch gesehen.
+Doch auch mit den Kontroversen schien ChatGPT bereit zu sein, die Art und Weise, wie Internetnutzerinhalte erstellt werden,
+zu revolutionieren. Webentwickler und Ersteller von Inhalten begannen schnell, ChatGPT als Recherche- und Schreibhilfe für 
+Website-Texte zu nutzen.
+Im März 2023 veröffentlichte OpenAI eine neue Version, bekannt als GPT-4. Ein großer Unterschied ist, dass GPT-4 
+Eingaben sowohl in text- als auch in bildbasierten Formaten akzeptiert, was dem ChatBot ermöglicht, Daten aus 
+Diagrammen, Grafiken und Screenshots zu interpretieren. Ebenfalls macht GPT-4 weitaus weniger Denkfehler und sachliche 
+Fehler, die in der KI als "Halluzinationen" bezeichnet werden, als das GPT-3.5-Modell, das in der ersten ChatGPT-Version 
+verwendet wurde. Am Ende des Jahres war es immer fortschrittlicher geworden und ChatGPT könnte beispielsweise Bilder 
+analysieren, Sprachansagen abhören und seine eigene gesprochene Antwort anbieten. Im Mai 2024 kündigte OpenAI ein 
+aktualisiertes Modell namens ChatGPT-4o an, das schnellere Ergebnisse und verbesserte Text- und Audiofunktionen versprach,
+einschließlich eines neuen Konversations-KI-Systems namens "Sky"\cite{GrundlagenChatGPT}.
+
+Wenn man ChatGPT fragt, ob es einen Infotext zu sich selbst erstellen kann erhält man folgende Antwort:
+
+\begin{figure}[H] 
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+    \textbf{Prompt: Erstell mir einen Infotext über dich für meine Bachelorarbeit}\\ 
+
+    ChatGPT ist ein fortschrittlicher KI-gestützter Sprachassistent, der auf der GPT-4-Architektur von OpenAI basiert. 
+    Entwickelt im Rahmen der Forschung und Entwicklung im Bereich Künstliche Intelligenz, ist ChatGPT in der Lage, 
+    natürliche Sprache zu verstehen und darauf zu antworten. Dies macht ihn zu einem vielseitigen Werkzeug für eine 
+    Vielzahl von Anwendungen, von der Beantwortung alltäglicher Fragen bis hin zur Unterstützung bei komplexeren 
+    Aufgaben wie dem Schreiben von Texten, der Generierung von Ideen und der Bereitstellung von Informationen.\\
+    
+    Die GPT-4-Architektur, auf der ChatGPT basiert, verwendet tiefes maschinelles Lernen, um menschliche Sprache zu 
+    verarbeiten und zu erzeugen. Durch die Analyse großer Mengen an Textdaten kann das Modell Muster und Zusammenhänge 
+    erkennen, die es ihm ermöglichen, kontextuell relevante und kohärente Antworten zu geben. Diese Fähigkeiten machen 
+    ChatGPT zu einem nützlichen Instrument in Bereichen wie Bildung, Forschung, Kundenservice und mehr.\\
+    
+    Ein weiterer bemerkenswerter Aspekt von ChatGPT ist seine Fähigkeit, sich an eine Vielzahl von Themen anzupassen 
+    und Informationen auf klare und präzise Weise zu vermitteln. Dies wird durch kontinuierliches Training und 
+    Verbesserung des Modells erreicht, wobei sowohl technische Fortschritte als auch Nutzerfeedback berücksichtigt 
+    werden.\\
+    
+    Zusammengefasst ist ChatGPT ein leistungsstarker und vielseitiger KI-Assistent, der durch seine fortschrittliche 
+    Technologie und seine breite Anwendbarkeit einen wertvollen Beitrag in vielen Bereichen leistet.\\
+\vfill
+    \end{tcolorbox}
+\end{figure}
+
+Wenn man 
 
 \subsection{Google Gemini} \index{Google Gemini} \label{Google Gemini}
 

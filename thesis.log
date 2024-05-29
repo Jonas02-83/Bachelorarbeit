@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  28 MAY 2024 11:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  28 MAY 2024 16:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -1530,50 +1530,31 @@ Package pgfplots: loading complementary utilities for your pgf version...
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))) (c:/texlive/2024/texmf-dist/tex/latex/bchart/bchart.sty
+))) (c:/texlive/2024/texmf-dist/tex/latex/bchart/bchart.sty
 Package: bchart 
  (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 \bcpos=\skip121
 \bcwidth=\skip122
-) (c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.sty
-Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip123
-\subfigcapskip=\skip124
-\subfigcaptopadj=\dimen379
-\subfigbottomskip=\skip125
-\subfigcapmargin=\dimen380
-\subfiglabelskip=\skip126
-\c@subfigure=\count568
-\c@lofdepth=\count569
-\c@subtable=\count570
-\c@lotdepth=\count571
-
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-(c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip127
-\subfig@bottom=\skip128
-) (c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+)) (c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen381
-\captionmargin=\dimen382
-\caption@leftmargin=\dimen383
-\caption@rightmargin=\dimen384
-\caption@width=\dimen385
-\caption@indent=\dimen386
-\caption@parindent=\dimen387
-\caption@hangindent=\dimen388
+\caption@tempdima=\dimen379
+\captionmargin=\dimen380
+\caption@leftmargin=\dimen381
+\caption@rightmargin=\dimen382
+\caption@width=\dimen383
+\caption@indent=\dimen384
+\caption@parindent=\dimen385
+\caption@hangindent=\dimen386
 Package caption Info: KOMA-Script document class detected.
  (c:/texlive/2024/texmf-dist/tex/latex/caption/caption-koma.sto
 File: caption-koma.sto 2023/09/08 v2.0e Adaption of the caption package to the KOMA-Script document classes (AR)
 ))
-\c@caption@flags=\count572
-\c@continuedfloat=\count573
+\c@caption@flags=\count568
+\c@continuedfloat=\count569
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1582,10 +1563,28 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: KOMA-Script scrextend package detected.
-\caption@addmargin@hsize=\dimen389
-\caption@addmargin@linewidth=\dimen390
-Package caption Info: subfigure package is loaded.
+\caption@addmargin@hsize=\dimen387
+\caption@addmargin@linewidth=\dimen388
 Package caption Info: supertabular package is loaded.
+) (c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip123
+\subfigcapskip=\skip124
+\subfigcaptopadj=\dimen389
+\subfigbottomskip=\skip125
+\subfigcapmargin=\dimen390
+\subfiglabelskip=\skip126
+\c@subfigure=\count570
+\c@lofdepth=\count571
+\c@subtable=\count572
+\c@lotdepth=\count573
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip127
+\subfig@bottom=\skip128
 ) (c:/texlive/2024/texmf-dist/tex/latex/abstract/abstract.sty
 Package: abstract 2009/06/08 v1.2a configurable abstracts
 \abstitleskip=\skip129
@@ -1866,6 +1865,7 @@ Package pgfplots notification 'compat/show suggested version=true': you might be
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \openout2 = `source/000_title.aux'.
 
@@ -2031,18 +2031,46 @@ chapter 2.
 [3]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 11.39996pt on input line 49.
- [4]) [5]
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4] [5]) [6]
 \openout2 = `source/300_usage.aux'.
 
- (./source/300_usage.tex [6
+ (./source/300_usage.tex
+chapter 3.
+) [7
 
 
 
 
 
 ]
-chapter 3.
-) [7]
 \openout2 = `source/400_comparison.aux'.
 
  (./source/400_comparison.tex [8
@@ -2194,10 +2222,6 @@ chapter without number
 
 ])
 
-Package caption Warning: Unused \captionsetup[figure] on input line 85.
-See the caption package documentation for explanation.
-
-
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 87.
 See the caption package documentation for explanation.
 
@@ -2217,18 +2241,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 71659 strings out of 474049
- 1645265 string characters out of 5746277
- 2905154 words of memory out of 5000000
- 92661 multiletter control sequences out of 15000+600000
- 619187 words of font info for 173 fonts, out of 8000000 for 9000
+ 71726 strings out of 474049
+ 1646839 string characters out of 5746277
+ 2905343 words of memory out of 5000000
+ 92710 multiletter control sequences out of 15000+600000
+ 619812 words of font info for 183 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,21n,117p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,21n,120p,10948b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (36 pages, 155346 bytes).
+Output written on thesis.pdf (36 pages, 161548 bytes).
 PDF statistics:
- 473 PDF objects out of 1000 (max. 8388607)
- 392 compressed objects within 4 object streams
- 65 named destinations out of 1000 (max. 500000)
+ 488 PDF objects out of 1000 (max. 8388607)
+ 406 compressed objects within 5 object streams
+ 68 named destinations out of 1000 (max. 500000)
  51111 words of extra memory for PDF output out of 51595 (max. 10000000)
 

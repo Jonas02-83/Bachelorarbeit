@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  28 MAY 2024 16:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  29 MAY 2024 13:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -2032,39 +2032,47 @@ chapter 2.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 11.39996pt on input line 49.
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+Underfull \hbox (badness 10000) in paragraph at lines 60--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--88
+Underfull \hbox (badness 10000) in paragraph at lines 66--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--93
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4] [5]) [6]
+[4] [5]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 124.
+ (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 10.40245pt on input line 124.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [6] [7]) [8]
 \openout2 = `source/300_usage.aux'.
 
  (./source/300_usage.tex
 chapter 3.
-) [7
+) [9
 
 
 
@@ -2073,7 +2081,7 @@ chapter 3.
 ]
 \openout2 = `source/400_comparison.aux'.
 
- (./source/400_comparison.tex [8
+ (./source/400_comparison.tex [10
 
 
 
@@ -2081,10 +2089,10 @@ chapter 3.
 
 ]
 chapter 4.
-) [9]
+) [11]
 \openout2 = `source/500_Problems.aux'.
 
- (./source/500_Problems.tex [10
+ (./source/500_Problems.tex [12
 
 
 
@@ -2092,10 +2100,10 @@ chapter 4.
 
 ]
 chapter 5.
-) [11]
+) [13]
 \openout2 = `source/600_Conclusion.aux'.
 
- (./source/600_Conclusion.tex [12
+ (./source/600_Conclusion.tex [14
 
 
 
@@ -2103,7 +2111,7 @@ chapter 5.
 
 ]
 chapter 6.
-) [13] [14
+) [15] [16
 
 
 
@@ -2241,18 +2249,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 71726 strings out of 474049
- 1646839 string characters out of 5746277
- 2905343 words of memory out of 5000000
- 92710 multiletter control sequences out of 15000+600000
- 619812 words of font info for 183 fonts, out of 8000000 for 9000
+ 71839 strings out of 474049
+ 1648402 string characters out of 5746277
+ 2910577 words of memory out of 5000000
+ 92760 multiletter control sequences out of 15000+600000
+ 622079 words of font info for 220 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,21n,120p,10948b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,21n,120p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (36 pages, 161548 bytes).
+Output written on thesis.pdf (38 pages, 170363 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 406 compressed objects within 5 object streams
- 68 named destinations out of 1000 (max. 500000)
- 51111 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 432 compressed objects within 5 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 53159 words of extra memory for PDF output out of 61914 (max. 10000000)
 

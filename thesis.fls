@@ -1,8 +1,8 @@
-PWD c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit
+PWD c:/Users/jonij/Desktop/Bachelorarbeit
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+INPUT c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
 OUTPUT thesis.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -835,6 +835,11 @@ INPUT source/200_basics.tex
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
+INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
+INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr8c.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvr8c.vf
 INPUT ./source/300_usage.tex
 INPUT ./source/300_usage.tex
 OUTPUT source/300_usage.aux

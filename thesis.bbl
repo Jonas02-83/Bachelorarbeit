@@ -79,6 +79,36 @@
       \verb https://eds.p.ebscohost.com/eds/detail/detail?vid=3&sid=1983b266-2f53-4090-a0f2-1aef00f51d1f%40redis&bdata=Jmxhbmc9ZGUmc2l0ZT1lZHMtbGl2ZQ%3d%3d#AN=163030996&db=ers
       \endverb
     \endentry
+    \entry{GrundlagenGemini}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=4b1323c1488a80ed376c456611d30ff2}{%
+           family={Luber},
+           familyi={L\bibinitperiod},
+           given={Dipl.-Ing.\bibnamedelimi (FH)\bibnamedelima Stefan},
+           giveni={D\bibinithyphendelim I\bibinitperiod\bibinitdelim (\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{fullhash}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{fullhashraw}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{bibnamehash}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{authorbibnamehash}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{authornamehash}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{authorfullhash}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{authorfullhashraw}{4b1323c1488a80ed376c456611d30ff2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Zugriff am 29. Mai 2024}
+      \field{title}{Was ist Google Gemini?}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.bigdata-insider.de/was-ist-google-gemini-a-f855ef105c02f4533c18e913d4643007/
+      \endverb
+      \verb{url}
+      \verb https://www.bigdata-insider.de/was-ist-google-gemini-a-f855ef105c02f4533c18e913d4643007/
+      \endverb
+    \endentry
     \entry{GrundlagenLeChat}{online}{}{}
       \name{author}{1}{}{%
         {{hash=59d6c41b24948296c2734668515dace3}{%
@@ -95,8 +125,8 @@
       \strng{authornamehash}{59d6c41b24948296c2734668515dace3}
       \strng{authorfullhash}{59d6c41b24948296c2734668515dace3}
       \strng{authorfullhashraw}{59d6c41b24948296c2734668515dace3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Zugriff am 16. Mai 2024}
@@ -131,8 +161,8 @@
       \strng{authornamehash}{70341b3bfcce7026902f4eb1e4111b58}
       \strng{authorfullhash}{70341b3bfcce7026902f4eb1e4111b58}
       \strng{authorfullhashraw}{70341b3bfcce7026902f4eb1e4111b58}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The book presents a broad perspective on software systems engineering, concentrating on widely used techniques for developing large-scale systems. Building on the widely acclaimed strengths of the 8th edition, the 9th edition updates readers with the latest developments in the field while remaining the most current Software Engineering text in the market with quality trusted coverage and practical case studies. This text is structured into 6 parts: Introduction; Requirements Engineering; Design; Software Development; Verification and Validation; Management. An up-to-date reference for software engineers.}

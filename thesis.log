@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  29 MAY 2024 13:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  29 MAY 2024 14:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -1537,7 +1537,7 @@ File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 \bcpos=\skip121
 \bcwidth=\skip122
-)) (c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+) (c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
@@ -1566,6 +1566,15 @@ Package caption Info: KOMA-Script scrextend package detected.
 \caption@addmargin@hsize=\dimen387
 \caption@addmargin@linewidth=\dimen388
 Package caption Info: supertabular package is loaded.
+) (c:/texlive/2024/texmf-dist/tex/latex/newfloat/newfloat.sty
+Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
+Package newfloat Info: `rotating' package detected.
+)
+Package newfloat Info: New float `prompt' with options `fileext=lop' on input line 663.
+\c@prompt=\count570
+\newfloat@ftype=\count571
+Package newfloat Info: float type `prompt'=8 on input line 663.
+Package tocbasic Info: setting babel extension for `lop' on input line 663.
 ) (c:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip123
@@ -1574,10 +1583,10 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigbottomskip=\skip125
 \subfigcapmargin=\dimen390
 \subfiglabelskip=\skip126
-\c@subfigure=\count570
-\c@lofdepth=\count571
-\c@subtable=\count572
-\c@lotdepth=\count573
+\c@subfigure=\count572
+\c@lofdepth=\count573
+\c@subtable=\count574
+\c@lotdepth=\count575
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -1594,7 +1603,7 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 \absparsep=\skip133
 ) (c:/texlive/2024/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count574
+\c@float@type=\count576
 \float@exts=\toks77
 \float@box=\box158
 \@float@everytoks=\toks78
@@ -1639,56 +1648,56 @@ File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (c:/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfcalendar.sty (c:/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.tex
 File: pgfcalendar.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfcalendarcurrentjulian=\count575
-\pgf@cal@easter@Y=\count576
-\pgf@cal@easter@G=\count577
-\pgf@cal@easter@C=\count578
-\pgf@cal@easter@X=\count579
-\pgf@cal@easter@Z=\count580
-\pgf@cal@easter@D=\count581
-\pgf@cal@easter@E=\count582
-\pgf@cal@easter@N=\count583
-\pgf@cal@easter@M=\count584
-\pgf@cal@easter@julianday=\count585
+\pgfcalendarcurrentjulian=\count577
+\pgf@cal@easter@Y=\count578
+\pgf@cal@easter@G=\count579
+\pgf@cal@easter@C=\count580
+\pgf@cal@easter@X=\count581
+\pgf@cal@easter@Z=\count582
+\pgf@cal@easter@D=\count583
+\pgf@cal@easter@E=\count584
+\pgf@cal@easter@N=\count585
+\pgf@cal@easter@M=\count586
+\pgf@cal@easter@julianday=\count587
 ))
-\gtt@currentline=\count586
-\gtt@lasttitleline=\count587
-\gtt@currgrid=\count588
-\gtt@chartwidth=\count589
-\gtt@lasttitleslot=\count590
-\gtt@elementid=\count591
-\gtt@today@slot=\count592
-\gtt@startjulian=\count593
-\gtt@endjulian=\count594
-\gtt@chartid=\count595
-\gtt@vrule@slot=\count596
-\gtt@calendar@slots=\count597
-\gtt@calendar@weeknumber=\count598
-\gtt@calendar@startofweek=\count599
-\gtt@left@slot=\count600
-\gtt@right@slot=\count601
+\gtt@currentline=\count588
+\gtt@lasttitleline=\count589
+\gtt@currgrid=\count590
+\gtt@chartwidth=\count591
+\gtt@lasttitleslot=\count592
+\gtt@elementid=\count593
+\gtt@today@slot=\count594
+\gtt@startjulian=\count595
+\gtt@endjulian=\count596
+\gtt@chartid=\count597
+\gtt@vrule@slot=\count598
+\gtt@calendar@slots=\count599
+\gtt@calendar@weeknumber=\count600
+\gtt@calendar@startofweek=\count601
+\gtt@left@slot=\count602
+\gtt@right@slot=\count603
 ) (c:/texlive/2024/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
-\c@blindtext=\count602
-\c@Blindtext=\count603
-\c@blind@countparstart=\count604
-\blind@countxx=\count605
-\blindtext@numBlindtext=\count606
-\blind@countyy=\count607
-\c@blindlist=\count608
-\c@blindlistlevel=\count609
-\c@blindlist@level=\count610
-\blind@listitem=\count611
-\c@blind@listcount=\count612
-\c@blind@levelcount=\count613
-\blind@mathformula=\count614
-\blind@Mathformula=\count615
-\c@blind@randomcount=\count616
-\c@blind@randommax=\count617
-\c@blind@pangramcount=\count618
-\c@blind@pangrammax=\count619
+\c@blindtext=\count604
+\c@Blindtext=\count605
+\c@blind@countparstart=\count606
+\blind@countxx=\count607
+\blindtext@numBlindtext=\count608
+\blind@countyy=\count609
+\c@blindlist=\count610
+\c@blindlistlevel=\count611
+\c@blindlist@level=\count612
+\blind@listitem=\count613
+\c@blind@listcount=\count614
+\c@blind@levelcount=\count615
+\blind@mathformula=\count616
+\blind@Mathformula=\count617
+\c@blind@randomcount=\count618
+\c@blind@randommax=\count619
+\c@blind@pangramcount=\count620
+\c@blind@pangrammax=\count621
 )
-\c@savepage=\count620
+\c@savepage=\count622
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1751,16 +1760,16 @@ Dictionary: translator-months-dictionary, Language: English
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
 ) (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count621
+\scratchcounter=\count623
 \scratchdimen=\dimen392
 \scratchbox=\box163
-\nofMPsegments=\count622
-\nofMParguments=\count623
+\nofMPsegments=\count624
+\nofMParguments=\count625
 \everyMPshowfont=\toks79
-\MPscratchCnt=\count624
+\MPscratchCnt=\count626
 \MPscratchDim=\dimen393
-\MPnumerator=\count625
-\makeMPintoPDFobject=\count626
+\MPnumerator=\count627
+\makeMPintoPDFobject=\count628
 \everyMPtoPDFconversion=\toks80
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1847,9 +1856,9 @@ Class scrbook Info: loading recommended package `bookmark'.
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (c:/texlive/2024/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count627
+\BKM@id=\count629
 ))
-\c@lstlisting=\count628
+\c@lstlisting=\count630
 Package tocbasic Info: setting babel extension for `lol' on input line 81.
 \scr@dte@lstlisting@maxnumwidth=\skip134
  (c:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
@@ -1867,6 +1876,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
+Package newfloat Info: `float' package detected.
 \openout2 = `source/000_title.aux'.
 
 (./source/000_title.tex
@@ -2067,12 +2077,28 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [6] [7]) [8]
+Package hyperref Info: bookmark level for unknown prompt defaults to 0 on input line 151.
+ [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 205--211
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--217
+
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 236--238
+[]\T1/phv/b/n/10.95 (+20) Kosteneffizienz: \T1/phv/m/n/10.95 (+20) Le Chat kann als kos-tenef-fi-zi-en-te Al-ter-na-ti-ve zu mensch-li-chen
+ []
+
+[8] [9]) [10]
 \openout2 = `source/300_usage.aux'.
 
  (./source/300_usage.tex
 chapter 3.
-) [9
+) [11
 
 
 
@@ -2081,7 +2107,7 @@ chapter 3.
 ]
 \openout2 = `source/400_comparison.aux'.
 
- (./source/400_comparison.tex [10
+ (./source/400_comparison.tex [12
 
 
 
@@ -2089,10 +2115,10 @@ chapter 3.
 
 ]
 chapter 4.
-) [11]
+) [13]
 \openout2 = `source/500_Problems.aux'.
 
- (./source/500_Problems.tex [12
+ (./source/500_Problems.tex [14
 
 
 
@@ -2100,10 +2126,10 @@ chapter 4.
 
 ]
 chapter 5.
-) [13]
+) [15]
 \openout2 = `source/600_Conclusion.aux'.
 
- (./source/600_Conclusion.tex [14
+ (./source/600_Conclusion.tex [16
 
 
 
@@ -2111,7 +2137,7 @@ chapter 5.
 
 ]
 chapter 6.
-) [15] [16
+) [17] [18
 
 
 
@@ -2249,18 +2275,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 71839 strings out of 474049
- 1648402 string characters out of 5746277
- 2910577 words of memory out of 5000000
- 92760 multiletter control sequences out of 15000+600000
- 622079 words of font info for 220 fonts, out of 8000000 for 9000
+ 72035 strings out of 474049
+ 1651832 string characters out of 5746277
+ 2912617 words of memory out of 5000000
+ 92929 multiletter control sequences out of 15000+600000
+ 622842 words of font info for 234 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,21n,120p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,21n,120p,10948b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (38 pages, 170363 bytes).
+Output written on thesis.pdf (40 pages, 174675 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 432 compressed objects within 5 object streams
- 73 named destinations out of 1000 (max. 500000)
+ 523 PDF objects out of 1000 (max. 8388607)
+ 437 compressed objects within 5 object streams
+ 75 named destinations out of 1000 (max. 500000)
  53159 words of extra memory for PDF output out of 61914 (max. 10000000)
 

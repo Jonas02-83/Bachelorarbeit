@@ -44,14 +44,14 @@ werden, um die Beziehungen festzulegen.
 
 Entscheidend über die Leistungsfähigkeit und die Qualität des Sprachmodells sind die Datensätze, welche zum trainieren
 benutzt werden. Im folgenden wird auf die drei unterschiedliche LLM-Tools eingeganden, welche in dieser Arbeit näher 
-untersucht werden\cite{GrundlagenLLM}. 
+untersucht werden \cite{GrundlagenLLM}. 
 
 \subsection{ChatGPT} \index{ChatGPT} \label{ChatGPT}
 
 
 ChatGPT wurde von OpenAI am 30. November 2022 veröffentlicht und entwickelte sich aufgrund seiner fortschrittlichen 
 generativen KI-Fähigkeiten rasch zu einer internationalen Sensation. Wenn man ChatGPT fragt, ob es einen Infotext 
-zu sich selbst erstellen kann, erhält man die Antwort in Abbildung \ref{InfotextChatGPT}
+zu sich selbst erstellen kann, erhält man die Antwort in \autoref{InfotextChatGPT}
 
 \begin{figure} 
     \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
@@ -100,7 +100,7 @@ auch "Halluzinationen" genannt, als das zuvor verwendete GPT-3.5-Modell. Am Ende
 und konnte beispielsweise Bilder analysieren, Sprachansagen verarbeiten und gesprochene Antworten geben.
 
 Im Mai 2024 kündigte OpenAI ein aktualisiertes Modell namens ChatGPT-4o an, das schnellere Ergebnisse sowie verbesserte 
-Text- und Audiofunktionen versprach. Dieses Modell umfasste auch ein neues Konversations-KI-System namens ``Sky''\cite{GrundlagenChatGPT}.
+Text- und Audiofunktionen versprach. Dieses Modell umfasste auch ein neues Konversations-KI-System namens ``Sky'' \cite{GrundlagenChatGPT}.
 
 \subsection{Google Gemini} \index{Google Gemini} \label{Google Gemini}
 
@@ -110,7 +110,7 @@ Google entwickelt und realisiert wurde. In der ursprünglichen Ankündigung wurd
 Im Februar 2024 entschied Google, auch den bisher als Bard bekannten Chatbot in Gemini umzubenennen. Damit ist Gemini mittlerweile sowohl
 der Name des Google Chatbots als auch des zugrundeliegenden Sprachmodells.
 
-Bei Nachfrage an Gemini, ob es einen Infotext über sich erstellen kann, erhält man die Antwort in Abbildung \ref{InfotextGemini1} und Abbildung \ref{InfotextGemini2}
+Bei Nachfrage an Gemini, ob es einen Infotext über sich erstellen kann, erhält man die Antwort in \autoref{InfotextGemini1} und \autoref{InfotextGemini2}
 
 \begin{prompt}
     \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
@@ -247,7 +247,7 @@ verarbeiten können. Diese neuen Versionen sollen die Benchmark-Ergebnisse der V
     \label{InfotextLeChat}
 \end{figure}
 
-In Abbildung \ref{InfotextLeChat} sieht man die Antwort die Le Chat gibt, wenn man ihn nach einem Infotext über sich 
+In \autoref{InfotextLeChat} sieht man die Antwort die Le Chat gibt, wenn man ihn nach einem Infotext über sich 
 fragt. Le Chat ist ein, von dem französischem KI-Startup Mistral AI veröffentlichter Chatbot. Mistral AI startete mit  
 seinen frei verwendbaren Sprachmodellen, also auf der Grundlage von Open Source, erfolgreich durch. Nun  
 hat Mistral AI sein bislang größtes Modell 'Mistral Large' veröffentlicht. Diesmal allerdings nicht auf der  
@@ -261,16 +261,94 @@ Halluzination kommen kann.
 Grundsätzlich kann man zwischen drei Sprachmodellen auswählen: Large, Next und Small. Large bietet überlegene Denkfähigkeit,  
 Next ist ein Prototyp-Modell für erhöhte Kürze und Small arbeitet schnell und kosteneffektiv \cite{GrundlagenLeChat}.
 
+
 \section{Software Engineering Prozess}
 
-Software-Engineering ist eine technische Disziplin, die sich mit allen Aspekten der Softwareherstellung beschäftigt, 
-angefangen bei Konzeption über Betrieb bis hin zur Wartung. Die grundlegenden Aktivitäten des Software-Engineerings stellen 
-dabei die Softwarespezifikation, Softwareentwicklung, Softwarevalidierung und Softwareweiterentwicklung dar. Wie im 
-Software Engineering gearbeitet wird, ist allerdings abhängig von den Umständen. Ein kreativeres, weniger formelles Verfahren 
-kann daher das richtige Vorgehen für einige Softwarearten sein. Im Software-Engineering geht es daher hauptsächlich darum, 
-die am besten geeignete Methode zu wählen. Dieser systematische Ansatz, der beim Software-Engineering eingesetzt wird, wird
-manchmal Softwareprozess genannt. Ein Softwareprozess ist eine Folge von Aktivitäten, die zur Herstellung eines 
-Softwareprodukts führen. Die vier grundlegenden Aktivitäten des Software-Engineerings findest man auch in jedem 
-Softwareprozess wieder. In dieser Arbeit wird lediglich auf das Wasserfallmodell 
+\begin{figure}
+    \centering
+    \includegraphics{pictures/Wasserfallmodell.PNG}
+    \caption{Wasserfallmodell, Quelle: \cite{Sommerville10}}
+    \label{Ablauf Wasserfallmodell}
+\end{figure}
 
-\subsection{einzelne Phasen} \index{einzelne Phasen} \label{einzelne Phasen}
+Software-Engineering ist eine technische Disziplin, die sich umfassend mit der Erstellung von Software beschäftigt, beginnend 
+bei der Konzeption, über den Betrieb, bis hin zur Wartung. Die wesentlichen Aktivitäten im Software-Engineering umfassen die 
+Softwarespezifikation, -entwicklung, -validierung und -weiterentwicklung. Die Arbeitsweise im Software-Engineering variiert 
+je nach den spezifischen Umständen. Für bestimmte Softwaretypen kann daher ein kreativeres, weniger formelles Vorgehen angemessen 
+sein. Im Mittelpunkt des Software-Engineerings steht somit die Auswahl der am besten geeigneten Methode. Dieser systematische 
+Ansatz wird oft als Softwareprozess bezeichnet. Ein Softwareprozess besteht aus einer Abfolge von Aktivitäten, die zur Erstellung 
+eines Softwareprodukts führen. Die vier grundlegenden Aktivitäten des Software-Engineerings sind in jedem Softwareprozess 
+enthalten. In dieser Arbeit wird ausschließlich das Wasserfallmodell als Softwareprozess behandelt. Das Wasserfallmodell ist das 
+erste veröffentlichte Modell für die Softwareentwicklung und basiert auf Prozessmodellen, die ursprünglich in der Entwicklung 
+großer militärischer Systeme verwendet wurden. Das Modell stellt den Softwareentwicklungsprozess als eine Reihe von Phasen dar, 
+wie in \autoref{Ablauf Wasserfallmodell} veranschaulicht. Das Wasserfallmodell ist ein Beispiel für einen plangesteuerten Prozess, 
+bei dem alle Prozessaktivitäten inhaltlich und zeitlich geplant werden, bevor die eigentliche Softwareentwicklung beginnt. Im 
+Folgenden werden die einzelnen Phasen des Wasserfallmodells beschrieben \cite{Sommerville10}.
+
+\subsection{Anforderungsdefinition} \index{Anforderungsdefinition} \label{Anforderungsdefinition}
+
+Die erste Phase des Wasserfallmodells umfasst die Analyse und Definition der Anforderungen. Dabei werden in Zusammenarbeit mit den 
+Systembenutzern die Dienstleistungen, Einschränkungen und Ziele des Systems ermittelt. Diese Anforderungen werden anschließend 
+detailliert spezifiziert und dienen als Grundlage für die Systemspezifikation \cite{Sommerville10}. Die Ergebnisse dieser Phase werden in einem Dokument, 
+der Anforderungsspezifikation, festgehalten.\\
+
+Die Anforderungsspezifikation umfasst die Benutzeranforderungen, eine grobe Systemübersicht mit der benötigten Hardware, sowie ein 
+fachliches Datenmodell, das die erforderlichen Klassen, deren Variablen und Beziehungen beschreibt. Zudem enthält sie ein 
+Anwendungsfalldiagramm, das die gewünschten Anwendungsfälle den entsprechenden Rollen zuweist, und eine detaillierte Beschreibung 
+jedes Anwendungsfalls, einschließlich eines Entitätendiagramms zur Festlegung des Ablaufs. Des Weiteren beinhaltet die Spezifikation 
+eine Skizzierung und Beschreibung der erforderlichen Dialoge sowie eine Benutzungsschnittstelle, die die verschiedenen Dialoge 
+miteinander verknüpft. Abschließend werden die nichtfunktionalen Anforderungen zusammen mit einem entsprechenden Test festgehalten.\\
+
+Diese umfassende Dokumentation bildet die Basis für die nachfolgenden Phasen im Wasserfallmodell und stellt sicher, dass alle 
+Anforderungen klar und präzise definiert sind.
+
+\subsection{System- und Softwareentwurf} \index{System- und Softwareentwurf} \label{System- und Softwareentwurf}
+
+Die zweite Phase des Wasserfallmodells ist der System- und Softwareentwurf. Im Rahmen des Systementwurfsprozesses werden die Anforderungen 
+entweder Hard- oder Softwaresystemen zugewiesen, wodurch eine übergeordnete Systemarchitektur festgelegt wird. Der Softwareentwurf konzentriert 
+sich auf das Erkennen und Beschreiben der grundlegenden abstrakten Softwaresysteme und ihrer Beziehungen zueinander \cite{Sommerville10}. Die 
+Ergebnisse dieser Phase werden in einem Architekturdokument festgehalten.\\
+
+Das Architekturdokument umfasst eine Skizze und eine Beschreibung der technischen Infrastruktur, die eine ausführlichere Version der Systemübersicht 
+aus der Anforderungsspezifikation darstellt [\ref{Anforderungsdefinition}]. Zudem beinhaltet es ein Komponentenmodell, in dem die Schnittstellen zwischen den einzelnen 
+benötigten Komponenten dargestellt und beschrieben werden. Weiterhin enthält das Architekturdokument eine detaillierte Schnittstellenbeschreibung, 
+in der die Schnittstellen der Komponenten für die Implementierung festgelegt werden. Abschließend wird für jeden Anwendungsfall ein Sequenzdiagramm 
+erstellt, das festlegt, welche Funktionen in den jeweiligen Schnittstellen der Komponenten vorhanden sein müssen.\\
+
+Diese detaillierte Dokumentation ist essenziell, um sicherzustellen, dass die Softwareentwicklung auf einer klaren und präzisen Architektur 
+basiert, die alle Anforderungen berücksichtigt und eine effiziente Implementierung ermöglicht.
+
+\subsection{Implementierung und Modultests} \index{Implementierung und Modultests} \label{Implementierung und Modultests}
+
+Die Implementierung und die dazugehörigen Modultests finden in der dritten Phase des Wasserfallmodells statt. In dieser Phase wird der 
+Softwareentwurf durch eine Reihe von Programmen oder Programmeinheiten realisiert. Die Modultests stellen sicher, dass jede Einheit ihre 
+Spezifikation erfüllt \cite{Sommerville10}. Je mehr Tests erstellt werden, desto besser kann die Funktionalität der Implementierung gewährleistet 
+werden. Daher sollten möglichst viele Tests durchgeführt werden. Diese Tests konzentrieren sich auf die einzelnen Komponenten. Wenn eine Komponente von 
+einer anderen abhängig ist, kann zunächst mit einem Dummy getestet werden. Bei der Zusammenführung der einzelnen Komponenten wird dann nochmals mit der 
+echten Komponente getestet [\ref{Integration und Systemtests}]. Ein Dummy dient dabei als Ersatz für ein (noch) nicht vorhandenes Unterprogramm, in dem die gewünschte Ausgabe simuliert wird. 
+In dieser Phase werden die Tests in der Testspezifikation dokumentiert.\\
+
+Die Testspezifikation umfasst ein Testkonzept, das festlegt, wann welche Komponente getestet wird und ob bei Abhängigkeiten von anderen Komponenten auf 
+die fertige Implementierung gewartet oder zunächst ein Dummy verwendet wird. Für die Modultests werden für jeden Anwendungsfall Tests erstellt, die mit einer 
+Vorbedingung, einem bestimmten Testablauf und dem erwarteten Ergebnis beschrieben werden. Dazu gehört auch eine Tabelle mit den Testdaten, die die Tester 
+verwenden sollen. Außerdem gibt es ein Testprotokoll, in dem die Ergebnisse der Tests festgehalten werden.\\
+
+Diese detaillierte Dokumentation der Tests ist entscheidend, um sicherzustellen, dass jede Programm- oder Programmeinheit korrekt funktioniert und den 
+festgelegten Spezifikationen entspricht.
+
+\subsection{Integration und Systemtests} \index{Integration und Systemtests} \label{Integration und Systemtests}
+
+Die vierte Phase des Wasserfallmodells befasst sich mit der Integration und den Systemtests. In dieser Phase werden die einzelnen Programmeinheiten oder 
+Programme zusammengeführt und als Gesamtsystem getestet, um sicherzustellen, dass die Softwareanforderungen erfüllt werden. Nach Abschluss der Tests wird 
+das Softwaresystem an den Kunden ausgeliefert \cite{Sommerville10}.\\
+
+Die Systemtests werden nach dem gleichen Verfahren erstellt wie die Modultests in der dritten Phase [\ref{Implementierung und Modultests}] und sind ebenfalls 
+in der Testspezifikation dokumentiert. Diese Tests dienen dazu, die Funktionsweise des gesamten Systems zu überprüfen und sicherzustellen, dass alle 
+Komponenten korrekt zusammenarbeiten und die festgelegten Anforderungen erfüllen.
+
+\subsection{Betrieb und Wartung} \index{Betrieb und Wartung} \label{Betrieb und Wartung}
+
+Die letzte, fünfte Phase des Wasserfallmodells umfasst den Betrieb und die Wartung. Diese Phase ist normalerweise die längste im gesamten Lebenszyklus 
+der Software. In dieser Phase wird das System installiert und für den Gebrauch freigegeben. Die Wartung beinhaltet das Korrigieren von Fehlern, die in
+den vorherigen Phasen nicht entdeckt wurden, die Optimierung der Implementierung von Systemeinheiten und die Anpassung des Systems an neue Anforderungen, 
+die nach der Freigabe auftreten \cite{Sommerville10}.

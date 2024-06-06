@@ -1,7 +1,12 @@
 
 \chapter{Grundlagen} \index{Grundlagen}
 
-TODO!!!!!!!!!
+In diesem Kapitel wird erläutert, was LLM Tools sind, wie sie trainiert werden und wie sie funktionieren. Anschließend 
+werden die einzelnen Tools ChatGPT, Google Gemini und Le Chat vorgestellt und deren Entwicklung beschrieben.\\
+
+Im zweiten Teil des Kapitels wird der Software Engineering Prozess erklärt und erläutert, was dieser umfasst. 
+Dabei wird als Softwareprozess ausschließlich das Wasserfallmodell betrachtet, da in dieser Arbeit nur mit diesem 
+Modell gearbeitet wird.
 
 \section{LLM Tools} \index{LLM Tools} \label{LLM Tools}
 
@@ -15,7 +20,7 @@ LLMs basieren auf einem Transformer-Modell, das Eingaben in Token umwandelt und 
 Gleichungen ausführt, um Beziehungen zwischen den Token zu ermitteln. Dadurch kann der Computer Muster erkennen, 
 die auch ein Mensch wahrnehmen würde, wenn ihm die gleiche Frage gestellt wird. Zudem verwenden Transformer-Modelle 
 Selbstaufmerksamkeitsmechanismen, die es dem Modell ermöglichen, schneller zu lernen als herkömmliche Modelle. 
-Dadurch kann das Transformer-Modell verschiedene Teile der Sequenz oder den gesamten Kontext eines Satzes berücksichtigen, 
+Somit kann das Transformer-Modell verschiedene Teile der Sequenz oder den gesamten Kontext eines Satzes berücksichtigen, 
 um Vorhersagen zu generieren.
 
 Grundsätzlich bestehen LLMs aus vier neuronalen Netzwerkschichten: der wiederkehrenden Ebene, der Einbettungsebene, 
@@ -53,7 +58,7 @@ ChatGPT wurde von OpenAI am 30. November 2022 veröffentlicht und entwickelte si
 generativen KI-Fähigkeiten rasch zu einer internationalen Sensation. Wenn man ChatGPT fragt, ob es einen Infotext 
 zu sich selbst erstellen kann, erhält man die Antwort in \autoref{InfotextChatGPT}
 
-\begin{figure} 
+\begin{prompt} 
     \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
     \textbf{Prompt: Erstell mir einen Infotext über dich für meine Bachelorarbeit}\\ 
 
@@ -79,7 +84,7 @@ zu sich selbst erstellen kann, erhält man die Antwort in \autoref{InfotextChatG
     \end{tcolorbox}
     \caption{Infotext ChatGPT, Quelle: ChatGPT}
     \label{InfotextChatGPT}
-\end{figure}
+\end{prompt}
 
 Die Beta-Version der Plattform war zunächst kostenlos verfügbar, und OpenAI bot den Nutzern weiterhin eine kostenlose 
 Basisversion an. Im Februar 2023 führte OpenAI ein kostenpflichtiges Abonnement ein, das unbegrenzten Zugriff auf ChatGPT 
@@ -96,11 +101,11 @@ Webentwickler und Content-Ersteller nutzten ChatGPT zunehmend als Recherche- und
 Im März 2023 brachte OpenAI eine neue Version heraus, bekannt als GPT-4. Ein bedeutender Unterschied zu früheren Versionen 
 bestand darin, dass GPT-4 Eingaben sowohl in Text- als auch in Bildformaten akzeptierte. Dies ermöglichte dem Chatbot, Daten 
 aus Diagrammen, Grafiken und Screenshots zu interpretieren. Zudem machte GPT-4 deutlich weniger Denkfehler und sachliche Fehler, 
-auch "Halluzinationen" genannt, als das zuvor verwendete GPT-3.5-Modell. Am Ende des Jahres hatte sich ChatGPT weiterentwickelt 
+auch ``Halluzinationen'' genannt, als das zuvor verwendete GPT-3.5-Modell. Am Ende des Jahres hatte sich ChatGPT weiterentwickelt 
 und konnte beispielsweise Bilder analysieren, Sprachansagen verarbeiten und gesprochene Antworten geben.
 
 Im Mai 2024 kündigte OpenAI ein aktualisiertes Modell namens ChatGPT-4o an, das schnellere Ergebnisse sowie verbesserte 
-Text- und Audiofunktionen versprach. Dieses Modell umfasste auch ein neues Konversations-KI-System namens ``Sky'' \cite{GrundlagenChatGPT}.
+Text- und Audiofunktionen versprach. Dieses Modell umfasst auch ein neues Konversations-KI-System namens ``Sky'' \cite{GrundlagenChatGPT}.
 
 \subsection{Google Gemini} \index{Google Gemini} \label{Google Gemini}
 
@@ -110,7 +115,7 @@ Google entwickelt und realisiert wurde. In der ursprünglichen Ankündigung wurd
 Im Februar 2024 entschied Google, auch den bisher als Bard bekannten Chatbot in Gemini umzubenennen. Damit ist Gemini mittlerweile sowohl
 der Name des Google Chatbots als auch des zugrundeliegenden Sprachmodells.
 
-Bei Nachfrage an Gemini, ob es einen Infotext über sich erstellen kann, erhält man die Antwort in \autoref{InfotextGemini1} und \autoref{InfotextGemini2}
+Bei Nachfrage an Gemini, ob es einen Infotext über sich erstellen kann, erhält man die Antwort in \autoref{InfotextGemini1} und \autoref{InfotextGemini2}.
 
 \begin{prompt}
     \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
@@ -152,7 +157,7 @@ Bei Nachfrage an Gemini, ob es einen Infotext über sich erstellen kann, erhält
     \label{InfotextGemini1}
 \end{prompt}
 
-\begin{figure} 
+\begin{prompt} 
     \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
         \textbf{Ethische Überlegungen}\\
         Es ist wichtig, Gemini verantwortungsvoll und ethisch zu nutzen. Zu den ethischen Überlegungen, die bei der Verwendung von Gemini zu beachten sind, gehören:
@@ -172,7 +177,7 @@ Bei Nachfrage an Gemini, ob es einen Infotext über sich erstellen kann, erhält
     %\addtocounter{figure}{-1}
     \caption{Infotext Gemini 2, Quelle: Gemini}
     \label{InfotextGemini2}
-\end{figure}
+\end{prompt}
 
 Gemini 1.0 wurde in drei verschiedenen Größen optimiert: Gemini Ultra als das größte und leistungsstärkste Modell 
 für hochkomplexe Aufgaben, Gemini Pro als das beste Modell zur Anwendung in einem breiten Aufgabenspektrum und Gemini 
@@ -181,8 +186,8 @@ Nano als das effizienteste Modell für Aufgaben, die direkt auf dem Gerät verar
 Die Gemini-Modelle sind von Grund auf multimodal konzipiert, was bedeutet, dass sie mit verschiedenen Arten von 
 Informationen umgehen können. Gemini ist in der Lage, Texte, Programmcode, Bilder, Videos, Audioinformationen und 
 deren Kombinationen zu analysieren, zu verstehen, zu kombinieren und zu generieren. Da Gemini auch mit Skizzen und 
-handgeschriebenem Text umgehen kann, eignet es sich für den Einsatz in Fachbereichen wie Mathematik oder Physik und 
-anderen. Im Programmierbereich werden gängige Programmiersprachen wie Python, Java, C++ oder Go unterstützt. Gemini 
+handgeschriebenem Text umgehen kann, eignet es sich für den Einsatz in Fachbereichen wie zum Beispiel Mathematik oder Physik. 
+Im Programmierbereich werden gängige Programmiersprachen wie Python, Java, C++ oder Go unterstützt. Gemini 
 kann Programmcode analysieren, kommentieren und auch generieren. Dadurch steht Gemini in Konkurrenz zu anderen LLMs 
 wie den GPT-Sprachmodellen von Open AI. Gemini soll jedoch die Konkurrenzprodukte in vielen Benchmarks deutlich übertreffen.
 
@@ -200,7 +205,7 @@ verarbeiten können. Diese neuen Versionen sollen die Benchmark-Ergebnisse der V
 
 \subsection{Le Chat} \index{Le Chat} \label{Le Chat}
 
-\begin{figure} 
+\begin{prompt}
     \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
         \textbf{Prompt: Erstell mir einen Infotext über Le Chat für meine Bachelorarbeit}
         \textbf{Einleitung}\\
@@ -245,7 +250,7 @@ verarbeiten können. Diese neuen Versionen sollen die Benchmark-Ergebnisse der V
     \end{tcolorbox}
     \caption{Infotext LeChat, Quelle: Le Chat}
     \label{InfotextLeChat}
-\end{figure}
+\end{prompt}
 
 In \autoref{InfotextLeChat} sieht man die Antwort die Le Chat gibt, wenn man ihn nach einem Infotext über sich 
 fragt. Le Chat ist ein, von dem französischem KI-Startup Mistral AI veröffentlichter Chatbot. Mistral AI startete mit  
@@ -310,7 +315,7 @@ sich auf das Erkennen und Beschreiben der grundlegenden abstrakten Softwaresyste
 Ergebnisse dieser Phase werden in einem Architekturdokument festgehalten.\\
 
 Das Architekturdokument umfasst eine Skizze und eine Beschreibung der technischen Infrastruktur, die eine ausführlichere Version der Systemübersicht 
-aus der Anforderungsspezifikation darstellt [\ref{Anforderungsdefinition}]. Zudem beinhaltet es ein Komponentenmodell, in dem die Schnittstellen zwischen den einzelnen 
+aus der Anforderungsspezifikation darstellt [\autoref{Anforderungsdefinition}]. Zudem beinhaltet es ein Komponentenmodell, in dem die Schnittstellen zwischen den einzelnen 
 benötigten Komponenten dargestellt und beschrieben werden. Weiterhin enthält das Architekturdokument eine detaillierte Schnittstellenbeschreibung, 
 in der die Schnittstellen der Komponenten für die Implementierung festgelegt werden. Abschließend wird für jeden Anwendungsfall ein Sequenzdiagramm 
 erstellt, das festlegt, welche Funktionen in den jeweiligen Schnittstellen der Komponenten vorhanden sein müssen.\\
@@ -325,7 +330,7 @@ Softwareentwurf durch eine Reihe von Programmen oder Programmeinheiten realisier
 Spezifikation erfüllt \cite{Sommerville10}. Je mehr Tests erstellt werden, desto besser kann die Funktionalität der Implementierung gewährleistet 
 werden. Daher sollten möglichst viele Tests durchgeführt werden. Diese Tests konzentrieren sich auf die einzelnen Komponenten. Wenn eine Komponente von 
 einer anderen abhängig ist, kann zunächst mit einem Dummy getestet werden. Bei der Zusammenführung der einzelnen Komponenten wird dann nochmals mit der 
-echten Komponente getestet [\ref{Integration und Systemtests}]. Ein Dummy dient dabei als Ersatz für ein (noch) nicht vorhandenes Unterprogramm, in dem die gewünschte Ausgabe simuliert wird. 
+echten Komponente getestet [\autoref{Integration und Systemtests}]. Ein Dummy dient dabei als Ersatz für ein (noch) nicht vorhandenes Unterprogramm, in dem die gewünschte Ausgabe simuliert wird. 
 In dieser Phase werden die Tests in der Testspezifikation dokumentiert.\\
 
 Die Testspezifikation umfasst ein Testkonzept, das festlegt, wann welche Komponente getestet wird und ob bei Abhängigkeiten von anderen Komponenten auf 
@@ -342,7 +347,7 @@ Die vierte Phase des Wasserfallmodells befasst sich mit der Integration und den 
 Programme zusammengeführt und als Gesamtsystem getestet, um sicherzustellen, dass die Softwareanforderungen erfüllt werden. Nach Abschluss der Tests wird 
 das Softwaresystem an den Kunden ausgeliefert \cite{Sommerville10}.\\
 
-Die Systemtests werden nach dem gleichen Verfahren erstellt wie die Modultests in der dritten Phase [\ref{Implementierung und Modultests}] und sind ebenfalls 
+Die Systemtests werden nach dem gleichen Verfahren erstellt wie die Modultests in der dritten Phase [\autoref{Implementierung und Modultests}] und sind ebenfalls 
 in der Testspezifikation dokumentiert. Diese Tests dienen dazu, die Funktionsweise des gesamten Systems zu überprüfen und sicherzustellen, dass alle 
 Komponenten korrekt zusammenarbeiten und die festgelegten Anforderungen erfüllen.
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  31 MAY 2024 19:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  6 JUN 2024 14:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2038,21 +2038,21 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
 ]
 chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+
+ []
+
 [3]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 49.
+(Font)              scaled to size 11.39996pt on input line 54.
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--70
+Underfull \hbox (badness 10000) in paragraph at lines 65--70
 
  []
 
@@ -2062,77 +2062,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--75
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
 
-Underfull \vbox (badness 2671) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
- [4] [5]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 124.
+ []
+
+Package hyperref Info: bookmark level for unknown prompt defaults to 0 on input line 85.
+[4] [5]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 129.
  (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 124.
+(Font)              scaled to size 10.40245pt on input line 129.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package hyperref Info: bookmark level for unknown prompt defaults to 0 on input line 151.
- [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 205--211
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--216
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--217
+Underfull \hbox (badness 10000) in paragraph at lines 217--222
 
  []
 
 
-Underfull \hbox (badness 2253) in paragraph at lines 236--238
+Underfull \hbox (badness 2253) in paragraph at lines 241--243
 []\T1/phv/b/n/10.95 (+20) Kosteneffizienz: \T1/phv/m/n/10.95 (+20) Le Chat kann als kos-tenef-fi-zi-en-te Al-ter-na-ti-ve zu mensch-li-chen
  []
 
-<./images/pictures/Wasserfallmodell.PNG, id=251, 417.05812pt x 234.1247pt>
+[6] [7]
+<./images/pictures/Wasserfallmodell.PNG, id=267, 417.05812pt x 234.1247pt>
 File: ./images/pictures/Wasserfallmodell.PNG Graphic file (type png)
 <use ./images/pictures/Wasserfallmodell.PNG>
-Package pdftex.def Info: ./images/pictures/Wasserfallmodell.PNG  used on input line 269.
+Package pdftex.def Info: ./images/pictures/Wasserfallmodell.PNG  used on input line 274.
 (pdftex.def)             Requested size: 417.0571pt x 234.12411pt.
-[8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 290--294
+ [8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 295--299
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--301
+Underfull \hbox (badness 10000) in paragraph at lines 300--306
 
  []
 
 [10 <./images/pictures/Wasserfallmodell.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 307--311
+Underfull \hbox (badness 10000) in paragraph at lines 312--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--317
+Underfull \hbox (badness 10000) in paragraph at lines 317--322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--330
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--335
+Underfull \hbox (badness 10000) in paragraph at lines 328--335
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 341--344
+Underfull \hbox (badness 10000) in paragraph at lines 336--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--349
 
  []
 
@@ -2141,24 +2144,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 341--344
 
  (./source/300_usage.tex
 chapter 3.
-) [13
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13
 
 
 
 
 
-]
+] [14]
 \openout2 = `source/400_comparison.aux'.
 
- (./source/400_comparison.tex [14
+ (./source/400_comparison.tex
+chapter 4.
+) [15
 
 
 
 
 
 ]
-chapter 4.
-) [15]
 \openout2 = `source/500_Problems.aux'.
 
  (./source/500_Problems.tex [16
@@ -2317,18 +2323,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72073 strings out of 474049
- 1652811 string characters out of 5746277
- 2914031 words of memory out of 5000000
- 92959 multiletter control sequences out of 15000+600000
+ 72086 strings out of 474049
+ 1652969 string characters out of 5746277
+ 2920264 words of memory out of 5000000
+ 92967 multiletter control sequences out of 15000+600000
  622842 words of font info for 234 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,21n,120p,10939b,3487s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,22n,120p,10939b,3478s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (42 pages, 201014 bytes).
+Output written on thesis.pdf (42 pages, 204956 bytes).
 PDF statistics:
- 582 PDF objects out of 1000 (max. 8388607)
- 491 compressed objects within 5 object streams
- 83 named destinations out of 1000 (max. 500000)
- 53196 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 614 PDF objects out of 1000 (max. 8388607)
+ 522 compressed objects within 6 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 53236 words of extra memory for PDF output out of 61914 (max. 10000000)
 

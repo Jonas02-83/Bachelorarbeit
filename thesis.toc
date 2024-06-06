@@ -16,7 +16,12 @@
 \contentsline {subsection}{\numberline {2.2.4}Integration und Systemtests}{12}{subsection.2.2.4}%
 \contentsline {subsection}{\numberline {2.2.5}Betrieb und Wartung}{12}{subsection.2.2.5}%
 \contentsline {chapter}{\numberline {3}Anwendung von LLM Tools im Software Engineering}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Einzelne Phasen}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Besprechungsprotokoll}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Projekthandbuch}{14}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Risikoliste}{14}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Anforderungsspezifikation}{14}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Architekturdokument}{14}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Testspezifikation}{14}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Praxisergebnisse und Vergleich}{15}{chapter.4}%
 \contentsline {section}{\numberline {4.1}??????}{15}{section.4.1}%
 \contentsline {section}{\numberline {4.2}ChatGPT}{15}{section.4.2}%

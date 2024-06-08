@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  6 JUN 2024 14:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  7 JUN 2024 15:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -2144,7 +2144,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 346--349
 
  (./source/300_usage.tex
 chapter 3.
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--36
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13
@@ -2153,12 +2173,65 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-] [14]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--67
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 68--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--110
+
+ []
+
+
+Underfull \vbox (badness 4859) has occurred while \output is active []
+
+ [15]) [16]
 \openout2 = `source/400_comparison.aux'.
 
  (./source/400_comparison.tex
 chapter 4.
-) [15
+) [17
 
 
 
@@ -2167,7 +2240,7 @@ chapter 4.
 ]
 \openout2 = `source/500_Problems.aux'.
 
- (./source/500_Problems.tex [16
+ (./source/500_Problems.tex [18
 
 
 
@@ -2175,10 +2248,10 @@ chapter 4.
 
 ]
 chapter 5.
-) [17]
+) [19]
 \openout2 = `source/600_Conclusion.aux'.
 
- (./source/600_Conclusion.tex [18
+ (./source/600_Conclusion.tex [20
 
 
 
@@ -2186,7 +2259,7 @@ chapter 5.
 
 ]
 chapter 6.
-) [19] [20
+) [21] [22
 
 
 
@@ -2323,18 +2396,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72086 strings out of 474049
- 1652969 string characters out of 5746277
+ 72088 strings out of 474049
+ 1653010 string characters out of 5746277
  2920264 words of memory out of 5000000
  92967 multiletter control sequences out of 15000+600000
  622842 words of font info for 234 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,22n,120p,10939b,3478s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,22n,120p,10948b,3479s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (42 pages, 204956 bytes).
+Output written on thesis.pdf (44 pages, 211870 bytes).
 PDF statistics:
- 614 PDF objects out of 1000 (max. 8388607)
- 522 compressed objects within 6 object streams
- 88 named destinations out of 1000 (max. 500000)
+ 627 PDF objects out of 1000 (max. 8388607)
+ 533 compressed objects within 6 object streams
+ 90 named destinations out of 1000 (max. 500000)
  53236 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  8 JUN 2024 16:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  11 JUN 2024 19:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -1702,7 +1702,20 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
- (./thesis.aux (./source/000_title.aux) (./source/001_declaration.aux) (./source/002_abstract.aux) (./source/100_introduction.aux) (./source/200_basics.aux) (./source/300_usage.aux) (./source/400_comparison.aux
+ (./thesis.aux (./source/000_title.aux) (./source/001_declaration.aux) (./source/002_abstract.aux) (./source/100_introduction.aux) (./source/200_basics.aux) (./source/300_usage.aux
+
+LaTeX Warning: Label `Besprechungsprotokoll' multiply defined.
+
+
+LaTeX Warning: Label `Projekthandbuch' multiply defined.
+
+
+LaTeX Warning: Label `Risikoliste' multiply defined.
+
+
+LaTeX Warning: Label `Anforderungsspezifikation' multiply defined.
+
+) (./source/400_comparison.aux
 
 LaTeX Warning: Label `ChatGPT' multiply defined.
 
@@ -2099,50 +2112,61 @@ Underfull \hbox (badness 2253) in paragraph at lines 241--243
  []
 
 [6] [7]
-<./images/pictures/Wasserfallmodell.PNG, id=267, 417.05812pt x 234.1247pt>
+<./images/pictures/Wasserfallmodell.PNG, id=264, 417.05812pt x 234.1247pt>
 File: ./images/pictures/Wasserfallmodell.PNG Graphic file (type png)
 <use ./images/pictures/Wasserfallmodell.PNG>
 Package pdftex.def Info: ./images/pictures/Wasserfallmodell.PNG  used on input line 274.
 (pdftex.def)             Requested size: 417.0571pt x 234.12411pt.
- [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 295--299
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--288
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--306
+[8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 293--300
 
  []
 
 [10 <./images/pictures/Wasserfallmodell.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 312--316
+Underfull \hbox (badness 10000) in paragraph at lines 311--317
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--322
+Underfull \hbox (badness 10000) in paragraph at lines 318--321
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--335
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 336--340
+Underfull \hbox (badness 10000) in paragraph at lines 322--328
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--349
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
-) [12]
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--345
+
+ []
+
+[11] [12]) [13]
 \openout2 = `source/300_usage.aux'.
 
- (./source/300_usage.tex
+ (./source/300_usage.tex [14
+
+
+
+
+
+]
 chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 12--17
@@ -2159,13 +2183,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--27
 
  []
 
-[13
-
-
-
-
-
-]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 35--40
 
  []
@@ -2195,10 +2213,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
-[14]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 72--76
 
  []
+
+
+LaTeX Warning: Reference `Anforderungsdefinition' on page 17 undefined on input line 88.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 84--89
@@ -2216,11 +2237,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--100
  []
 
 
+LaTeX Warning: Reference `System- und Softwareentwurf' on page 17 undefined on input line 112.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 108--113
 
  []
 
-[15]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 114--118
 
  []
@@ -2236,6 +2260,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--131
  []
 
 
+LaTeX Warning: Reference `Implementierung und Modultests' on page 18 undefined on input line 137.
+
+
+LaTeX Warning: Reference `Integration und Systemtests' on page 18 undefined on input line 137.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 134--138
 
  []
@@ -2245,7 +2275,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--143
 
  []
 
-[16]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
  []
@@ -2260,10 +2290,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--156
 
  []
 
-) [17]
+) [19]
 \openout2 = `source/400_comparison.aux'.
 
- (./source/400_comparison.tex [18
+ (./source/400_comparison.tex [20
 
 
 
@@ -2271,10 +2301,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--156
 
 ]
 chapter 4.
-) [19]
+) [21]
 \openout2 = `source/500_Problems.aux'.
 
- (./source/500_Problems.tex [20
+ (./source/500_Problems.tex [22
 
 
 
@@ -2282,10 +2312,10 @@ chapter 4.
 
 ]
 chapter 5.
-) [21]
+) [23]
 \openout2 = `source/600_Conclusion.aux'.
 
- (./source/600_Conclusion.tex [22
+ (./source/600_Conclusion.tex [24
 
 
 
@@ -2293,7 +2323,7 @@ chapter 5.
 
 ]
 chapter 6.
-) [23] [24
+) [25] [26
 
 
 
@@ -2421,6 +2451,9 @@ L3 programming layer <2024-04-11>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -2430,18 +2463,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72090 strings out of 474049
- 1652997 string characters out of 5746277
- 2920264 words of memory out of 5000000
- 92967 multiletter control sequences out of 15000+600000
+ 72089 strings out of 474049
+ 1652995 string characters out of 5746277
+ 2920948 words of memory out of 5000000
+ 92965 multiletter control sequences out of 15000+600000
  622842 words of font info for 234 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,22n,120p,10939b,3478s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,22n,120p,10948b,3478s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (46 pages, 215488 bytes).
+Output written on thesis.pdf (48 pages, 217194 bytes).
 PDF statistics:
- 638 PDF objects out of 1000 (max. 8388607)
- 542 compressed objects within 6 object streams
- 92 named destinations out of 1000 (max. 500000)
- 53236 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 624 PDF objects out of 1000 (max. 8388607)
+ 526 compressed objects within 6 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 53228 words of extra memory for PDF output out of 61914 (max. 10000000)
 

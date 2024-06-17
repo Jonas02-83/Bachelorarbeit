@@ -1,160 +1,152 @@
 \chapter{Anwendung von LLM Tools im Software Engineering} \index{Anwendung von LLM Tools im Software Engineering}
 
-Dieses Kapitel untersucht ausführlich die potenziellen Anwendungsfälle von LLM Tools im Software Engineering. 
-Zunächst wird eine umfassende Übersicht der verschiedenen Dokumente vorgestellt, die im Verlauf des 
-Entwicklungsprozesses erstellt werden. Dabei wird jedes Dokument einzeln betrachtet und aufgezeigt, wie 
-LLM Tools bei der Erstellung und Verwaltung dieser Dokumente eingesetzt werden können. Es wird detailliert 
-beschrieben, in welchen Bereichen und auf welche Weise diese Tools die Entwickler unterstützen, um die 
-Effizienz und Qualität des gesamten Entwicklungsprozesses zu verbessern.
+\begin{figure}
+    \centering
+    \includegraphics{pictures/Kapitel3Tabelle.PNG}
+    \caption{Mögliche LLM Tool Unterstützung}
+    \label{Dokumente mit LLM}
+\end{figure}
 
-\section{Besprechungsprotokoll} \index{Besprechungsprotokoll} \label{Besprechungsprotokoll}
+Dieses Kapitel untersucht ausführlich die potenziellen Anwendungsfälle von LLM-Tools im Software Engineering. Dabei 
+wird jedes Dokument einzeln betrachtet und aufgezeigt, wie LLM-Tools bei der Erstellung und Verwaltung dieser 
+Dokumente eingesetzt werden können. Die \autoref{Dokumente mit LLM} bietet eine Übersicht darüber, in welchen 
+Dokumenten und bei welchen Inhalten LLM-Tools unterstützend eingesetzt werden können.
 
-Besprechungsprotokolle sind ein unverzichtbares Element im Software Engineering Prozess, da sie die Kommunikation 
-und Dokumentation innerhalb eines Teams strukturieren und nachvollziehbar machen. Diese Protokolle erfassen die 
-wesentlichen Punkte, die in Meetings besprochen werden, einschließlich Entscheidungen, Aufgabenverteilungen und 
-nächste Schritte. Traditionell werden Besprechungsprotokolle manuell von einem oder mehreren Teammitgliedern erstellt, 
-was zeitaufwendig und fehleranfällig sein kann. Der Einsatz von LLM Tools kann diesen Prozess erheblich optimieren.\\
+\section{Besprechungsprotokoll} \index{Besprechungsprotokoll} \label{LLMBesprechungsprotokoll}
 
-LLM Tools wie ChatGPT, Google Gemini und Le Chat bieten fortschrittliche Möglichkeiten zur Unterstützung bei der Erstellung 
-und Bearbeitung von Besprechungsprotokollen. Da die kostenlosen Versionen dieser Tools keine Audio-Dateien transkribieren 
-können und lediglich mit Texteingaben arbeiten, entfällt die Möglichkeit einer Echtzeit-Transkription. Man könnte jedoch 
-andere kostenfreie Sprach-zu-Text Tools nutzen, um das Meeting in Textform vorliegen zu haben. Auf diese Weise wären die LLM 
-Tools in der Lage, die wichtigsten Punkte aus dem Text zu extrahieren und strukturiert zusammenzufassen.\\
+Im \autoref{Besprechungsprotokoll} wurde bereits erläutert, welche Inhalte in einem Besprechungsprotokoll enthalten 
+sind. Nun stellt sich die Frage, wie LLM-Tools bei der Erstellung eines solchen Dokuments unterstützen können.\\
 
-Ein praktisches Beispiel für den Einsatz von LLM Tools ist die automatische Identifizierung von Aufgaben, die an bestimmte 
-Teammitglieder verteilt wurden, und die direkte Einfügung dieser Informationen in das Protokoll. Dies erleichtert die 
-Nachverfolgung und stellt sicher, dass keine wichtigen Punkte übersehen werden.\\
+Eine Möglichkeit wäre, das Besprechungsprotokoll aufzeichnen zu lassen und anschließend automatisch daraus das Protokoll 
+erstellen zu lassen. Da aktuell jedoch nur die kostenfreie Version ChatGPT-4o mit Dokumenten arbeiten kann, ist dies 
+nur in begrenztem Umfang und ohne Vergleiche testbar.\\
 
-Eine weitere Möglichkeit für den Einsatz von LLM Tools ist die Durchsuchung historischer Besprechungsprotokolle, um relevante 
-Informationen schnell zu finden. Dies ist besonders in großen Projekten nützlich, in denen viele Meetings stattfinden und eine
-Vielzahl von Informationen verwaltet werden muss. Durch die Suchfunktion können Teammitglieder schnell auf vergangene 
-Entscheidungen und Diskussionspunkte zugreifen.
 
-\section{Projekthandbuch} \index{Projekthandbuch} \label{Projekthandbuch}
+Eine weitere Möglichkeit ist es, das Meeting zu verschriftlichen und damit als Texteingabe zu arbeiten. Mit dem 
+schriftlichen Gespräch könnten die Tools dann automatisch das Besprechungsprotokoll erstellen.\\
+Sollte dies nicht möglich sein, könnte man versuchen, sich die Aufgaben aus dem Gespräch zusammenfassen zu lassen.
+Dadurch wäre es einfacher, das Besprechungsprotokoll selbst zu erstellen.\\
+Falls auch dies nicht funktioniert, kann das Gespräch zusammengefasst und um unwichtige Themen, wie etwa Abschweifungen, 
+gekürzt werden.
+
+\section{Projekthandbuch} \index{Projekthandbuch} \label{LLMProjekthandbuch}
 
 Das Projekthandbuch ist ein zentrales Dokument im Software Engineering Prozess, das alle wesentlichen Informationen und 
-Richtlinien eines Projekts zusammenfasst. Es dient als Referenzwerk für das Projektteam und stellt sicher, dass alle 
-Beteiligten ein gemeinsames Verständnis der Projektziele, -anforderungen und -prozesse haben. Das Handbuch umfasst 
-typischerweise Abschnitte zu den Projektzielen, den beteiligten Personen, den Kommunikationswegen, den zu verwendenden 
-Tools und Technologien sowie den Vorgehensweisen und Standards, die im Projekt eingehalten werden sollen.\\
+Richtlinien eines Projekts zusammenfasst. Die spezifischen Inhalte dieses Dokuments wurden bereits im 
+\autoref{Projekthandbuch} dargelegt. Doch wie können LLM-Tools bei der Erstellung des 
+Projekthandbuches unterstützend wirken?\\
 
-Der Einsatz von LLM Tools kann durch die Fähigkeiten, wie die automatisierte Generierung, Aktualisierung 
-und Verwaltung von Projektdokumentationen, an dieser Stelle gut unterstützen.\\
+Eine Möglichkeit besteht darin, das gesamte Projekthandbuch oder einzelne Kapitel von diesen Tools erstellen zu 
+lassen. Dafür benötigen die Tools jedoch die relevanten Informationen. Um die Kapitel präziser zu gestalten, könnte 
+man diese zunächst in Form von Stichpunkten vorschreiben und anschließend von den LLM-Tools in ausformulierte Texte 
+umwandeln lassen.\\
 
-Ein Möglichkeit der Nutzung von LLM Tools ist, das Projekthandbuch kontinuierlich aktuell zu 
-halten. Änderungen und Ergänzungen können automatisch erkannt und in das Handbuch eingepflegt werden. Beispielsweise 
-können neue Anforderungen oder geänderte Spezifikationen, die in Besprechungen oder anderen Kommunikationskanälen 
-besprochen wurden, direkt in das Projekthandbuch übernommen werden. Dies stellt sicher, dass das Handbuch stets den 
-aktuellen Projektstand widerspiegelt und als verlässliche Quelle für alle Teammitglieder dient.
+Ein weiterer unterstützender Ansatz wäre, dass das Projekthandbuch bei Änderungen, wie beispielsweise personellen 
+Veränderungen, automatisch aktualisiert wird.
 
-\section{Risikoliste} \index{Risikoliste} \label{Risikoliste}
+\section{Risikoliste} \index{Risikoliste} \label{LLMRisikoliste}
 
-Die Risikoliste identifiziert und bewertet potenzielle Risiken und legt Maßnahmen zu deren Minimierung fest.
-Eine sorgfältig erstellte Risikoliste trägt dazu bei, mögliche Probleme frühzeitig zu erkennen und geeignete 
-Gegenmaßnahmen zu planen, um den Projekterfolg zu sichern. Traditionell wird die Risikoliste manuell von 
-Projektmanagern und Teammitgliedern erstellt, was zeitaufwendig sein kann und oft eine systematische und 
-kontinuierliche Überprüfung erfordert.\\
+Nachdem im \autoref{Risikoliste} die Bestandteile der Risikoliste beschrieben wurden, stellt sich auch hier die Frage, 
+wie LLM Tools bei der Erstellung und Pflege der Risikoliste mitwirken und unterstützen können.\\
 
-Durch den Einsatz von LLM Tools im Kontext der Risikoliste könnte dieser Prozess erheblich verbessert werden. LLM Tools wie ChatGPT, 
-Google Gemini und Le Chat bieten fortschrittliche Möglichkeiten zur automatisierten Erstellung, Aktualisierung und 
-Verwaltung von Risikolisten.\\
+Eine erste Möglichkeit besteht darin, die gesamte Risikoliste einschließlich der zugehörigen Maßnahmentabelle von 
+LLM Tools erstellen zu lassen. Dabei sollten alle Attribute für die Risiken festgelegt werden. Die Werte der einzelnen 
+Risikoattribute sollten zudem zueinander in einem konsistenten Verhältnis stehen.\\
+Falls dies nicht möglich ist, können LLM-Tools zur Erstellung von Risiken und Maßnahmen herangezogen werden, während 
+die Festlegung der Attribute manuell erfolgt.\\
 
-Ein bedeutender Vorteil der Nutzung von LLM Tools ist die Fähigkeit, große Mengen an Informationen zu analysieren und 
-potenzielle Risiken zu identifizieren. Diese Tools können Daten aus verschiedenen Quellen wie Projektdokumentationen und 
-Besprechungsprotokollen durchforsten, um mögliche Risiken zu erkennen und in die Risikoliste aufzunehmen. Dies würde 
-nicht nur Zeit sparen, sondern würde auch die Genauigkeit und Vollständigkeit der Risikoliste erhöhen.\\
+Eine weitere Möglichkeit, wie LLM-Tools bei der Risikoliste unterstützen können, liegt in der Pflege der Liste. Die 
+Tools könnten zu bestimmten Zeitpunkten während des Projekts abgefragt werden, ob und wie sich die Risikoliste 
+verändert hat. Sollten sich der Status oder andere Attribute der Risiken verändert haben oder sollten Risiken 
+eingetreten sein, können die Tools die Risikoliste entsprechend aktualisieren.
 
-Darüber hinaus können LLM Tools dabei helfen, Risiken zu bewerten und zu priorisieren. Basierend auf historischen Daten 
-und aktuellen Projektinformationen können diese Tools die Wahrscheinlichkeit und den möglichen Einfluss von Risiken 
-einschätzen. Dies ermöglicht eine fundierte Entscheidungsfindung und hilft dem Projektteam, sich auf die wichtigsten 
-Risiken zu konzentrieren.\\
+\section{Anforderungsspezifikation} \index{Anforderungsspezifikation} \label{LLMAnforderungsspezifikation}
 
-Ein weiterer Vorteil ist die Fähigkeit der LLM Tools, kontinuierlich neue Informationen zu überwachen und die 
-Risikoliste entsprechend zu aktualisieren. Wenn sich im Verlauf des Projekts neue Risiken ergeben oder bestehende 
-Risiken ändern, können diese Änderungen automatisch erkannt und in die Risikoliste integriert werden. Dies stellt 
-sicher, dass die Risikoliste stets aktuell ist und das Projektteam rechtzeitig auf neue Entwicklungen reagieren kann.\\
+Das \autoref{Anforderungsspezifikation} beschreibt die einzelnen Inhalte der Anforderungsspezifikation. Doch wie 
+können LLM-Tools bei der Erstellung dieser unterstützen?\\
 
-LLM Tools können zudem bei der Entwicklung von Maßnahmen zur Risikominimierung unterstützen. Basierend auf den 
-identifizierten Risiken und den Erfahrungen aus früheren Projekten können diese Tools Vorschläge für geeignete 
-Gegenmaßnahmen machen. Dies erleichtert es dem Projektteam, proaktiv zu handeln und potenzielle Probleme frühzeitig 
-anzugehen.
+Zunächst könnte die Einleitung des Dokuments entweder komplett oder kapitelweise automatisch erstellt werden. Da der 
+Kontext hierbei jedoch entscheidend ist, wäre es vermutlich sinnvoller, die Kapitel in Stichpunkten selbst zu 
+verfassen und diese dann von den LLM-Tools in zusammenhängende Texte umwandeln zu lassen.\\
 
-\section{Anforderungsspezifikation} \index{Anforderungsspezifikation} \label{Anforderungsspezifikation}
+Im nächsten Schritt folgen die Benutzeranforderungen. Auch hier besteht die Möglichkeit, den gesamten Text von den 
+Tools erstellen zu lassen oder, um eine präzisere Formulierung zu erreichen, die Inhalte zunächst in Stichpunkten zu 
+notieren und diese dann ausformulieren zu lassen.\\
 
-Die Anforderungsspezifikation definiert die funktionalen und nicht-funktionalen Anforderungen an einem Softwareprojekt.
-Es bildet die Basis für das Design, die Implementierung und das Testen der Software. Eine genaue und umfassende 
-Anforderungsspezifikation ist daher unerlässlich, um Missverständnisse zu vermeiden und sicherzustellen, dass 
-das Endprodukt den Erwartungen der Stakeholder entspricht. Die Bestandteile der Anforderungsspezifikation wurden 
-bereits im \autoref{Anforderungsdefinition} beschrieben und erläutert.\\
+Danach kommt die Systemübersicht. Da außer ChatGPT-4o keiner der Chatbots eigenständig Dokumente erstellen kann, 
+muss die Zeichnung manuell erstellt werden. Es ist jedoch möglich, die Beschreibung der Komponenten und deren 
+Beziehungen von den Tools erstellen zu lassen und diese Beschreibung dann in eine Zeichnung umzusetzen. Ebenso 
+kann der Text, der das System beschreibt und in die Systemlandschaft einordnet, automatisch generiert werden. Auch 
+hier kann es hilfreich sein, vorab Stichpunkte zu erstellen und diese dann in einen flüssigen Text umwandeln zu lassen.\\
 
-Ein bedeutender Vorteil der Nutzung von LLM-Tools liegt in ihrer Fähigkeit, natürliche Sprache zu verstehen und in 
-strukturierte Anforderungen zu übersetzen. Dies kann genutzt werden, um das fachliche Datenmodell, die 
-Entitätsdiagramme für die Anwendungsfälle und die Dialoge zu erstellen. Dadurch kann man die Zeit sparen, die ansonsten 
-für die manuelle Erstellung dieser Diagramme und Skizzen erforderlich wäre, und muss diese lediglich in Textform dokumentieren. 
-Einfachere und weniger komplexe Diagramme könnten sogar ohne ausführliche Beschreibung erstellt werden.\\
+Ähnlich verhält es sich beim fachlichen Datenmodell. Die kostenfreien LLM-Tools können zwar kein UML-Diagramm erstellen, 
+aber sie können die Entitäten sowie deren Attribute und Beziehungen beschreiben. Die Diagrammerstellung muss daher 
+manuell erfolgen. Die dazugehörigen Beschreibungen und Einschränkungen können hingegen von den Tools generiert werden. 
+Falls dies nicht zufriedenstellend funktioniert, können die einzelnen Inhalte wie Entitäten, Attribute, Beziehungen 
+sowie Beschreibungen und Einschränkungen jeweils nacheinander separat erstellt werden.\\
 
-Für das Anwendungsfalldiagramm kann das umfassende Wissen der LLM-Tools genutzt werden. Diese Tools können Vorschläge 
-für Anwendungsfälle für die einzelnen Rollen im System unterbreiten, was zu einem Zeitersparnis und einer Erhöhung 
-der Genauigkeit und Vollständigkeit des Anwendungsfalldiagramms führt. Zudem können die Rollen in Beziehung 
-zueinander gesetzt werden.\\
+Anschließend folgt das Anwendungsfalldiagramm und eine detaillierte Beschreibung der einzelnen Anwendungsfälle mit 
+Aktivitätsdiagramm. Das Anwendungsfalldiagramm muss wieder manuell erstellt werden, jedoch können die LLM-Tools 
+die Rollen, deren Verbindungen und die zugehörigen Anwendungsfälle auflisten. Falls zusätzliche Bemerkungen zu den 
+Anwendungsfällen erforderlich sind, können diese auch von den Tools erstellt werden. Das Aktivitätsdiagramm für die 
+Anwendungsfälle muss ebenfalls manuell erstellt werden, wobei eine genaue und detaillierte Beschreibung erforderlich 
+ist. Die Beschreibung des Anwendungsfalls kann hingegen vollständig von den Tools generiert werden.\\
 
-Darüber hinaus können LLM-Tools dabei helfen, Unklarheiten und Widersprüche in den Anforderungen zu erkennen. 
-Durch die Analyse der erfassten Anforderungen können diese Tools potenzielle Konflikte identifizieren und auf 
-Inkonsistenzen hinweisen. Dies ermöglicht es dem Projektteam, frühzeitig Korrekturen vorzunehmen und die Qualität 
-der Anforderungsspezifikation zu verbessern.
+Darauf folgt die Benutzungsschnittstelle, die ebenfalls aus einem Diagramm besteht, das zeigt, von welchem Dialog aus 
+man zu anderen navigieren kann. Hier kann lediglich eine textuelle Beschreibung von den Tools erstellt werden, während 
+das Diagramm manuell erstellt werden muss. Zusätzliche Bemerkungen und die Zuordnung der Dialoge zu den Anwendungsfällen 
+können ebenfalls von den LLM-Tools übernommen werden. Die einzelnen Dialoge können textuell beschrieben werden, wobei 
+die Tools die einzelnen Eingabefelder und Buttons erläutern sowie definieren können, wann der Dialog aufgerufen wird 
+und was beim Schließen des Dialogs passiert.\\
 
-\section{Architekturdokument} \index{Architekturdokument} \label{Architekturdokument}
+Zuletzt werden die nichtfunktionalen Anforderungen mitsamt den dazugehörigen Tests aufgelistet. Die Anforderungen 
+können von den Tools basierend auf den vorherigen Dokumenten erstellt werden. Falls die Tools die Anforderungen nicht 
+eigenständig erstellen können, sollten zumindest die Tests von ihnen aufgestellt werden können.
 
-Das Architekturdokument beschreibt die grundlegende Struktur und die Designentscheidungen eines Softwareprojekts. Es 
-dient als detaillierte Vorlage für die Entwicklung und stellt sicher, dass alle Teammitglieder ein einheitliches 
-Verständnis der Softwarearchitektur haben. Das Dokument umfasst in der Regel Informationen über die Hauptkomponenten, 
-deren Interaktionen, die verwendeten Technologien und die Designprinzipien, die im Projekt verfolgt werden. Auch hier 
-wurden die Bestandteile bereits im \autoref{System- und Softwareentwurf} aufgezählt und erklärt.\\
+\section{Architekturdokument} \index{Architekturdokument} \label{LLMArchitekturdokument}
 
-LLM Tools können bei der Erstellung von Diagrammen und anderen visuellen Darstellungen der Softwarearchitektur helfen. 
-Durch die automatische Generierung von Architekturdiagrammen auf Basis der erfassten Informationen tragen diese Tools 
-dazu bei, die Struktur und Interaktionen der verschiedenen Komponenten klar und übersichtlich darzustellen. Dies erleichtert 
-das Verständnis der Architektur und unterstützt die Kommunikation innerhalb des Teams.\\
+Das Architekturdokument beschreibt die grundlegende Struktur und die Designentscheidungen eines Softwareprojekts. 
+Die genauen Inhalte wurden bereits im \autoref{Architekturdokument} erläutert. Doch wie können LLM-Tools bei der 
+Erstellung dieses Dokuments unterstützen?\\
 
-Ein praktisches Beispiel für den Einsatz von LLM Tools ist die automatische Erstellung von Architekturdokumenten basierend 
-auf den initialen Anforderungen und Designentscheidungen. Diese Tools dokumentieren die grundlegenden Komponenten und deren 
-Interaktionen sowie die verwendeten Technologien und Designprinzipien. Dadurch wird eine solide Grundlage für die weitere 
-Entwicklung geschaffen und sichergestellt, dass alle Teammitglieder ein einheitliches Verständnis der Architektur haben.\\
+Die technische Infrastruktur besteht aus einer Grafik und einem erklärenden Text. Bei der Erstellung der Grafik 
+stellt sich das Problem, dass nur ChatGPT-4o in der Lage ist, Grafiken zu generieren. Daher muss man sich die 
+einzelnen Hardwarekomponenten mit den entsprechenden Versionen und deren Beziehungen zueinander beschreiben lassen 
+und die Grafik selbst erstellen. Den dazugehörigen erklärenden Text kann man automatisch generieren lassen. Falls 
+dieser nicht präzise genug formuliert ist, kann es hilfreich sein, den Text zunächst in Stichpunkten vorzuschreiben 
+und anschließend ausformulieren zu lassen.\\
 
-Basierend auf der Systemübersicht aus dem \autoref{Anforderungsspezifikation} kann die technische Infrastruktur erstellt 
-und die aktuellsten Versionen der Hardware spezifiziert werden. Zudem könnten LLM-Tools die Hardwarekomponenten erläutern und die 
-erforderlichen Hardwarevoraussetzungen definieren. Das Komponentendiagramm und die Sequenzdiagramme lassen sich ähnlich 
-wie die Diagramme aus dem \autoref{Anforderungsspezifikation} beschreiben und erstellen. Beim Komponentendiagramm können 
-die Komponenten und Schnittstellen erklärt und definiert werden. Für die Sequenzdiagramme der einzelnen Anwendungsfälle 
-könnten die benötigten Funktionen innerhalb der Komponenten inklusive der Übergabeparameter definiert und der Ablauf 
-beschrieben werden.\\
+Anschließend folgt das Komponentenmodell. Auch dieses kann nicht grafisch erstellt werden; lediglich die Komponenten 
+und deren Schnittstellen zueinander können definiert werden. Hierzu gibt es einen begleitenden Text, der die 
+Komponenten und Schnittstellen beschreibt und deren Funktion erläutert. Dieser Text kann ebenfalls vollständig 
+generiert oder in Stichpunkten vorgeschrieben und anschließend ausformuliert werden.\\
 
-\section{Testspezifikation} \index{Testspezifikation} \label{Testspezifikation}
+Das Datenmodell entspricht häufig dem fachlichen Datenmodell. Hier kann überprüft werden, ob dies der Fall ist und, 
+falls nicht, wo die Unterschiede liegen bzw. wie das Datenmodell tatsächlich aussieht.\\
 
-Die Testspezifikation ist ein essenzielles Dokument im Software Engineering Prozess, das die Teststrategie und die spezifischen 
-Testfälle für ein Softwareprojekt definiert. Sie stellt sicher, dass alle funktionalen und nicht-funktionalen Anforderungen 
-umfassend getestet werden, um die Qualität und Zuverlässigkeit der Software zu gewährleisten. Was die Testspezifikation
-umfasst, wurde bereits im \autoref{Implementierung und Modultests} und \autoref{Integration und Systemtests} aufgelistet.\\
+Danach folgt die detaillierte Schnittstellenbeschreibung. Diese ist abhängig von der Projektstruktur der 
+Implementierung. LLM-Tools könnten basierend auf den vorherigen Dokumenten eine Projektstruktur erstellen und 
+anschließend die Schnittstellenbeschreibung generieren. Wenn jedoch bereits ein Verzeichnis mit den passenden 
+Ordnern existiert, sollte die Schnittstellenbeschreibung manuell durchgeführt werden.\\
 
-Ein wesentlicher Vorteil der Nutzung von LLM Tools ist ihre Fähigkeit, Testfälle automatisch aus den Anforderungsspezifikationen 
-zu generieren. Diese Tools können die Anforderungen analysieren und darauf basierend Testfälle erstellen, die sicherstellen, 
-dass alle Aspekte der Software umfassend getestet werden. Dies spart nicht nur Zeit, sondern erhöht auch die Vollständigkeit 
-und Genauigkeit der Testspezifikation.\\
+Nach der Schnittstellenbeschreibung folgt die dynamische Beschreibung exemplarischer Anwendungsfälle. Diese besteht 
+aus einem Sequenzdiagramm und den für den Anwendungsfall benötigten Vorbedingungen. Das Sequenzdiagramm kann nur als 
+Text beschrieben werden und muss anschließend selbstständig erstellt werden. Die Vorbedingungen sollten ohne 
+Schwierigkeiten generiert werden können.
 
-Darüber hinaus können LLM Tools dabei helfen, Testskripte für automatisierte Tests zu erstellen. Basierend auf den definierten 
-Testfällen können diese Tools Testskripte generieren, die in verschiedenen Testumgebungen ausgeführt werden können. Dies würde 
-die Automatisierung von Testprozessen erleichtern und zur Effizienzsteigerung im Testzyklus bei tragen.\\
+\section{Testspezifikation} \index{Testspezifikation} \label{LLMTestspezifikation}
 
-Ein weiterer Vorteil ist die Unterstützung bei der Verwaltung und Aktualisierung der Testspezifikation. LLM Tools können Änderungen 
-in den Anforderungen oder im Code automatisch erkennen und die entsprechenden Testfälle und Testskripte aktualisieren. Dies stellt 
-sicher, dass die Testspezifikation stets den aktuellen Stand der Softwareentwicklung widerspiegelt und alle neuen oder geänderten 
-Funktionen angemessen getestet werden.\\
+Im \autoref{Testspezifikation} wurde bereits erklärt, welche Inhalte die Testspezifikation umfasst. Doch wie können 
+LLM-Tools bei der Erstellung dieses Dokuments unterstützen?
 
-LLM Tools können auch dabei helfen, die Testabdeckung zu analysieren und zu verbessern. Durch die Überprüfung der vorhandenen Testfälle 
-und die Identifizierung von Lücken können diese Tools Vorschläge zur Ergänzung der Testspezifikation machen, um eine umfassende 
-Testabdeckung zu gewährleisten. Dies trägt dazu bei, potenzielle Fehler frühzeitig zu erkennen und die Qualität der Software zu erhöhen.\\
+Zunächst kommt das Testkonzept. Dieses kann automatisch generiert werden. Falls das generierte Konzept nicht den 
+eigenen Vorstellungen entspricht, kann man zunächst Stichpunkte selbst schreiben und sich dann den Text daraus 
+erstellen lassen. Auch die dazugehörige Tabelle sollte sich von den LLM-Tools erstellen lassen.\\
 
-Ein praktisches Beispiel für den Einsatz von LLM Tools ist die automatische Erstellung von Testberichten. Nach der Ausführung der Tests 
-können diese Tools die Testergebnisse analysieren und detaillierte Testberichte erstellen, die die Testabdeckung, die gefundenen Fehler 
-und die insgesamt erreichte Qualität der Software dokumentieren. Dies erleichtert die Nachverfolgung von Fehlern und die Kommunikation 
-der Testergebnisse an alle Stakeholder.
+Anschließend folgen die Tests für die einzelnen Anwendungsfälle. Die Testfälle kann man vollständig von den Tools 
+erstellen lassen. Die Testdaten, die bei diesen Tests benötigt werden, werden in einer Tabelle zusammengefasst. 
+Auch diese Tabelle könnten die Tools automatisch generieren.\\
+
+Der Rahmen der Tabelle mit dem Testprotokoll kann ebenfalls von den LLM-Tools erstellt werden. Die Ergebnisse 
+könnten die Tools auch generieren; allerdings stellt sich hier die Frage, ob dies zu einer Zeitersparnis oder 
+einer Arbeitserleichterung führt.\\

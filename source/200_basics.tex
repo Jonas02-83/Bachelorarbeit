@@ -271,22 +271,18 @@ Next ist ein Prototyp-Modell für erhöhte Kürze und Small arbeitet schnell und
 
 \begin{figure}
     \centering
-    \includegraphics{pictures/Wasserfallmodell.PNG}
-    \caption{Wasserfallmodell, Quelle: \cite{Sommerville10}}
-    \label{Ablauf Wasserfallmodell}
+    \includegraphics{pictures/Kapitel2Tabelle.PNG}
+    \caption{Dokumente im Software Engineering}
+    \label{Dokumente Software Engineering}
 \end{figure}
 
-Software-Engineering ist eine technische Disziplin, die sich umfassend mit der Erstellung von Software beschäftigt, beginnend 
-bei der Konzeption, über den Betrieb, bis hin zur Wartung. Die wesentlichen Aktivitäten im Software-Engineering umfassen die 
-Softwarespezifikation, -entwicklung, -validierung und -weiterentwicklung. Die Arbeitsweise im Software-Engineering variiert 
-je nach den spezifischen Umständen. Für bestimmte Softwaretypen kann daher ein kreativeres, weniger formelles Vorgehen angemessen 
-sein. Im Mittelpunkt des Software-Engineerings steht somit die Auswahl der am besten geeigneten Methode. Dieser systematische 
-Ansatz wird oft als Softwareprozess bezeichnet. Ein Softwareprozess besteht aus einer Abfolge von Aktivitäten, die zur Erstellung 
-eines Softwareprodukts führen. Die vier grundlegenden Aktivitäten des Software-Engineerings sind in jedem Softwareprozess 
-enthalten. Während der Arbeit am Projekt werden die Ergebnisse in unterschiedlichen Dokumenten festgehalten. Im folgenden 
-wird kurz auf die einzelnen Dokumente eingegangen und deren Aufbau und Inhalt beschrieben.\\ 
-
-\cite{Sommerville10}.
+Software-Engineering ist eine technische Disziplin, die sich umfassend mit der Erstellung von Software beschäftigt, 
+beginnend bei der Konzeption, über den Betrieb, bis hin zur Wartung. Die wesentlichen Aktivitäten im Software-Engineering 
+umfassen die Softwarespezifikation, -entwicklung, -validierung und -weiterentwicklung \cite{Sommerville10}. Während des Prozesses werden 
+mehrere Dokumente erstellt und im Verlauf angepasst. Diese umfassen Besprechungsprotokolle, eine Risikoliste,
+ein Projekthandbuch, eine Anforderungsspezifikation, ein Architekturdokument und eine Testspezifikation. In der 
+\autoref{Dokumente Software Engineering} sieht man welche Inhalte die einzelnen Dokumente umfassen. Außerdem wird im 
+folgenden zu jedem Dokument und dessen Inhalte ein Überblick gegeben.
 
 \subsection{Besprechungsprotokoll} \index{Besprechungsprotokoll} \label{Besprechungsprotokoll}
 
@@ -364,12 +360,12 @@ Die Risikoliste ist ein zentrales Instrument, das dem gesamten Team einen umfass
 und die entsprechenden Maßnahmen bietet. Der Projektleiter muss diese Risiken stets im Auge behalten, um eine 
 fundierte Projektplanung sicherzustellen. Zusätzlich kann die Risikoliste dem Anforderungsanalysten bei der 
 Identifikation von Anforderungen, dem Systemarchitekten bei der Wahl geeigneter technischer Lösungen und dem 
-Testmanager bei der Entwicklung von Testfällen nützlich sein.
+Testmanager bei der Entwicklung von Testfällen nützlich sein.\\
 
 Der Inhalt der Risikoliste umfasst die Autoren des Dokuments, die Historie des Dokuments mit einer Zusammenfassung 
 der Änderungen, die Liste der Risiken sowie eine Liste der möglichen Maßnahmen für jedes identifizierte Risiko. 
 Die Historie enthält Spalten für Datum, Autor*in und Änderungen, um später vorgenommene Modifikationen leichter 
-nachvollziehbar zu machen.
+nachvollziehbar zu machen.\\
 
 Die Risikoliste selbst setzt sich aus mehreren Attributen zusammen. Die Identifikationsnummer ist eine eindeutige 
 Nummer zur Identifizierung des Risikos, während die Risikobezeichnung eine kurze Beschreibung des Risikos bietet. 
@@ -380,7 +376,7 @@ Eintrittswahrscheinlichkeit des Risikos, und der Risikoschaden oder das Risikoau
 Schadensausmaß, einschließlich eventueller Vertragsstrafen. Das Risikomaß berechnet sich aus der Multiplikation von 
 Risikowahrscheinlichkeit und Risikoschaden. Die Risikoklasse ist eine Priorisierung der Risiken, typischerweise in 
 Kategorien wie tolerierbar, unerwünscht, kritisch oder katastrophal. Schließlich wird für jedes Risiko ein Status 
-festgelegt, der zwischen aktiv, eingetragen und geschlossen unterscheiden kann.
+festgelegt, der zwischen aktiv, eingetragen und geschlossen unterscheiden kann.\\
 
 Die Maßnahmen zur Risikobewältigung umfassen ebenfalls mehrere Attribute. Zunächst wird der Typ der Maßnahme festgelegt, 
 wobei zwischen Risiko verhindern, Risiko lindern oder minimieren, Risiko übertragen oder teilen und Risiko akzeptieren 
@@ -397,12 +393,108 @@ geschätzte Maß und die geschätzte Klasse des Restrisikos nach Durchführung d
 
 \subsection{Anforderungsspezifikation} \index{Anforderungsspezifikation} \label{Anforderungsspezifikation}
 
-Die Anforderungsspezifikation beschreibt formell, was das zu entwickelnde System leisten muss. Sie beschreibt was das 
-System leisten soll, aber nicht wie das System dies umsetzt. Das wie ist Inhalt des Architekturdokuments. In der Praxis 
-sind Anforderungen und Systementwurf nicht trennbar. Die Anforderungsspezifikation ist oft Bestandteil des Vertrags und 
-muss daher so vollständig und eindeutig wie möglich sein.
+Die Anforderungsspezifikation definiert formell, welche Leistungen das zu entwickelnde System erbringen muss. Sie 
+beschreibt detailliert, was das System leisten soll, ohne jedoch festzulegen, wie diese Leistungen erbracht werden. 
+Das ``Wie'' wird im Architekturdokument behandelt. In der Praxis sind Anforderungen und Systementwurf eng miteinander 
+verknüpft. Die Anforderungsspezifikation ist oft Teil eines Vertrags und muss daher so vollständig und eindeutig wie 
+möglich formuliert sein.\\
 
-Die Anforderungsspezifikation hilft zum einen dem Kunden oder Endbenutzer zu beurteilen, ob das System das Gewünschte 
-leisten wird und wie das System später bedient werden muss und zum anderen wird Sie vom Projektmanager zur Erstellung 
-des Angebots für das System und zur Planung des detaillierten Systementwicklungsprozesses verwendet. Ebenfalls hilft es 
-den späteren Administratoren zu entscheiden, wie das System administriert werden muss. 
+Diese Spezifikation dient mehreren Zwecken: Sie hilft Kunden und Endbenutzern zu beurteilen, ob das System die 
+gewünschten Leistungen erbringen wird und wie es später zu bedienen ist. Projektmanager nutzen die Spezifikation 
+zur Erstellung des Angebots und zur Planung des detaillierten Entwicklungsprozesses. Administratoren können damit 
+entscheiden, wie das System verwaltet werden muss. Für Systemarchitekten dient sie als Grundlage für ihr 
+Architekturdokument, und Softwareentwickler nutzen sie, um zu verstehen, welches System entwickelt werden soll. 
+Zusammen mit dem Architekturdokument bildet sie die Basis für die Implementierung. Testmanager verwenden die 
+Spezifikation, um Validierungstests und Testfallspezifikationen zu entwickeln.\\
+
+Der Inhalt einer Anforderungsspezifikation ist folgendermaßen aufgebaut:
+
+Zunächst werden der Name des Softwareprodukts und des Herstellers genannt. Es folgt ein Vorwort, das die erwartete 
+Leserschaft definiert, eine Versionshistorie des Dokuments mit Begründungen für neue Versionen und eine Zusammenfassung 
+der Änderungen enthält sowie die Autoren des Dokuments nennt.\\
+Die Einleitung beschreibt den Zweck und Umfang des Dokuments. Dies umfasst eine Beschreibung der Notwendigkeit des 
+Systems, eine Kurzbeschreibung der Funktionalität und der Nachbarsysteme sowie eine Definition der Bedeutung des 
+Systems für die gesamtwirtschaftlichen oder strategischen Ziele des Unternehmens. Es folgen Verweise auf weitere 
+Ressourcen sowie Definitionen von Begriffen und Abkürzungen. Eine Übersicht des Dokuments schließt die Einleitung ab.\\
+Anschließend werden die Benutzeranforderungen definiert. Diese enthalten eine Beschreibung der für den Benutzer 
+bereitgestellten Dienste und der nichtfunktionalen Anforderungen in verständlicher Sprache, Diagrammen oder anderen 
+für den Kunden nachvollziehbaren Notationen.\\
+Es folgt ein Überblick über die Systemarchitektur, der die erwartete Systemarchitektur und die Einordnung des Systems 
+in die Systemlandschaft des Kunden beschreibt.\\
+Daraufhin wird die Spezifikation der Systemanforderungen behandelt, die sowohl funktionale als auch nichtfunktionale 
+Anforderungen beschreibt. Hier können auch Schnittstellendefinitionen zu externen Systemen enthalten sein.\\
+Abschließend werden die Systemmodelle vorgestellt, zu denen Klassen-, Datenfluss- und semantische Modelle gehören, 
+die die Beziehungen zwischen Systemkomponenten sowie zwischen dem System und seiner Umgebung darstellen.\\
+
+Ein spezielles Modell ist das fachliche Datenmodell, das aus Entitätstypen besteht. Eine Entität ist ein individuelles 
+und identifizierbares Exemplar von Dingen, Personen oder Begriffen der realen oder Vorstellungswelt, beschrieben 
+durch ihre Eigenschaften. Entitätstypen besitzen Attribute und Beziehungen, jedoch keine Fähigkeiten. Das fachliche 
+Datenmodell wird mit Hilfe eines UML Klassendiagrammes mit ergänzenden Beschreibungen bzw. Einschränkungen spezifiziert.
+Dieses enthält alle Entitätstypen mit deren Eigenschaften, Beziehungen und Einschränkungen.\\
+
+Zu den Systemmodellen gehören auch Anwendungsfälle, die die funktionalen Anforderungen an das System beschreiben. 
+Ein Anwendungsfalldiagramm gibt eine Übersicht über alle Anwendungsfälle. Ein Anwendungsfall besteht aus mehreren 
+Szenarien, die konkrete Abläufe beschreiben, wie das System genutzt werden kann. Anwendungsfälle können textuell 
+beschrieben oder durch Aktivitäts- oder Sequenzdiagramme ergänzt werden.\\
+Ein Anwendungsfall hat mehrere Bestandteile: Der Titel dient als eindeutige Identifikation, die Kurzbeschreibung 
+definiert das Thema, und das Ziel legt fest, was erreicht werden soll. Akteure beschreiben, wer den Anwendungsfall 
+auslöst, und der Auslöser definiert den Grund für die Ausführung. Die Vorbedingung legt fest, welche Bedingungen zu 
+Beginn vorherrschen müssen, das Szenario beschreibt den Ablauf, und das Ergebnis erläutert die gelieferten 
+Informationen. Die Häufigkeit gibt eine grobe Schätzung, wie oft der Anwendungsfall ausgeführt wird, und 
+nicht-funktionale Anforderungen werden ebenfalls beschrieben. Schließlich können Bemerkungen hinzugefügt werden.\\
+In der Anforderungsspezifikation gibt es dazu eine Übersicht aller Anwendungsfälle im UML Use-Case-Diagramm, welches 
+alle Akteure, Anwendungsfälle, Beziehungen zwischen Akteur und Anwendungsfällen und eventuell include- und extend-Beziehungen
+zwischen den Anwendungsfällen darstellt. Ebenfalls gibt es eine Spezifikation jedes einzelnen Anwendungsfalls mit Hilfe 
+von UML Aktivitätsdiagrammen und ergänzenden Beschreibungen. Diese enthalten eine genaue Ablaufbeschreibung, den Akteur, 
+die Aufrufhäufigkeit, die Vorbedingung und den Auslöser sowie eine Dokumentation des Datenflusses. 
+
+Neben den Anwendungsfällen müssen auch die Dialoge und Schnittstellen beschrieben werden, über die die Anwendungsfälle 
+ausgeführt werden. Eine Dialogbeschreibung enthält alle Details, einschließlich der Feldlängen und der zugeordneten 
+Aktionen für jeden Button. In den Schnittstellen müssen die Parameter genau festgelegt werden.\\
+Im Dokument werden alle Dialoge mit Bildern und strukturierter und detaillierter Beschreibung der Bestandteile spezifiziert.
+Auch alle Schnittstellen zu den Nachbarsystemen werden Spezifiziert.\\
+
+Zum Schluss werden die nichtfunktionalen Anforderungen in natürlicher Sprache inklusiver Abnahmebeschreibung aufgelistet.
+
+\subsection{Architekturdokument} \index{Architekturdokument} \label{Architekturdokument}
+
+Das Architekturdokument, auch bekannt als Softwarearchitektur-Dokument, beschreibt die Umsetzung des zu entwickelnden 
+Systems. Die Anforderungsspezifikation [\ref{Anforderungsspezifikation}] legt fest, „was“ das System leisten soll, 
+jedoch nicht „wie“ dies erreicht wird. Diese Umsetzung wird im Architekturdokument detailliert beschrieben. In der 
+Praxis sind die Anforderungsspezifikation und das Architekturdokument eng miteinander verzahnt.\\
+
+Die Zielgruppe des Architekturdokuments umfasst hauptsächlich Softwareentwickler und Testmanager. Softwareentwickler 
+nutzen das Dokument, um zu verstehen, wie das in der Anforderungsspezifikation beschriebene System entwickelt werden 
+soll. Zusammen mit der Anforderungsspezifikation bildet es die Grundlage für die Implementierung. Testmanager verwenden 
+das Architekturdokument, um Komponententests für das System zu entwickeln.\\
+
+Der Inhalt des Architekturdokuments gliedert sich in drei Hauptabschnitte: Technische Architektur, Anwendungsarchitektur 
+und IT-Konzept.\\
+Die Technische Architektur umfasst zwei Hauptkomponenten. Die Technische Infrastruktur (TI-Architektur) beschreibt 
+die Hardware- und Produktanforderungen.
+%Der andere Teil ist die T-Architektur, also die Technische Struktur, und beschreibt die Technischen Lösungen und Strukturen. 
+Beide Komponenten werden durch erklärende Texte und Grafiken dargestellt.\\
+Die Anwendungsarchitektur besteht ebenfalls aus zwei Hauptteilen: dem Komponentenmodell und dem Datenmodell. Das 
+Komponentenmodell beschreibt die fachliche Struktur der Lösung auf einer groben Ebene mittels eines 
+UML-Komponenten-Diagramms. Das Datenmodell hingegen beschreibt die Struktur der persistenten Daten und wird 
+entweder durch ein UML-Komponenten-Diagramm oder Entity-Relationship-Diagramme dargestellt.\\
+Das IT-Konzept enthält die detaillierte Schnittstellenbeschreibung. Diese beschreibt die Semantik und Syntax der 
+Komponentenschnittstellen ausführlich und wird durch Code oder Code-Dokumentation dokumentiert. Darüber hinaus 
+beinhaltet das IT-Konzept dynamische Beschreibungen exemplarischer Anwendungsfälle im Komponentenmodell, die mittels 
+Aktivitätsdiagrammen oder Sequenzdiagrammen veranschaulicht werden.
+
+\subsection{Testspezifikation} \index{Testspezifikation} \label{Testspezifikation}
+
+Die Testfallspezifikation oder auch Software Test Dokumentation dient dazu die Testdurchführung zu planen, die Testfälle 
+zu Spezifizieren und die Testergebnisse zu protokollieren. Mit Hilfe dieser ist es möglich die Anwendung systematisch 
+und strukturiert zu testen. Die Protokollierung der Testergebnisse ermöglicht es eine Aussage über die Qualität zu geben.
+Nach einer Fehlerbehebung können die selben Tests erneut durchgeführt werden. Dadurch wird nichts vergessen.\\
+
+Die Testspezifikation besteht aus einem Testkonzept, einer Testfall-Spezifikation und einem Testprotokoll.\\
+Das Testkonzept legt die Vorgehensweise, die verwendeten Mittel und den Ablauf der Testaktivitäten fest. In diesem Rahmen
+muss festgelegt werden, ob es irgendwelche Anforderungen an die Umsetzung gibt oder ob irgendwelche Dummy-Komponenten 
+entwickelt werden müssen.\\
+Die Testfall-Spezifikation listet die Testfälle auf. Ein Testfall besteht aus einer Kurzbeschreibung, der Testvoraussetzung, 
+den Eingabewerten inkl. dem Testablauf, und den erwarteten Ausgabewerte.\\
+Im Testprotokoll wird die Testdurchführung protokolliert. Dies beinhaltet wann welcher Test durchgeführt wurde und ob 
+der Test erfolgreich war oder nicht.

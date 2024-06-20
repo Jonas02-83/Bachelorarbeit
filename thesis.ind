@@ -1,21 +1,18 @@
 \begin{theindex}
 
-  \item ????, \hyperpage{23}
-
-  \indexspace
-
   \item Anforderungsspezifikation, \hyperpage{13}, \hyperpage{19}
   \item Anwendung von LLM Tools im Software Engineering, \hyperpage{17}
-  \item Architekturdokument, \hyperpage{15}, \hyperpage{20}
+  \item Architekturdokument, \hyperpage{15}, \hyperpage{21}
   \item Ausblick und zukünftige Entwicklungen, \hyperpage{27}
 
   \indexspace
 
-  \item Besprechungsprotokoll, \hyperpage{11}, \hyperpage{17}
+  \item Besprechungsprotokoll, \hyperpage{11}, \hyperpage{17}, 
+		\hyperpage{23}
 
   \indexspace
 
-  \item ChatGPT, \hyperpage{4}, \hyperpage{23}
+  \item ChatGPT, \hyperpage{4}, \hyperpage{24}
 
   \indexspace
 
@@ -23,7 +20,7 @@
 
   \indexspace
 
-  \item Gemini, \hyperpage{23}
+  \item Gemini, \hyperpage{24}
   \item Google Gemini, \hyperpage{6}
   \item Grundlagen, \hyperpage{3}
 
@@ -37,7 +34,7 @@
 
   \indexspace
 
-  \item Le Chat, \hyperpage{8}, \hyperpage{23}
+  \item Le Chat, \hyperpage{8}, \hyperpage{24}
   \item Limitationen von LLM Tools im Software Engineering Kontext, 
 		\hyperpage{25}
   \item LLM Tools, \hyperpage{3}
@@ -66,7 +63,7 @@
 
   \indexspace
 
-  \item Vergleich, \hyperpage{23}
+  \item Vergleich, \hyperpage{24}
 
   \indexspace
 

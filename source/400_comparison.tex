@@ -3,39 +3,88 @@
 
 TODO!!!!!!!!
 
+Generell:
+    - Schwierigkeiten in einem gorßen/langen Chat, die Tools von einer Formulierung weg zu bringen. 
+
 \section{Besprechungsprotokoll} \index{Besprechungsprotokoll} \label{CompBesprechungsprotokoll}
 
-Für die Erstellung des Besprechungsprotokoll wurde ein verschriftliches Gespräch verwendet [siehe Anhang!!!!!!!]. Mit 
-diesem Gespräch und dem Prompt:
+%Angefangener Text in Rest.tex
 
-\begin{prompt}[H]
-    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
-        Erstell mir aus folgendem Gespräch ein erstes Besprechungsprotokoll für ein Projekt. Das Protokoll soll in 
-        Form einer Tabelle mit den Spalten "Nummer": was eine eindeutige Nummer zur Identifikation ist, "Art": eine 
-        Auswahl ob es eine Information, ein Auftrag, eine Feststellung oder eine Beschluss ist, "Beschreibung": Was 
-        den Punkt kurz und präzise zusammenfasst, "Termin": bis wann der Auftrag erledigt sein muss und 
-        "Verantwortlich": Welches Teammitglied verantwortlich ist, sein. Dabei müssen Aufträge mit einem 
-        Fälligkeitsdatum und einem Verantwortlichen versehen sein. Beschlüsse müssen klar und unmissverständlich 
-        formuliert werden. Feststellungen sind Beschlüsse, die keine Abstimmung benötigen und Informationen bieten 
-        den Projektmitgliedern wichtige Hinweise: [siehe Besprechungsprotokoll.docx]
-        \vfill
-    \end{tcolorbox}
-    \caption{Infotext LeChat, Quelle: Le Chat}
-    \label{InfotextLeChat}
-\end{prompt}
+- [Prompt] und Gespräch als Eingabe
+- Teilweise sehr unterschiedliche Ausgaben obwohl selbe Prompts. Auch in neuen Chats bei gleichem Tool.
+Einzelne Einträge mal zu einem Eintrag zusammengefasst, mal in mehreren geschrieben. (Anz. immer unterschiedlich).
+Beispiel Server-Client, JavaFX und RMI.
+- genaue Beschreibung der Spalten wird benötigt, da sonst eher eine Stichpunkteliste erstellt wird
+- Einzelnen Arten müssen beschrieben werden, da diese sonst sehr ungenau festgelegt werden. Aber auch mit
+Beschreibung der Arten ein Problem. Tools machen das unterschiedlich und auch in neuen Chats wird die Zuweisung immer 
+bisschen unterschiedlich gemacht. Obwohl gleiche Eingabe.
+- Im Prompt muss stehen das "Termin" ein genaues Datum benötigt. Sonst wird z.B. mit "+2 Wochen" gearbeitet. Le Chat 
+macht das dann trotzdem nicht, da muss als neue Eingabe "Der Termin soll ein genaues Datum sein" geschrieben werden.
+Datum dann allerdings in der Vergangenheit (z.B. 31.10.2023)?? Schreibt aber das die Termine beispielhaft gewählt sind
+und sich am aktuellen Datum, 29.03.2023??, gewählt sind.
+- Gemini hat großes Problem nur die wichtigsten Punkte aus dem Gespräch rauszulesen. Häufig Besprechungsprotokolle mit etwa 
+30 Punkten. Dabei erstellt er als neue Art "Frage" und füllt diese z.B. mit "Maximale Spieleranzahl" um anschließend eine 
+Information aufzulisten mit der Beschreibung "Maximale Spieleranzahl: 4". Wenn selben Prompt in neuem Chat immer wieder 
+eingegeben wird, kommt manchmal eine "kurze" Version, welche immernoch länger ist als die Protokolle der anderen beiden Tools.
+Gemini schreibt sehr kleinkariert und mach für jede einzelne Information einen neuen Punkt. Beispiel Server-Client, JavaFX und RMI.
+- Auch zusätzlicher Hinweis im Prompt, nur die wichtigen Punkte in der Tabelle aufzunehmen, ändert bei Gemini nix daran auszuschweifen.
+- Fazit?? Selber drüber lesen und schauen ob das passt. Vorallem auf "Art" gucken und ob der Punkt wirklich wichtig ist. Le Chat
+hält sich eher zu knapp mit den Punkten, daher hier schauen ob alle wichtigen Informationen enthalten sind.
 
-wurden die Eingaben getätigt. Wichtig ist dabei die einzelnen Spalten zu beschreiben. Ansonsten wird das Gespräch in dem 
-Besprechungsprotokoll eher als Stichpunktliste zusammengefasst. Alle drei Tools sind dabei etwas ungenau mit der 
-Beschreibung der Art. Die Anforderungen die der Kunde in dem Gespräch stellt, werden von ChatGPT und Gemini als 
-Information festgelegt. Le Chat hingegen legt diese als Feststellung fest.\\
-Alle drei legen teilweise für Aufträge kein genaues Datum fest, sondern schreiben hier zum Beispiel "+2 Wochen". Wenn 
-man in den Prompt allerdings noch schreibt, dass ein genaues Datum benötigt wird, machen das auch alle drei Tools. Nur 
-Le Chat legt dann als Datum
+\section{Projekthandbuch} \index{Projekthandbuch} \label{CompProjekthandbuch}
 
-\section{ChatGPT} \index{ChatGPT} \label{ChatGPT}
+- Zwei eingaben. Einmal für Einleitung mit dem Zweck des Dokuments, der Redaktion und dem Verteiler. Und einmal für die 
+Projektdefinition mit ausschließlich den Kapiteln Vorgeschichte und Inhaltliche Kurzdarstellung.
+- Muss genau Beschrieben werden was man für Abschnitte haben will, sonst wird ein eigenes Projekthandbuch erstellt, welches 
+nicht ganz den Anforderungen, welche in dieser Arbeit beschrieben wurde, entspricht.
+- Für die Einleitung werden spezifische Informationen benötigt, welche im Prompt angegeben werden müssen. In diesem Fall wurde 
+angegeben, dass die Projektleiterinfür das Projekt verantwortlich ist und als Verteiler ein Discord-Channel verwendet wird.
+- Abschnitte wurden gut erstellt. ChatGPT bennent im Abschnitt für den Verteiler einmal alle Teammitglieder, frage ob unbedingt nötig.
+- Zweite Abschnitt benötigt keine weiteren Informationen, da diese im Gespräch bereits vorgegeben sind. 
+- Abschnitte wurden hier auch gut erstellt. Die benötigten Informationen haben sich die Tools gut aus dem Gespräch raus gezogen.
+- Gemini hat teilweise dreher in den Namen drinne. Einmal hat Gemini geschrieben, dass Frau Schmidt (Teamcheffin) mit dem Herrn Müller 
+(Kunde) aufnahm. -> muss Probegelesen werden.
 
-\section{Gemini} \index{Gemini} \label{Gemini}
+\section{Risikoliste} \index{Risikoliste} \label{CompRisikoliste}
 
-\section{Le Chat} \index{Le Chat} \label{Le Chat}
+- Auch hier zwei einzelne Eingaben. Einmal für die Tabelle mit den Risiken und einmal für die mit den Maßnahmen.
+- Prompt für Risikotabelle sehr umfangreich. Jede Spalte erklärt damit die Tabelle, die erstellt wird, den Vorgaben entspricht. 
+Auch das Risiken jeweils zu den Oberbegriffen Team-, Technische-, Methodische-, Kunden-, Fachliche-, Produkt-, Management- und 
+Planungsrisiken erstellt werden sollen und die Risiken dazu mit einer leer Zeile getrennt werden sollen für eine bessere Übersicht 
+und um die Risiken leichter Zuordnen zu können.
+- Die Tools haben die Zuweisung der Risikoklasse zunächst mit den Werten niedrig, mittel und hoch erstellt. Daher wurde der 
+Prompt um die Anweisung, dass zwischen tolerierbar, unerwünscht, kritisch und katastrophal gewählt werden soll ergänzt.
+Insgesamt war die Zuordnung jedoch ohne richtiges Konzept und schwerwiegende Risiken eine geringe Risikoklasse als eher unwichtigere
+Risiken. Daher wurde die definition, wann welche Risikoklasse zuwählen ist, ebenfalls ergänzt.
+- Damit Schaden und die Risikoklassen richtig gewählt werden und die Tools vergleichbar sind, wurde das Projektvolumen auf 500000€
+festgelegt. Ansonsten wählen die Tools ein eigenes, was zu ungenauigkeiten führt.
+- Die Erstellung der Risiken war kein Problem, eher bei der Formatierung der Tabelle und der Zuweisung der restlichen Attirbute haben
+[[[[[[[[[Die Tools???????]]]]]]]]] schwierigkeiten.
 
-\section{Vergleich} \index{Vergleich} \label{Vergleich}
+- Gemini legt den Autor, auf den am ehsten Verantwortlichen für das Risiko, fest. Also Teamrisiken werden von Frau Schmidt definiert,
+während zum Beispiel Anforderungsrisiken vom Anforderungsanalysten (Herr Schneider) und Kundenrisiken vom Kunden (Herr Müller) geschrieben
+werden. Außerdem berechnet Gemini das Risikomaß nicht richtig. Das Komma der Werte ist um eine Stelle zu weit links. Es muss alles *10 
+gerechnet werden. Die ID setzt Gemini einfach auf 1, 2, 3, ... was grundsätzlich aber nicht schlimm ist, da kein großer Mehraufwand, dies 
+selbst zu ändern. Gemini kann nicht gesamte Tabelle aufeinmal Generieren. Es wird einfach mitten drinn aufgehört. Bei nachfrage ob er nur 
+noch Produkt-, Management- und Planungsrisiken erstellen kann, macht er dies, fügt aber keinen Schaden und Maß mehr ein. Wenn ich ihm sag, 
+das er den Schaden und Maß noch festlegen soll, sagt er nur, dass er das ohne detaillierte Informationen über das Projekt und die potenziellen
+Risiken nicht kann.
+
+- Le Chat hatte wieder das Problem mit dem Datum, dass dieses auf den 01.04.2023 gesetzt wurde. Manchmal war außerdem das Format der Tabelle 
+nicht richtig und die Risiken wurde manchmal den Oberbegriffen nicht zugeordnet sondern zufällig erstellt. Musste schritt für schritt beschreiben 
+was Le Chat ändern soll. Auch Le Chat bestimmt die Risikoklasse falsch. Auch nach Hinweis, dass diese nicht stimmen sind diese noch falsch 
+und es wird der Schaden bei den Risiken geändert. Auch hier ist der Autor eher der Verantwortliche.
+
+
+- Prompt für Maßnahmen ähnlich, dass jede Spalte der Tabelle einmal beschrieben wird und anschließend gesagt wird, dass die ID des dazugehörigen
+Risikos übernommen werden soll.
+
+- Gemini erstellt für die Begründung, warum ein Risiko als nicht mehr relevant eingestuft wird eine eigene Spalte. Ist aber nicht so schlimm, da 
+zu beginn eh leer. Formatierung schlecht, da bei jeder 2. Zeile alle Daten ab Spalte "Begründung" um eine Stelle nach links verschoben wird. Neu 
+generierung und auch Hinweis darauf ändert nichts. Trigger auch nicht gefüllt. Außerdem ist der Typ immer abwechselnd "Verhindern" und "Lindern".
+Auch hier ist Teilweise das Restmaß falsch berechnet. Hört bei Risiko 4.2 auf mit der generierung der Maßnahmen. Maßnahmen passen aber zu Risiken.
+
+- Le Chat erstellt die Maßnahmen nicht immer zu den Risiken in der Risikotabelle, sonder zu den Oberbegriffen Team-, Technische-, Methodische-, 
+Kunden-, Fachliche-, Produkt-, Management- und Planungsrisiken. Maßnahme 1-4 scheinen sehr allgemein formuliert, Maßnahmen 5-8 würden
+zu den 1. Risiken des jeweiligen Oberbegriffes passen. Auch hier scheinen die Attribute sehr repetitiv. Wahrscheinlichkeit immer bei 5\%,
+die Risikoklasse außer bei der ersten Maßnahme immer Unerwünscht und der Restschaden auch meistens bei den 2 Maßnahmen für ein Risiko gleich.

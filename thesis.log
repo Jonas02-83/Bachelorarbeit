@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  19 JUN 2024 13:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  20 JUN 2024 14:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -1702,17 +1702,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
- (./thesis.aux (./source/000_title.aux) (./source/001_declaration.aux) (./source/002_abstract.aux) (./source/100_introduction.aux) (./source/200_basics.aux) (./source/300_usage.aux) (./source/400_comparison.aux
-
-LaTeX Warning: Label `InfotextLeChat' multiply defined.
-
-
-LaTeX Warning: Label `ChatGPT' multiply defined.
-
-
-LaTeX Warning: Label `Le Chat' multiply defined.
-
-) (./source/500_Problems.aux) (./source/600_Conclusion.aux) (./source/801_appendix.aux))
+ (./thesis.aux (./source/000_title.aux) (./source/001_declaration.aux) (./source/002_abstract.aux) (./source/100_introduction.aux) (./source/200_basics.aux) (./source/300_usage.aux) (./source/400_comparison.aux) (./source/500_Problems.aux) (./source/600_Conclusion.aux) (./source/801_appendix.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
@@ -1998,10 +1988,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 108.
- (./thesis.toc
-Underfull \vbox (badness 1314) has occurred while \output is active []
-
- [7])
+ (./thesis.toc [7])
 \tf@toc=\write10
 \openout10 = `thesis.toc'.
 
@@ -2105,7 +2092,7 @@ Underfull \hbox (badness 2253) in paragraph at lines 241--243
  []
 
 [6] [7]
-<./images/pictures/Kapitel2Tabelle.PNG, id=270, 172.01765pt x 378.66469pt>
+<./images/pictures/Kapitel2Tabelle.PNG, id=264, 172.01765pt x 378.66469pt>
 File: ./images/pictures/Kapitel2Tabelle.PNG Graphic file (type png)
 <use ./images/pictures/Kapitel2Tabelle.PNG>
 Package pdftex.def Info: ./images/pictures/Kapitel2Tabelle.PNG  used on input line 274.
@@ -2210,7 +2197,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 488--492
 
  (./source/300_usage.tex
 chapter 3.
-<./images/pictures/Kapitel3Tabelle.PNG, id=319, 344.78813pt x 379.04109pt>
+<./images/pictures/Kapitel3Tabelle.PNG, id=312, 344.78813pt x 379.04109pt>
 File: ./images/pictures/Kapitel3Tabelle.PNG Graphic file (type png)
 <use ./images/pictures/Kapitel3Tabelle.PNG>
 Package pdftex.def Info: ./images/pictures/Kapitel3Tabelle.PNG  used on input line 5.
@@ -2334,30 +2321,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--120
 
  (./source/400_comparison.tex
 chapter 4.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23
+[23
 
 
 
 
 
-] [24]
+] [24]) [25]
 \openout2 = `source/500_Problems.aux'.
 
- (./source/500_Problems.tex
-chapter 5.
-) [25
+ (./source/500_Problems.tex [26
 
 
 
 
 
 ]
+chapter 5.
+) [27]
 \openout2 = `source/600_Conclusion.aux'.
 
- (./source/600_Conclusion.tex [26
+ (./source/600_Conclusion.tex [28
 
 
 
@@ -2365,7 +2349,7 @@ chapter 5.
 
 ]
 chapter 6.
-) [27] [28
+) [29] [30
 
 
 
@@ -2469,6 +2453,7 @@ chapter without number
 
 
 
+
 ]) [12
 
 
@@ -2491,10 +2476,6 @@ See the caption package documentation for explanation.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
@@ -2502,18 +2483,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72117 strings out of 474049
- 1653648 string characters out of 5746277
- 2920338 words of memory out of 5000000
- 92987 multiletter control sequences out of 15000+600000
- 622842 words of font info for 234 fonts, out of 8000000 for 9000
+ 72120 strings out of 474049
+ 1653667 string characters out of 5746277
+ 2920321 words of memory out of 5000000
+ 92988 multiletter control sequences out of 15000+600000
+ 622932 words of font info for 236 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,22n,120p,10948b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,22n,120p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (50 pages, 266252 bytes).
+Output written on thesis.pdf (52 pages, 271859 bytes).
 PDF statistics:
- 658 PDF objects out of 1000 (max. 8388607)
- 557 compressed objects within 6 object streams
- 99 named destinations out of 1000 (max. 500000)
- 53249 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 651 PDF objects out of 1000 (max. 8388607)
+ 548 compressed objects within 6 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 53233 words of extra memory for PDF output out of 61914 (max. 10000000)
 

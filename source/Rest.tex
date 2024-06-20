@@ -34,3 +34,31 @@ Basics:
         \label{StäSchwäChatGPT}
     \end{figure}
 
+Comparison:
+    Projekthandbuch:
+        Für die Erstellung des Besprechungsprotokoll wurde ein verschriftliches Gespräch verwendet [siehe Anhang!!!!!!!]. Mit 
+        diesem Gespräch und dem Prompt:
+    
+        \begin{prompt}[H]
+            \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+                Erstell mir aus folgendem Gespräch ein erstes Besprechungsprotokoll für ein Projekt. Das Protokoll soll in 
+                Form einer Tabelle mit den Spalten "Nummer": was eine eindeutige Nummer zur Identifikation ist, "Art": eine 
+                Auswahl ob es eine Information, ein Auftrag, eine Feststellung oder eine Beschluss ist, "Beschreibung": Was 
+                den Punkt kurz und präzise zusammenfasst, "Termin": bis wann der Auftrag erledigt sein muss und 
+                "Verantwortlich": Welches Teammitglied verantwortlich ist, sein. Dabei müssen Aufträge mit einem 
+                Fälligkeitsdatum und einem Verantwortlichen versehen sein. Beschlüsse müssen klar und unmissverständlich 
+                formuliert werden. Feststellungen sind Beschlüsse, die keine Abstimmung benötigen und Informationen bieten 
+                den Projektmitgliedern wichtige Hinweise: [siehe Besprechungsprotokoll.docx]
+                \vfill
+            \end{tcolorbox}
+            \caption{Infotext LeChat, Quelle: Le Chat}
+            \label{InfotextLeChat}
+        \end{prompt}
+    
+        wurden die Eingabe getätigt. Wichtig ist dabei die einzelnen Spalten zu beschreiben. Ansonsten wird das Gespräch in dem 
+        Besprechungsprotokoll eher als Stichpunktliste zusammengefasst. Alle drei Tools sind dabei etwas ungenau mit der 
+        Beschreibung der Art. Die Anforderungen die der Kunde in dem Gespräch stellt, werden von ChatGPT und Gemini als 
+        Information festgelegt. Le Chat hingegen legt diese als Feststellung fest. Die Aufträge werden dahingegen gut 
+        erkannt, jedoch legen alle drei Tools für Aufträge teilweise kein genaues Datum fest, sondern schreiben hier zum 
+        Beispiel "+2 Wochen". Wenn man in den Prompt allerdings noch schreibt, dass ein genaues Datum benötigt wird, machen 
+        das auch alle drei Tools. Nur Le Chat bleibt dann 

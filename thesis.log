@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  20 JUN 2024 14:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  21 JUN 2024 11:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2092,7 +2092,7 @@ Underfull \hbox (badness 2253) in paragraph at lines 241--243
  []
 
 [6] [7]
-<./images/pictures/Kapitel2Tabelle.PNG, id=264, 172.01765pt x 378.66469pt>
+<./images/pictures/Kapitel2Tabelle.PNG, id=267, 172.01765pt x 378.66469pt>
 File: ./images/pictures/Kapitel2Tabelle.PNG Graphic file (type png)
 <use ./images/pictures/Kapitel2Tabelle.PNG>
 Package pdftex.def Info: ./images/pictures/Kapitel2Tabelle.PNG  used on input line 274.
@@ -2197,7 +2197,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 488--492
 
  (./source/300_usage.tex
 chapter 3.
-<./images/pictures/Kapitel3Tabelle.PNG, id=312, 344.78813pt x 379.04109pt>
+<./images/pictures/Kapitel3Tabelle.PNG, id=315, 344.78813pt x 379.04109pt>
 File: ./images/pictures/Kapitel3Tabelle.PNG Graphic file (type png)
 <use ./images/pictures/Kapitel3Tabelle.PNG>
 Package pdftex.def Info: ./images/pictures/Kapitel3Tabelle.PNG  used on input line 5.
@@ -2483,18 +2483,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72120 strings out of 474049
- 1653667 string characters out of 5746277
- 2920321 words of memory out of 5000000
- 92988 multiletter control sequences out of 15000+600000
+ 72124 strings out of 474049
+ 1653730 string characters out of 5746277
+ 2921374 words of memory out of 5000000
+ 92991 multiletter control sequences out of 15000+600000
  622932 words of font info for 236 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,22n,120p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (52 pages, 271859 bytes).
+Output written on thesis.pdf (52 pages, 273638 bytes).
 PDF statistics:
- 651 PDF objects out of 1000 (max. 8388607)
- 548 compressed objects within 6 object streams
- 98 named destinations out of 1000 (max. 500000)
- 53233 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 658 PDF objects out of 1000 (max. 8388607)
+ 555 compressed objects within 6 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 53241 words of extra memory for PDF output out of 61914 (max. 10000000)
 

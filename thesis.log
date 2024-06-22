@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  21 JUN 2024 18:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  22 JUN 2024 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -1906,6 +1906,595 @@ Package pdftex.def Info: images/logos/UniBwM_ETTI_6_geschnitten.pdf  used on inp
 
 
 
-{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-!pdfTeX error: pdflatex.exe (file c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fflush() failed (Invalid argument)
- ==> Fatal error occurred, no output PDF file produced!
+{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc} <./images/logos/UniBwMSignet.pdf> <./images/logos/UniBwM_ETTI_6_geschnitten.pdf>] [2
+
+
+])
+\openout2 = `source/001_declaration.aux'.
+
+ (./source/001_declaration.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.40245pt on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 19.70294pt on input line 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--27
+
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 27.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 10.40245pt on input line 27.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 27.
+(c:/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 27.
+ (c:/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 27.
+ (c:/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <6> on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+ (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+ (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [3
+
+
+
+
+
+] [4
+
+
+])
+\openout2 = `source/002_abstract.aux'.
+
+ (./source/002_abstract.tex [5
+
+
+
+
+
+]) [6
+
+
+
+
+]
+Package tocbasic Info: character protrusion at toc deactivated on input line 108.
+ (./thesis.toc [7])
+\tf@toc=\write10
+\openout10 = `thesis.toc'.
+
+ [8]
+\openout2 = `source/100_introduction.aux'.
+
+ (./source/100_introduction.tex
+chapter 1.
+
+Class scrbook Warning: \float@addtolists detected!
+(scrbook)              Implementation of \float@addtolist became
+(scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrbook)              has been replaced by several more flexible
+(scrbook)              features of package `tocbasic`.
+(scrbook)              Since Version 3.12 support for deprecated
+(scrbook)              \float@addtolist interface has been
+(scrbook)              restricted to only some of the KOMA-Script
+(scrbook)              features and been removed from others.
+(scrbook)              Loading of package `scrhack' may help to
+(scrbook)              avoid this warning, if you are using a
+(scrbook)              a package that still implements the
+(scrbook)              deprecated \float@addtolist interface.
+
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 13.67995pt on input line 6.
+) [1
+
+
+
+
+
+]
+\openout2 = `source/200_basics.aux'.
+
+ (./source/200_basics.tex [2
+
+
+
+
+
+]
+chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+
+ []
+
+[3]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 11.39996pt on input line 54.
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
+
+ []
+
+Package hyperref Info: bookmark level for unknown prompt defaults to 0 on input line 85.
+[4] [5]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 129.
+ (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 10.40245pt on input line 129.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--222
+
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 241--243
+[]\T1/phv/b/n/10.95 (+20) Kosteneffizienz: \T1/phv/m/n/10.95 (+20) Le Chat kann als kos-tenef-fi-zi-en-te Al-ter-na-ti-ve zu mensch-li-chen
+ []
+
+[6] [7]
+<./images/pictures/Kapitel2Tabelle.PNG, id=267, 172.01765pt x 378.66469pt>
+File: ./images/pictures/Kapitel2Tabelle.PNG Graphic file (type png)
+<use ./images/pictures/Kapitel2Tabelle.PNG>
+Package pdftex.def Info: ./images/pictures/Kapitel2Tabelle.PNG  used on input line 274.
+(pdftex.def)             Requested size: 172.01723pt x 378.66376pt.
+ [8] [9] [10 <./images/pictures/Kapitel2Tabelle.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 289--296
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--313
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--324
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--380
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 396--401
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--409
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 412--428
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--434
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 451--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 461--465
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--470
+
+ []
+
+
+Overfull \hbox (0.3939pt too wide) in paragraph at lines 471--485
+\T1/phv/m/n/10.95 (-20) Die Tech-ni-sche Ar-chi-tek-tur um-fasst zwei Haupt-kom-po-nen-ten. Die Tech-ni-sche In-fra-struk-tur (TI-Architektur)
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 488--492
+
+ []
+
+) [16]
+\openout2 = `source/300_usage.aux'.
+
+ (./source/300_usage.tex
+chapter 3.
+<./images/pictures/Kapitel3Tabelle.PNG, id=315, 344.78813pt x 379.04109pt>
+File: ./images/pictures/Kapitel3Tabelle.PNG Graphic file (type png)
+<use ./images/pictures/Kapitel3Tabelle.PNG>
+Package pdftex.def Info: ./images/pictures/Kapitel3Tabelle.PNG  used on input line 5.
+(pdftex.def)             Requested size: 344.78728pt x 379.04015pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--47
+
+ []
+
+[17
+
+
+
+
+
+] [18 <./images/pictures/Kapitel3Tabelle.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--79
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 80--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--115
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 116--122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--149
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 154--120
+
+ []
+
+[22]
+\openout2 = `source/400_comparison.aux'.
+
+ (./source/400_comparison.tex
+chapter 4.
+[23
+
+
+
+
+
+] [24]) [25]
+\openout2 = `source/500_Problems.aux'.
+
+ (./source/500_Problems.tex [26
+
+
+
+
+
+]
+chapter 5.
+) [27]
+\openout2 = `source/600_Conclusion.aux'.
+
+ (./source/600_Conclusion.tex [28
+
+
+
+
+
+]
+chapter 6.
+) [29] [30
+
+
+
+
+]
+\openout2 = `source/801_appendix.aux'.
+
+ (./source/801_appendix.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4 \cleardoublepage
+                     [1
+
+
+
+
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4 \cleardoublepage
+                     [2
+
+
+]
+No file thesis.acr.
+No file thesis.gls.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.III}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.11 \listoffigures
+                    [3]
+pdfTeX warning (ext4): destination with the same identifier (name{page.IV}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.11 \listoffigures
+                    [4
+
+
+]
+Package tocbasic Info: character protrusion at lof deactivated on input line 11.
+ (./thesis.lof)
+\tf@lof=\write11
+\openout11 = `thesis.lof'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.V}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 \cleardoublepage
+                      [5]
+pdfTeX warning (ext4): destination with the same identifier (name{page.VI}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 \cleardoublepage
+                      [6
+
+
+]
+Package tocbasic Info: character protrusion at lot deactivated on input line 15.
+ (./thesis.lot)
+\tf@lot=\write12
+\openout12 = `thesis.lot'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.VII}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 \cleardoublepage
+                      [7
+
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{page.VIII}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 \cleardoublepage
+                      [8
+
+
+]
+Package tocbasic Info: character protrusion at lol deactivated on input line 20.
+ (./thesis.lol)
+\tf@lol=\write13
+\openout13 = `thesis.lol'.
+
+ [9
+
+
+] [10
+
+
+] (./thesis.ind
+chapter without number
+[11
+
+
+
+
+
+
+]) [12
+
+
+
+]
+chapter without number
+[13
+
+
+] [14
+
+
+])
+
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 87.
+See the caption package documentation for explanation.
+
+(./thesis.aux (./source/000_title.aux) (./source/001_declaration.aux) (./source/002_abstract.aux) (./source/100_introduction.aux) (./source/200_basics.aux) (./source/300_usage.aux) (./source/400_comparison.aux) (./source/500_Problems.aux) (./source/600_Conclusion.aux) (./source/801_appendix.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-04-11>
+ ***********
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package logreq Info: Writing requests to 'thesis.run.xml'.
+\openout1 = `thesis.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 72125 strings out of 474049
+ 1653745 string characters out of 5746277
+ 2921374 words of memory out of 5000000
+ 92992 multiletter control sequences out of 15000+600000
+ 622932 words of font info for 236 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 108i,22n,120p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on thesis.pdf (52 pages, 274265 bytes).
+PDF statistics:
+ 658 PDF objects out of 1000 (max. 8388607)
+ 555 compressed objects within 6 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 53241 words of extra memory for PDF output out of 61914 (max. 10000000)
+

@@ -1,0 +1,181 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{GrundlagenLLM}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=18251a1a8a9bbcb1b88ce590ff5cd073}{%
+           family={Sadar},
+           familyi={S\bibinitperiod},
+           given={Milfad},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{18251a1a8a9bbcb1b88ce590ff5cd073}
+      \strng{fullhash}{18251a1a8a9bbcb1b88ce590ff5cd073}
+      \strng{fullhashraw}{18251a1a8a9bbcb1b88ce590ff5cd073}
+      \strng{bibnamehash}{18251a1a8a9bbcb1b88ce590ff5cd073}
+      \strng{authorbibnamehash}{18251a1a8a9bbcb1b88ce590ff5cd073}
+      \strng{authornamehash}{18251a1a8a9bbcb1b88ce590ff5cd073}
+      \strng{authorfullhash}{18251a1a8a9bbcb1b88ce590ff5cd073}
+      \strng{authorfullhashraw}{18251a1a8a9bbcb1b88ce590ff5cd073}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Zugriff am 27. Mai 2024}
+      \field{title}{Large Language Models - Grundlagen KI-getriebener Kommunikation}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://weissenberg-group.de/was-ist-ein-large-language-model/#:~:text=Zum%20IPA%20Whitepaper-,Wie%20funktioniert%20ein%20LLM%3F,zwischen%20den%20Token%20zu%20ermitteln
+      \endverb
+      \verb{url}
+      \verb https://weissenberg-group.de/was-ist-ein-large-language-model/#:~:text=Zum%20IPA%20Whitepaper-,Wie%20funktioniert%20ein%20LLM%3F,zwischen%20den%20Token%20zu%20ermitteln
+      \endverb
+    \endentry
+    \entry{GrundlagenChatGPT}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=869a46634aeaa7fc23920e2fe743a78c}{%
+           family={Greene},
+           familyi={G\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{869a46634aeaa7fc23920e2fe743a78c}
+      \strng{fullhash}{869a46634aeaa7fc23920e2fe743a78c}
+      \strng{fullhashraw}{869a46634aeaa7fc23920e2fe743a78c}
+      \strng{bibnamehash}{869a46634aeaa7fc23920e2fe743a78c}
+      \strng{authorbibnamehash}{869a46634aeaa7fc23920e2fe743a78c}
+      \strng{authornamehash}{869a46634aeaa7fc23920e2fe743a78c}
+      \strng{authorfullhash}{869a46634aeaa7fc23920e2fe743a78c}
+      \strng{authorfullhashraw}{869a46634aeaa7fc23920e2fe743a78c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Zugriff am 28. Mai 2024}
+      \field{title}{ChatGPT(software)}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://eds.p.ebscohost.com/eds/detail/detail?vid=3&sid=1983b266-2f53-4090-a0f2-1aef00f51d1f%40redis&bdata=Jmxhbmc9ZGUmc2l0ZT1lZHMtbGl2ZQ%3d%3d#AN=163030996&db=ers
+      \endverb
+      \verb{url}
+      \verb https://eds.p.ebscohost.com/eds/detail/detail?vid=3&sid=1983b266-2f53-4090-a0f2-1aef00f51d1f%40redis&bdata=Jmxhbmc9ZGUmc2l0ZT1lZHMtbGl2ZQ%3d%3d#AN=163030996&db=ers
+      \endverb
+    \endentry
+    \entry{GrundlagenGemini}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=4b1323c1488a80ed376c456611d30ff2}{%
+           family={Luber},
+           familyi={L\bibinitperiod},
+           given={Dipl.-Ing.\bibnamedelimi (FH)\bibnamedelima Stefan},
+           giveni={D\bibinithyphendelim I\bibinitperiod\bibinitdelim (\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{fullhash}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{fullhashraw}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{bibnamehash}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{authorbibnamehash}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{authornamehash}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{authorfullhash}{4b1323c1488a80ed376c456611d30ff2}
+      \strng{authorfullhashraw}{4b1323c1488a80ed376c456611d30ff2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Zugriff am 29. Mai 2024}
+      \field{title}{Was ist Google Gemini?}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.bigdata-insider.de/was-ist-google-gemini-a-f855ef105c02f4533c18e913d4643007/
+      \endverb
+      \verb{url}
+      \verb https://www.bigdata-insider.de/was-ist-google-gemini-a-f855ef105c02f4533c18e913d4643007/
+      \endverb
+    \endentry
+    \entry{GrundlagenLeChat}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=59d6c41b24948296c2734668515dace3}{%
+           family={Kindt},
+           familyi={K\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{59d6c41b24948296c2734668515dace3}
+      \strng{fullhash}{59d6c41b24948296c2734668515dace3}
+      \strng{fullhashraw}{59d6c41b24948296c2734668515dace3}
+      \strng{bibnamehash}{59d6c41b24948296c2734668515dace3}
+      \strng{authorbibnamehash}{59d6c41b24948296c2734668515dace3}
+      \strng{authornamehash}{59d6c41b24948296c2734668515dace3}
+      \strng{authorfullhash}{59d6c41b24948296c2734668515dace3}
+      \strng{authorfullhashraw}{59d6c41b24948296c2734668515dace3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Zugriff am 16. Mai 2024}
+      \field{title}{Mistral AI: Französisches KI-Startup stellt Chatbot "Le Chat" und Kooperation mit Microsoft Azure vor}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.unidigital.news/mistral-ai-franzoesisches-ki-startup-stellt-chatbot-le-chat-und-kooperation-mit-microsoft-azure-vor/
+      \endverb
+      \verb{url}
+      \verb https://www.unidigital.news/mistral-ai-franzoesisches-ki-startup-stellt-chatbot-le-chat-und-kooperation-mit-microsoft-azure-vor/
+      \endverb
+    \endentry
+    \entry{Sommerville10}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=70341b3bfcce7026902f4eb1e4111b58}{%
+           family={Sommerville},
+           familyi={S\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Harlow, England}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{fullhash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{fullhashraw}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{bibnamehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authorbibnamehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authornamehash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authorfullhash}{70341b3bfcce7026902f4eb1e4111b58}
+      \strng{authorfullhashraw}{70341b3bfcce7026902f4eb1e4111b58}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The book presents a broad perspective on software systems engineering, concentrating on widely used techniques for developing large-scale systems. Building on the widely acclaimed strengths of the 8th edition, the 9th edition updates readers with the latest developments in the field while remaining the most current Software Engineering text in the market with quality trusted coverage and practical case studies. This text is structured into 6 parts: Introduction; Requirements Engineering; Design; Software Development; Verification and Validation; Management. An up-to-date reference for software engineers.}
+      \field{edition}{9}
+      \field{isbn}{978-0-13-703515-1}
+      \field{title}{Software Engineering}
+      \field{year}{2010}
+      \verb{file}
+      \verb eBook:2010/Sommerville10.pdf:PDF;Amazon Search inside:http\://www.amazon.de/gp/reader/0137035152/:URL
+      \endverb
+      \keyw{01841 105 book shelf software engineering development intro}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

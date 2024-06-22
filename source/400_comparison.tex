@@ -110,16 +110,61 @@ erklärt werden muss. Sonst gut.
 
 
 Systemarchitektur:
-- Prompt:
+- Prompt: Inhalt der Systemarchitektur spezifizieren. Mit Nachrichten vorher im Chat wird diese gut erstellt. (Gemini ausstehend.......)
 
 - ChatGPT stellt die Client-Server und Server-Datenbank Verbindung zunächst unidirektional da, nach Hinweis korrigiert 
 er dies aber richtig. Hat in die Komponenten schon genauere Teile definiert, schon zu detailiert? Beschreibung gut und 
 hat in Chat Skizze "gezeichnet".
 
-- Gemini:
+- Gemini: 
 
 - Le Chat: Kann die Abbildung nicht zeichnen. Gibt Text nach erstem Prompt aber gut aus. Nach Eingabe "Beschreib mir, 
 wie die Abbildung aussehen soll." Erhält man beschreibung, welche Komponenten vorhanden sind, jedoch nicht die 
 Beziehungen zueinander. Bei Frage "Wie ist die Beziehung zwischen der Client-Anwendungs, Server-Anwendung und der 
 Datenbank?" Wird erklärt wie der Datenfluss abläuft (Bidirektional). Infos reichen um skizze selber zu erstellen.
 
+
+Fachliches Datenmodell:
+- Prompt:
+
+- ChatGPT: 
+    - Pfeile zeigen in gleiche Richtung -> sagt "stimmt sollten Bidirektional sein,..." und generiert neu. Fehler bleibt aber
+    - Spiel-Spieler Beziehung 4..*? Sollen doch 0..4 Teilnehmen oder garkeine. -> Ändert auf 1..4, richtige Bezeichnung? weiß ich auch nicht.
+    - spielBrett als String?
+    - Wofür zugNummer? -> Reihenfolge der Spielzüge innerhalb eines Spiels festzuhalten
+    - Beziehungen von Spielfigur im Diagramm nicht richtig dargestellt. -> Bei Hinweis wird nicht korrigiert
+    - Feld braucht Attribut ob belegt oder nicht -> Korrigiert
+    - Chat nicht richtig im UML dargestellt, Beziehungen falsch -> Bei Hinweis wird nicht korrigiert
+    - Spieler in User und Player aufteilen? -> Macht er richtig. Frage nur ob dann pos in Spieler oder figur?
+    - status in Spiel zu einem Enum statt String?
+    - farbe in Spieler zu Enum statt String?
+    - Spielzug: figurID statt spielfigur? Beziehung zu Spieler?
+    - Spielfigur: braucht farbe wenn Spieler schon farbe hat?
+    -
+
+    - Hat keine Einschränkungen zu den Attributen festgelegt.
+
+    Prompts:
+        - Erstell mir nun für die Anforderungsspezifikation das Fachliche Datenmodell. Dieses soll mit Hilfe eines UML Klassendiagrammes mit ergänzenden Beschreibungen bzw. EInschränkungen spezifiziert werden. Das Modell soll alle Entitätstypen mit deren Eigenschaften, Beziehungen und Einschränkungen besitzen.
+        - Im UML-Diagramm zeigen immer beide Pfeile in eine richtung, müssen diese nicht bidirektional zeigen?
+        - Du hast die Beziehung "Ein Spiel hat mehrere Spieler" auf 4..* festgelegt. Sollte diese nicht 1 - 4 betragen? Es sollen ja maximal 4 Spieler teilnehmen können.
+        - Braucht das Feld nicht noch ein Attribut ob es belegt ist oder nicht?
+        - Macht es nicht auch sinn Spieler in zwei Entitäten aufzuteilen? Einmal "User" und einmal "Player".  "User" beinhaltet dabei den Namen, die Email, das Passwort und die Punkte. "Spieler" beinhaltet dann die nötigen Attribute zum Spielen wie SpielerID, die Farbe und die position seiner Spielfiguren.
+
+- Le Chat:
+    - Nur beschreibung
+    - Hat auch nur Spieler, "user" und "player" würden sinn machen.
+    - Spielfigur an einem oder mehreren Spielen teilnehmen?
+    - Spieler-Spielfigur: Ein Spieler hat genau 4 Figuren, nicht weniger und nicht mehr
+    - Beziehung zwischen Spiel-Spielfigur? wenn ja, Spieler * 4 Spielfiguren.
+    - Punkte werde nicht gespeichert.
+    - Player hat position? Player kann an mehreren Spielen teilnehmen? -> 
+    - Player und Spielfigur haben positionen.
+    - Spiel-Spielfigur Beziehung sinnvoll?
+
+    - Probleme mit der Beschreibung der Beziehungen zwischen den Entitäten
+
+    Prompts:
+        - Erstell mir nun für die Anforderungsspezifikation das Fachliche Datenmodell. Dieses soll mit Hilfe eines UML Klassendiagrammes mit ergänzenden Beschreibungen bzw. EInschränkungen spezifiziert werden. Das Modell soll alle Entitätstypen mit deren Eigenschaften, Beziehungen und Einschränkungen besitzen.
+        - Macht es nicht auch sinn "Spieler" in zwei Entitäten aufzuteilen? Einmal "User" und einmal "Player".  "User" beinhaltet dabei den Namen, die Email, das Passwort und die Punkte. "Spieler" beinhaltet dann die nötigen Attribute zum Spielen wie SpielerID, die Farbe und die position seiner Spielfiguren.
+        - Ein Player hat 4 Figuren. Außerdem hat der Player keine Positionen, diese haben ja die Figuren. Ein Player soll auch nicht an mehreren Spielen teilnehmen, sondern der User kann mehrere Player sein und ein Player spielt ein Spiel. Ein Spiel besteht aus 1 bis 4 Playern.

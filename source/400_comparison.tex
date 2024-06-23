@@ -12,7 +12,7 @@ Generell:
 
 - [Prompt] und Gespräch als Eingabe
 - Teilweise sehr unterschiedliche Ausgaben obwohl selbe Prompts. Auch in neuen Chats bei gleichem Tool.
-Einzelne Einträge mal zu einem Eintrag zusammengefasst, mal in mehreren geschrieben. (Anz. immer unterschiedlich).
+Einzelne Einträge mal zu einem Eintrag zusammengefasst, mal in mehreren geschrieben. (Anz. der Einträge immer unterschiedlich).
 Beispiel Server-Client, JavaFX und RMI.
 - genaue Beschreibung der Spalten wird benötigt, da sonst eher eine Stichpunkteliste erstellt wird
 - Einzelnen Arten müssen beschrieben werden, da diese sonst sehr ungenau festgelegt werden. Aber auch mit
@@ -212,6 +212,10 @@ implementierung der Server-Client-Applikation einfacher fällt. Außerdem erwäh
     - Häufigkeit keine Zahl: "Häufig verwendet (mehrmals täglich)
     - Erstellt diagramm direkt mit, kein Endzustand. Verbindungen führen nach ``Anmeldung erfolgreich'' und ``Anmeldung fehlgeschlagen'' wieder zusammen.
     - Beschreibungen gut.
+    - ChatGPT-4o macht zu viel. Implementierung wird bisschen mit beschrieben (Benutzersession erstellen) sowie Dialog 
+    eigenschaften wie Anzeigen von Fehlermeldungen werden beschrieben. GPT-3.5 hier tatsächlich besser. Außerdem wurde Code
+    von PlantUML falsch erstellt (Syntax error)
+
 
 - Gemini: [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 
@@ -224,14 +228,56 @@ implementierung der Server-Client-Applikation einfacher fällt. Außerdem erwäh
 
 Benutzungsschnittstelle:
 
-
-Dialog:
-
 - Prompt:
 
 - ChatGPT:
+    - Man startet im Hauptmenü und sieht alle Buttons. ``Spiel erstellen'' und ``Spiel beitreten'' können jedoch nur 
+    genutzt werden, wenn man Angemeldet ist.
+    - Erstellt Skizze und Textuelle Beschreibung. Skizze passt aber nicht ganz zu Beschreibung. Auch nach Hinweis wird 
+    selber Fehler nochmal gemacht. Wenn man auf die wiederholt Falsche Antwort negativ Reagiert mit dem Feedback, dass 
+    die Hinweise nicht richtig umgesetzt wurden, und dann im als Prompt die Eingabe ``Die Skizze ist unverändert. 
+    Setzt den "Spiel beitreten"-Dialog mit dem Hauptmenü in Verbindung.'' gibt, wird die Skizze richtig erstellt.
+    - Es wird auch beschrieben, welche Buttons und Eingabefelder die einzelnen Dialoge besitzen. Dies ist jedoch 
+    an dieser Stelle nicht nötig.
+    - Skizze kann auch nicht zu einem Dialog zurück gehen. Wird dann nochmal aufgeführt (ohne Buttons,...)
+
+
+- Gemini:
+
+- Le Chat:
+    - Erstellt für jeden Anwendungsfall einen Dialog, grundsätzlich gut.
+    - Spielbrett benötigt auch ein Dialog?
+    - Verbindungen zwischen den Dialogen macht keinen Sinn -> Nach Hinweis wird erneut ausgegeben, Beschreibung besser
+    aber Skizze immer noch unsinnig.
+    - Beschreibung beinhaltet aber nicht alle Anwendungsfälle (Admin wird ausgelassen). Außerdem werden Dialoge erstellt,
+    für die es keine Anwendungsfälle gibt (z.B. "Profil bearbeiten" um Benutzerdaten selber zu ändern)
+    - Auch nach genauer Beschreibung wird Skizze nicht richtig erstellt.
+    
+
+
+Dialog:
+
+- Prompt: Beschreibung des Inhalts reicht.
+
+- ChatGPT:
+    - Erstellt Skizze
+    - beschreibt Validierung. Richtigen Stelle dafür?
 
 - Gemini:
 
 - Le Chat: 
+    - kleiner Formulierungsfehler bei ``Abbrechen''-Button. "Nutzer bleibt angemeldet. -> Wird bei Hinweis korrigiert
+    - Erklärt Skizze gut bei Nachfrage.
 
+
+Nichtfunktionale Anforderungen:
+
+- Prompt: 
+
+- ChatGPT:
+    - passt
+
+- Gemini:
+
+- Le Chat: 
+    - passt

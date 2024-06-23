@@ -125,7 +125,8 @@ Datenbank?" Wird erklärt wie der Datenfluss abläuft (Bidirektional). Infos rei
 
 
 Fachliches Datenmodell:
-- Prompt:
+- Prompt: Information, das ein UML-Klassendiagramm verwendet werden soll, um entsprechendes Layout zu erhalten. 
+Außerdem beschreibung, welche Infos benötigt werden. Inhalt muss nicht beschrieben werden.
 
 - ChatGPT: 
     - Pfeile zeigen in gleiche Richtung -> sagt "stimmt sollten Bidirektional sein,..." und generiert neu. Fehler bleibt aber
@@ -158,7 +159,7 @@ Fachliches Datenmodell:
     - Spieler-Spielfigur: Ein Spieler hat genau 4 Figuren, nicht weniger und nicht mehr
     - Beziehung zwischen Spiel-Spielfigur? wenn ja, Spieler * 4 Spielfiguren.
     - Punkte werde nicht gespeichert.
-    - Player hat position? Player kann an mehreren Spielen teilnehmen? -> 
+    - Player hat position? Player kann an mehreren Spielen teilnehmen? -> Nach Hinweis geändert
     - Player und Spielfigur haben positionen.
     - Spiel-Spielfigur Beziehung sinnvoll?
 
@@ -166,5 +167,63 @@ Fachliches Datenmodell:
 
     Prompts:
         - Erstell mir nun für die Anforderungsspezifikation das Fachliche Datenmodell. Dieses soll mit Hilfe eines UML Klassendiagrammes mit ergänzenden Beschreibungen bzw. EInschränkungen spezifiziert werden. Das Modell soll alle Entitätstypen mit deren Eigenschaften, Beziehungen und Einschränkungen besitzen.
-        - Macht es nicht auch sinn "Spieler" in zwei Entitäten aufzuteilen? Einmal "User" und einmal "Player".  "User" beinhaltet dabei den Namen, die Email, das Passwort und die Punkte. "Spieler" beinhaltet dann die nötigen Attribute zum Spielen wie SpielerID, die Farbe und die position seiner Spielfiguren.
+        - Macht es nicht auch sinn "Spieler" in zwei Entitäten aufzuteilen? Einmal "User" und einmal ``Player''.  "User" beinhaltet dabei den Namen, die Email, das Passwort und die Punkte. "Spieler" beinhaltet dann die nötigen Attribute zum Spielen wie SpielerID, die Farbe und die position seiner Spielfiguren.
         - Ein Player hat 4 Figuren. Außerdem hat der Player keine Positionen, diese haben ja die Figuren. Ein Player soll auch nicht an mehreren Spielen teilnehmen, sondern der User kann mehrere Player sein und ein Player spielt ein Spiel. Ein Spiel besteht aus 1 bis 4 Playern.
+
+
+Anwendungsfalldiagramm:
+
+- Prompt: Reicht zu sagen, dass das Diagramm alle Anwendungsfälle beinhalten soll und den Rollen zugewiesen werden soll.
+
+- ChatGPT:
+    - Spiel erstellen: wird zum Gastgeber. Besondere rechte? wenn ja, warum keine neue Rolle. -> Nach Hinweis neue Rolle
+    - Als User Chat nutzen? In Anforderungen wurde nur von Chat während des Spiels gesprochen. -> Nach Hinweis wurde entfernt.
+    - Was gehört zu Zug machen, wenn Spielfigur bewegen eigener Anwendungsfall ist -> gesamte Ablauf wenn Spieler am Zug ist
+    (Würfeln, Auswählen und Bewegen der Spielfigur, Schlagen gegnerischer Figuren und Beenden des Zuges), AF "Spielfigur bewegen" 
+    war doppelt. Wurde aber nach Hinweis entfernt. Sehr großer Anwendungsfall, vielleicht lieber in kleinere AF aufteilen??
+    - Erstellt Code um in einem PlantUML-Editor oder einem Online Renderer das Diagramm als Bild zu erstellen
+    - Erstellt Skizze in PlantUML ganz gut, sieht lediglich aus als ob auch ``Spieler'' von ``User'' erbt.
+
+- Gemini: [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+- Le Chat:
+    - Rollen werden gut erstellt.
+    - Passende Anwendungsfälle, stimmen auch zu den Rollen
+    - "Benutzer verwalten" von Admin vielleicht etwas ungenau? -> Wird geändert und entsprechend ergänzt
+    - möglich mit PlantUML erstellen zu lassen, Diagramm jedoch recht durcheinander und Anwendungsfall ``Passwort vergessen'' wurde ``User'' 
+    zugewiesen und nicht wie in der Beschreibung ``Gast''
+
+
+AF:
+
+- Prompt: Beschreibung, welcher Anwendunsfall beschrieben werden soll, welche Informationen zunächst erstellt werden soll und anschließend das ein 
+Aktivitätsdiagramm erstellt werden soll. Beschrieben das die Aktivitäten dem Server oder dem Client zugewiesen werden sollen, um die spätere 
+implementierung der Server-Client-Applikation einfacher fällt. Außerdem erwähnt das keine Dialog eigenschaft beschrieben werden sollen.
+
+- ChatGPT-3.5:
+    - Häufigkeit keine Zahl: "Häufig verwendet (mehrmals täglich)
+    - Erstellt diagramm direkt mit, kein Endzustand. Verbindungen führen nach ``Anmeldung erfolgreich'' und ``Anmeldung fehlgeschlagen'' wieder zusammen.
+    - Beschreibungen gut.
+
+- Gemini: [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+- Le Chat:
+    - Beschreibt für die Endzustände trotz Hinweis, das keine Dialog eigenschaften beschrieben werden sollen, was der Dialog anzeigt.
+    - Häufigkeit keine Zahl
+    - Kann auf Nachfrage Code für PlantUML erstellen.
+    - Diagramm hat nur einen Endzustand, wo Verbindung von ``Anmeldung erfolgreich'' und ``Anmeldung fehlgeschlagen'' enden.
+
+
+Benutzungsschnittstelle:
+
+
+Dialog:
+
+- Prompt:
+
+- ChatGPT:
+
+- Gemini:
+
+- Le Chat: 
+

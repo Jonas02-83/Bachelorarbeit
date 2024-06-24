@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  24 JUN 2024 17:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  24 JUN 2024 19:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -1702,7 +1702,11 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
- (./thesis.aux (./source/000_title.aux) (./source/001_declaration.aux) (./source/002_abstract.aux) (./source/100_introduction.aux) (./source/200_basics.aux) (./source/300_usage.aux) (./source/400_comparison.aux) (./source/500_Problems.aux) (./source/600_Conclusion.aux) (./source/801_appendix.aux))
+ (./thesis.aux (./source/000_title.aux) (./source/001_declaration.aux) (./source/002_abstract.aux) (./source/100_introduction.aux) (./source/200_basics.aux) (./source/300_usage.aux) (./source/400_comparison.aux
+
+LaTeX Warning: Label `Prompt Risikotabelle' multiply defined.
+
+) (./source/500_Problems.aux) (./source/600_Conclusion.aux) (./source/801_appendix.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
@@ -2395,21 +2399,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
-[26] [27] [28] [29]) [30]
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 199--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 234--241
+
+ []
+
+[28] [29] [30]) [31]
 \openout2 = `source/500_Problems.aux'.
 
- (./source/500_Problems.tex
-chapter 5.
-) [31
+ (./source/500_Problems.tex [32
 
 
 
 
 
 ]
+chapter 5.
+) [33]
 \openout2 = `source/600_Conclusion.aux'.
 
- (./source/600_Conclusion.tex [32
+ (./source/600_Conclusion.tex [34
 
 
 
@@ -2417,7 +2441,7 @@ chapter 5.
 
 ]
 chapter 6.
-) [33] [34
+) [35] [36
 
 
 
@@ -2544,6 +2568,10 @@ See the caption package documentation for explanation.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
@@ -2551,18 +2579,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72150 strings out of 474049
- 1654238 string characters out of 5746277
- 2921630 words of memory out of 5000000
- 93011 multiletter control sequences out of 15000+600000
- 622905 words of font info for 235 fonts, out of 8000000 for 9000
+ 72157 strings out of 474049
+ 1654296 string characters out of 5746277
+ 2921669 words of memory out of 5000000
+ 93014 multiletter control sequences out of 15000+600000
+ 622968 words of font info for 236 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,22n,120p,10948b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,22n,120p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (56 pages, 288053 bytes).
+Output written on thesis.pdf (58 pages, 291617 bytes).
 PDF statistics:
- 680 PDF objects out of 1000 (max. 8388607)
- 573 compressed objects within 6 object streams
- 107 named destinations out of 1000 (max. 500000)
+ 692 PDF objects out of 1000 (max. 8388607)
+ 583 compressed objects within 6 object streams
+ 110 named destinations out of 1000 (max. 500000)
  53241 words of extra memory for PDF output out of 61914 (max. 10000000)
 

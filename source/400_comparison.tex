@@ -196,7 +196,50 @@ Risikoarten fragen. Diese werden dann erstellt, jedoch soll man den Schaden und 
 Nach anschließender Frage, ob er den Risikoschaden und das Schadensmaß festlegen kann, sagt er, dass er detaillierte 
 Informationen über das Projekt und die potenziellen Risiken benötigt um genaue Werte festzulegen.
 
+Le Chat hatte ein ähnliches Problem wie bereits im Besprechungsprotokoll [\autoref{CompBesprechungsprotokoll}], dass das 
+Datum immer auf den 01.04.2023 gesetzt wird. Außerdem hatte Le Chat Probleme damit, die Tabelle in das gewünschte Format
+zu bringen, dass die Risikoarten in einer Zeile stehen und die dazugehörigen Risiken darunter aufgelistet werden. Auch 
+hier wurden die Risikoklassen falsch bestimmt und auch nach einem Hinweis waren diese falsch. Zudem wurde dabei der 
+Risikoschaden der einzelnen Risiken geändert.\\
 
+Die Maßnahmentabelle wurde mit folgendem Prompt erstellt:
+
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstelle mir nun eine dazu passende Maßnahmentabelle. Auch diese besteht aus mehreren Spalten: "Typ" beschreibt 
+        ob die Maßnahme das Risiko verhindert, lindert oder überträgt. In "Beschreibung" wird die Maßnahme beschrieben. 
+        Falls ein Risiko als nicht mehr relevant eingestuft wird, wird in der Spalte "Beschreibung" eine Begründung 
+        eingetragen und die Maßnahme auf "beendet" gesetzt. "Trigger" ist das Ereignis, das den Start der Maßnahme 
+        veranlasst, falls diese nicht sofort eingeleitet werden soll. "Verantwortlicher" ist die zuständige Person für 
+        die Durchführung der Maßnahme. "Status" unterscheidet zwischen geplant, aktiv und beendet. Anschließend gibt es 
+        jeweils eine Spalte für "Restwahrscheinlichkeit (in \%)", "Restschaden (in €)", "Restmaß (in €)" und "Restklasse" 
+        was die geschätzte Wahrscheinlichkeit, geschätzter Schaden, Maß und Klasse des Restrisikos, nach Durchführung der 
+        Maßnahme entsprechen. Für jedes Risiko sollen zwei Maßnahmen erstellt werden. Dazu wird über die zwei Maßnahmen 
+        eine Zeile mit der ID von dem Risikon beschrieben, auf die sich die Maßnahmen beziehen.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Risikotabelle}
+    \label{Prompt Risikotabelle}
+\end{prompt}
+
+Der Prompt für die Maßnahmen ist ähnlich wie der, für die Risikotabelle. Es wird jede Spalte der Tabelle einmal beschrieben,
+damit das Format der Tabelle mit den Vorgaben übereinstimmt. Anschließend wird gesagt, dass die ID des dazugehörigen Risikos
+mit in die Tabelle übernommen werden soll, damit man die Maßnahmen den Risiken zuordnen kann. Die Probleme sind hier 
+ähnlich zu denen bei der Risikotabelle, jedoch erstellen alle drei Tools grundsätzlich anständige Maßnahmen für die Risiken.
+Bei allen dreien fühlt sich allerdings die Zuweisung der Attribute zu den Maßnahmen repetitiv an. Häufig wechseln sich die 
+auswählbaren Parameter ab und auch die Wahrscheinlichkeiten und der Restschaden sind meistens immer wieder die gleichen Zahlen.\\
+
+ChatGPT erstellt auch die Maßnahmentabelle sehr gut. Lediglich die Zuweisung der Restklasse stimmt nicht überein.\\
+
+Bei Gemini wird für die Begründung, warum ein Risiko als nicht mehr relevant eingestuft wird, eine eigene Spalte erstellt.
+Auch wenn man die Beschreibung dafür im Prompt ändert, wird die Spalte erstellt. Außerdem ist die Formatierung bei Gemini
+manchmal nicht so gut, da bei jeder 2. Zeile alle Daten ab der Spalte "Begründung" um eine Stelle nach links verschoben wird.
+Lässt man sich die Antwort neu generieren und auch wenn man Gemini sagt er soll die Formatierung korrigieren bleibt das 
+Problem bestehen. Ein weiteres Problem ist, dass die Spalte "Trigger" nicht gefüllt wird und auch wieder das Problem, dass
+die Tabelle nicht ganz vollständig generiert wird sondern mitten drin aufhört, tritt wieder auf. Teilweise ist das Restmaß 
+falsch berechnet und auch die Zuweisung der Restklasse ist nicht immer richtig.\\
+
+Le Chat [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 
 % - Auch hier zwei einzelne Eingaben. Einmal für die Tabelle mit den Risiken und einmal für die mit den Maßnahmen.
 % - Prompt für Risikotabelle sehr umfangreich. Jede Spalte erklärt damit die Tabelle, die erstellt wird, den Vorgaben entspricht. 
@@ -225,10 +268,10 @@ Informationen über das Projekt und die potenziellen Risiken benötigt um genaue
 % das er den Schaden und Maß noch festlegen soll, sagt er nur, dass er das ohne detaillierte Informationen über das Projekt und die potenziellen
 % Risiken nicht kann.
 
-- Le Chat hatte wieder das Problem mit dem Datum, dass dieses auf den 01.04.2023 gesetzt wurde. Manchmal war außerdem das Format der Tabelle 
-nicht richtig und die Risiken wurde manchmal den Oberbegriffen nicht zugeordnet sondern zufällig erstellt. Musste schritt für schritt beschreiben 
-was Le Chat ändern soll. Auch Le Chat bestimmt die Risikoklasse falsch. Auch nach Hinweis, dass diese nicht stimmen sind diese noch falsch 
-und es wird der Schaden bei den Risiken geändert. Auch hier ist der Autor eher der Verantwortliche.
+% - Le Chat hatte wieder das Problem mit dem Datum, dass dieses auf den 01.04.2023 gesetzt wurde. Manchmal war außerdem das Format der Tabelle 
+% nicht richtig und die Risiken wurde manchmal den Oberbegriffen nicht zugeordnet sondern zufällig erstellt. Musste schritt für schritt beschreiben 
+% was Le Chat ändern soll. Auch Le Chat bestimmt die Risikoklasse falsch. Auch nach Hinweis, dass diese nicht stimmen sind diese noch falsch 
+% und es wird der Schaden bei den Risiken geändert. Auch hier ist der Autor eher der Verantwortliche.
 
 
 - Prompt für Maßnahmen ähnlich, dass jede Spalte der Tabelle einmal beschrieben wird und anschließend gesagt wird, dass die ID des dazugehörigen

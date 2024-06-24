@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  24 JUN 2024 14:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  24 JUN 2024 17:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -2372,10 +2372,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
-[25]
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26] [27] [28] [29]) [30]
+ [25]
+Underfull \hbox (badness 10000) in paragraph at lines 170--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--187
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
+
+ []
+
+[26] [27] [28] [29]) [30]
 \openout2 = `source/500_Problems.aux'.
 
  (./source/500_Problems.tex
@@ -2531,18 +2551,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72145 strings out of 474049
- 1654115 string characters out of 5746277
- 2921576 words of memory out of 5000000
- 93005 multiletter control sequences out of 15000+600000
- 622932 words of font info for 236 fonts, out of 8000000 for 9000
+ 72150 strings out of 474049
+ 1654238 string characters out of 5746277
+ 2921630 words of memory out of 5000000
+ 93011 multiletter control sequences out of 15000+600000
+ 622905 words of font info for 235 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,22n,120p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,22n,120p,10948b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (56 pages, 286321 bytes).
+Output written on thesis.pdf (56 pages, 288053 bytes).
 PDF statistics:
- 679 PDF objects out of 1000 (max. 8388607)
- 572 compressed objects within 6 object streams
- 106 named destinations out of 1000 (max. 500000)
+ 680 PDF objects out of 1000 (max. 8388607)
+ 573 compressed objects within 6 object streams
+ 107 named destinations out of 1000 (max. 500000)
  53241 words of extra memory for PDF output out of 61914 (max. 10000000)
 

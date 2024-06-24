@@ -142,32 +142,88 @@ Herrn Müller (Kunde) Kontakt aufnahm, was eine fehlerhafte Zuordnung darstellt.
 
 \section{Risikoliste} \index{Risikoliste} \label{CompRisikoliste}
 
-- Auch hier zwei einzelne Eingaben. Einmal für die Tabelle mit den Risiken und einmal für die mit den Maßnahmen.
-- Prompt für Risikotabelle sehr umfangreich. Jede Spalte erklärt damit die Tabelle, die erstellt wird, den Vorgaben entspricht. 
-Auch das Risiken jeweils zu den Oberbegriffen Team-, Technische-, Methodische-, Kunden-, Fachliche-, Produkt-, Management- und 
-Planungsrisiken erstellt werden sollen und die Risiken dazu mit einer leer Zeile getrennt werden sollen für eine bessere Übersicht 
-und um die Risiken leichter Zuordnen zu können.
-- Die Tools haben die Zuweisung der Risikoklasse zunächst mit den Werten niedrig, mittel und hoch erstellt. Daher wurde der 
-Prompt um die Anweisung, dass zwischen tolerierbar, unerwünscht, kritisch und katastrophal gewählt werden soll ergänzt.
-Insgesamt war die Zuordnung jedoch ohne richtiges Konzept und schwerwiegende Risiken eine geringe Risikoklasse als eher unwichtigere
-Risiken. Daher wurde die definition, wann welche Risikoklasse zuwählen ist, ebenfalls ergänzt.
-- Damit Schaden und die Risikoklassen richtig gewählt werden und die Tools vergleichbar sind, wurde das Projektvolumen auf 500000€
-festgelegt. Ansonsten wählen die Tools ein eigenes, was zu ungenauigkeiten führt.
-- Die Erstellung der Risiken war kein Problem, eher bei der Formatierung der Tabelle und der Zuweisung der restlichen Attirbute haben
-Gemini und Le Chat Schwierigkeiten.
+Auch die Risikoliste wurde in zwei Schritten erstellt. Zunächst wurde nur die Risikotabelle erstellt und im zweiten 
+Schritt die Tabelle mit den Maßnahmen. Die beiden Ergebnisse sind [Verweis!!!!!!!!!!!!!!].\\
 
-- ChatGPT hat bei der ersten eingabe die Risikoklassen falsch zugewiesen. Bei Hinweis darauf wurde dies jedoch richtig korriegiert.
-Autor eher der Verantwortliche für das Risiko. Macht aber irgendwo sinn, da die "Experten" auf ihrem Gebiet, am ehesten die Risiken
-für ihr Gebiet kennen und erstellen können.
+Der Prompt für die Risikotabelle
 
-- Gemini legt den Autor, auf den am ehsten Verantwortlichen für das Risiko, fest. Also Teamrisiken werden von Frau Schmidt definiert,
-während zum Beispiel Anforderungsrisiken vom Anforderungsanalysten (Herr Schneider) und Kundenrisiken vom Kunden (Herr Müller) geschrieben
-werden. Außerdem berechnet Gemini das Risikomaß nicht richtig. Das Komma der Werte ist um eine Stelle zu weit links. Es muss alles *10 
-gerechnet werden. Die ID setzt Gemini einfach auf 1, 2, 3, ... was grundsätzlich aber nicht schlimm ist, da kein großer Mehraufwand, dies 
-selbst zu ändern. Gemini kann nicht gesamte Tabelle aufeinmal Generieren. Es wird einfach mitten drinn aufgehört. Bei nachfrage ob er nur 
-noch Produkt-, Management- und Planungsrisiken erstellen kann, macht er dies, fügt aber keinen Schaden und Maß mehr ein. Wenn ich ihm sag, 
-das er den Schaden und Maß noch festlegen soll, sagt er nur, dass er das ohne detaillierte Informationen über das Projekt und die potenziellen
-Risiken nicht kann.
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir für diese Projekt eine Risikoliste. Diese soll aus mehreren Spalten bestehen: "ID" für eine 
+        eindeutige Identifikationsnummer, "Beschreibung" für eine ausführliche Beschreibung des Risikos und der 
+        Auswirkungen, "Datum" für den Zeitpunkt, wann das Risiko identifiziert wurde, "Autor" für die Person die 
+        das Risiko gemeldet hat, "Wahrscheinlichkeit (in\%)" für einen Schätzwert der Eintrittswahrscheinlichkeit 
+        des Risikos, "Schaden (in €)" für eine Schätzung wie groß der Schaden ist, "Maß (in €)" was das Produkt aus 
+        Wahrscheinlichkeit und Schaden ist, "Risikoklasse" für eine Priorisierung der potentiellen Risiken wo 
+        zwischen Tolerierbar, Unerwünscht, Kritisch und Katastrophal Unterschieden wird und "Status" wo zwischen 
+        aktiv, eingetreten und geschlossen unterschieden wird. Das Risiko ist Tolerierbar wenn das Risikomaß geringer 
+        als 0,1\% des Projektvolumen ist, Unerwünscht wenn es größer als 0,1\% ist, Kritisch wenn es größer als 1\% 
+        ist und Katastrophal wenn es größer als 10\% ist. In der Risikoliste sollen Team-, Technische-, Methodische-, 
+        Kunden-, Fachliche-, Produkt-, Management- und Planungsrisiken betrachtet werden. Diese sollen mit einer 
+        leer Zeile getrennt werden, in welchen die Oberbegriffe stehen. Das Projektvolumen beträgt 500000€.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Risikotabelle}
+    \label{Prompt Risikotabelle}
+\end{prompt}
+
+ist sehr umfangreich formuliert. Damit die Tabelle mit den richtigen Spalten erstellt wird, wurde im Prompt jede
+einzelne Spalte aufgezählt und beschrieben. Ebenfalls ist es wichtig, die möglichen Werte für die Risikoklasse zu 
+definieren, da hier sonst immer ``Hoch'', ``Mittel'' und ``Niedrig'' von den Tools verwendet wird. Es musste auch 
+festgelegt werden, wann die einzelnen Risikoklassen auftreten, da die Zuweisung ansonsten recht schwammig ausfällt und
+schwerwiegende Risiken eine geringere Risikoklasse erhalten als eher unwichtige Risiken. Außerdem sollte beschrieben 
+werden, welche Arten von Risiken betrachtet werden sollen und dass diese Arten in einer leer Zeile stehen, welche 
+die dazugehörigen Risiken von den anderen Arten trennen. Ansonsten kann es passieren, dass die Risiken durcheinander 
+geschrieben werden und damit nicht den Arten zuzuordnen sind. Damit der Risikoschaden zwischen den Tools vergleichbar 
+ist, sollte das Projektvolumen definiert werden. Ansonsten wird auch dies von Tools festgelegt und führt zu 
+Ungenauigkeiten.\\
+
+Grundsätzlich war die Erstellung der Risiken kein Problem. Schwierig war es eher die gewünschte Formatierung zu erhalten, 
+sowie eine richtige Zuweisung der restlichen Attribute. Besonders Gemini und Le Chat haben dabei Schwierigkeiten. 
+Außerdem war bei allen drei Tools auffällig, dass der Autor immer die Person ist, zu dem das Risiko in den 
+Tätigkeitsbereich fällt. Also die Person, die auch der Verantwortliche ist. Fraglich ist dabei teilweise, wenn 
+Kundenrisiken vom Kunden, also Herr Müller, erstellt werden, da dieser an der Erstellung der Risikoliste überhaupt 
+nicht beteiligt ist.\\
+
+ChatGPT hat die Tabelle sehr gut erstellt. Lediglich die Zuweisung der Risikoklasse war falsch. Nach einem Hinweis 
+diesbezüglich wurden diese jedoch richtig korrigiert.\\
+
+Ein Problem bei Gemini ist, dass das Risikomaß nicht richtig berechnet wird. Das Komma der Werte ist um eine Stelle zu 
+weit links. Es muss alles einmal *10 gerechnet werden, damit die Werte stimmen. Kritisch bei Gemini ist, dass die Tabelle 
+nicht in einem Zug erstellt werden kann. Es wird während der Generierung einfach aufgehört. Auch wenn man Gemini fragt, 
+ob die vollständige Tabelle generiert werden kann, wird mitten drin aufgehört. Man muss explizit nur nach den noch offenen
+Risikoarten fragen. Diese werden dann erstellt, jedoch soll man den Schaden und das Maß selbst eintragen und berechnen.
+Nach anschließender Frage, ob er den Risikoschaden und das Schadensmaß festlegen kann, sagt er, dass er detaillierte 
+Informationen über das Projekt und die potenziellen Risiken benötigt um genaue Werte festzulegen.
+
+
+
+% - Auch hier zwei einzelne Eingaben. Einmal für die Tabelle mit den Risiken und einmal für die mit den Maßnahmen.
+% - Prompt für Risikotabelle sehr umfangreich. Jede Spalte erklärt damit die Tabelle, die erstellt wird, den Vorgaben entspricht. 
+% Auch das Risiken jeweils zu den Oberbegriffen Team-, Technische-, Methodische-, Kunden-, Fachliche-, Produkt-, Management- und 
+% Planungsrisiken erstellt werden sollen und die Risiken dazu mit einer leer Zeile getrennt werden sollen für eine bessere Übersicht 
+% und um die Risiken leichter Zuordnen zu können.
+% - Die Tools haben die Zuweisung der Risikoklasse zunächst mit den Werten niedrig, mittel und hoch erstellt. Daher wurde der 
+% Prompt um die Anweisung, dass zwischen tolerierbar, unerwünscht, kritisch und katastrophal gewählt werden soll ergänzt.
+% Insgesamt war die Zuordnung jedoch ohne richtiges Konzept und schwerwiegende Risiken eine geringe Risikoklasse als eher unwichtigere
+% Risiken. Daher wurde die definition, wann welche Risikoklasse zu wählen ist, ebenfalls ergänzt.
+% - Damit Schaden und die Risikoklassen richtig gewählt werden und die Tools vergleichbar sind, wurde das Projektvolumen auf 500000€
+% festgelegt. Ansonsten wählen die Tools ein eigenes, was zu Ungenauigkeiten führt.
+% - Die Erstellung der Risiken war kein Problem, eher bei der Formatierung der Tabelle und der Zuweisung der restlichen Attirbute haben
+% Gemini und Le Chat Schwierigkeiten.
+
+% - ChatGPT hat bei der ersten eingabe die Risikoklassen falsch zugewiesen. Bei Hinweis darauf wurde dies jedoch richtig korriegiert.
+% Autor eher der Verantwortliche für das Risiko. Macht aber irgendwo Sinn, da die "Experten" auf ihrem Gebiet, am ehesten die Risiken
+% für ihr Gebiet kennen und erstellen können.
+
+% - Gemini legt den Autor, auf den am ehesten Verantwortlichen für das Risiko, fest. Also Teamrisiken werden von Frau Schmidt definiert,
+% während zum Beispiel Anforderungsrisiken vom Anforderungsanalysten (Herr Schneider) und Kundenrisiken vom Kunden (Herr Müller) geschrieben
+% werden. Außerdem berechnet Gemini das Risikomaß nicht richtig. Das Komma der Werte ist um eine Stelle zu weit links. Es muss alles *10 
+% gerechnet werden. Die ID setzt Gemini einfach auf 1, 2, 3, ... was grundsätzlich aber nicht schlimm ist, da kein großer Mehraufwand, dies 
+% selbst zu ändern. Gemini kann nicht gesamte Tabelle aufeinmal Generieren. Es wird einfach mitten drinn aufgehört. Bei nachfrage ob er nur 
+% noch Produkt-, Management- und Planungsrisiken erstellen kann, macht er dies, fügt aber keinen Schaden und Maß mehr ein. Wenn ich ihm sag, 
+% das er den Schaden und Maß noch festlegen soll, sagt er nur, dass er das ohne detaillierte Informationen über das Projekt und die potenziellen
+% Risiken nicht kann.
 
 - Le Chat hatte wieder das Problem mit dem Datum, dass dieses auf den 01.04.2023 gesetzt wurde. Manchmal war außerdem das Format der Tabelle 
 nicht richtig und die Risiken wurde manchmal den Oberbegriffen nicht zugeordnet sondern zufällig erstellt. Musste schritt für schritt beschreiben 

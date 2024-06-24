@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  23 JUN 2024 19:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  24 JUN 2024 14:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -2321,18 +2321,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--120
 
  (./source/400_comparison.tex
 chapter 4.
+
+Overfull \hbox (1.83362pt too wide) in paragraph at lines 31--32
+[]\T1/phv/m/n/10.95 (-20) wurden dann bei ChatGPT, Ge-mi-ni und Le Chat die Ein-ga-be ge-tä-tigt. Die Er-geb-nis-se [[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--45
+
+ []
+
 [23
 
 
 
 
 
-] [24] [25] [26] [27]) [28]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 46--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--106
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
+
+ []
+
+[25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26] [27] [28] [29]) [30]
 \openout2 = `source/500_Problems.aux'.
 
  (./source/500_Problems.tex
 chapter 5.
-) [29
+) [31
 
 
 
@@ -2341,7 +2389,7 @@ chapter 5.
 ]
 \openout2 = `source/600_Conclusion.aux'.
 
- (./source/600_Conclusion.tex [30
+ (./source/600_Conclusion.tex [32
 
 
 
@@ -2349,7 +2397,7 @@ chapter 5.
 
 ]
 chapter 6.
-) [31] [32
+) [33] [34
 
 
 
@@ -2483,18 +2531,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72133 strings out of 474049
- 1653876 string characters out of 5746277
- 2921374 words of memory out of 5000000
- 92998 multiletter control sequences out of 15000+600000
+ 72145 strings out of 474049
+ 1654115 string characters out of 5746277
+ 2921576 words of memory out of 5000000
+ 93005 multiletter control sequences out of 15000+600000
  622932 words of font info for 236 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,22n,120p,10948b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,22n,120p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (54 pages, 282397 bytes).
+Output written on thesis.pdf (56 pages, 286321 bytes).
 PDF statistics:
- 666 PDF objects out of 1000 (max. 8388607)
- 561 compressed objects within 6 object streams
- 101 named destinations out of 1000 (max. 500000)
+ 679 PDF objects out of 1000 (max. 8388607)
+ 572 compressed objects within 6 object streams
+ 106 named destinations out of 1000 (max. 500000)
  53241 words of extra memory for PDF output out of 61914 (max. 10000000)
 

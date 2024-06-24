@@ -8,42 +8,137 @@ Generell:
 
 \section{Besprechungsprotokoll} \index{Besprechungsprotokoll} \label{CompBesprechungsprotokoll}
 
-%Angefangener Text in Rest.tex
+Für die Erstellung des Besprechungsprotokoll wurde ein verschriftliches Gespräch verwendet [siehe Anhang!!!!!!!]. Mit 
+diesem Gespräch und dem Prompt:
+    
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir aus folgendem Gespräch ein erstes Besprechungsprotokoll für ein Projekt. Das Protokoll soll nur 
+        die wichtigen Punkte in Form einer Tabelle mit den Spalten "Nummer": was eine eindeutige Nummer zur 
+        Identifikation ist, "Art": eine Auswahl ob es eine Information, ein Auftrag, eine Feststellung oder eine 
+        Beschluss ist, "Beschreibung": Was den Punkt kurz und präzise zusammenfasst, "Termin": ein genaues Datum bis 
+        wann der Auftrag erledigt sein muss und "Verantwortlich": Welches Teammitglied verantwortlich ist, enthalten. 
+        Dabei müssen Aufträge mit einem genauen Fälligkeitsdatum und einem Verantwortlichen versehen sein. Beschlüsse 
+        müssen klar und unmissverständlich formuliert werden. Feststellungen sind Beschlüsse, die keine Abstimmung 
+        benötigen und Informationen bieten den Projektmitgliedern wichtige Hinweise: 
+        [siehe Besprechungsprotokoll.docx]
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Besprechungsprotokoll}
+    \label{Prompt Besprechungsprotokoll}
+\end{prompt}
 
-- [Prompt] und Gespräch als Eingabe
-- Teilweise sehr unterschiedliche Ausgaben obwohl selbe Prompts. Auch in neuen Chats bei gleichem Tool.
-Einzelne Einträge mal zu einem Eintrag zusammengefasst, mal in mehreren geschrieben. (Anz. der Einträge immer unterschiedlich).
-Beispiel Server-Client, JavaFX und RMI.
-- genaue Beschreibung der Spalten wird benötigt, da sonst eher eine Stichpunkteliste erstellt wird
-- Einzelnen Arten müssen beschrieben werden, da diese sonst sehr ungenau festgelegt werden. Aber auch mit
-Beschreibung der Arten ein Problem. Tools machen das unterschiedlich und auch in neuen Chats wird die Zuweisung immer 
-bisschen unterschiedlich gemacht. Obwohl gleiche Eingabe.
-- Im Prompt muss stehen das "Termin" ein genaues Datum benötigt. Sonst wird z.B. mit "+2 Wochen" gearbeitet. Le Chat 
-macht das dann trotzdem nicht, da muss als neue Eingabe "Der Termin soll ein genaues Datum sein" geschrieben werden.
-Datum dann allerdings in der Vergangenheit (z.B. 31.10.2023)?? Schreibt aber das die Termine beispielhaft gewählt sind
-und sich am aktuellen Datum, 29.03.2023??, gewählt sind.
-- Gemini hat großes Problem nur die wichtigsten Punkte aus dem Gespräch rauszulesen. Häufig Besprechungsprotokolle mit etwa 
-30 Punkten. Dabei erstellt er als neue Art "Frage" und füllt diese z.B. mit "Maximale Spieleranzahl" um anschließend eine 
-Information aufzulisten mit der Beschreibung "Maximale Spieleranzahl: 4". Wenn selben Prompt in neuem Chat immer wieder 
-eingegeben wird, kommt manchmal eine "kurze" Version, welche immernoch länger ist als die Protokolle der anderen beiden Tools.
-Gemini schreibt sehr kleinkariert und mach für jede einzelne Information einen neuen Punkt. Beispiel Server-Client, JavaFX und RMI.
-- Auch zusätzlicher Hinweis im Prompt, nur die wichtigen Punkte in der Tabelle aufzunehmen, ändert bei Gemini nix daran auszuschweifen.
-- Fazit?? Selber drüber lesen und schauen ob das passt. Vorallem auf "Art" gucken und ob der Punkt wirklich wichtig ist. Le Chat
-hält sich eher zu knapp mit den Punkten, daher hier schauen ob alle wichtigen Informationen enthalten sind.
+wurden dann bei ChatGPT, Gemini und Le Chat die Eingabe getätigt. Die Ergebnisse [[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]].\\
+
+Zunächst fiel auf, dass trotz der Verwendung desselben Prompts die Ausgaben der verschiedenen Tools teilweise erheblich abwichen. 
+Dies betraf sowohl die Anzahl der erstellten Einträge im Besprechungsprotokoll als auch die Art und Weise, wie die Informationen 
+zusammengefasst wurden. In einigen Fällen wurden mehrere Punkte zu einem Eintrag zusammengefasst, während in anderen Fällen mehrere 
+Einträge daraus entstanden. Dies trat insbesondere bei der Anforderung auf, dass die Anwendung mit JavaFX als Server-Client-Architektur 
+mit RMI entworfen werden sollte. Hier haben die Tools teilweise einen Eintrag dafür erstellt und manchmal drei einzelne Einträge. 
+Dieses Verhalten zeigte sich auch, wenn derselbe Prompt in neuen Chats mit demselben Tool verwendet wurde. Besonders bei Gemini trat 
+dieses Problem sehr häufig und extrem auf.\\
+
+Ein wichtiger Aspekt bei der Erstellung des Prompts war die Notwendigkeit einer genauen Beschreibung der Spalten und der verschiedenen 
+Arten (Information, Auftrag, Feststellung, Beschluss). Ohne diese genaue Beschreibung tendierten die Tools dazu, lediglich 
+Stichpunktlisten anstelle einer strukturierten Tabelle zu erstellen. Doch auch die genaue Definition der Arten führte nicht immer zu 
+konsistenten Ergebnissen, da die Zuweisung der Kategorien unterschiedlich vorgenommen wurde.\\
+
+Auf die Spalte ``Termin'' musste ebenfalls ein besonderes Augenmerk gelegt werden. Wenn im Prompt nicht explizit angegeben war, dass ein 
+genaues Datum erforderlich ist, arbeiteten die Tools oft mit relativen Angaben wie ``+2 Wochen''. Selbst mit der Klarstellung, dass der 
+Termin ein genaues Datum sein sollte, traten bei Le Chat Probleme auf: Es wurden immer Termine gewählt, die in der Vergangenheit lagen. 
+Dazu wurde angegeben, dass die Termine beispielhaft gewählt und auf das aktuelle Datum, den 29.03.2023, bezogen seien.\\
+
+Google Gemini hatte, wie bereits erwähnt, erhebliche Schwierigkeiten, nur die wichtigsten Punkte aus dem Gespräch herauszufiltern. 
+Häufig wurden Besprechungsprotokolle mit etwa 30 Punkten erstellt, wobei jede einzelne Information separat und auch unwichtige 
+Informationen aufgeführt wurden. Gemini fügte zudem eine neue Art, ``Frage'', selbstständig hinzu, wodurch im Besprechungsprotokoll 
+teilweise mehrere Punkte für eine Information erstellt wurden. Bei erneuten Eingaben variierte die Länge des Besprechungsprotokolls 
+stark. Trotz des Hinweises, nur die wichtigen Punkte in das Protokoll aufzunehmen, neigte Gemini weiterhin dazu, sehr detaillierte und 
+kleinteilige Protokolle zu erstellen.\\
+
+Le Chat hingegen hielt sich häufig zu knapp. Dadurch wurden immer wieder wichtige Anforderungen nicht in das Besprechungsprotokoll 
+aufgenommen, und es musste besonders darauf geachtet werden, ob alle relevanten Informationen enthalten waren.
+
+%Stichpunkte
+% - [Prompt] und Gespräch als Eingabe
+% - Teilweise sehr unterschiedliche Ausgaben obwohl selbe Prompts. Auch in neuen Chats bei gleichem Tool.
+% Einzelne Einträge mal zu einem Eintrag zusammengefasst, mal in mehreren geschrieben. (Anz. der Einträge immer unterschiedlich).
+% Beispiel Server-Client, JavaFX und RMI.
+% - genaue Beschreibung der Spalten wird benötigt, da sonst eher eine Stichpunkteliste erstellt wird
+% - Einzelnen Arten müssen beschrieben werden, da diese sonst sehr ungenau festgelegt werden. Aber auch mit
+% Beschreibung der Arten ein Problem. Tools machen das unterschiedlich und auch in neuen Chats wird die Zuweisung immer 
+% bisschen unterschiedlich gemacht. Obwohl gleiche Eingabe.
+% - Im Prompt muss stehen das "Termin" ein genaues Datum benötigt. Sonst wird z.B. mit "+2 Wochen" gearbeitet. Le Chat 
+% macht das dann trotzdem nicht, da muss als neue Eingabe "Der Termin soll ein genaues Datum sein" geschrieben werden.
+% Datum dann allerdings in der Vergangenheit (z.B. 31.10.2023)?? Schreibt aber das die Termine beispielhaft gewählt sind
+% und sich am aktuellen Datum, 29.03.2023??, gewählt sind.
+% - Gemini hat großes Problem nur die wichtigsten Punkte aus dem Gespräch rauszulesen. Häufig Besprechungsprotokolle mit etwa 
+% 30 Punkten. Dabei erstellt er als neue Art "Frage" und füllt diese z.B. mit "Maximale Spieleranzahl" um anschließend eine 
+% Information aufzulisten mit der Beschreibung "Maximale Spieleranzahl: 4". Wenn selben Prompt in neuem Chat immer wieder 
+% eingegeben wird, kommt manchmal eine "kurze" Version, welche immernoch länger ist als die Protokolle der anderen beiden Tools.
+% Gemini schreibt sehr kleinkariert und mach für jede einzelne Information einen neuen Punkt. Beispiel Server-Client, JavaFX und RMI.
+% - Auch zusätzlicher Hinweis im Prompt, nur die wichtigen Punkte in der Tabelle aufzunehmen, ändert bei Gemini nix daran auszuschweifen.
+% - Fazit?? Selber drüber lesen und schauen ob das passt. Vorallem auf "Art" gucken und ob der Punkt wirklich wichtig ist. Le Chat
+% hält sich eher zu knapp mit den Punkten, daher hier schauen ob alle wichtigen Informationen enthalten sind.
 
 \section{Projekthandbuch} \index{Projekthandbuch} \label{CompProjekthandbuch}
 
-- Zwei eingaben. Einmal für Einleitung mit dem Zweck des Dokuments, der Redaktion und dem Verteiler. Und einmal für die 
-Projektdefinition mit ausschließlich den Kapiteln Vorgeschichte und Inhaltliche Kurzdarstellung.
-- Muss genau Beschrieben werden was man für Abschnitte haben will, sonst wird ein eigenes Projekthandbuch erstellt, welches 
-nicht ganz den Anforderungen, welche in dieser Arbeit beschrieben wurde, entspricht.
-- Für die Einleitung werden spezifische Informationen benötigt, welche im Prompt angegeben werden müssen. In diesem Fall wurde 
-angegeben, dass die Projektleiterinfür das Projekt verantwortlich ist und als Verteiler ein Discord-Channel verwendet wird.
-- Abschnitte wurden gut erstellt. ChatGPT bennent im Abschnitt für den Verteiler einmal alle Teammitglieder, frage ob unbedingt nötig.
-- Zweite Abschnitt benötigt keine weiteren Informationen, da diese im Gespräch bereits vorgegeben sind. 
-- Abschnitte wurden hier auch gut erstellt. Die benötigten Informationen haben sich die Tools gut aus dem Gespräch raus gezogen.
-- Gemini hat teilweise dreher in den Namen drinne. Einmal hat Gemini geschrieben, dass Frau Schmidt (Teamcheffin) mit dem Herrn Müller 
-(Kunde) aufnahm. -> muss Probegelesen werden.
+Das Projekthandbuch wurde in zwei Schritten erstellt. Zunächst wurde die Einleitung mit dem Zweck des Dokuments, der Redaktion 
+und dem Verteiler verfasst. Hierzu wurde der folgende Prompt im selben Chat eingegeben, in dem auch das Besprechungsprotokoll 
+erstellt wurde:
+
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir für dieses Projekt die Einleitung für das Projekthandbuch. Die Einleitung besteht aus einem Abschnitt für 
+        den Zweck des Dokuments, einen Abschnitt zur Redaktion, in welchem geklärt wird, wer für das Dokument verantwortlich ist 
+        und einen Abschnitt zu dem Verteiler, also wer bei Änderungen zu informieren ist. Verantwortlich für das Dokument ist der 
+        Projektleiter und über Änderungen wird das gesamte Team informiert. Dazu wird eine entsprechende Nachricht in den Discord 
+        Channel geschrieben.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Einleitung Projekthandbuch}
+    \label{Prompt Einleitung Projekthandbuch}
+\end{prompt}
+
+Für die Einleitung sind spezifische Informationen erforderlich, die im Prompt angegeben werden müssen. In diesem Projekt sind das die 
+Verantwortlichkeit des Projektleiters und der Verteiler über den Discord-Channel. Die Tools konnten die Abschnitte gut erstellen, wobei 
+jedoch auffiel, dass ChatGPT im Abschnitt Verteiler alle Teammitglieder nannte, was nicht unbedingt nötig ist. Ansonsten wurden die 
+Abschnitte gut erstellt [Verweis!!!!!!!!!!!!!!!!!!!!!!].\\
+
+Der zweite Teil betrifft das Kapitel „Projektdefinition“ mit den Abschnitten „Vorgeschichte“ und „Inhaltliche Kurzdarstellung“. Dazu wurde 
+der folgende Prompt verwendet, welcher nach der Ausgabe der Einleitung im Chat eingegeben wurde:
+
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstelle mir nun das Kapitel "Projektdefinition" des Projekthandbuches. Der erste Abschnitt soll die Vorgeschichte des Projekts 
+        beschreiben und anschließend soll ein Abschnitt eine inhaltliche Kurzdarstellung beschreiben.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Projektdefinition Projekthandbuch}
+    \label{Prompt Projektdefinition Projekthandbuch}
+\end{prompt}
+
+Diese zweite Eingabe erforderte keine weiteren Informationen, da diese im Gespräch bereits vorgegeben waren und die Tools darauf zugreifen 
+können sollten. Auch hier wurden die Abschnitte gut erstellt, und die Tools konnten die benötigten Informationen aus dem Gespräch gut 
+extrahieren [Verweis!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!].\\
+
+Bei der Erstellung der Einleitung zeigte sich, dass eine genaue Beschreibung der benötigten Abschnitte entscheidend war. Ohne diese klare 
+Vorgabe neigten die Tools dazu, eigene Strukturen und Inhalte zu erstellen, die nicht den Anforderungen entsprachen.\\
+
+Außerdem traten bei Gemini teilweise Fehler in den Namen auf. Einmal wurde beispielsweise geschrieben, dass Frau Schmidt (Teamchefin) mit 
+Herrn Müller (Kunde) Kontakt aufnahm, was eine fehlerhafte Zuordnung darstellt. %Dies zeigt, dass die Ausgaben der Tools unbedingt 
+%probegelesen werden müssen, um solche Fehler zu korrigieren. -> Fazit/Bewertung
+
+% - Zwei eingaben. Einmal für Einleitung mit dem Zweck des Dokuments, der Redaktion und dem Verteiler. Und einmal für die 
+% Projektdefinition mit ausschließlich den Kapiteln Vorgeschichte und Inhaltliche Kurzdarstellung.
+% - Muss genau Beschrieben werden was man für Abschnitte haben will, sonst wird ein eigenes Projekthandbuch erstellt, welches 
+% nicht ganz den Anforderungen, welche in dieser Arbeit beschrieben wurde, entspricht.
+% - Für die Einleitung werden spezifische Informationen benötigt, welche im Prompt angegeben werden müssen. In diesem Fall wurde 
+% angegeben, dass die Projektleiterinfür das Projekt verantwortlich ist und als Verteiler ein Discord-Channel verwendet wird.
+% - Abschnitte wurden gut erstellt. ChatGPT bennent im Abschnitt für den Verteiler einmal alle Teammitglieder, frage ob unbedingt nötig.
+% - Zweite Abschnitt benötigt keine weiteren Informationen, da diese im Gespräch bereits vorgegeben sind. 
+% - Abschnitte wurden hier auch gut erstellt. Die benötigten Informationen haben sich die Tools gut aus dem Gespräch raus gezogen.
+% - Gemini hat teilweise dreher in den Namen drinne. Einmal hat Gemini geschrieben, dass Frau Schmidt (Teamcheffin) mit dem Herrn Müller 
+% (Kunde) aufnahm. -> muss Probegelesen werden.
 
 \section{Risikoliste} \index{Risikoliste} \label{CompRisikoliste}
 

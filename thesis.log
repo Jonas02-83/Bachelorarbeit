@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  24 JUN 2024 17:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  28 JUN 2024 11:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1988,7 +1988,10 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 108.
- (./thesis.toc [7])
+ (./thesis.toc
+Underfull \vbox (badness 1314) has occurred while \output is active []
+
+ [7])
 \tf@toc=\write10
 \openout10 = `thesis.toc'.
 
@@ -2092,7 +2095,7 @@ Underfull \hbox (badness 2253) in paragraph at lines 241--243
  []
 
 [6] [7]
-<./images/pictures/Kapitel2Tabelle.PNG, id=267, 172.01765pt x 378.66469pt>
+<./images/pictures/Kapitel2Tabelle.PNG, id=270, 172.01765pt x 378.66469pt>
 File: ./images/pictures/Kapitel2Tabelle.PNG Graphic file (type png)
 <use ./images/pictures/Kapitel2Tabelle.PNG>
 Package pdftex.def Info: ./images/pictures/Kapitel2Tabelle.PNG  used on input line 274.
@@ -2197,7 +2200,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 488--492
 
  (./source/300_usage.tex
 chapter 3.
-<./images/pictures/Kapitel3Tabelle.PNG, id=315, 344.78813pt x 379.04109pt>
+<./images/pictures/Kapitel3Tabelle.PNG, id=318, 344.78813pt x 379.04109pt>
 File: ./images/pictures/Kapitel3Tabelle.PNG Graphic file (type png)
 <use ./images/pictures/Kapitel3Tabelle.PNG>
 Package pdftex.def Info: ./images/pictures/Kapitel3Tabelle.PNG  used on input line 5.
@@ -2322,94 +2325,94 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--120
  (./source/400_comparison.tex
 chapter 4.
 
-Overfull \hbox (1.83362pt too wide) in paragraph at lines 31--32
+Underfull \vbox (badness 6047) has occurred while \output is active []
+
+ [23
+
+
+
+
+
+]
+Overfull \hbox (1.83362pt too wide) in paragraph at lines 66--67
 []\T1/phv/m/n/10.95 (-20) wurden dann bei ChatGPT, Ge-mi-ni und Le Chat die Ein-ga-be ge-tä-tigt. Die Er-geb-nis-se [[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--40
+Underfull \hbox (badness 10000) in paragraph at lines 68--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--45
-
- []
-
-[23
-
-
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 46--50
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--57
+Underfull \hbox (badness 10000) in paragraph at lines 81--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--106
+Underfull \hbox (badness 10000) in paragraph at lines 86--92
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 120--123
+Underfull \hbox (badness 10000) in paragraph at lines 137--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
+Underfull \hbox (badness 10000) in paragraph at lines 155--158
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--147
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 205--215
 
- [25]
-Underfull \hbox (badness 10000) in paragraph at lines 170--180
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 216--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--187
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
-
- []
-
-[26] [27] [28] [29]) [30]
+[27] [28] [29] [30]) [31]
 \openout2 = `source/500_Problems.aux'.
 
- (./source/500_Problems.tex
-chapter 5.
-) [31
+ (./source/500_Problems.tex [32
 
 
 
 
 
 ]
+chapter 5.
+) [33]
 \openout2 = `source/600_Conclusion.aux'.
 
- (./source/600_Conclusion.tex [32
+ (./source/600_Conclusion.tex [34
 
 
 
@@ -2417,7 +2420,7 @@ chapter 5.
 
 ]
 chapter 6.
-) [33] [34
+) [35] [36
 
 
 
@@ -2521,7 +2524,6 @@ chapter without number
 
 
 
-
 ]) [12
 
 
@@ -2551,18 +2553,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72150 strings out of 474049
- 1654238 string characters out of 5746277
- 2921630 words of memory out of 5000000
- 93011 multiletter control sequences out of 15000+600000
+ 72155 strings out of 474049
+ 1654288 string characters out of 5746277
+ 2920667 words of memory out of 5000000
+ 93013 multiletter control sequences out of 15000+600000
  622905 words of font info for 235 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,22n,120p,10948b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (56 pages, 288053 bytes).
+Output written on thesis.pdf (58 pages, 289824 bytes).
 PDF statistics:
- 680 PDF objects out of 1000 (max. 8388607)
- 573 compressed objects within 6 object streams
- 107 named destinations out of 1000 (max. 500000)
- 53241 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 697 PDF objects out of 1000 (max. 8388607)
+ 588 compressed objects within 6 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 53249 words of extra memory for PDF output out of 61914 (max. 10000000)
 

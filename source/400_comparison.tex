@@ -426,9 +426,9 @@ Außerdem beschreibung, welche Infos benötigt werden. Inhalt muss nicht beschri
 - ChatGPT: 
     - Pfeile zeigen in gleiche Richtung -> sagt "stimmt sollten Bidirektional sein,..." und generiert neu. Fehler bleibt aber
     - Spiel-Spieler Beziehung 4..*? Sollen doch 0..4 Teilnehmen oder garkeine. -> Ändert auf 1..4, richtige Bezeichnung? weiß ich auch nicht.
-    - spielBrett als String?
+    - spielBrett als String? -> Wird entfernt bei Nachfrage
     - Wofür zugNummer? -> Reihenfolge der Spielzüge innerhalb eines Spiels festzuhalten
-    - Beziehungen von Spielfigur im Diagramm nicht richtig dargestellt. -> Bei Hinweis wird nicht korrigiert
+    - Beziehungen von Spielfigur im Diagramm nicht richtig dargestellt. -> Bei Hinweis wird nicht korrigiert. ``Kann'' Beziehungen immer mit 1..
     - Feld braucht Attribut ob belegt oder nicht -> Korrigiert
     - Chat nicht richtig im UML dargestellt, Beziehungen falsch -> Bei Hinweis wird nicht korrigiert
     - Spieler in User und Player aufteilen? -> Macht er richtig. Frage nur ob dann pos in Spieler oder figur?
@@ -436,7 +436,9 @@ Außerdem beschreibung, welche Infos benötigt werden. Inhalt muss nicht beschri
     - farbe in Spieler zu Enum statt String?
     - Spielzug: figurID statt spielfigur? Beziehung zu Spieler?
     - Spielfigur: braucht farbe wenn Spieler schon farbe hat?
-    - 
+    - Bei Prompt Nr. 7, bekommt Spieler ein Attribut pos: int?? und Spieler hat keine Farbe mehr? -> Bei Hinweis Farbe wieder eingefügt und Position entfernt
+    - Ändert bei Neugenerierung immer wieder ein oder zwei Beziehungen. -> Lassen sich aber Händisch vervollständigen
+    - Für Würfel wird zunächst eine eigene Entität erstellt, nach Frage ob nicht auch einfach Attribut in Spiel reicht, wird dies geändert
 
     - Hat keine Einschränkungen zu den Attributen festgelegt. -> Wird nach Hinweis gemacht
     - Legt nicht alle Beziehungen fest.
@@ -448,9 +450,14 @@ Außerdem beschreibung, welche Infos benötigt werden. Inhalt muss nicht beschri
         - Braucht das Feld nicht noch ein Attribut ob es belegt ist oder nicht?
         - Macht es nicht auch sinn Spieler in zwei Entitäten aufzuteilen? Einmal "User" und einmal "Player".  "User" beinhaltet dabei den Namen, die Email, das Passwort und die Punkte. "Spieler" beinhaltet dann die nötigen Attribute zum Spielen wie SpielerID, die Farbe und die position seiner Spielfiguren.
         - Erstell mir zu den Attributen noch Einschränkungen, in dem du zu jedem Attribut eine Erklärung schreibst und ein Format definierst.
+        - Benötigt man für jede entität unbedingt eine ID? Außerdem sind einige Beziehungen falsch: Ein User kann ein Spieler sein (0..*), Ein Spiel kann mehrere Spielzüge haben (0..*), ein Feld kann von einer Spielfigur besetzt sein (0..1), Ein Spieler kann an einem Spiel teilnehmen (1) und es fehlen die Beziehungsbeschreibung von Spieler zu Spielfigur, Spieler zu Chat, Spiel zu Chat, Spielfigur zu Spielzug. Dadurch, dass die Spielfigur nur genau einem Spieler zugeordnet ist, braucht die Spielfigur kein Attribut Farbe oder nicht?
+        - Wieso hat Spieler keine Farbe mehr
+        - Wieso hat Spieler ein Attribut Position
+        - Wie setzt du das Spielbrett als String um? Und warum muss dieses gespeichert werden? Kann man das nicht einfach als Graphische Oberfläche implementieren?
+        - Muss man den Würfel in das Fachliche Datenmodell übernehmen? 
+        - Reicht es nicht den Würfel als Attribut in Spiel aufzunehmen?
 
-
-- Gemini: [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+        - Gemini: [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 
 
 - Le Chat:

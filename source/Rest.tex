@@ -62,3 +62,106 @@ Comparison:
         erkannt, jedoch legen alle drei Tools für Aufträge teilweise kein genaues Datum fest, sondern schreiben hier zum 
         Beispiel "+2 Wochen". Wenn man in den Prompt allerdings noch schreibt, dass ein genaues Datum benötigt wird, machen 
         das auch alle drei Tools. Nur Le Chat bleibt dann 
+
+Comparison:
+    Bewertung:
+        Sehr gut:
+        - Inhalt ist Fachlich richtig
+        - Format ist so wie gewünscht
+        -> Brauch nur in Datei eingefügt zu werden
+        
+        Gut:
+        - Inhalt fehlerhaft, lässt sich mit einpaar Eingaben korrigieren
+        - Format ist wie gewünscht
+        
+        oder
+        - Inhalt richtig
+        - Format ist fehlerhaft, man kann aber benötigten Inhalt einfach raus kopieren und passend einfügen.
+        
+        Befriedigend:
+        - Inhalt fehlerhaft, lässt sich mit einpaar Eingaben korrigieren
+        - Format ist fehlerhaft, lässt sich korrigieren oder man kann richtigen Inhalt raus kopieren
+        
+        Ausreichend:
+        - Inhaltlich fehlen Teile, aber mit weiteren genauen Beschreibungen, von dem was man will, wird es verbessert, aber 
+        immernoch nicht vollständig
+        
+        Mangelhaft:
+        - Inhaltlich falsch oder nicht verständlich und lässt sich auch nicht korrigieren.
+        
+        Besprechungsprotokoll:
+        - Nur wichtige Punkte (mit gestelltem Gespräch nicht mehr als 20 Punkte, sonst sofort Mangelhaft)
+        - Format soll der beschriebenen Tabelle entsprechen
+        - Art darf nur die 4 festgelegten und beschrieben sein
+        - Termin muss!! ein Datum sein
+        - Verantwortliche Person namentlich nennen
+        - muss alle Anforderungen enthalten
+        
+        Projekthandbuch:
+        - Texte sollen zum Abschnitt \& Kapitel passen.
+        - Die richtigen Informationen sollen im Text enthalten sein (Redaktion und Verteiler)
+        
+        Risikoliste:
+        - Risiken \& Maßnahmen sollen stimmig sein
+        - Attribute sollen grob passen (Habe keine echten Erfahrungswerte diese zu beschreiben)
+        - Format der Tabelle soll passen
+        - Risiko- \& Restmaß richtig berechnet
+        - Restklasse richtig zugewiesen
+        
+        Anforderungsspezifikation:
+            Einleitung:
+            - Texte sollen zum Abschnitt \&  Kapitel passen
+        
+            Systemübersicht:
+            - Nicht zu detailiert
+            - "Gezeichnetes" Diagramm wäre schön (so als Ausgabe oder PlantUML, auch nach Nachfrage sehr gut)
+            - Passender Text
+        
+            Fachliches Datenmodell:
+            - Format eines UML-Klassendiagrammes
+            - Zeichnung wäre schön, aber ausführliche Beschreibung würde auch reichen
+            - Format und Beschreibung für jeden Wert beschreiben
+        
+            Anwendungsfalldiagramm:
+            - Zeichnung wäre schön, beschreibung der Rollen mit dazugehörigen AF würde aber auch reichen
+            - Falls besonderheiten, diese Textuell beschreiben
+        
+            AF:
+            - Zeichnung wäre schön, aber ausführliche Beschreibung würde auch reichen
+            - Endzustände auf Clientseite wichtig
+            - Aktivitätsdiagramm richtiges Format (auch bei Beschreibung)
+            - Aktivitäten beschreiben
+        
+            Benutzungsschnittstelle:
+            - Zeichnung wäre schön, aber ausführliche Beschreibung würde auch reichen
+            - Beschreibung, Zeichnung sinnvoll und korrekt. Alle Verbindungen eingezeichnet
+        
+            Dialog:
+            - Zu Benutzungsschnittstelle passende Beschreibung, wann sich Dialog öffnet.
+            - Dialog aufzeichenen oder gut beschreiben
+    
+    
+    Besprechungsprotokoll:
+        Stichpunkte
+        - [Prompt] und Gespräch als Eingabe
+        - Teilweise sehr unterschiedliche Ausgaben obwohl selbe Prompts. Auch in neuen Chats bei gleichem Tool.
+        Einzelne Einträge mal zu einem Eintrag zusammengefasst, mal in mehreren geschrieben. (Anz. der Einträge immer unterschiedlich).
+        Beispiel Server-Client, JavaFX und RMI.
+        - genaue Beschreibung der Spalten wird benötigt, da sonst eher eine Stichpunkteliste erstellt wird
+        - Einzelnen Arten müssen beschrieben werden, da diese sonst sehr ungenau festgelegt werden. Aber auch mit
+        Beschreibung der Arten ein Problem. Tools machen das unterschiedlich und auch in neuen Chats wird die Zuweisung immer 
+        bisschen unterschiedlich gemacht. Obwohl gleiche Eingabe.
+        - Im Prompt muss stehen das "Termin" ein genaues Datum benötigt. Sonst wird z.B. mit "+2 Wochen" gearbeitet. Le Chat 
+        macht das dann trotzdem nicht, da muss als neue Eingabe "Der Termin soll ein genaues Datum sein" geschrieben werden.
+        Datum dann allerdings in der Vergangenheit (z.B. 31.10.2023)?? Schreibt aber das die Termine beispielhaft gewählt sind
+        und sich am aktuellen Datum, 29.03.2023??, gewählt sind.
+        - Gemini hat großes Problem nur die wichtigsten Punkte aus dem Gespräch rauszulesen. Häufig Besprechungsprotokolle mit etwa 
+        30 Punkten. Dabei erstellt er als neue Art "Frage" und füllt diese z.B. mit "Maximale Spieleranzahl" um anschließend eine 
+        Information aufzulisten mit der Beschreibung "Maximale Spieleranzahl: 4". Wenn selben Prompt in neuem Chat immer wieder 
+        eingegeben wird, kommt manchmal eine "kurze" Version, welche immernoch länger ist als die Protokolle der anderen beiden Tools.
+        Gemini schreibt sehr kleinkariert und mach für jede einzelne Information einen neuen Punkt. Beispiel Server-Client, JavaFX und RMI.
+        - Auch zusätzlicher Hinweis im Prompt, nur die wichtigen Punkte in der Tabelle aufzunehmen, ändert bei Gemini nix daran auszuschweifen.
+        - Fazit?? Selber drüber lesen und schauen ob das passt. Vorallem auf "Art" gucken und ob der Punkt wirklich wichtig ist. Le Chat
+        hält sich eher zu knapp mit den Punkten, daher hier schauen ob alle wichtigen Informationen enthalten sind.
+
+    Projekthandbuch:

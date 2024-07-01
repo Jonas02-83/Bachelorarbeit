@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  29 JUN 2024 15:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  1 JUL 2024 13:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2329,12 +2329,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--120
  (./source/400_comparison.tex
 chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--15
+Underfull \hbox (badness 10000) in paragraph at lines 15--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--28
+Underfull \hbox (badness 10000) in paragraph at lines 19--31
 
  []
 
@@ -2345,94 +2345,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--28
 
 
 ]
-Overfull \hbox (1.83362pt too wide) in paragraph at lines 132--133
+Overfull \hbox (1.83362pt too wide) in paragraph at lines 58--59
 []\T1/phv/m/n/10.95 (-20) wurden dann bei ChatGPT, Ge-mi-ni und Le Chat die Ein-ga-be ge-tä-tigt. Die Er-geb-nis-se [[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--141
+Underfull \hbox (badness 10000) in paragraph at lines 60--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--77
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 142--146
+Underfull \hbox (badness 10000) in paragraph at lines 78--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--158
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 203--207
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--224
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 246--248
+Underfull \hbox (badness 10000) in paragraph at lines 85--88
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26]
-Underfull \hbox (badness 10000) in paragraph at lines 271--281
+ [25]
+Underfull \hbox (badness 10000) in paragraph at lines 118--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--288
+Underfull \hbox (badness 10000) in paragraph at lines 135--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--205
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 289--291
+Underfull \hbox (badness 10000) in paragraph at lines 206--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--305
+Underfull \hbox (badness 10000) in paragraph at lines 217--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--332
+Underfull \hbox (badness 10000) in paragraph at lines 243--249
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--342
+Underfull \hbox (badness 10000) in paragraph at lines 252--259
 
  []
 
-[29] [30] [31] [32]) [33]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29] [30] [31] [32]) [33]
 \openout2 = `source/500_Problems.aux'.
 
  (./source/500_Problems.tex [34
@@ -2597,15 +2610,15 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72171 strings out of 474049
- 1654478 string characters out of 5746277
+ 72172 strings out of 474049
+ 1654496 string characters out of 5746277
  2920806 words of memory out of 5000000
- 93021 multiletter control sequences out of 15000+600000
+ 93022 multiletter control sequences out of 15000+600000
  622968 words of font info for 236 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,22n,120p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (62 pages, 302228 bytes).
+Output written on thesis.pdf (62 pages, 304042 bytes).
 PDF statistics:
  722 PDF objects out of 1000 (max. 8388607)
  608 compressed objects within 7 object streams

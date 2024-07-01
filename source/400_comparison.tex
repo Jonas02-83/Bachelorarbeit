@@ -5,6 +5,9 @@ TODO!!!!!!!!
 
 Generell:
     - Schwierigkeiten in einem gorßen/langen Chat, die Tools von einer Formulierung weg zu bringen. 
+    - Le Chat erstellt immer Link mit Bild aber /Xyxyxyxy ?
+    - Le Chat warnt manchmal vor Eingabe: "Der Inhalt kann gefährliche oder sensible Themen beinhalten" für Eingabe:
+    "Formulier die Beschreibung der Aktivitäten etwas genauer. Beschreibe welcher Wert wo gespeichert wird mithilfe des Fachlichen Datenmodells."
 
 
 \section{Bewertung} \index{Bewertung} \label{BewertungLLMTools}
@@ -26,85 +29,8 @@ was man will, die Ausgabe etwas verbessert, aber diese immer noch nicht vollstä
 Zuletzt wird eine Ausgabe als ``Mangelhaft'' bewertet, wenn der Inhalt der Ausgabe falsch oder nicht verständlich ist
 und es sich auch nicht korrigieren lässt.\\
 
-
-
-% Sehr gut:
-% - Inhalt ist Fachlich richtig
-% - Format ist so wie gewünscht
-% -> Brauch nur in Datei eingefügt zu werden
-
-% Gut:
-% - Inhalt fehlerhaft, lässt sich mit einpaar Eingaben korrigieren
-% - Format ist wie gewünscht
-
-% oder
-% - Inhalt richtig
-% - Format ist fehlerhaft, man kann aber benötigten Inhalt einfach raus kopieren und passend einfügen.
-
-% Befriedigend:
-% - Inhalt fehlerhaft, lässt sich mit einpaar Eingaben korrigieren
-% - Format ist fehlerhaft, lässt sich korrigieren oder man kann richtigen Inhalt raus kopieren
-
-% Ausreichend:
-% - Inhaltlich fehlen Teile, aber mit weiteren genauen Beschreibungen, von dem was man will, wird es verbessert, aber 
-% immernoch nicht vollständig
-
-% Mangelhaft:
-% - Inhaltlich falsch oder nicht verständlich und lässt sich auch nicht korrigieren.
-
 Außerdem fließen auch spezifische Aspekte, die nur für das jeweilige Aspekt wichtig sind, in die Bewertung mit ein. 
-Diese sehen wie folgt aus:
-
-Besprechungsprotokoll:
-- Nur wichtige Punkte (mit gestelltem Gespräch nicht mehr als 20 Punkte, sonst sofort Mangelhaft)
-- Format soll der beschriebenen Tabelle entsprechen
-- Art darf nur die 4 festgelegten und beschrieben sein
-- Termin muss!! ein Datum sein
-- Verantwortliche Person namentlich nennen
-- muss alle Anforderungen enthalten
-
-Projekthandbuch:
-- Texte sollen zum Abschnitt \& Kapitel passen.
-- Die richtigen Informationen sollen im Text enthalten sein (Redaktion und Verteiler)
-
-Risikoliste:
-- Risiken \& Maßnahmen sollen stimmig sein
-- Attribute sollen grob passen (Habe keine echten Erfahrungswerte diese zu beschreiben)
-- Format der Tabelle soll passen
-- Risiko- \& Restmaß richtig berechnet
-- Restklasse richtig zugewiesen
-
-Anforderungsspezifikation:
-    Einleitung:
-    - Texte sollen zum Abschnitt \&  Kapitel passen
-
-    Systemübersicht:
-    - Nicht zu detailiert
-    - "Gezeichnetes" Diagramm wäre schön (so als Ausgabe oder PlantUML, auch nach Nachfrage sehr gut)
-    - Passender Text
-
-    Fachliches Datenmodell:
-    - Format eines UML-Klassendiagrammes
-    - Zeichnung wäre schön, aber ausführliche Beschreibung würde auch reichen
-    - Format und Beschreibung für jeden Wert beschreiben
-
-    Anwendungsfalldiagramm:
-    - Zeichnung wäre schön, beschreibung der Rollen mit dazugehörigen AF würde aber auch reichen
-    - Falls besonderheiten, diese Textuell beschreiben
-
-    AF:
-    - Zeichnung wäre schön, aber ausführliche Beschreibung würde auch reichen
-    - Endzustände auf Clientseite wichtig
-    - Aktivitätsdiagramm richtiges Format (auch bei Beschreibung)
-    - Aktivitäten beschreiben
-
-    Benutzungsschnittstelle:
-    - Zeichnung wäre schön, aber ausführliche Beschreibung würde auch reichen
-    - Beschreibung, Zeichnung sinnvoll und korrekt. Alle Verbindungen eingezeichnet
-
-    Dialog:
-    - Zu Benutzungsschnittstelle passende Beschreibung, wann sich Dialog öffnet.
-    - Dialog aufzeichenen oder gut beschreiben
+Diese werden in den entsprechenden Kapiteln für die Dokumente im Fazit erläutert.
 
 
 \section{Besprechungsprotokoll} \index{Besprechungsprotokoll} \label{CompBesprechungsprotokoll}
@@ -122,7 +48,7 @@ und \autoref{Kundengespräch2}]. Mit diesem Gespräch und dem Prompt:
         Dabei müssen Aufträge mit einem genauen Fälligkeitsdatum und einem Verantwortlichen versehen sein. Beschlüsse 
         müssen klar und unmissverständlich formuliert werden. Feststellungen sind Beschlüsse, die keine Abstimmung 
         benötigen und Informationen bieten den Projektmitgliedern wichtige Hinweise: 
-        [siehe Besprechungsprotokoll.docx]
+        [Hier folgte das Gespräch]
         \vfill
     \end{tcolorbox}
     \caption{Prompt Besprechungsprotokoll}
@@ -140,9 +66,9 @@ Dieses Verhalten zeigte sich auch, wenn derselbe Prompt in neuen Chats mit demse
 dieses Problem sehr häufig und extrem auf.\\
 
 Ein wichtiger Aspekt bei der Erstellung des Prompts war die Notwendigkeit einer genauen Beschreibung der Spalten und der verschiedenen 
-Arten (Information, Auftrag, Feststellung, Beschluss). Ohne diese genaue Beschreibung tendierten die Tools dazu, lediglich 
-Stichpunktlisten anstelle einer strukturierten Tabelle zu erstellen. Doch auch die genaue Definition der Arten führte nicht immer zu 
-konsistenten Ergebnissen, da die Zuweisung der Kategorien unterschiedlich vorgenommen wurde.\\
+Arten (Information, Auftrag, Feststellung, Beschluss). Ohne diese genaue Beschreibung benutzten die Tools ein eigenes Format, was eher  
+einer Stichpunktlisten ähnelte. Doch auch die genaue Definition der Arten führt nicht immer zu konsistenten Ergebnissen, da die Zuweisung 
+der Kategorien häufig unterschiedlich vorgenommen werden.\\
 
 Auf die Spalte ``Termin'' musste ebenfalls ein besonderes Augenmerk gelegt werden. Wenn im Prompt nicht explizit angegeben war, dass ein 
 genaues Datum erforderlich ist, arbeiteten die Tools oft mit relativen Angaben wie ``+2 Wochen''. Selbst mit der Klarstellung, dass der 
@@ -157,29 +83,18 @@ stark. Trotz des Hinweises, nur die wichtigen Punkte in das Protokoll aufzunehme
 kleinteilige Protokolle zu erstellen.\\
 
 Le Chat hingegen hielt sich häufig zu knapp. Dadurch wurden immer wieder wichtige Anforderungen nicht in das Besprechungsprotokoll 
-aufgenommen, und es musste besonders darauf geachtet werden, ob alle relevanten Informationen enthalten waren.
+aufgenommen, und es musste besonders darauf geachtet werden, ob alle relevanten Informationen enthalten waren. Besonders, dass mehrere
+Spiele gleichzeitig gespielt werden können und das ansprechende Animationen verwendet werden sollen, wurden nicht mit aufgeführt.\\
 
-%Stichpunkte
-% - [Prompt] und Gespräch als Eingabe
-% - Teilweise sehr unterschiedliche Ausgaben obwohl selbe Prompts. Auch in neuen Chats bei gleichem Tool.
-% Einzelne Einträge mal zu einem Eintrag zusammengefasst, mal in mehreren geschrieben. (Anz. der Einträge immer unterschiedlich).
-% Beispiel Server-Client, JavaFX und RMI.
-% - genaue Beschreibung der Spalten wird benötigt, da sonst eher eine Stichpunkteliste erstellt wird
-% - Einzelnen Arten müssen beschrieben werden, da diese sonst sehr ungenau festgelegt werden. Aber auch mit
-% Beschreibung der Arten ein Problem. Tools machen das unterschiedlich und auch in neuen Chats wird die Zuweisung immer 
-% bisschen unterschiedlich gemacht. Obwohl gleiche Eingabe.
-% - Im Prompt muss stehen das "Termin" ein genaues Datum benötigt. Sonst wird z.B. mit "+2 Wochen" gearbeitet. Le Chat 
-% macht das dann trotzdem nicht, da muss als neue Eingabe "Der Termin soll ein genaues Datum sein" geschrieben werden.
-% Datum dann allerdings in der Vergangenheit (z.B. 31.10.2023)?? Schreibt aber das die Termine beispielhaft gewählt sind
-% und sich am aktuellen Datum, 29.03.2023??, gewählt sind.
-% - Gemini hat großes Problem nur die wichtigsten Punkte aus dem Gespräch rauszulesen. Häufig Besprechungsprotokolle mit etwa 
-% 30 Punkten. Dabei erstellt er als neue Art "Frage" und füllt diese z.B. mit "Maximale Spieleranzahl" um anschließend eine 
-% Information aufzulisten mit der Beschreibung "Maximale Spieleranzahl: 4". Wenn selben Prompt in neuem Chat immer wieder 
-% eingegeben wird, kommt manchmal eine "kurze" Version, welche immernoch länger ist als die Protokolle der anderen beiden Tools.
-% Gemini schreibt sehr kleinkariert und mach für jede einzelne Information einen neuen Punkt. Beispiel Server-Client, JavaFX und RMI.
-% - Auch zusätzlicher Hinweis im Prompt, nur die wichtigen Punkte in der Tabelle aufzunehmen, ändert bei Gemini nix daran auszuschweifen.
-% - Fazit?? Selber drüber lesen und schauen ob das passt. Vorallem auf "Art" gucken und ob der Punkt wirklich wichtig ist. Le Chat
-% hält sich eher zu knapp mit den Punkten, daher hier schauen ob alle wichtigen Informationen enthalten sind.
+Zusammenfassend lässt sich sagen, dass die Erstellung des Besprechungsprotokolls durch die LLM Tools grundsätzlich schon ganz gut 
+funktioniert. Besonders ChatGPT hat wenig Schwankungen in seinen generierten Ausgaben und hat eigentlich immer die gleichen 
+Punkte im Besprechungsprotokoll, formuliert diese nur einbisschen unterschiedlich. Daher wird ChatGPT mit ``Sehr gut'' bewertet.
+Die anderen beiden haben damit etwas mehr Schwierigkeiten, doch wenn man sich das Besprechungsprotokoll immer wieder neu generieren 
+lässt, kommt irgendwann ein anständig erstelltes Protokoll. Da die Zusammenfassung des Gesprächs auf die wesentlichen Punkte, die 
+Hauptaufgabe eines Besprechungsprotokolls ist, erhalten LeChat und Gemini lediglich die Bewertung ``Ausreichend''. Das LeChat und 
+Gemini nicht alle Anforderungen in das Protokoll aufnehmen, kann, falls dies nicht auffällt, im Nachhinein das Projekt verzögern 
+und die Kosten in die höhe Treiben. Geminis erstelle Protokolle mit etwa 30 Punkten verfehlen dahingegen komplett denn Sinn eines
+Besprechungsprotokoll.
 
 \section{Projekthandbuch} \index{Projekthandbuch} \label{CompProjekthandbuch}
 
@@ -201,11 +116,10 @@ erstellt wurde:
 \end{prompt}
 
 Für die Einleitung sind spezifische Informationen erforderlich, die im Prompt angegeben werden müssen. In diesem Projekt sind das die 
-Verantwortlichkeit des Projektleiters und der Verteiler über den Discord-Channel. Die Tools konnten die Abschnitte gut erstellen, wobei 
-jedoch auffiel, dass ChatGPT im Abschnitt Verteiler alle Teammitglieder nannte, was nicht unbedingt nötig ist. Ansonsten wurden die 
-Abschnitte gut erstellt [Verweis!!!!!!!!!!!!!!!!!!!!!!].\\
+Verantwortlichkeit des Projektleiters und der Verteiler über den Discord-Channel. Es fiel lediglich auf, dass ChatGPT im Abschnitt 
+``Verteiler'' alle Teammitglieder nannte, was nicht unbedingt nötig ist. Ansonsten wurden die Abschnitte gut erstellt [Verweis!!!!!!!!!!!!!!!!!!!!!!].\\
 
-Der zweite Teil betrifft das Kapitel „Projektdefinition“ mit den Abschnitten „Vorgeschichte“ und „Inhaltliche Kurzdarstellung“. Dazu wurde 
+Der zweite Teil betrifft das Kapitel ``Projektdefinition'' mit den Abschnitten ``Vorgeschichte'' und ``Inhaltliche Kurzdarstellung''. Dazu wurde 
 der folgende Prompt verwendet, welcher nach der Ausgabe der Einleitung im Chat eingegeben wurde:
 
 \begin{prompt}[H]
@@ -226,8 +140,11 @@ Bei der Erstellung der Einleitung zeigte sich, dass eine genaue Beschreibung der
 Vorgabe neigten die Tools dazu, eigene Strukturen und Inhalte zu erstellen, die nicht den Anforderungen entsprachen.\\
 
 Außerdem traten bei Gemini teilweise Fehler in den Namen auf. Einmal wurde beispielsweise geschrieben, dass Frau Schmidt (Teamchefin) mit 
-Herrn Müller (Kunde) Kontakt aufnahm, was eine fehlerhafte Zuordnung darstellt. %Dies zeigt, dass die Ausgaben der Tools unbedingt 
-%probegelesen werden müssen, um solche Fehler zu korrigieren. -> Fazit/Bewertung
+Herrn Müller (Kunde) Kontakt aufnahm, was eine fehlerhafte Zuordnung darstellt.\\
+
+Abschließend lässt sich sagen, dass die Abschnitte von allen drei Tools gut waren. Der Fehler von Gemini zeigt allerdings, dass man sich 
+die Ausgaben trotzdem nochmal achtsam durchlesen sollte. Aufgrund der Bewertungskriterien wird Gemini durch seinen Fehler mit ``Gut''
+bewertet. LeChat und Gemini werden beide mit ``Sehr gut'' benotet.
 
 % - Zwei eingaben. Einmal für Einleitung mit dem Zweck des Dokuments, der Redaktion und dem Verteiler. Und einmal für die 
 % Projektdefinition mit ausschließlich den Kapiteln Vorgeschichte und Inhaltliche Kurzdarstellung.
@@ -273,11 +190,11 @@ einzelne Spalte aufgezählt und beschrieben. Ebenfalls ist es wichtig, die mögl
 definieren, da hier sonst immer ``Hoch'', ``Mittel'' und ``Niedrig'' von den Tools verwendet wird. Es musste auch 
 festgelegt werden, wann die einzelnen Risikoklassen auftreten, da die Zuweisung ansonsten recht schwammig ausfällt und
 schwerwiegende Risiken eine geringere Risikoklasse erhalten als eher unwichtige Risiken. Außerdem sollte beschrieben 
-werden, welche Arten von Risiken betrachtet werden sollen und dass diese Arten in einer leer Zeile stehen, welche 
-die dazugehörigen Risiken von den anderen Arten trennen. Ansonsten kann es passieren, dass die Risiken durcheinander 
-geschrieben werden und damit nicht den Arten zuzuordnen sind. Damit der Risikoschaden zwischen den Tools vergleichbar 
-ist, sollte das Projektvolumen definiert werden. Ansonsten wird auch dies von Tools festgelegt und führt zu 
-Ungenauigkeiten.\\
+werden, welche Arten (Team-, Technische-, Methodische-, Kunden-, Fachliche-, Produkt-, Management- und Planungsrisiken) 
+von Risiken betrachtet werden sollen und dass diese Arten in einer leer Zeile stehen, welche die dazugehörigen Risiken von 
+den anderen Arten trennen. Ansonsten kann es passieren, dass die Risiken durcheinander geschrieben werden und damit nicht 
+den Arten zuzuordnen sind. Damit der Risikoschaden zwischen den Tools vergleichbar ist, sollte das Projektvolumen definiert 
+werden. Ansonsten wird auch dies von Tools festgelegt und führt zu Ungenauigkeiten im Vergleich der einzelnen Ausgaben.\\
 
 Grundsätzlich war die Erstellung der Risiken kein Problem. Schwierig war es eher die gewünschte Formatierung zu erhalten, 
 sowie eine richtige Zuweisung der restlichen Attribute. Besonders Gemini und Le Chat haben dabei Schwierigkeiten. 
@@ -493,6 +410,7 @@ Anwendungsfalldiagramm:
     war doppelt. Wurde aber nach Hinweis entfernt. Sehr großer Anwendungsfall, vielleicht lieber in kleinere AF aufteilen??
     - Erstellt Code um in einem PlantUML-Editor oder einem Online Renderer das Diagramm als Bild zu erstellen
     - Erstellt Skizze in PlantUML ganz gut, sieht lediglich aus als ob auch ``Spieler'' von ``User'' erbt.
+    -> Grundgerüst wird ganz gut erstellt, muss aber mit ein paar nachfragen in richtige Richtung lenken.
 
 - Gemini: [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 
@@ -513,6 +431,7 @@ implementierung der Server-Client-Applikation einfacher fällt. Außerdem erwäh
 - ChatGPT-3.5:
     - Häufigkeit keine Zahl: "Häufig verwendet (mehrmals täglich)
     - Erstellt diagramm direkt mit, kein Endzustand. Verbindungen führen nach ``Anmeldung erfolgreich'' und ``Anmeldung fehlgeschlagen'' wieder zusammen.
+    -> Auch nach Allgemeiner Beschreibung nicht korrigiert und auch nicht bei sehr genauer Beschreibung.
     - Beschreibungen gut.
     - ChatGPT-4o macht zu viel. Implementierung wird bisschen mit beschrieben (Benutzersession erstellen) sowie Dialog 
     eigenschaften wie Anzeigen von Fehlermeldungen werden beschrieben. GPT-3.5 hier tatsächlich besser. Außerdem wurde Code
@@ -526,6 +445,42 @@ implementierung der Server-Client-Applikation einfacher fällt. Außerdem erwäh
     - Häufigkeit keine Zahl
     - Kann auf Nachfrage Code für PlantUML erstellen.
     - Diagramm hat nur einen Endzustand, wo Verbindung von ``Anmeldung erfolgreich'' und ``Anmeldung fehlgeschlagen'' enden.
+    - Diagramm häufig Syntax Error, welcher sich nicht beheben lässt. -> Dafür sehr gute textuelle Beschreibung, auch richtig mit 
+    Endpunkten und dem Entscheidungsknoten.
+
+
+    Zug machen:
+
+        ChatGPT:
+            - Aktivität 6, berechne mögliche Züge. -> Nicht grade effizient?
+            - Server würfelt alleine, kein gutes Spielerlebnis
+            - Generell keine wirklche Verweise aufs FDM
+            - Entität Spielzug aus FDM wird nicht betrachtet.
+            - Entscheidungsknoten laufen im UML Diagramm immer wieder zusammen
+            - Aber ansich ablauf der Aktivitäten ergibt Sinn 
+            - Hilft, das FDM ihm nochmal zum merken zu geben. Beschreibung der Aktivität geht dann bisschen mehr aufs FDM ein
+            - Erstellt aufeinmal ``Spieler'' und ``Server'' Spalten. -> Wird zu ``Client'' und ``Server'' geändert
+            - Hat wieder Dialog Aktivitäten mit drinne, Bsp.: "Ergebnis des Würfelwurfs anzeigen"
+            - Aktivitäten schon etwas zu genau formuliert?
+            - Entscheidungsknoten laufen auch hier wieder zusammen -> Wird geändert
+            - Nur ein Endknoten -> Wird geändert
+            - Nach Frage ob er Aktivitätenbeschreibung etwas genauer Formulieren kann, wird zwei mal in ``Spielfigur.position''
+            gespeichert. Einmal in ``Bewege Spielfigur'' und einmal in ``Speichere aktuelle Position der Spielfigur in Spielfigur.position''
+                -> wird geändert
+            - Spiel.status soll aktualisiert werden, wird aber nix genaues Beschrieben was geprüft wird
+            - Feld.belegt wird nicht angepasst
+            -
+
+
+        LeChat:
+            - Formuliert aktivitäten erst sehr grob. Sagt nicht was wie gespeichert wird.
+            - Benutzt andere Attribute als im FDM festgelegt. Bsp. Feld.x und Feld.y
+            - Entspricht nicht den normalen Regeln? "...die geschlagene Figur aus der Liste der Figuren des Spielers entfernt"
+            - Spielstand aktualisieren als eigenen AF? Wurde vorher nicht aufgeführt
+            - Führt Würfeln als Aktivität auf? Ist aber doch eigener Anwendungsfall
+            - Auf nachfrage, das aktuelle FDM auszugeben, wird ein völlig anderes erstellt. Auch wenn ich 
+            das zuletzt erstellte als Eingabe verwende, ändert er dies geringfügig.
+
 
 
 Benutzungsschnittstelle:

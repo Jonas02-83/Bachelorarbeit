@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  1 JUL 2024 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  2 JUL 2024 13:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -2403,60 +2403,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--144
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--198
+Underfull \hbox (badness 10000) in paragraph at lines 176--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--205
+Underfull \hbox (badness 10000) in paragraph at lines 187--193
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--222
+Underfull \hbox (badness 10000) in paragraph at lines 197--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--249
-
- []
-
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--259
+Underfull \hbox (badness 10000) in paragraph at lines 206--212
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29] [30] [31] [32]) [33]
+ [28]
+Underfull \hbox (badness 10000) in paragraph at lines 233--239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--254
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 255--267
+
+ []
+
+[30] [31] [32] [33]) [34]
 \openout2 = `source/500_Problems.aux'.
 
- (./source/500_Problems.tex [34
+ (./source/500_Problems.tex
+chapter 5.
+) [35
 
 
 
 
 
 ]
-chapter 5.
-) [35]
 \openout2 = `source/600_Conclusion.aux'.
 
  (./source/600_Conclusion.tex [36
@@ -2611,14 +2626,14 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  72172 strings out of 474049
- 1654496 string characters out of 5746277
- 2920806 words of memory out of 5000000
+ 1654523 string characters out of 5746277
+ 2920807 words of memory out of 5000000
  93022 multiletter control sequences out of 15000+600000
  622968 words of font info for 236 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,22n,120p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,22n,120p,10948b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (62 pages, 304042 bytes).
+Output written on thesis.pdf (62 pages, 305677 bytes).
 PDF statistics:
  722 PDF objects out of 1000 (max. 8388607)
  608 compressed objects within 7 object streams

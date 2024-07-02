@@ -88,12 +88,12 @@ Spiele gleichzeitig gespielt werden können und das ansprechende Animationen ver
 
 Zusammenfassend lässt sich sagen, dass die Erstellung des Besprechungsprotokolls durch die LLM Tools grundsätzlich schon ganz gut 
 funktioniert. Besonders ChatGPT hat wenig Schwankungen in seinen generierten Ausgaben und hat eigentlich immer die gleichen 
-Punkte im Besprechungsprotokoll, formuliert diese nur einbisschen unterschiedlich. Daher wird ChatGPT mit ``Sehr gut'' bewertet.
+Punkte im Besprechungsprotokoll, formuliert diese nur ein bisschen unterschiedlich. Daher wird ChatGPT mit ``Sehr gut'' bewertet.
 Die anderen beiden haben damit etwas mehr Schwierigkeiten, doch wenn man sich das Besprechungsprotokoll immer wieder neu generieren 
 lässt, kommt irgendwann ein anständig erstelltes Protokoll. Da die Zusammenfassung des Gesprächs auf die wesentlichen Punkte, die 
-Hauptaufgabe eines Besprechungsprotokolls ist, erhalten LeChat und Gemini lediglich die Bewertung ``Ausreichend''. Das LeChat und 
+Hauptaufgabe eines Besprechungsprotokolls ist, erhalten Le Chat und Gemini lediglich die Bewertung ``Ausreichend''. Das Le Chat und 
 Gemini nicht alle Anforderungen in das Protokoll aufnehmen, kann, falls dies nicht auffällt, im Nachhinein das Projekt verzögern 
-und die Kosten in die höhe Treiben. Geminis erstelle Protokolle mit etwa 30 Punkten verfehlen dahingegen komplett denn Sinn eines
+und die Kosten in die Höhe treiben. Geminis erstelle Protokolle mit etwa 30 Punkten verfehlen dahingegen komplett denn Sinn eines
 Besprechungsprotokoll.
 
 \section{Projekthandbuch} \index{Projekthandbuch} \label{CompProjekthandbuch}
@@ -144,19 +144,7 @@ Herrn Müller (Kunde) Kontakt aufnahm, was eine fehlerhafte Zuordnung darstellt.
 
 Abschließend lässt sich sagen, dass die Abschnitte von allen drei Tools gut waren. Der Fehler von Gemini zeigt allerdings, dass man sich 
 die Ausgaben trotzdem nochmal achtsam durchlesen sollte. Aufgrund der Bewertungskriterien wird Gemini durch seinen Fehler mit ``Gut''
-bewertet. LeChat und Gemini werden beide mit ``Sehr gut'' benotet.
-
-% - Zwei eingaben. Einmal für Einleitung mit dem Zweck des Dokuments, der Redaktion und dem Verteiler. Und einmal für die 
-% Projektdefinition mit ausschließlich den Kapiteln Vorgeschichte und Inhaltliche Kurzdarstellung.
-% - Muss genau Beschrieben werden was man für Abschnitte haben will, sonst wird ein eigenes Projekthandbuch erstellt, welches 
-% nicht ganz den Anforderungen, welche in dieser Arbeit beschrieben wurde, entspricht.
-% - Für die Einleitung werden spezifische Informationen benötigt, welche im Prompt angegeben werden müssen. In diesem Fall wurde 
-% angegeben, dass die Projektleiterinfür das Projekt verantwortlich ist und als Verteiler ein Discord-Channel verwendet wird.
-% - Abschnitte wurden gut erstellt. ChatGPT bennent im Abschnitt für den Verteiler einmal alle Teammitglieder, frage ob unbedingt nötig.
-% - Zweite Abschnitt benötigt keine weiteren Informationen, da diese im Gespräch bereits vorgegeben sind. 
-% - Abschnitte wurden hier auch gut erstellt. Die benötigten Informationen haben sich die Tools gut aus dem Gespräch raus gezogen.
-% - Gemini hat teilweise dreher in den Namen drinne. Einmal hat Gemini geschrieben, dass Frau Schmidt (Teamcheffin) mit dem Herrn Müller 
-% (Kunde) aufnahm. -> muss Probegelesen werden.
+bewertet. Le Chat und Gemini werden beide mit ``Sehr gut'' benotet.
 
 \section{Risikoliste} \index{Risikoliste} \label{CompRisikoliste}
 
@@ -204,21 +192,23 @@ Kundenrisiken vom Kunden, also Herr Müller, erstellt werden, da dieser an der E
 nicht beteiligt ist.\\
 
 ChatGPT hat die Tabelle sehr gut erstellt. Lediglich die Zuweisung der Risikoklasse war falsch. Nach einem Hinweis 
-diesbezüglich wurden diese jedoch richtig korrigiert.\\
+diesbezüglich wurden diese jedoch, mit einer Ausnahme, richtig korrigiert.\\
 
-Ein Problem bei Gemini ist, dass das Risikomaß nicht richtig berechnet wird. Das Komma der Werte ist um eine Stelle zu 
-weit links. Es muss alles einmal *10 gerechnet werden, damit die Werte stimmen. Kritisch bei Gemini ist, dass die Tabelle 
-nicht in einem Zug erstellt werden kann. Es wird während der Generierung einfach aufgehört. Auch wenn man Gemini fragt, 
-ob die vollständige Tabelle generiert werden kann, wird mitten drin aufgehört. Man muss explizit nur nach den noch offenen
-Risikoarten fragen. Diese werden dann erstellt, jedoch soll man den Schaden und das Maß selbst eintragen und berechnen.
-Nach anschließender Frage, ob er den Risikoschaden und das Schadensmaß festlegen kann, sagt er, dass er detaillierte 
-Informationen über das Projekt und die potenziellen Risiken benötigt um genaue Werte festzulegen.
+Ein Problem bei Gemini ist, dass das Risikomaß nicht richtig berechnet wird und auch die Risikoklassen nicht korrekt 
+zugewiesen werden. Das Komma der Werte ist um eine Stelle zu weit links. Es muss alles einmal *10 gerechnet werden, damit die 
+Werte stimmen. Kritisch bei Gemini ist, dass die Tabelle nicht in einem Zug erstellt werden kann. Es wird während der 
+Generierung einfach aufgehört. Auch wenn man Gemini fragt, ob die vollständige Tabelle generiert werden kann, wird mitten 
+drin aufgehört. Man muss explizit nur nach den noch offenen Risikoarten fragen. Diese werden dann erstellt, jedoch soll man 
+den Schaden und das Maß selbst eintragen und berechnen. Nach anschließender Frage, ob er den Risikoschaden und das Schadensmaß 
+festlegen kann, sagt er, dass er detaillierte Informationen über das Projekt und die potenziellen Risiken benötigt um genaue Werte 
+festlegen zu können.\\
 
 Le Chat hatte ein ähnliches Problem wie bereits im Besprechungsprotokoll [\autoref{CompBesprechungsprotokoll}], dass das 
 Datum immer auf den 01.04.2023 gesetzt wird. Außerdem hatte Le Chat Probleme damit, die Tabelle in das gewünschte Format
-zu bringen, dass die Risikoarten in einer Zeile stehen und die dazugehörigen Risiken darunter aufgelistet werden. Auch 
-hier wurden die Risikoklassen falsch bestimmt und auch nach einem Hinweis waren diese falsch. Zudem wurde dabei der 
-Risikoschaden der einzelnen Risiken geändert.\\
+zu bringen, dass die Risikoarten in einer Zeile stehen und die dazugehörigen Risiken darunter aufgelistet werden. Sie wurden 
+lediglich mit 1.x bis 8.x beschriftet wodurch Sie sich zu den Arten zuweisen ließen. Auch 
+hier wurden die Risikoklassen falsch bestimmt und auch nach einem Hinweis wurden diese nicht korrigiert. Jedoch wurde 
+dabei der Risikoschaden der einzelnen Risiken geändert. Auch hier ist die Zuweisung der Risikoklassen nicht richtig.\\
 
 Die Maßnahmentabelle wurde mit folgendem Prompt erstellt:
 
@@ -253,61 +243,41 @@ Bei Gemini wird für die Begründung, warum ein Risiko als nicht mehr relevant e
 Auch wenn man die Beschreibung dafür im Prompt ändert, wird die Spalte erstellt. Außerdem ist die Formatierung bei Gemini
 manchmal nicht so gut, da bei jeder 2. Zeile alle Daten ab der Spalte "Begründung" um eine Stelle nach links verschoben wird.
 Lässt man sich die Antwort neu generieren und auch wenn man Gemini sagt er soll die Formatierung korrigieren bleibt das 
-Problem bestehen. Ein weiteres Problem ist, dass die Spalte "Trigger" nicht gefüllt wird und auch wieder das Problem, dass
+Problem bestehen. Ein weiteres Problem ist, dass die Spalte "Trigger" nicht gefüllt wird und auch das Problem, dass
 die Tabelle nicht ganz vollständig generiert wird sondern mitten drin aufhört, tritt wieder auf. Teilweise ist das Restmaß 
 falsch berechnet und auch die Zuweisung der Restklasse ist nicht immer richtig.\\
 
-Le Chat [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+Besonders aufgefallen bei Le Chat ist, dass die Attribute für die Maßnahmen sehr repetitiv festgelegt wurden. Die Restwahrscheinlichkeit
+beträgt für jede Maßnahme 5\% und auch der Restschaden ist häufig für die Maßnahmen für eine Risikoart gleich. Auch hier ist die 
+Restklasse nicht entsprechend zugewiesen worden sondern ist, bis auf bei der ersten Maßnahme, auf Unerwünscht festgelegt. Auch 
+die Festlegung des Typs der Maßnahmen wirkt sehr repetitiv, da hier immer zwischen ``verhindern'' und ``lindern'' gewechselt wird.\\
 
-% - Auch hier zwei einzelne Eingaben. Einmal für die Tabelle mit den Risiken und einmal für die mit den Maßnahmen.
-% - Prompt für Risikotabelle sehr umfangreich. Jede Spalte erklärt damit die Tabelle, die erstellt wird, den Vorgaben entspricht. 
-% Auch das Risiken jeweils zu den Oberbegriffen Team-, Technische-, Methodische-, Kunden-, Fachliche-, Produkt-, Management- und 
-% Planungsrisiken erstellt werden sollen und die Risiken dazu mit einer leer Zeile getrennt werden sollen für eine bessere Übersicht 
-% und um die Risiken leichter Zuordnen zu können.
-% - Die Tools haben die Zuweisung der Risikoklasse zunächst mit den Werten niedrig, mittel und hoch erstellt. Daher wurde der 
-% Prompt um die Anweisung, dass zwischen tolerierbar, unerwünscht, kritisch und katastrophal gewählt werden soll ergänzt.
-% Insgesamt war die Zuordnung jedoch ohne richtiges Konzept und schwerwiegende Risiken eine geringe Risikoklasse als eher unwichtigere
-% Risiken. Daher wurde die definition, wann welche Risikoklasse zu wählen ist, ebenfalls ergänzt.
-% - Damit Schaden und die Risikoklassen richtig gewählt werden und die Tools vergleichbar sind, wurde das Projektvolumen auf 500000€
-% festgelegt. Ansonsten wählen die Tools ein eigenes, was zu Ungenauigkeiten führt.
-% - Die Erstellung der Risiken war kein Problem, eher bei der Formatierung der Tabelle und der Zuweisung der restlichen Attirbute haben
-% Gemini und Le Chat Schwierigkeiten.
+Zusammenfassend lässt sich sagen, das die Erstellung von Risiken und dazu gehörigen Maßnahmen gut funktioniert, allerdings die 
+Festlegung der zusätzlichen Attribute nicht den Vorgaben entspricht und häufig zu Fehlern führt. Auch die richtige Formatierung 
+der Tabelle ist häufig etwas schwierig, lässt sich aber in den meisten fällen korrigieren. Da ChatGPT deutlich weniger Probleme 
+bei der Erstellung hatte und auch die Zuweisung der Attribute, abgesehen von der Risikoklasse, und die Formatierung gut funktioniert
+hat wird es mit ``Gut'' bewertet.\\
+Le Chat hatte etwas mehr Probleme gemacht. Bei der Risikotabelle war die Formatierung insofern kein Problem, da man die einzelnen 
+Spalten einfach in eine eigene Tabelle übernehmen konnte und die Risikoarten selbst dazwischen schreibt. Erst bei der Maßnahmentabelle
+hat LeChat Probleme mit der Zuweisung der Attribute bekommen. Daher wird Le Chat mit ``Befriedigend'' bewertet.\\
+Gemini hat am meisten Probleme gemacht. Alleine schon die Tatsache, dass Gemini mitten in der Generierung diese als fertig betrachtet 
+und dadurch die Tabellen unvollständig erstellt werden, sorgt dafür, dass Gemini für solche Erstellungen eher ungeeignet ist. Die 
+anderen Probleme wie die fehlerhafte Formatierung und das die Attribute falsch berechnet und festgelegt werden kommen dabei noch hinzu.
+Dies sorgt dafür, dass Gemini hier die Bewertung ``Mangelhaft'' erhält.\\
 
-% - ChatGPT hat bei der ersten eingabe die Risikoklassen falsch zugewiesen. Bei Hinweis darauf wurde dies jedoch richtig korriegiert.
-% Autor eher der Verantwortliche für das Risiko. Macht aber irgendwo Sinn, da die "Experten" auf ihrem Gebiet, am ehesten die Risiken
-% für ihr Gebiet kennen und erstellen können.
+Wenn man allerdings sich nur die Erstellung von Risiken mit dazugehörigen Maßnahmen anschaut, erhalten alle drei Tools die Bewertung 
+``Sehr gut''. Die erstellten Risiken und Maßnahmen waren zwar alle eher welche, die man vermutlich als erstes benennt und auch 
+Projekt unabhängig sind, wurden aber dennoch sehr gut erstellt. Auch bei Gemini werden einzelne Risiken mit dazugehörigen Maßnahmen 
+in einem rutsch erstellt, weshalb man dieses Problem bei der Erstellung der Risiken und Maßnahmen nicht ankreiden kann.
 
-% - Gemini legt den Autor, auf den am ehesten Verantwortlichen für das Risiko, fest. Also Teamrisiken werden von Frau Schmidt definiert,
-% während zum Beispiel Anforderungsrisiken vom Anforderungsanalysten (Herr Schneider) und Kundenrisiken vom Kunden (Herr Müller) geschrieben
-% werden. Außerdem berechnet Gemini das Risikomaß nicht richtig. Das Komma der Werte ist um eine Stelle zu weit links. Es muss alles *10 
-% gerechnet werden. Die ID setzt Gemini einfach auf 1, 2, 3, ... was grundsätzlich aber nicht schlimm ist, da kein großer Mehraufwand, dies 
-% selbst zu ändern. Gemini kann nicht gesamte Tabelle aufeinmal Generieren. Es wird einfach mitten drinn aufgehört. Bei nachfrage ob er nur 
-% noch Produkt-, Management- und Planungsrisiken erstellen kann, macht er dies, fügt aber keinen Schaden und Maß mehr ein. Wenn ich ihm sag, 
-% das er den Schaden und Maß noch festlegen soll, sagt er nur, dass er das ohne detaillierte Informationen über das Projekt und die potenziellen
-% Risiken nicht kann.
-
-% - Le Chat hatte wieder das Problem mit dem Datum, dass dieses auf den 01.04.2023 gesetzt wurde. Manchmal war außerdem das Format der Tabelle 
-% nicht richtig und die Risiken wurde manchmal den Oberbegriffen nicht zugeordnet sondern zufällig erstellt. Musste schritt für schritt beschreiben 
-% was Le Chat ändern soll. Auch Le Chat bestimmt die Risikoklasse falsch. Auch nach Hinweis, dass diese nicht stimmen sind diese noch falsch 
-% und es wird der Schaden bei den Risiken geändert. Auch hier ist der Autor eher der Verantwortliche.
-
-
-- Prompt für Maßnahmen ähnlich, dass jede Spalte der Tabelle einmal beschrieben wird und anschließend gesagt wird, dass die ID des dazugehörigen
-Risikos übernommen werden soll.
-
-- ChatGPT nur ein Fehler bei Restklasse. Sonst passt alles.
-
-- Gemini erstellt für die Begründung, warum ein Risiko als nicht mehr relevant eingestuft wird eine eigene Spalte. Ist aber nicht so schlimm, da 
-zu beginn eh leer. Formatierung schlecht, da bei jeder 2. Zeile alle Daten ab Spalte "Begründung" um eine Stelle nach links verschoben wird. Neu 
-generierung und auch Hinweis darauf ändert nichts. Trigger auch nicht gefüllt. Außerdem ist der Typ immer abwechselnd "Verhindern" und "Lindern".
-Auch hier ist Teilweise das Restmaß falsch berechnet. Hört bei Risiko 4.2 auf mit der generierung der Maßnahmen. Maßnahmen passen aber zu Risiken.
-
-- Le Chat erstellt die Maßnahmen nicht immer zu den Risiken in der Risikotabelle, sonder zu den Oberbegriffen Team-, Technische-, Methodische-, 
-Kunden-, Fachliche-, Produkt-, Management- und Planungsrisiken. Maßnahme 1-4 scheinen sehr allgemein formuliert, Maßnahmen 5-8 würden
-zu den 1. Risiken des jeweiligen Oberbegriffes passen. Auch hier scheinen die Attribute sehr repetitiv. Wahrscheinlichkeit immer bei 5\%,
-die Risikoklasse außer bei der ersten Maßnahme immer Unerwünscht und der Restschaden auch meistens bei den 2 Maßnahmen für ein Risiko gleich.
 
 \section{Anforderungsspezifikation} \index{Anforderungsspezifikation} \label{CompAnforderungsspezifikation}
+
+Für die Anforderungsspezifikation wurde für jeden Inhalt ein eigener Prompt erstellt. Daher wird im folgenden auf die Erstellung der Einleitung, 
+der Systemarchitektur, des Fachliche Datenmodells, des Anwendungsfalldiagramms, der detaillierten Anwendungsfall Beschreibung mit Aktivitätsdiagramm, 
+der Benutzungsschnittstelle mit der Dialog Navigation, der detaillierten Ausarbeitung von Dialogen und der nichtfunktionalen Anforderungen einzelnen
+Beschrieben und bewertet.
+
 
 Einleitung:
 - Beschreibung, welche Absätze erstellt werden sollen. Da ``Zweck und Umfang des Dokuments'' recht spezifisch, genauer definieren was für ein 

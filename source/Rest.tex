@@ -165,3 +165,64 @@ Comparison:
         hält sich eher zu knapp mit den Punkten, daher hier schauen ob alle wichtigen Informationen enthalten sind.
 
     Projekthandbuch:
+        - Zwei eingaben. Einmal für Einleitung mit dem Zweck des Dokuments, der Redaktion und dem Verteiler. Und einmal für die 
+        Projektdefinition mit ausschließlich den Kapiteln Vorgeschichte und Inhaltliche Kurzdarstellung.
+        - Muss genau Beschrieben werden was man für Abschnitte haben will, sonst wird ein eigenes Projekthandbuch erstellt, welches 
+        nicht ganz den Anforderungen, welche in dieser Arbeit beschrieben wurde, entspricht.
+        - Für die Einleitung werden spezifische Informationen benötigt, welche im Prompt angegeben werden müssen. In diesem Fall wurde 
+        angegeben, dass die Projektleiterinfür das Projekt verantwortlich ist und als Verteiler ein Discord-Channel verwendet wird.
+        - Abschnitte wurden gut erstellt. ChatGPT bennent im Abschnitt für den Verteiler einmal alle Teammitglieder, frage ob unbedingt nötig.
+        - Zweite Abschnitt benötigt keine weiteren Informationen, da diese im Gespräch bereits vorgegeben sind. 
+        - Abschnitte wurden hier auch gut erstellt. Die benötigten Informationen haben sich die Tools gut aus dem Gespräch raus gezogen.
+        - Gemini hat teilweise dreher in den Namen drinne. Einmal hat Gemini geschrieben, dass Frau Schmidt (Teamcheffin) mit dem Herrn Müller 
+        (Kunde) aufnahm. -> muss Probegelesen werden.
+
+
+    Risikoliste:
+        - Auch hier zwei einzelne Eingaben. Einmal für die Tabelle mit den Risiken und einmal für die mit den Maßnahmen.
+        - Prompt für Risikotabelle sehr umfangreich. Jede Spalte erklärt damit die Tabelle, die erstellt wird, den Vorgaben entspricht. 
+        Auch das Risiken jeweils zu den Oberbegriffen Team-, Technische-, Methodische-, Kunden-, Fachliche-, Produkt-, Management- und 
+        Planungsrisiken erstellt werden sollen und die Risiken dazu mit einer leer Zeile getrennt werden sollen für eine bessere Übersicht 
+        und um die Risiken leichter Zuordnen zu können.
+        - Die Tools haben die Zuweisung der Risikoklasse zunächst mit den Werten niedrig, mittel und hoch erstellt. Daher wurde der 
+        Prompt um die Anweisung, dass zwischen tolerierbar, unerwünscht, kritisch und katastrophal gewählt werden soll ergänzt.
+        Insgesamt war die Zuordnung jedoch ohne richtiges Konzept und schwerwiegende Risiken eine geringe Risikoklasse als eher unwichtigere
+        Risiken. Daher wurde die definition, wann welche Risikoklasse zu wählen ist, ebenfalls ergänzt.
+        - Damit Schaden und die Risikoklassen richtig gewählt werden und die Tools vergleichbar sind, wurde das Projektvolumen auf 500000€
+        festgelegt. Ansonsten wählen die Tools ein eigenes, was zu Ungenauigkeiten führt.
+        - Die Erstellung der Risiken war kein Problem, eher bei der Formatierung der Tabelle und der Zuweisung der restlichen Attirbute haben
+        Gemini und Le Chat Schwierigkeiten.
+        
+        - ChatGPT hat bei der ersten eingabe die Risikoklassen falsch zugewiesen. Bei Hinweis darauf wurde dies jedoch richtig korriegiert.
+        Autor eher der Verantwortliche für das Risiko. Macht aber irgendwo Sinn, da die "Experten" auf ihrem Gebiet, am ehesten die Risiken
+        für ihr Gebiet kennen und erstellen können.
+        
+        - Gemini legt den Autor, auf den am ehesten Verantwortlichen für das Risiko, fest. Also Teamrisiken werden von Frau Schmidt definiert,
+        während zum Beispiel Anforderungsrisiken vom Anforderungsanalysten (Herr Schneider) und Kundenrisiken vom Kunden (Herr Müller) geschrieben
+        werden. Außerdem berechnet Gemini das Risikomaß nicht richtig. Das Komma der Werte ist um eine Stelle zu weit links. Es muss alles *10 
+        gerechnet werden. Die ID setzt Gemini einfach auf 1, 2, 3, ... was grundsätzlich aber nicht schlimm ist, da kein großer Mehraufwand, dies 
+        selbst zu ändern. Gemini kann nicht gesamte Tabelle aufeinmal Generieren. Es wird einfach mitten drinn aufgehört. Bei nachfrage ob er nur 
+        noch Produkt-, Management- und Planungsrisiken erstellen kann, macht er dies, fügt aber keinen Schaden und Maß mehr ein. Wenn ich ihm sag, 
+        das er den Schaden und Maß noch festlegen soll, sagt er nur, dass er das ohne detaillierte Informationen über das Projekt und die potenziellen
+        Risiken nicht kann.
+        
+        - Le Chat hatte wieder das Problem mit dem Datum, dass dieses auf den 01.04.2023 gesetzt wurde. Manchmal war außerdem das Format der Tabelle 
+        nicht richtig und die Risiken wurde manchmal den Oberbegriffen nicht zugeordnet sondern zufällig erstellt. Musste schritt für schritt beschreiben 
+        was Le Chat ändern soll. Auch Le Chat bestimmt die Risikoklasse falsch. Auch nach Hinweis, dass diese nicht stimmen sind diese noch falsch 
+        und es wird der Schaden bei den Risiken geändert. Auch hier ist der Autor eher der Verantwortliche.
+        
+        
+        - Prompt für Maßnahmen ähnlich, dass jede Spalte der Tabelle einmal beschrieben wird und anschließend gesagt wird, dass die ID des dazugehörigen
+        Risikos übernommen werden soll.
+        
+        - ChatGPT nur ein Fehler bei Restklasse. Sonst passt alles.
+        
+        - Gemini erstellt für die Begründung, warum ein Risiko als nicht mehr relevant eingestuft wird eine eigene Spalte. Ist aber nicht so schlimm, da 
+        zu beginn eh leer. Formatierung schlecht, da bei jeder 2. Zeile alle Daten ab Spalte "Begründung" um eine Stelle nach links verschoben wird. Neu 
+        generierung und auch Hinweis darauf ändert nichts. Trigger auch nicht gefüllt. Außerdem ist der Typ immer abwechselnd "Verhindern" und "Lindern".
+        Auch hier ist Teilweise das Restmaß falsch berechnet. Hört bei Risiko 4.2 auf mit der generierung der Maßnahmen. Maßnahmen passen aber zu Risiken.
+        
+        - Le Chat erstellt die Maßnahmen nicht immer zu den Risiken in der Risikotabelle, sonder zu den Oberbegriffen Team-, Technische-, Methodische-, 
+        Kunden-, Fachliche-, Produkt-, Management- und Planungsrisiken. Maßnahme 1-4 scheinen sehr allgemein formuliert, Maßnahmen 5-8 würden
+        zu den 1. Risiken des jeweiligen Oberbegriffes passen. Auch hier scheinen die Attribute sehr repetitiv. Wahrscheinlichkeit immer bei 5\%,
+        die Risikoklasse außer bei der ersten Maßnahme immer Unerwünscht und der Restschaden auch meistens bei den 2 Maßnahmen für ein Risiko gleich.

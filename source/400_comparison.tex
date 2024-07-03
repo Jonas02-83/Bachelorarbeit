@@ -273,78 +273,127 @@ in einem rutsch erstellt, weshalb man dieses Problem bei der Erstellung der Risi
 
 \section{Anforderungsspezifikation} \index{Anforderungsspezifikation} \label{CompAnforderungsspezifikation}
 
-Für die Anforderungsspezifikation wurde für jeden Inhalt ein eigener Prompt erstellt. Daher wird im folgenden auf die Erstellung der Einleitung, 
+Für die Anforderungsspezifikation wurde für jeden Inhalt ein eigener Prompt erstellt. Daher wird im folgenden die Erstellung der Einleitung, 
 der Systemarchitektur, des Fachliche Datenmodells, des Anwendungsfalldiagramms, der detaillierten Anwendungsfall Beschreibung mit Aktivitätsdiagramm, 
 der Benutzungsschnittstelle mit der Dialog Navigation, der detaillierten Ausarbeitung von Dialogen und der nichtfunktionalen Anforderungen einzelnen
-Beschrieben und bewertet.
+Beschrieben und anschließend bewertet.\\
 
+\subsection*{Einleitung}
 
-Einleitung:
-- Beschreibung, welche Absätze erstellt werden sollen. Da ``Zweck und Umfang des Dokuments'' recht spezifisch, genauer definieren was für ein 
-Inhalt benötigt wird.
+Für die Einleitung wurde der folgende Prompt verwendet:
 
-- ChatGPT stellt nur textuellen Verweis auf Spielregeln. Müssen noch selber eingefügt werden, falls gewünscht. Fraglich ob Begriff "Punktesystem"
-erklärt werden muss. Sonst gut.
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir für die Anforderungsspezifikation eine Einleitung. Diese soll kurz, mit 2-3 Sätzen, in das Dokument einführen. Anschließend soll 
+        ein Abschnitt zum "Zweck und Umfang des Dokuments" kommen, welcher eine Beschreibung der Notwendigkeit des Systems für den Kunden sowie eine 
+        Kurzbeschreibung der Funktionalität und der Nachbarsysteme beinhaltet. Danach wichtige "Begriffe und Abkürzungen" erklärt werden. Zum Schluss 
+        kommt ein Abschnitt "Verweise auf sonstige Ressourcen", wo auf die Spielregeln verwiesen wird.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Einleitung Anforderungsspezifikation}
+    \label{Prompt Einleitung Anforderungsspezifikation}
+\end{prompt}
 
-- Gemini:?????????????????????????????????
+Bei der Erstellung des Prompts musste darauf geachtet werden, den Abschnitt ``Zweck und Umfang des Dokuments'' genauer zu beschreiben, da hier ansonsten
+die generierte Ausgabe sehr ausschweifend und unspezifisch erstellt werden. Grundsätzlich hat die Erstellung gut geklappt.\\
+Bei ChatGPT ist lediglich auffällig, dass er beim Abschnitt ``Zweck und Umfang des Dokuments'' nicht den Zweck der Anwendung beschreibt, sondern den Zweck 
+des Dokuments. Die Kurzbeschreibung der Funktionalität wurde dafür gut erstellt. Bei der Kurzbeschreibung der Nachbarsysteme wurden die einzelnen Teile 
+der Anwendungs erläutert, also das Spielsystem, das Kommunikationsprotokoll für RMI und die Benutzeroberfläche, und keine anderweitigen System, da die 
+Anwendungs alleinstehend ist.\\
+Bei Gemini [[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]\\
+Le Chat hat die Beschreibung gut erstellt. Der einzige Aspekt der auffällig war ist, dass beim Abschnitt ``Verweis auf sonstige Ressourcen'' ein Link 
+auf eine Webseite für die Regeln von Mensch ärgere dich nicht eingefügt wird.\\
 
-- Le Chat verweist auf Link aus dem Internet. Macht man das in einem offizielen Dokument? Sonst gut.
+Bewertet wird ChatGPT mit ``Gut'', da hier der Zweck des Dokuments beschrieben wurde, obwohl im Prompt explizit nach einer Beschreibung der Notwendigkeit
+des Systems für den Kunden gefragt wurde.\\
+Le Chat wird mit ``Sehr gut'' benotet, da hier keine Inhatlichen Fehler vorhanden sind und soweit alles gepasst hat. 
 
+\subsection*{Systemarchitektur}
 
-Systemarchitektur:
-- Prompt: Inhalt der Systemarchitektur spezifizieren. Mit Nachrichten vorher im Chat wird diese gut erstellt. (Gemini ausstehend.......)
+Die Systemarchitektur wurde mit folgenden Prompt erstellt:
 
-- ChatGPT stellt die Client-Server und Server-Datenbank Verbindung zunächst unidirektional da, nach Hinweis korrigiert 
-er dies aber richtig. Hat in die Komponenten schon genauere Teile definiert, schon zu detailiert? Beschreibung gut und 
-hat in Chat Skizze "gezeichnet".
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir für die Anforderungsspezifikation die Systemarchitektur. Diese beinhaltet einen groben Überblick über die erwartete Systemarchitektur 
+        und Einordnung des Systems in die Systemlandschaft des Kunden. Falls Schnittstellen zu Nachbarsystemen bestehen, dann müssen diese abgebildet werden.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Einleitung Anforderungsspezifikation}
+    \label{Prompt Einleitung Anforderungsspezifikation}
+\end{prompt}
 
-- Gemini: [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+Auch hier muss beschrieben werden, was genau erstellt werden soll. Wichtig hier ist, dass man in den selben Chat schreibt, in dem man die Dokumente vorher
+schon erstellt hat. Dadurch wissen die Tools was zu erstellen ist.\\
+Bei ChatGPT wurde sogar ein Diagramm in den Chat ``gezeichnet''. Die Beschreibung und das Diagramm ist jedoch für die Systemarchitektur schon viel zu genau.
+Es hätte gereicht den Client, den Server und die Datenbank darzustellen und diese richtig miteinander zu verbinden. Bei der ersten Erstellung wurden 
+die Verbindungen zwischen Client und Server und Server und Datenbank unidirektional dargstellt. Nach einer weiteren Eingabe, ob das so gewollt ist, wurde 
+dies jedoch korrigiert und die Verbindung wurde bidirektional eingezeichnet.\\
+Gemini[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]\\
+Nach der Eingabe kam bei Le Chat eine kurze Textuelle Beschreibung der Client- und Server-Anwendung sowie der Datenbank. Außerdem wurde beschrieben, 
+dass Schnittstellen zu Nachbarsystemen ebenfalls mit aufgenommen werden sollen. Diese Beschreibungen haben soweit gut gepasst. Auf nachfrage, wie denn 
+dann die Abbildung aussehen soll, wurde beschrieben, dass der Client, der Server und die Datenbank jeweils eigenständige Blöcke sein sollen. Dies ist soweit
+richtig. Es wurde jedoch nicht genau Beschrieben wie die Beziehungen zwischen den Komponenten aussehen. Daher wurde nochmal eine Eingabe getätigt, wie denn 
+die Beziehung zwischen den Komponenten aussieht. Hier wurde richtig dargestellt, dass der Client und der Server kommunizieren und der Server mit der Datenbank, 
+jedoch nicht der Client mit der Datenbank. Die restliche Beschreibung, wie diese Komponenten kommunizieren, ist wieder etwas zu ausführlich. Die Beschreibung 
+reicht jedoch, um die Skizze selber zu erstellen, was kein negatives Kriterium ist, da bei den kostenfreien Versionen nicht davon ausgegangen wird, dass diese 
+das können.\\
 
-- Le Chat: Kann die Abbildung nicht zeichnen. Gibt Text nach erstem Prompt aber gut aus. Nach Eingabe "Beschreib mir, 
-wie die Abbildung aussehen soll." Erhält man beschreibung, welche Komponenten vorhanden sind, jedoch nicht die 
-Beziehungen zueinander. Bei Frage "Wie ist die Beziehung zwischen der Client-Anwendungs, Server-Anwendung und der 
-Datenbank?" Wird erklärt wie der Datenfluss abläuft (Bidirektional). Infos reichen um skizze selber zu erstellen.
+Zusammenfassend lässt sich hier sagen das alle [zwei???] Tools die Systemarchitektur etwas zu genau erzeugen. Jedoch lassen sich die richtigen Inhalte 
+aus der Ausgabe kopieren und die zu detaillierten Beschreibungen können einfach rausgelöscht werden, weshalb die Tools mit der Note ``Gut'' bewertet werden.
 
+\subsection*{Fachliches Datenmodell}
 
-Fachliches Datenmodell:
-- Prompt: Information, das ein UML-Klassendiagramm verwendet werden soll, um entsprechendes Layout zu erhalten. 
-Außerdem beschreibung, welche Infos benötigt werden. Inhalt muss nicht beschrieben werden.
+Das erste größere und anspruchsvollere Dokument ist das Fachliche Datenmodell. Dieses wurde mit folgendem Prompt erstellt:
 
-- ChatGPT: 
-    - Pfeile zeigen in gleiche Richtung -> sagt "stimmt sollten Bidirektional sein,..." und generiert neu. Fehler bleibt aber
-    - Spiel-Spieler Beziehung 4..*? Sollen doch 0..4 Teilnehmen oder garkeine. -> Ändert auf 1..4, richtige Bezeichnung? weiß ich auch nicht.
-    - spielBrett als String? -> Wird entfernt bei Nachfrage
-    - Wofür zugNummer? -> Reihenfolge der Spielzüge innerhalb eines Spiels festzuhalten
-    - Beziehungen von Spielfigur im Diagramm nicht richtig dargestellt. -> Bei Hinweis wird nicht korrigiert. ``Kann'' Beziehungen immer mit 1..
-    - Feld braucht Attribut ob belegt oder nicht -> Korrigiert
-    - Chat nicht richtig im UML dargestellt, Beziehungen falsch -> Bei Hinweis wird nicht korrigiert
-    - Spieler in User und Player aufteilen? -> Macht er richtig. Frage nur ob dann pos in Spieler oder figur?
-    - status in Spiel zu einem Enum statt String?
-    - farbe in Spieler zu Enum statt String?
-    - Spielzug: figurID statt spielfigur? Beziehung zu Spieler?
-    - Spielfigur: braucht farbe wenn Spieler schon farbe hat?
-    - Bei Prompt Nr. 7, bekommt Spieler ein Attribut pos: int?? und Spieler hat keine Farbe mehr? -> Bei Hinweis Farbe wieder eingefügt und Position entfernt
-    - Ändert bei Neugenerierung immer wieder ein oder zwei Beziehungen. -> Lassen sich aber Händisch vervollständigen
-    - Für Würfel wird zunächst eine eigene Entität erstellt, nach Frage ob nicht auch einfach Attribut in Spiel reicht, wird dies geändert
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir nun für die Anforderungsspezifikation das Fachliche Datenmodell. Dieses soll mit Hilfe eines UML Klassendiagrammes mit ergänzenden Beschreibungen 
+        bzw. EInschränkungen spezifiziert werden. Das Modell soll alle Entitätstypen mit deren Eigenschaften, Beziehungen und Einschränkungen besitzen.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Einleitung Anforderungsspezifikation}
+    \label{Prompt Einleitung Anforderungsspezifikation}
+\end{prompt}
 
-    - Hat keine Einschränkungen zu den Attributen festgelegt. -> Wird nach Hinweis gemacht
-    - Legt nicht alle Beziehungen fest.
+Dabei muss explizit erwähnt werden, dass ein UML-Klassendiagramm gewünscht ist, damit die Aussgabe das richtige Format besitzt. Außerdem sollte erwähnt werden,
+dass ergänzende Beschreibungen mit erstellt werden soll, damit diese Vorgabe auch direkt mit erfüllt ist und die Tools ihr Diagramm einmal näher erläutern.\\
 
-    Prompts:
-        - Erstell mir nun für die Anforderungsspezifikation das Fachliche Datenmodell. Dieses soll mit Hilfe eines UML Klassendiagrammes mit ergänzenden Beschreibungen bzw. EInschränkungen spezifiziert werden. Das Modell soll alle Entitätstypen mit deren Eigenschaften, Beziehungen und Einschränkungen besitzen.
-        - Im UML-Diagramm zeigen immer beide Pfeile in eine richtung, müssen diese nicht bidirektional zeigen?
-        - Du hast die Beziehung "Ein Spiel hat mehrere Spieler" auf 4..* festgelegt. Sollte diese nicht 1 - 4 betragen? Es sollen ja maximal 4 Spieler teilnehmen können.
-        - Braucht das Feld nicht noch ein Attribut ob es belegt ist oder nicht?
-        - Macht es nicht auch sinn Spieler in zwei Entitäten aufzuteilen? Einmal "User" und einmal "Player".  "User" beinhaltet dabei den Namen, die Email, das Passwort und die Punkte. "Spieler" beinhaltet dann die nötigen Attribute zum Spielen wie SpielerID, die Farbe und die position seiner Spielfiguren.
-        - Erstell mir zu den Attributen noch Einschränkungen, in dem du zu jedem Attribut eine Erklärung schreibst und ein Format definierst.
-        - Benötigt man für jede entität unbedingt eine ID? Außerdem sind einige Beziehungen falsch: Ein User kann ein Spieler sein (0..*), Ein Spiel kann mehrere Spielzüge haben (0..*), ein Feld kann von einer Spielfigur besetzt sein (0..1), Ein Spieler kann an einem Spiel teilnehmen (1) und es fehlen die Beziehungsbeschreibung von Spieler zu Spielfigur, Spieler zu Chat, Spiel zu Chat, Spielfigur zu Spielzug. Dadurch, dass die Spielfigur nur genau einem Spieler zugeordnet ist, braucht die Spielfigur kein Attribut Farbe oder nicht?
-        - Wieso hat Spieler keine Farbe mehr
-        - Wieso hat Spieler ein Attribut Position
-        - Wie setzt du das Spielbrett als String um? Und warum muss dieses gespeichert werden? Kann man das nicht einfach als Graphische Oberfläche implementieren?
-        - Muss man den Würfel in das Fachliche Datenmodell übernehmen? 
-        - Reicht es nicht den Würfel als Attribut in Spiel aufzunehmen?
+Bei ChatGPT war direkt auffällig, dass für jede Entität eine ID erstellt wurde. Dies führt zum einen dazu, dass die Anwendung sehr Datenbanklastig ist und zum 
+anderen ist dies auch einfach bei manchen Entitäten nicht nötig. Zum Beispiel beim User könnte man, je nach logIn-Daten, den Namen oder die E-Mail-Adresse 
+einzigartig machen und damit den User identifizieren. Des weiteren haben die Beziehungen nicht immer gepasst. Zum Beispiel die 1:1 Beziehung zwischen 
+``Spielfigur'' und ``Feld''. Es muss natürlich nicht auf jedem Feld eine Spielfigur stehen sondern auf einem Feld kann (0..1) eine Spielfigur stehen. Dieses Problem
+zieht sich auch durch die gesamten Versuche, das Fachliche Datenmodell zu korrigieren. Häufig passiert es auch, dass wenn ein anderer Fehler korrigiert wird, 
+eine richtige Beziehung zu etwas falschem geändert wird. Bei der erstellten Skizze waren ebenfalls die Beziehungen falsch eingezeichnet. Außerdem zeigten Beide Pfeile 
+zwischen zwei Entitäten in die gleiche Richtung. Bei Nachfrage, ob die Beziehung nicht in beide richtungen zeigen sollten, wurde gesagt, dass das stimmt und die 
+Beziehungen Bidirektional sein sollten, jedoch wurde an der Zeichnung nichts geändert. Desweiteren ist aufgefallen, dass bei der Entität ``Feld'' ein Attribut gefehlt
+hat, das beschreibt, ob das Feld belegt ist oder nicht. Außerdem wurde in einem String in ``Spiel'' das Spielbrett gespeichert. Auf Nachfrage wie dies Implementiert
+werden soll, wurde geantwortet das dies nicht die beste Lösung ist, sondern das Spielbrett dynamisch in der Anwendung generiert und angezeigt werden sollte.
+Weitere Probleme hatte ChatGPT mit der Speicherung der Farbe und der Position. Manchmal wurden diese Attribute in ``Spieler'', manchmal in ``Spielfigur'' und teilweise
+auch in beiden gespeichert. Damit ese später einfacher zu realisieren ist an mehreren Spielen teilnehmen zu können, wurde die Eingabe, dass es mehr Sinn macht den 
+``Spieler'' in ``User'' und ``Spieler'' aufzuteilen, getätigt. ChatGPT hat dies dann genau wie beschrieben gemacht. Desweiteren wurde der Würfel vergessen, welcher 
+jedoch nach Hinweis diesbezüglich in ``Spiel'' hinzugefügt wurde. Nach der letzten Ausgabe des Fachlichen Datenmodells wurde, nach Aufforderung, ein PlantUML-Diagramm 
+erstellt. In diesem wurde an den Assoziationen Leseunterstützung angefügt. Diese Leseunterstützung sind jedoch nur von oben nach unten hilfreich. Zum Beispiel ``Feld 
+steht auf Spielfigur'' ist keine Hilfreiche Beschriftung. Des weiteren sind alle Festlegungen der Vielfachheit auf der falschen Seite. Als Beispiel muss an der 
+Assoziation zwischen ``Spieler'' und ``Spielfigur'' die ``1'' auf der Seite von ``Spieler'' sein und die ``1..4'' auf der Seite von ``Spielfigur''. Desweiteren würden 
+Pfeile an den Assoziationen helfen, die Flussrichtung zu verdeutlichen.\\
 
-        - Gemini: [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+Gemini[[[[[[[[[]]]]]]]]]\\
+
+Auch Le Chat hatte zu beginn nur eine Entität ``Spieler''. Für eine Anwendung wo ein Spieler an mehreren Spielen teilnehmen sollen kann, macht es jedoch Sinn, diese 
+Entität auf zwei Entitäten, ``User'' und ``Player'', aufzuteilen. Desweiteren wurde bei Le Chat, wie es eigentlich in einem UML-Klassendiagramm gehört, die Typen der
+Attribute nicht festgelegt. Außerdem ist die Frage, wenn die E-Mail-Adresse eines Spieler eindeutig sein muss, warum dann trotzdem eine eindeutige ID benötigt wird.
+Die Bezeichung der Beziehungen zwischen den Entitäten ist, in der Textuellen Beschreibung für die Beziehung, eher an einem ER-Modell orientiert und nicht an einem 
+UML-Klassendiagramm. Die genaue Bezeichnung für die Vielfachheit muss aus der Beschreibung selbst erstellt werden. Diese war jedoch auch teilweise fehlerhaft. Zum 
+Beispiel, dass ein Player an einem oder mehreren Spielen teilnehmen kann, macht kein Sinn, da die Entität ``Player'' die Eigenschaften eines Spielers
+im Spiel beschreibt. Diese kann schlecht in mehreren Spielen gleich sein. Auch einfachere Sachen wie die Zuweisung der Spielfiguren war ein Problem. Zum Beispiel bei 
+der Beschreibung der Beziehung zwischen Player und Spielfigur wurde definiert, dass ein Player eine oder mehrere Spielfiguren besitzen kann. Dies entspricht aber nicht 
+den normalen Regeln von Mensch ärgere dich nicht, wo jeder Spieler immer genau vier Spielfiguren besitzt. Daneben wurde auch hier der ``Player''-Entität ein Attribut
+für die Position auf dem Spielbrett festgelegt. Nach der Eingabe [Verweis!!!!] wurden genau diese Beziehungen richtig geändert, jedoch waren immernoch Fehler enthalten
+wie zum Beispiel, dass ein Spiel eine oder mehrere Spielfiguren enthalten kann. Anschließend wurde gefragt ob der Würfel auch in das Fachliche Datenmodell mit aufgenommen
+werden sollte, woraufhin sowohl eine eigene Entität ``Dice'' als auch ein Attribut ``dice: Dice'' in der ``Game''-Entität erstellt wurde. Anschließend wurde gefragt ob 
+das Fachliche Datenmodell in PlantUML erstellt werden kann. Hier fällt besonders auf, dass die Verbindungen zwischen den Entitäten 
+
+Alle drei Tools schaffen es, ein grobes Grundgerüst für das Fachliche Datenmodell zu erstellen.
 
 
 - Le Chat:

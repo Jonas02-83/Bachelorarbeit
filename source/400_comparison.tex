@@ -226,8 +226,8 @@ Die Maßnahmentabelle wurde mit folgendem Prompt erstellt:
         eine Zeile mit der ID von dem Risikon beschrieben, auf die sich die Maßnahmen beziehen.
         \vfill
     \end{tcolorbox}
-    \caption{Prompt Risikotabelle}
-    \label{Prompt Risikotabelle}
+    \caption{Prompt Maßnahmentabelle}
+    \label{Prompt Maßnahmentabelle}
 \end{prompt}
 
 Der Prompt für die Maßnahmen ist ähnlich wie der, für die Risikotabelle. Es wird jede Spalte der Tabelle einmal beschrieben,
@@ -318,8 +318,8 @@ Die Systemarchitektur wurde mit folgenden Prompt erstellt:
         und Einordnung des Systems in die Systemlandschaft des Kunden. Falls Schnittstellen zu Nachbarsystemen bestehen, dann müssen diese abgebildet werden.
         \vfill
     \end{tcolorbox}
-    \caption{Prompt Einleitung Anforderungsspezifikation}
-    \label{Prompt Einleitung Anforderungsspezifikation}
+    \caption{Prompt Systemarchitektur}
+    \label{Prompt Systemarchitektur}
 \end{prompt}
 
 Auch hier muss beschrieben werden, was genau erstellt werden soll. Wichtig hier ist, dass man in den selben Chat schreibt, in dem man die Dokumente vorher
@@ -351,8 +351,8 @@ Das erste größere und anspruchsvollere Dokument ist das Fachliche Datenmodell.
         bzw. EInschränkungen spezifiziert werden. Das Modell soll alle Entitätstypen mit deren Eigenschaften, Beziehungen und Einschränkungen besitzen.
         \vfill
     \end{tcolorbox}
-    \caption{Prompt Einleitung Anforderungsspezifikation}
-    \label{Prompt Einleitung Anforderungsspezifikation}
+    \caption{Prompt Fachliches Datenmodell}
+    \label{Prompt Fachliches Datenmodell}
 \end{prompt}
 
 Dabei muss explizit erwähnt werden, dass ein UML-Klassendiagramm gewünscht ist, damit die Aussgabe das richtige Format besitzt. Außerdem sollte erwähnt werden,
@@ -382,16 +382,22 @@ Gemini[[[[[[[[[]]]]]]]]]\\
 Auch Le Chat hatte zu beginn nur eine Entität ``Spieler''. Für eine Anwendung wo ein Spieler an mehreren Spielen teilnehmen sollen kann, macht es jedoch Sinn, diese 
 Entität auf zwei Entitäten, ``User'' und ``Player'', aufzuteilen. Desweiteren wurde bei Le Chat, wie es eigentlich in einem UML-Klassendiagramm gehört, die Typen der
 Attribute nicht festgelegt. Außerdem ist die Frage, wenn die E-Mail-Adresse eines Spieler eindeutig sein muss, warum dann trotzdem eine eindeutige ID benötigt wird.
+Daneben wurde auch die Anforderung des Kunden, das ein Punktesystem eingebunden werden soll, ignoriert, da es kein Attribut zum Speichern der Punktzahl gibt.
 Die Bezeichung der Beziehungen zwischen den Entitäten ist, in der Textuellen Beschreibung für die Beziehung, eher an einem ER-Modell orientiert und nicht an einem 
 UML-Klassendiagramm. Die genaue Bezeichnung für die Vielfachheit muss aus der Beschreibung selbst erstellt werden. Diese war jedoch auch teilweise fehlerhaft. Zum 
 Beispiel, dass ein Player an einem oder mehreren Spielen teilnehmen kann, macht kein Sinn, da die Entität ``Player'' die Eigenschaften eines Spielers
 im Spiel beschreibt. Diese kann schlecht in mehreren Spielen gleich sein. Auch einfachere Sachen wie die Zuweisung der Spielfiguren war ein Problem. Zum Beispiel bei 
 der Beschreibung der Beziehung zwischen Player und Spielfigur wurde definiert, dass ein Player eine oder mehrere Spielfiguren besitzen kann. Dies entspricht aber nicht 
 den normalen Regeln von Mensch ärgere dich nicht, wo jeder Spieler immer genau vier Spielfiguren besitzt. Daneben wurde auch hier der ``Player''-Entität ein Attribut
-für die Position auf dem Spielbrett festgelegt. Nach der Eingabe [Verweis!!!!] wurden genau diese Beziehungen richtig geändert, jedoch waren immernoch Fehler enthalten
+für die Position auf dem Spielbrett festgelegt. Nach der Eingabe [Verweis!!!!] wurden genau diese Beziehungen richtig geändert, jedoch waren immer noch Fehler enthalten
 wie zum Beispiel, dass ein Spiel eine oder mehrere Spielfiguren enthalten kann. Anschließend wurde gefragt ob der Würfel auch in das Fachliche Datenmodell mit aufgenommen
 werden sollte, woraufhin sowohl eine eigene Entität ``Dice'' als auch ein Attribut ``dice: Dice'' in der ``Game''-Entität erstellt wurde. Anschließend wurde gefragt ob 
-das Fachliche Datenmodell in PlantUML erstellt werden kann. Hier fällt besonders auf, dass die Verbindungen zwischen den Entitäten 
+das Fachliche Datenmodell in PlantUML erstellt werden kann. Hier fällt besonders auf, dass die Verbindungen zwischen den Entitäten alles Kompositionen sind, was aber soweit
+auch Sinn ergibt. Außerdem fällt auch das hier bereits die Primär- und Fremdschlüssel dargestellt werden. Dies ist für das Fachliche Datenmodell allerdings zu spezifisch.
+Ein weiterer Fehler ist die Beziehung zwischen ``Game'' und ``Figure''. Hier wird festgelegt, dass ein Spiel aus 16 Figuren besteht. Allerdings gibt es auch ein 
+Attribut ``max\_players'' und es wurde bereits festgelegt, dass ein Spiel aus 1..4 Spieler besteht. Daher kann es auch sein, falls nicht immer auf 4 Spieler mit KI-Gegner aufgefüllt 
+wird, das weniger als 16 Figuren auf dem Spielfeld sind. Hier lässt sich allerdings eh kritisch hinterfragen ob die Komposition zwischen ``Game'' und ``Figure'' überhaupt 
+notwendig ist, da durch die Verbindung zwischen ``Figure'' und ``Player'' und der zwischen ``Game'' und ``Player'' die Figuren sowieso genau einem Spiel zugeordnet sind.\\
 
 Alle drei Tools schaffen es, ein grobes Grundgerüst für das Fachliche Datenmodell zu erstellen.
 

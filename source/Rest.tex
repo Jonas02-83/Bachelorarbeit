@@ -267,3 +267,43 @@ Außerdem beschreibung, welche Infos benötigt werden. Inhalt muss nicht beschri
         - Wie setzt du das Spielbrett als String um? Und warum muss dieses gespeichert werden? Kann man das nicht einfach als Graphische Oberfläche implementieren?
         - Muss man den Würfel in das Fachliche Datenmodell übernehmen? 
         - Reicht es nicht den Würfel als Attribut in Spiel aufzunehmen?
+
+
+- Le Chat:
+    - Nur beschreibung
+    - Hat auch nur Spieler, "user" und "player" würden sinn machen.
+    - Spielfigur an einem oder mehreren Spielen teilnehmen?
+    - Spieler-Spielfigur: Ein Spieler hat genau 4 Figuren, nicht weniger und nicht mehr
+    - Beziehung zwischen Spiel-Spielfigur? wenn ja, Spieler * 4 Spielfiguren.
+    - Punkte werde nicht gespeichert.
+    - Player hat position? Player kann an mehreren Spielen teilnehmen? -> Nach Hinweis geändert
+    - Player und Spielfigur haben positionen.
+    - Spiel-Spielfigur Beziehung sinnvoll?
+
+    - Probleme mit der Beschreibung der Beziehungen zwischen den Klassen
+
+    - Ein paar grundsätzliche Einschränkungen aufgelistet, aber nicht zu jedem Attribut -> Sagt nur ob Ganzzahl oder Text,
+    keine Begrenzung in der Länge.
+
+    Prompts:
+        - Erstell mir nun für die Anforderungsspezifikation das Fachliche Datenmodell. Dieses soll mit Hilfe eines UML Klassendiagrammes mit ergänzenden Beschreibungen bzw. EInschränkungen spezifiziert werden. Das Modell soll alle Entitätstypen mit deren Eigenschaften, Beziehungen und Einschränkungen besitzen.
+        - Macht es nicht auch sinn "Spieler" in zwei Klassen
+        aufzuteilen? Einmal "User" und einmal ``Player''.  "User" beinhaltet dabei den Namen, die Email, das Passwort und die Punkte. "Spieler" beinhaltet dann die nötigen Attribute zum Spielen wie SpielerID, die Farbe und die position seiner Spielfiguren.
+        - Ein Player hat 4 Figuren. Außerdem hat der Player keine Positionen, diese haben ja die Figuren. Ein Player soll auch nicht an mehreren Spielen teilnehmen, sondern der User kann mehrere Player sein und ein Player spielt ein Spiel. Ein Spiel besteht aus 1 bis 4 Playern.
+
+
+
+
+Anwendungsfalldiagramm:
+
+- Prompt: Reicht zu sagen, dass das Diagramm alle Anwendungsfälle beinhalten soll und den Rollen zugewiesen werden soll.
+
+- ChatGPT:
+    - Spiel erstellen: wird zum Gastgeber. Besondere rechte? wenn ja, warum keine neue Rolle. -> Nach Hinweis neue Rolle
+    - Als User Chat nutzen? In Anforderungen wurde nur von Chat während des Spiels gesprochen. -> Nach Hinweis wurde entfernt.
+    - Was gehört zu Zug machen, wenn Spielfigur bewegen eigener Anwendungsfall ist -> gesamte Ablauf wenn Spieler am Zug ist
+    (Würfeln, Auswählen und Bewegen der Spielfigur, Schlagen gegnerischer Figuren und Beenden des Zuges), AF "Spielfigur bewegen" 
+    war doppelt. Wurde aber nach Hinweis entfernt. Sehr großer Anwendungsfall, vielleicht lieber in kleinere AF aufteilen??
+    - Erstellt Code um in einem PlantUML-Editor oder einem Online Renderer das Diagramm als Bild zu erstellen
+    - Erstellt Skizze in PlantUML ganz gut, sieht lediglich aus als ob auch ``Spieler'' von ``User'' erbt.
+    -> Grundgerüst wird ganz gut erstellt, muss aber mit ein paar nachfragen in richtige Richtung lenken.

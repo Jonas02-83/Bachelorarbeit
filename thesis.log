@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  3 JUL 2024 15:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  6 JUL 2024 19:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -1988,10 +1988,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 108.
- (./thesis.toc
-Underfull \vbox (badness 1314) has occurred while \output is active []
-
- [7])
+ (./thesis.toc [7])
 \tf@toc=\write10
 \openout10 = `thesis.toc'.
 
@@ -2095,7 +2092,7 @@ Underfull \hbox (badness 2253) in paragraph at lines 241--243
  []
 
 [6] [7]
-<./images/pictures/Kapitel2Tabelle.PNG, id=270, 172.01765pt x 378.66469pt>
+<./images/pictures/Kapitel2Tabelle.PNG, id=273, 172.01765pt x 378.66469pt>
 File: ./images/pictures/Kapitel2Tabelle.PNG Graphic file (type png)
 <use ./images/pictures/Kapitel2Tabelle.PNG>
 Package pdftex.def Info: ./images/pictures/Kapitel2Tabelle.PNG  used on input line 274.
@@ -2200,7 +2197,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 488--492
 
  (./source/300_usage.tex
 chapter 3.
-<./images/pictures/Kapitel3Tabelle.PNG, id=318, 344.78813pt x 379.04109pt>
+<./images/pictures/Kapitel3Tabelle.PNG, id=321, 344.78813pt x 379.04109pt>
 File: ./images/pictures/Kapitel3Tabelle.PNG Graphic file (type png)
 <use ./images/pictures/Kapitel3Tabelle.PNG>
 Package pdftex.def Info: ./images/pictures/Kapitel3Tabelle.PNG  used on input line 5.
@@ -2480,24 +2477,132 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--360
  []
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 361--379
+Underfull \hbox (badness 10000) in paragraph at lines 361--381
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--381
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--401
+Underfull \hbox (badness 10000) in paragraph at lines 384--405
 
  []
 
-[33] [34] [35] [36]) [37]
+[33]
+Underfull \vbox (badness 5548) has occurred while \output is active []
+
+ [34]
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--442
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 445--453
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 478--481
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 482--500
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--508
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 542--543
+
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 575--576
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--592
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 593--594
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 623--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--649
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 692--697
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 698--699
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 700--704
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 721--724
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--739
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 740--741
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--761
+
+ []
+
+[44]) [45]
 \openout2 = `source/500_Problems.aux'.
 
- (./source/500_Problems.tex [38
+ (./source/500_Problems.tex [46
 
 
 
@@ -2505,10 +2610,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 382--401
 
 ]
 chapter 5.
-) [39]
+) [47]
 \openout2 = `source/600_Conclusion.aux'.
 
- (./source/600_Conclusion.tex [40
+ (./source/600_Conclusion.tex [48
 
 
 
@@ -2516,7 +2621,7 @@ chapter 5.
 
 ]
 chapter 6.
-) [41] [42
+) [49] [50
 
 
 
@@ -2655,18 +2760,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72192 strings out of 474049
- 1654910 string characters out of 5746277
- 2921027 words of memory out of 5000000
- 93032 multiletter control sequences out of 15000+600000
+ 72233 strings out of 474049
+ 1655582 string characters out of 5746277
+ 2922565 words of memory out of 5000000
+ 93049 multiletter control sequences out of 15000+600000
  622968 words of font info for 236 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,22n,120p,10948b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,22n,120p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (66 pages, 312781 bytes).
+Output written on thesis.pdf (74 pages, 337916 bytes).
 PDF statistics:
- 746 PDF objects out of 1000 (max. 8388607)
- 628 compressed objects within 7 object streams
- 127 named destinations out of 1000 (max. 500000)
- 53249 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 809 PDF objects out of 1000 (max. 8388607)
+ 683 compressed objects within 7 object streams
+ 151 named destinations out of 1000 (max. 500000)
+ 53257 words of extra memory for PDF output out of 61914 (max. 10000000)
 

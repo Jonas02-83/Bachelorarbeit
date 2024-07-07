@@ -358,208 +358,404 @@ Das erste größere und anspruchsvollere Dokument ist das Fachliche Datenmodell.
 Dabei muss explizit erwähnt werden, dass ein UML-Klassendiagramm gewünscht ist, damit die Aussgabe das richtige Format besitzt. Außerdem sollte erwähnt werden,
 dass ergänzende Beschreibungen mit erstellt werden soll, damit diese Vorgabe auch direkt mit erfüllt ist und die Tools ihr Diagramm einmal näher erläutern.\\
 
-Bei ChatGPT war direkt auffällig, dass für jede Entität eine ID erstellt wurde. Dies führt zum einen dazu, dass die Anwendung sehr Datenbanklastig ist und zum 
-anderen ist dies auch einfach bei manchen Entitäten nicht nötig. Zum Beispiel beim User könnte man, je nach logIn-Daten, den Namen oder die E-Mail-Adresse 
+Bei ChatGPT war direkt auffällig, dass für jede Klasse eine ID erstellt wurde. Dies führt zum einen dazu, dass die Anwendung sehr Datenbanklastig ist und zum 
+anderen ist dies auch einfach bei manchen Klassen nicht nötig. Zum Beispiel beim User könnte man, je nach logIn-Daten, den Namen oder die E-Mail-Adresse 
 einzigartig machen und damit den User identifizieren. Des weiteren haben die Beziehungen nicht immer gepasst. Zum Beispiel die 1:1 Beziehung zwischen 
 ``Spielfigur'' und ``Feld''. Es muss natürlich nicht auf jedem Feld eine Spielfigur stehen sondern auf einem Feld kann (0..1) eine Spielfigur stehen. Dieses Problem
 zieht sich auch durch die gesamten Versuche, das Fachliche Datenmodell zu korrigieren. Häufig passiert es auch, dass wenn ein anderer Fehler korrigiert wird, 
 eine richtige Beziehung zu etwas falschem geändert wird. Bei der erstellten Skizze waren ebenfalls die Beziehungen falsch eingezeichnet. Außerdem zeigten Beide Pfeile 
-zwischen zwei Entitäten in die gleiche Richtung. Bei Nachfrage, ob die Beziehung nicht in beide richtungen zeigen sollten, wurde gesagt, dass das stimmt und die 
-Beziehungen Bidirektional sein sollten, jedoch wurde an der Zeichnung nichts geändert. Desweiteren ist aufgefallen, dass bei der Entität ``Feld'' ein Attribut gefehlt
+zwischen zwei Klassen in die gleiche Richtung. Bei Nachfrage, ob die Beziehung nicht in beide richtungen zeigen sollten, wurde gesagt, dass das stimmt und die 
+Beziehungen Bidirektional sein sollten, jedoch wurde an der Zeichnung nichts geändert. Desweiteren ist aufgefallen, dass bei der Klasse ``Feld'' ein Attribut gefehlt
 hat, das beschreibt, ob das Feld belegt ist oder nicht. Außerdem wurde in einem String in ``Spiel'' das Spielbrett gespeichert. Auf Nachfrage wie dies Implementiert
 werden soll, wurde geantwortet das dies nicht die beste Lösung ist, sondern das Spielbrett dynamisch in der Anwendung generiert und angezeigt werden sollte.
 Weitere Probleme hatte ChatGPT mit der Speicherung der Farbe und der Position. Manchmal wurden diese Attribute in ``Spieler'', manchmal in ``Spielfigur'' und teilweise
-auch in beiden gespeichert. Damit ese später einfacher zu realisieren ist an mehreren Spielen teilnehmen zu können, wurde die Eingabe, dass es mehr Sinn macht den 
+auch in beiden gespeichert. Damit es später einfacher zu realisieren ist an mehreren Spielen teilnehmen zu können, wurde die Eingabe, dass es mehr Sinn macht den 
 ``Spieler'' in ``User'' und ``Spieler'' aufzuteilen, getätigt. ChatGPT hat dies dann genau wie beschrieben gemacht. Desweiteren wurde der Würfel vergessen, welcher 
 jedoch nach Hinweis diesbezüglich in ``Spiel'' hinzugefügt wurde. Nach der letzten Ausgabe des Fachlichen Datenmodells wurde, nach Aufforderung, ein PlantUML-Diagramm 
 erstellt. In diesem wurde an den Assoziationen Leseunterstützung angefügt. Diese Leseunterstützung sind jedoch nur von oben nach unten hilfreich. Zum Beispiel ``Feld 
 steht auf Spielfigur'' ist keine Hilfreiche Beschriftung. Des weiteren sind alle Festlegungen der Vielfachheit auf der falschen Seite. Als Beispiel muss an der 
 Assoziation zwischen ``Spieler'' und ``Spielfigur'' die ``1'' auf der Seite von ``Spieler'' sein und die ``1..4'' auf der Seite von ``Spielfigur''. Desweiteren würden 
 Pfeile an den Assoziationen helfen, die Flussrichtung zu verdeutlichen.\\
+Die zu dem Dokument gehörige ergänzende Beschreibungen und Einschränkungen wurden erst auf Nachfrage erstellt, doch ab da an passten diese ganz gut. Auch, dass beim 
+Format direkt die Länge der Strings begrenzt wurden, zeigt das ChatGPT hier auch Sicherheitstechnische Aspekte mit einbezieht.\\
 
 Gemini[[[[[[[[[]]]]]]]]]\\
 
-Auch Le Chat hatte zu beginn nur eine Entität ``Spieler''. Für eine Anwendung wo ein Spieler an mehreren Spielen teilnehmen sollen kann, macht es jedoch Sinn, diese 
-Entität auf zwei Entitäten, ``User'' und ``Player'', aufzuteilen. Desweiteren wurde bei Le Chat, wie es eigentlich in einem UML-Klassendiagramm gehört, die Typen der
+Auch Le Chat hatte zu beginn nur eine Klasse ``Spieler''. Für eine Anwendung wo ein Spieler an mehreren Spielen teilnehmen sollen kann, macht es jedoch Sinn, diese 
+Klasse auf zwei Klassen, ``User'' und ``Player'', aufzuteilen. Desweiteren wurde bei Le Chat, wie es eigentlich in einem UML-Klassendiagramm gehört, die Typen der
 Attribute nicht festgelegt. Außerdem ist die Frage, wenn die E-Mail-Adresse eines Spieler eindeutig sein muss, warum dann trotzdem eine eindeutige ID benötigt wird.
 Daneben wurde auch die Anforderung des Kunden, das ein Punktesystem eingebunden werden soll, ignoriert, da es kein Attribut zum Speichern der Punktzahl gibt.
-Die Bezeichung der Beziehungen zwischen den Entitäten ist, in der Textuellen Beschreibung für die Beziehung, eher an einem ER-Modell orientiert und nicht an einem 
+Die Bezeichung der Beziehungen zwischen den Klassen ist, in der Textuellen Beschreibung für die Beziehung, eher an einem ER-Modell orientiert und nicht an einem 
 UML-Klassendiagramm. Die genaue Bezeichnung für die Vielfachheit muss aus der Beschreibung selbst erstellt werden. Diese war jedoch auch teilweise fehlerhaft. Zum 
-Beispiel, dass ein Player an einem oder mehreren Spielen teilnehmen kann, macht kein Sinn, da die Entität ``Player'' die Eigenschaften eines Spielers
+Beispiel, dass ein Player an einem oder mehreren Spielen teilnehmen kann, macht kein Sinn, da die Klasse ``Player'' die Eigenschaften eines Spielers
 im Spiel beschreibt. Diese kann schlecht in mehreren Spielen gleich sein. Auch einfachere Sachen wie die Zuweisung der Spielfiguren war ein Problem. Zum Beispiel bei 
 der Beschreibung der Beziehung zwischen Player und Spielfigur wurde definiert, dass ein Player eine oder mehrere Spielfiguren besitzen kann. Dies entspricht aber nicht 
-den normalen Regeln von Mensch ärgere dich nicht, wo jeder Spieler immer genau vier Spielfiguren besitzt. Daneben wurde auch hier der ``Player''-Entität ein Attribut
-für die Position auf dem Spielbrett festgelegt. Nach der Eingabe [Verweis!!!!] wurden genau diese Beziehungen richtig geändert, jedoch waren immer noch Fehler enthalten
+den normalen Regeln von Mensch ärgere dich nicht, wo jeder Spieler immer genau vier Spielfiguren besitzt. Daneben wurde auch hier der ``Player''-Klasse ein Attribut
+für die Position auf dem Spielbrett festgelegt. Nach der Eingabe [Verweis!!!! 05\_03\_LeChat] wurden genau diese Beziehungen richtig geändert, jedoch waren immer noch Fehler enthalten
 wie zum Beispiel, dass ein Spiel eine oder mehrere Spielfiguren enthalten kann. Anschließend wurde gefragt ob der Würfel auch in das Fachliche Datenmodell mit aufgenommen
-werden sollte, woraufhin sowohl eine eigene Entität ``Dice'' als auch ein Attribut ``dice: Dice'' in der ``Game''-Entität erstellt wurde. Anschließend wurde gefragt ob 
-das Fachliche Datenmodell in PlantUML erstellt werden kann. Hier fällt besonders auf, dass die Verbindungen zwischen den Entitäten alles Kompositionen sind, was aber soweit
-auch Sinn ergibt. Außerdem fällt auch das hier bereits die Primär- und Fremdschlüssel dargestellt werden. Dies ist für das Fachliche Datenmodell allerdings zu spezifisch.
+werden sollte, woraufhin sowohl eine eigene Klasse ``Dice'' als auch ein Attribut ``dice: Dice'' in der ``Game''-Klasse erstellt wurde. Anschließend wurde gefragt ob 
+das Fachliche Datenmodell in PlantUML erstellt werden kann. Hier fällt besonders auf, dass die Verbindungen zwischen den Klassen alles Kompositionen sind, was aber soweit
+auch Sinn ergibt. Außerdem fällt auch auf, dass hier bereits die Primär- und Fremdschlüssel dargestellt werden. Dies ist für das Fachliche Datenmodell allerdings zu spezifisch.
 Ein weiterer Fehler ist die Beziehung zwischen ``Game'' und ``Figure''. Hier wird festgelegt, dass ein Spiel aus 16 Figuren besteht. Allerdings gibt es auch ein 
 Attribut ``max\_players'' und es wurde bereits festgelegt, dass ein Spiel aus 1..4 Spieler besteht. Daher kann es auch sein, falls nicht immer auf 4 Spieler mit KI-Gegner aufgefüllt 
 wird, das weniger als 16 Figuren auf dem Spielfeld sind. Hier lässt sich allerdings eh kritisch hinterfragen ob die Komposition zwischen ``Game'' und ``Figure'' überhaupt 
 notwendig ist, da durch die Verbindung zwischen ``Figure'' und ``Player'' und der zwischen ``Game'' und ``Player'' die Figuren sowieso genau einem Spiel zugeordnet sind.\\
+Le Chat erstellt das Format und die Beschreibung der Attribute auch erst auf Nachfrage. Jedoch hält sich die Ausgabe in Grenzen. Bei dem Format wird lediglich der Typ der
+Attribute beschrieben und es gibt keine Eingrenzung der Größe und der Länge der Werte.\\
 
-Alle drei Tools schaffen es, ein grobes Grundgerüst für das Fachliche Datenmodell zu erstellen.
-
-
-- Le Chat:
-    - Nur beschreibung
-    - Hat auch nur Spieler, "user" und "player" würden sinn machen.
-    - Spielfigur an einem oder mehreren Spielen teilnehmen?
-    - Spieler-Spielfigur: Ein Spieler hat genau 4 Figuren, nicht weniger und nicht mehr
-    - Beziehung zwischen Spiel-Spielfigur? wenn ja, Spieler * 4 Spielfiguren.
-    - Punkte werde nicht gespeichert.
-    - Player hat position? Player kann an mehreren Spielen teilnehmen? -> Nach Hinweis geändert
-    - Player und Spielfigur haben positionen.
-    - Spiel-Spielfigur Beziehung sinnvoll?
-
-    - Probleme mit der Beschreibung der Beziehungen zwischen den Entitäten
-    - Ein paar grundsätzliche Einschränkungen aufgelistet, aber nicht zu jedem Attribut -> Sagt nur ob Ganzzahl oder Text,
-    keine Begrenzung in der Länge.
-
-    Prompts:
-        - Erstell mir nun für die Anforderungsspezifikation das Fachliche Datenmodell. Dieses soll mit Hilfe eines UML Klassendiagrammes mit ergänzenden Beschreibungen bzw. EInschränkungen spezifiziert werden. Das Modell soll alle Entitätstypen mit deren Eigenschaften, Beziehungen und Einschränkungen besitzen.
-        - Macht es nicht auch sinn "Spieler" in zwei Entitäten aufzuteilen? Einmal "User" und einmal ``Player''.  "User" beinhaltet dabei den Namen, die Email, das Passwort und die Punkte. "Spieler" beinhaltet dann die nötigen Attribute zum Spielen wie SpielerID, die Farbe und die position seiner Spielfiguren.
-        - Ein Player hat 4 Figuren. Außerdem hat der Player keine Positionen, diese haben ja die Figuren. Ein Player soll auch nicht an mehreren Spielen teilnehmen, sondern der User kann mehrere Player sein und ein Player spielt ein Spiel. Ein Spiel besteht aus 1 bis 4 Playern.
+Alle drei Tools schaffen es, ein grobes Grundgerüst für das Fachliche Datenmodell zu erstellen. Bei [ChatGPT und Le Chat] war dabei auffällig, dass für jede Klasse eine 
+eindeutige ID erstellt wurde. Das Hauptproblem bei ChatGPT stellt die richtige Darstellung der Assoziationen zwischen den Klassen dar. Besonders die Beschreibung der 
+Vielfachheit stellt ChatGPT vor Schwierigkeiten. Dies funktioniert bei Le Chat etwas besser, aber immer noch nicht fehlerfrei. Dafür hatte Le Chat mit mehreren kleineren 
+generellen Problemen zu kämpfen. Es ist außerdem auffällig das ab einem gewissen Punkt, die Erstellung des Prompts und das analysieren der neuen Antwort länger dauert als 
+die Fehler selbstständig anzupassen. Daher ist es nicht allzu schlimm wenn ein Attribut irgendwo doppelt vorkommt oder eine Assoziation falsch beschriftet ist. Deshalb und
+aufgrund der Komplexität dieses Diagrammes erhalten sowohl ChatGPT als auch Le Chat die bewertung ``Gut''. Das Grundgerüst kann hier ohne Probleme übernommen werden und 
+anschließend an die eigenen Bedürfnisse und Anforderungen angepasst werden. 
 
 
-Anwendungsfalldiagramm:
+\subsection*{Anwendungsfalldiagramm}
 
-- Prompt: Reicht zu sagen, dass das Diagramm alle Anwendungsfälle beinhalten soll und den Rollen zugewiesen werden soll.
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir nun für die Anforderungsspezifikation ein Anwendungsfalldiagramm. Dieses soll alle Anwendungsfälle beinhalten und den Rollen zuweisen, die für die 
+        Applikation benötigt werden.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Anwendungsfalldiagramm}
+    \label{Prompt Anwendungsfalldiagramm}
+\end{prompt}
 
-- ChatGPT:
-    - Spiel erstellen: wird zum Gastgeber. Besondere rechte? wenn ja, warum keine neue Rolle. -> Nach Hinweis neue Rolle
-    - Als User Chat nutzen? In Anforderungen wurde nur von Chat während des Spiels gesprochen. -> Nach Hinweis wurde entfernt.
-    - Was gehört zu Zug machen, wenn Spielfigur bewegen eigener Anwendungsfall ist -> gesamte Ablauf wenn Spieler am Zug ist
-    (Würfeln, Auswählen und Bewegen der Spielfigur, Schlagen gegnerischer Figuren und Beenden des Zuges), AF "Spielfigur bewegen" 
-    war doppelt. Wurde aber nach Hinweis entfernt. Sehr großer Anwendungsfall, vielleicht lieber in kleinere AF aufteilen??
-    - Erstellt Code um in einem PlantUML-Editor oder einem Online Renderer das Diagramm als Bild zu erstellen
-    - Erstellt Skizze in PlantUML ganz gut, sieht lediglich aus als ob auch ``Spieler'' von ``User'' erbt.
-    -> Grundgerüst wird ganz gut erstellt, muss aber mit ein paar nachfragen in richtige Richtung lenken.
+Mit diesem Prompt wurde das Anwendungsfalldiagramm erstellt. Der Prompt ist sehr einfach gehalten und beschreibt lediglich kurz den Inhalt des Diagrammes.\\
 
-- Gemini: [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+ChatGPTs erste Ausgabe enthielt zwei Rollen, den ``Spieler'' und den ``User''. Der ``User'' hatte den Anwendungsfall ``Spiel erstellen''. Dadurch kamm die 
+Frage auf, ob man als Spielersteller besondere Rechte haben sollte. ChatGPT hat darauf hin die neue Rolle ``Gastgeber'' hinzugefügt. Fraglich ist allerdings
+die Einzeichnung in das PlantUML-Diagramm. Dem zufolge erbt der ``Gastgeber'' von ``Spieler'' und dieser von ``User''. Das ist allerdings nur Teilweise richtig.
+Der ``Gastgeber'' muss von ``Spieler'' erben, da auch der ``Gastgeber'' die zum Spielen benötigten Anwendungsfälle benötigt. Allerdings sollte ``Spieler'' nicht 
+von ``User'' erben, da die Anwendungsfälle auf die der ``User'' zugreifen kann, während eines Spiels nicht benötigt werden. Des weiteren hatte ``Spieler'' die 
+Anwendungsfälle ``Zug machen'' und ``Spielfigur bewegen''. Dadurch war zunächst unklar welche Tätigkeiten ``Zug machen'' beinhaltet. Auf Nachfrage antwortete 
+ChatGPT allerdings, dass zu ``Zug machen'' alle Tätigkeiten beinhaltet, die man während einem Zug durchführen muss (Würfeln, Auswählen und Bewegen der Spielfigur, 
+Schlagen gegnerischer Figuren und Beenden des Zuges). Daher ist der Anwendungsfall ``Spielfigur bewegen'' unnötig. Auf einen Hinweis diesbezüglich entfernt ChatGPT 
+den Anwendungsfall aus dem Diagramm. Zuletzt konnte der Anwendungsfall ``Chat nutzen'' mit der Rolle ``User'' durchgeführt werden. Dies entspricht allerdings nicht 
+den Anforderungen, da nur während eines Spiels ein Chat vorhanden sein soll. Auch hier wird der Anwendungsfall nach einem Hinweis von ChatGPT wieder entfernt. 
+Grundsätzlich wurde das Anwendungsfalldiagramm so passen, allerdings muss man sich die Frage stellen, ob man noch eine Rolle für Administrative Zwecke benötigt, 
+welcher direkt Daten, wie zum Beispiel User, aus der Datenbank löschen und hinzufügen kann. Positiv herausheben sollte man, dass ChatGPT bei jeder Ausgabe 
+automatisch Code für ein Diagramm bei PlantUML erzeugt hat.\\
 
-- Le Chat:
-    - Rollen werden gut erstellt.
-    - Passende Anwendungsfälle, stimmen auch zu den Rollen
-    - "Benutzer verwalten" von Admin vielleicht etwas ungenau? -> Wird geändert und entsprechend ergänzt
-    - möglich mit PlantUML erstellen zu lassen, Diagramm jedoch recht durcheinander und Anwendungsfall ``Passwort vergessen'' wurde ``User'' 
-    zugewiesen und nicht wie in der Beschreibung ``Gast''
+Gemini[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]\\
+
+Eine erste Ausgabe mit direkt vier Rollen erstellt dahingegen Le Chat. Hier wird eine eigene Rolle ``Gast'' erstellt, welche ein Benutzer erhält der noch nicht eingeloggt ist, und 
+es wird direkt ein Rolle ``Admin'' mit angegeben. Ein unterschied zu [ChatGPT] ist hier, dass wenn ein Spieler am Zug ist, jede Aktion ein eigener Anwendungsfall
+ist. Dabei ist zu beachten, dass ``Figur setzen'' und ``Figur schlagen'' nicht getrennt werden dürfen, da diese Aktionen zusammengehören. Wenn eine Figur gesetzt 
+wird muss automatisch überprüft werden ob sich auf dem Feld bereits eine Figur befindet, wenn ja muss diese automatich geschlagen werden. Außerdem sind die 
+Anwendungsfälle ``Benutzer verwalten'' und ``Profil bearbeiten'' zu ungenau definiert. Hier muss man für jede Aktion einen eigenen Anwendungsfall erstellen. Diese beiden Punkte wurden 
+Le Chat als Eingabe gegeben und anschließend anständig korriegiert. Auf Nachfrage wurde hier auch Code für ein PlantUML-Diagramm erzeugt. Dieses ist jedoch sehr
+unübersichtlich, da für jeden Anwendungsfall ein ``Männchen'' erstellt wird und diese einfach untereinander aufgelistet werden. Die Versuche, ihn davon wegzubringen 
+und das Diagramm ähnlich wie ChatGPT zu erstellen waren alle vergebens.\\
+
+Zusammenfassend lässt sich sagen, dass [ChatGPT und Le Chat] das Anwendungsfalldiagramm schon ganz gut beschreiben. Ein paar Ungenauigkeiten gibt es dennoch und aus 
+diesem Grund werden sowohl ChatGPT als auch Le Chat mit ``Gut'' bewertet. Dass Le Chat das PlantUML-Diagramm nicht übersichtlich erstellen kann fließt hier nicht
+negativ in die Bewertung mit ein, da dass erstellen des Diagramms keine Anforderung war sondern es reicht wenn die Diagramme anständig beschrieben werden, so das man 
+diese selbst erstellen kann. Dies ist bei der Beschreibung von Le Chat gegegeben.
+
+\subsection*{Anwendungsfälle}
+
+Nun geht es um die Erstellung der detaillierten Beschreibung für die einzelnen Anwendungsfälle. Dazu wurden zwei Anwendungsfälle ausgesucht.
+Einmal ``Anmelden'' als leichteren Anwendungsfall und ``Zug machen'' [ChatGPT] bzw. ``Figur setzen oder schlagen'' [Le Chat] 
+als komplexeren Anwendungsfall. Dazu wurde mit zwei Prompts gearbeitet. Für den Anwendungsfall ``Anmelden'' wurde folgende Eingabe benutzt:
+
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir nun für die Anforderungsspezifikation, basierend auf dem Anwendungsfalldiagramm, eine detaillierte Beschreibung für den Anwendungsfall „Anmelden“. Dabei 
+        soll zunächst der Anwendungsfall in einem Satz beschrieben werden, was dieser macht. Anschließend soll der Akteur, der Auslöser, die Vorbedingung und die Häufigkeit 
+        beschrieben werden. Danach soll ein Aktivitätsdiagramm erstellt werden. Dabei werden die Aktivitäten dem Client oder dem Server zugewiesen, wo diese bearbeitet werden. 
+        In dem Diagramm sollen keine Dialog beschreibung, wie Fenster mit Fehlermeldung anzeigen, beschrieben werden. Es sollen lediglich Dienste beschrieben werden, die der 
+        Server anbietet. Zuletzt werden die Aktivitäten aus dem Diagramm kurz beschrieben.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt AF Anmelden}
+    \label{Prompt AF Anmelden}
+\end{prompt}
+
+Der Prompt beschreibt die Struktur des Dokuments mit den Inhalten. Außerdem wird der Aufbau des Aktivitätsdiagramms beschrieben und das keine Dialog Beschreibungen 
+in das Diagramm gehören. Einige Sachen werden hier direkt ganz gut erstellt. Auffällig ist, dass bei der ``Häufigkeit'' keine grobe Schätzung angegeben wird sondern 
+Aussagen wie ``Jedes Mal, wenn der Benutzer die Anwendung nutzen möchte.''. Dies ist keine Sinnvolle Beschreibung der Häufigkeit.\\
+
+Die erste Ausgabe wurde mit ChatGPT-4o erstellt. Dabei ist vorallem aufgefallen, dass die Beschreibung nicht zu dem PlantUML-Diagramm passt. Die Aktivitäten
+sind anders benannt und auch die Anzahl der Aktivitäten simmt nicht überein. Außerdem wird sowohl in der Beschreibung als auch in dem Diagramm bereits 
+viel zu genau beschrieben was passiert. Zum Beispiel die Aktivität ``Session erstellen'' ist für die Beschreibung eines Anwendungsfalls viel zu genau.
+Dies beschreibt bereits ``Wie'' der Anwendungsfall umgesetzt wird und gehört somit in das Architekturdokument. Aufgrund, dass 4o hier zuviel erstellt hat, 
+wurde die Nachricht mit ChatGPT-3.5 nochmal generiert. Man sieht schonmal direkt, dass deutlich weniger Aktivitäten und keine Beschreibung der Implementierung 
+erstellt wurden. Die Aktivitäten passen zum Anwendungsfall und beschreiben diesen gut. Wenn man jedoch die Diagramme von 4o und von 3.5 vergleicht,
+fallen einem einige Fehler auf, die beide machen. Zum einen wird die Aktivtät, die überprüft wird, in den Entscheidungsknoten reingeschrieben. Diese muss jedoch als eigene 
+Aktivität oben drüber stehen. Des weiteren sollten die Beschriftungen an den Pfeilen des Entscheidungsknoten in eckige Klammern. Auch das die Pfade, die 
+aus dem Entscheidungsknoten entstehen, wieder zusammenführen, ist falsch. Bei dem Diagramm der 3.5er Version fehlt außerdem der Start- und Endknoten und auch 
+bei der 4o Version sollten zwei Endknoten vorhanden sein. Einmal für ``Anmeldung fehlgeschlagen'' und einmal für ``Anmeldung erfolgreich'' [01\&02 GPT Anmelden].
+Wenn man die 3.5er Version auf diese Hinweise allgemein Hinweist [siehe 2. Prompt 03 GPT Anmelden] führen zwar die beiden Pfade nach dem Entscheidungsknoten nicht mehr 
+zusammen, jedoch endet der eine ohne Endknoten und im Entscheidungsknoten steht immernoch die Aktivität. Wenn man ihm genau sagt, was er mit welcher Aktivität
+machen soll, wird das Aktivitätsdiagramm komplett Fehlerhaft mit unterbrochenen Verbindungen und einer alleinestehenden Aktivität erstellt.\\
+Gibt man den groben Hinweis der 4o-Version [05 GPT Anmelden] setzt dieser die Vorgaben richtig um. Ledliglich die Dialog Interaktion ``Benutzer klickt auf ``Anmelden''''
+ist noch vorhanden, welche jedoch nach einem Hinweis auch entfernt wird [06 GPT Anmelden]. Die letzten Kleinigkeiten die noch auffallen sind zum einen, dass
+im Entscheidungsknoten nur ``ja'' steht. Hier ist die Frage ob man in PlantUML einen leeren Entscheidungsknoten ohne Text erstellen kann. Ähnlich 
+verhält es sich an den Endknoten. Diese können vermutlich auch nicht beschriftet werden, weshalb direkt davor noch Aktivitäten mit der Beschreibung erstellt
+werden.\\
+
+Gemini [[[[[[[[[[[[]]]]]]]]]]]]\\
+
+Le Chat erstellt wieder nur auf Nachfrage ein PlantUML-Diagramm, welches vom Format her auch nicht ganz passend ist, da hier Client und Server übereinander 
+stehen und nicht nebeneinander. Außerdem gibt es hier die selben Probleme wie bei ChatGPT, dass im Entscheidungsknoten die Aktivität steht und die Pfade 
+danach wieder zusammengeführt werden. Die Textuelle Beschreibung von der ersten Ausgabe [01 Le Chat Anmelden] ist ganz gut und man könnte daraus, mit 
+einbisschen mitdenken, ein richtiges Aktivitätsdiagramm erstellen. Bei der zweiten Ausgabe, die mit der selben Eingabe erstellt worden ist, fällt auf 
+das trotz des Hinweises, dass keine Dialog Eigenschaften beschrieben werden sollen, die erste Aktivität ``Anmeldeformular anzeigen'' genau das tut.\\
+
+Der Anwendungsfall ``Zug machen'' oder ``Spielfigur setzen oder schlagen'' wurde direkt nach dem Anwendungsfall ``Anmelden'' erstellt. Dadurch wurde
+beim Prompt die Beschreibung, was erstellt wurde weggelassen. Stattdessen wurde beschrieben, dass wenn in einer Aktivität ein Wert gespeichert werden
+soll, auf den Wert im Fachliche Datenmodell referenziert werden muss. Außerdem wurde der Name des Anwendungsfalls bei den Tools entsprechend angepasst. 
+Für ChatGPT sieht der Prompt zum Beispiel wie folgt aus:
+
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir nun eine detaillierte Beschreibung für den Anwendungsfall "Zug machen". Wenn bei einer Aktivität ein Wert gespeichert wird, sollte 
+        in der Beschreibung der Aktivität beschrieben werden, um welchen Wert es sich aus dem Fachlichen Datenmodell handelt. Als Beispiel sollte der 
+        gewürfelte Wert in Spiel.wuerfel gespeichert werden.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt AF Zug machen}
+    \label{Prompt AF Zug Machen}
+\end{prompt}
+
+Die Aussgabe von ChatGPT scheint zunächst sehr überwaltigend, doch beim nähreren betrachten ist diese eigentlich schon ziemlich gut. Das Format des PlantUML-Diagrammes
+zeigt die selben Fehler auf wie bereits beim Anwendungsfall ``Anmelden'', lassen sich aber alle korrigieren. Eine Aktivität die etwas erschrenkend klingt ist Aktivität 6 
+``Berechne möglichen Züge''. Grundsätzlich ist dies nicht grade eine effiziente herangehensweise, was bei einem Mensch ärgere dich nicht Spiel allerdings nicht ganz so
+schlimm ist, da sich hier die möglichen Züge auf maximal vier beschränkt. Es fällt auch auf, dass das Würfeln auf Server-Seite stattfindet. Dies ist ansich kein gutes 
+Spielerlebnis, wenn man als Spieler nicht würfelt. Das 
+Würfeln sollte am besten ein eigener Anwendungsfall sein, da das Würfelergebnis wieder auf Client-Seite gebracht werden muss und dies innerhalb eines Anwendungsfalls
+schwierig zu implementieren ist. Auch die Verweise auf das Fachliche Datenmodell halten sich mit zwei Verweisen in grenzen und die Klasse ``Spielzug'' wird überhaupt nicht
+betrachtet. Als Hilfe wurde daher nochmal eine Eingabe, mit dem Fachliche Datenmodell [12 GPT FDM] und der Anweisung sich dieses zu merken, erstellt. Anschließend wurde 
+der \autoref{Prompt AF Zug Machen} erneut eingegeben. Diese Ausgabe schafft es etwas besser die Verweise auf das Fachliche Datenmodell zu beschreiben. Lediglich ``Spiel.status''
+und ``Feld.belegt'' werden nicht erwähnt. Das Würfeln wird auf die ``Client''-Seite geschoben. Jedoch ist dieser Ablauf, wie bereits beschrieben, 
+schwierig zu Implementieren und man sollte Würfeln als eigenen Anwendungsfall beschreiben. Es entfällt auch die Aktivität die Überprüft, ob ein Spieler an der Reihe ist. 
+Ebenfalls negativ ist, dass die ``Client''-Seite im Aktivitätsdiagramm zu ``Spieler'' 
+umbenannt wurde. Dies wird jedoch nach einem Hinweis wieder zurück geändert. Ein Fehler ist auch, dass die Position der Spielfigur zweimal gespeichert wird. Einmal in Aktivität 7
+und einmal in Aktivität 9 [04 GPT Zug machen]. Was nach einem Hinweis aber auch korrigiert wird. % Grunsätzlich wird die Beschreibung des Anwendungsfalls aber gut erstellt.
+% Man erhält ein Überblick über die nötigen Aktivitäten und den Ablauf des Anwendungsfalls, muss aber einige Fehler selbst aussbessern, da auch hier recht schnell der Punkt 
+% erreicht ist, wo die Erstellung der Prompts länger dauert als 
+
+Gemini [[[[[[[[[[]]]]]]]]]]\\
+
+Bei Le Chat war zu beginn die Beschreibung etwas kurz und es gab auch, außer ``Spiel.wuerfel'' was explizit im Prompt genannt wurde, keine Referenz aufs Fachliche Datenmodell.
+Erst nach der nächsten Eingabe [LeChat 02 ZugMachen] wurden die Beschreibungen etwas ausführlicher und es gab Referenzen aufs Fachliche Datenmodell. Diese Referenzen waren 
+jedoch falsch und entsprachen nicht dem zuvor erstellten Fachlichen Datenmodell. Hier wurde nämlich häufig auf die Position der Figuren und der Felder über ``.x'' und ``.y''
+Werte zugegriffen. Grundsätzlich ist das natürlich eine gute Art und Weise, die Position leichter zu definieren. Jedoch wurde im Fachlichen Datenmodell über einfache Int-Werte
+gespeichert. Außerdem ist die Beschreibung der Aktivitäten nicht entsprechend der Regeln von Mensch ärgere dich nicht. In der Aktivität ``Figur setzen oder schlagen'' wird 
+beschrieben, dass eine geschlagene Figur aus der Liste der Figuren des Spielers entfern wird. Dies ist natürlich nicht richtig, sondern die Figur sollte einfach auf ein Startfeld 
+der entsprechenden Farbe bzw. des entsrpechenden Spielers gesetzt werden. Außerdem wurde Würfeln als eine Aktivität hier aufgeführt. Im Anwendungsfalldiagramm wurde allerdings
+für Würfeln ein eigener Anwendungsfall erstellt, weshalb die Aktivität hier unnötig und falsch ist. Nach einem Hinweis diesbezüglich, hat Le Chat ausgegeben, dass das stimmt und
+die Aktivität entfernt werden muss. Anschließend wurde, auf Nachfrage, eine Beschreibung des Aktivitätsdiagramms erstellt. Dabei wurde einmal die Aktivität ``Figur setzen oder 
+schlagen'' in zwei Aktivitäten aufgeteilt. Einmal ``Figur setzen'' und ``Figur schlagen'' wobei mit einem Entscheidungsknoten entschieden wird, in welche Aktivität gegangen wird.
+Die Beschreibung der Flusslinien ist sehr sporadisch und sagt sogar eigentlich aus, dass die erst die Aktivitäten miteinander verbunden sind und diese dann erst mit den 
+Entscheidungsknoten und den Endpunkten verbunden werden. Dies sollte aber nicht so sein, da die Entscheidungsknoten ja zwischen den Aktivitäten stehen müssen. Dazu wird beschrieben, 
+dass es zwei Endpunkte gibt. Für den Fall, dass erfolgreich die Figur gesetzt oder geschlagen wird und das Verweigern des Zugs. Ebenfalls negativ auffällig ist, dass bei den ersten
+beiden Aktivitäten ``Figur auswählen'' und ``Zielfeld auswählen'', jeweils die Information an den Server übermittelt wird. Besser und einfacher wäre es aber, die Infos zusammen in einem
+Zug an den Server zusenden. Damit würde es reichen eine Funktion zu erstellen und an den Server zu senden. Der ``Trick'', das zuletzt erstellte Fachliche Datenmodell als Eingabe 
+zu nutzen, hat nicht wie bei ChatGPT funktioniert. Wenn man Le Chat nach dem aktuellen Fachlichen Datenmodell fragt, auf welches er sich referenziert, wird auch ein völlig anderes
+Datenmodell ausgegeben [LeChat 05 ZugMachenFDM].
 
 
-AF:
+\section*{Benutzungsschnittstelle}
 
-- Prompt: Beschreibung, welcher Anwendunsfall beschrieben werden soll, welche Informationen zunächst erstellt werden soll und anschließend das ein 
-Aktivitätsdiagramm erstellt werden soll. Beschrieben das die Aktivitäten dem Server oder dem Client zugewiesen werden sollen, um die spätere 
-implementierung der Server-Client-Applikation einfacher fällt. Außerdem erwähnt das keine Dialog eigenschaft beschrieben werden sollen.
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir nun für die Anforderungsspezifikation die Benutzungsschnittstelle. Diese zeigt, von welchem Dialog aus man zu anderen 
+        navigieren kann. Es sollen alle Dialoge enthalten sein, mit all deren Verbindungen zueinander.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Benutzungsschnittstelle}
+    \label{Prompt Benutzungsschnittstelle}
+\end{prompt}
 
-- ChatGPT-3.5:
-    - Häufigkeit keine Zahl: "Häufig verwendet (mehrmals täglich)
-    - Erstellt diagramm direkt mit, kein Endzustand. Verbindungen führen nach ``Anmeldung erfolgreich'' und ``Anmeldung fehlgeschlagen'' wieder zusammen.
-    -> Auch nach Allgemeiner Beschreibung nicht korrigiert und auch nicht bei sehr genauer Beschreibung.
-    - Beschreibungen gut.
-    - ChatGPT-4o macht zu viel. Implementierung wird bisschen mit beschrieben (Benutzersession erstellen) sowie Dialog 
-    eigenschaften wie Anzeigen von Fehlermeldungen werden beschrieben. GPT-3.5 hier tatsächlich besser. Außerdem wurde Code
-    von PlantUML falsch erstellt (Syntax error)
+Mit diesem Prompt wird die Benutzungsschnittstelle beschrieben die zeigt, wie man zwischen den Dialogen navigieren kann.\\
 
+Bei ChatGPT wurde zwei mal die Eingabe getätigt.\\
+Die erste Eingabe hat im Chat ein ``gezeichnetes'' Diagramm enthalten. Dort waren jedoch sowohl die Verbindungen zwischen Dialogen als auch 
+die Einzeichnung der Navigation etwas schwierig, da hier nur in eine Richtung navigiert wird. Außerdem passte dieses auch nicht richtig zu 
+der textuellen Beschreibung die mit generiert wurde. Bei der Beschreibung ist aufgefallen, dass ein ``Passwort-zurücksetzen-Dialog'' enthalten 
+ist. Allerdings ist in dem Anwendungsfalldiagramm kein Anwendungsfall für das Passwort zurücksetzen erstellt worden, weshalb man entweder 
+den Dialog aus dem Diagramm löscht oder den Anwendungsfall ``Passwort zurücksetzen'' nachträglich erstellen muss. Ähnlich verhält es sich mit 
+den Anwendungsfällen ``Punkte anzeigen'' und dem Dialog ``Anzeige der Spieler-Liste''. Außerdem ist Fraglich 
+ob ein noch nicht angemeldeter Nutzer die Buttons ``Spiel erstellen'' und ``Spiel beitreten'' sehen soll. Hier wäre es angebrachter einen 
+eigenen Dialog für nicht-angemeldete Nutzer zu erstellen und zusätzlich ein Hauptmenü.\\
+Nach der zweiten Eingabe erhielt man ebenfalls eine textuelle Beschreibung von welchem Dialog man wohin navigieren kann, einen PlantUML-Code
+für ein UML-Diagramm sowie eine Beschreibung der Dialoge. Das PlantUML-Diagramm hatte zunächst einen Syntax Fehler, welcher jedoch nach einem 
+Hinweis korrigiert wurde. Jedoch ist das Diagramm recht unübersichtlich, da zum einen die Pfiele nur in eine Richtung zeigen und zum anderen
+die Struktur etwas durcheinander ist. Die Beschreibung ist dafür abgesehen von einem Punkt sehr gut. Wenn man einem Spiel beigetreten oder 
+ein Spiel gestartet hat gelangt man zu dem Dialog ``Spielbildschirm''. Wenn man dort direkt das Spielfeld sieht, was bei einem Hauptbilschirm
+während des Spiels wohl der Fall ist, muss man den Anwendungsfall ``Spiel anzeigen'' aus dem Anwendungsfalldiagramm wieder entfernen.\\
 
-- Gemini: [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+Gemini[[[[[[]]]]]]\\
 
-- Le Chat:
-    - Beschreibt für die Endzustände trotz Hinweis, das keine Dialog eigenschaften beschrieben werden sollen, was der Dialog anzeigt.
-    - Häufigkeit keine Zahl
-    - Kann auf Nachfrage Code für PlantUML erstellen.
-    - Diagramm hat nur einen Endzustand, wo Verbindung von ``Anmeldung erfolgreich'' und ``Anmeldung fehlgeschlagen'' enden.
-    - Diagramm häufig Syntax Error, welcher sich nicht beheben lässt. -> Dafür sehr gute textuelle Beschreibung, auch richtig mit 
-    Endpunkten und dem Entscheidungsknoten.
-
-
-    Zug machen:
-
-        ChatGPT:
-            - Aktivität 6, berechne mögliche Züge. -> Nicht grade effizient?
-            - Server würfelt alleine, kein gutes Spielerlebnis
-            - Generell keine wirklche Verweise aufs FDM
-            - Entität Spielzug aus FDM wird nicht betrachtet.
-            - Entscheidungsknoten laufen im UML Diagramm immer wieder zusammen
-            - Aber ansich ablauf der Aktivitäten ergibt Sinn 
-            - Hilft, das FDM ihm nochmal zum merken zu geben. Beschreibung der Aktivität geht dann bisschen mehr aufs FDM ein
-            - Erstellt aufeinmal ``Spieler'' und ``Server'' Spalten. -> Wird zu ``Client'' und ``Server'' geändert
-            - Hat wieder Dialog Aktivitäten mit drinne, Bsp.: "Ergebnis des Würfelwurfs anzeigen"
-            - Aktivitäten schon etwas zu genau formuliert?
-            - Entscheidungsknoten laufen auch hier wieder zusammen -> Wird geändert
-            - Nur ein Endknoten -> Wird geändert
-            - Nach Frage ob er Aktivitätenbeschreibung etwas genauer Formulieren kann, wird zwei mal in ``Spielfigur.position''
-            gespeichert. Einmal in ``Bewege Spielfigur'' und einmal in ``Speichere aktuelle Position der Spielfigur in Spielfigur.position''
-                -> wird geändert
-            - Spiel.status soll aktualisiert werden, wird aber nix genaues Beschrieben was geprüft wird
-            - Feld.belegt wird nicht angepasst
-            -
+Le Chat hat bei der Erstellung der Benutzungsschnittstelle probiert, diese in die Ausgabe mit zu ``Zeichnen''. Die Abbildung war jedoch 
+völlig durcheinander und unübersichtlich. Die Verbindung zwischen den Dialogen ist unverständlich und ergeben keinen Sinn. Auch mit Eingaben, 
+das die Verbindung doch überarbeitet werden soll, wurde dies nicht besser. Dafür kann man sagen, dass die erstellen Dialoge soweit zu den 
+Anwendungsfällen passen und die meisten enthalten sind. Jedoch sind auch einige Dialoge erstellt worden, für die man eigentlich keinen eigenen
+Dialog erstellen muss. Zum Beispiel ``Spiel verlassen''. Da würde ein Button reichen, mit dem man zurück zum Hauptmenü gelangt. Auch die 
+Textuelle Beschreibung ist nicht vollständig. Bei der Beschreibung des Verlaufes werden Anwendungsfälle, wie zum Beispiel ``Registrieren'' vergessen.
+Außerdem stellt sich die Frage, was man beim ``Spiel beitreten'' Dialog sieht. In dem Anwendungsfalldiagramm wurden die Anwendungsfälle ``Spiel suchen'' 
+und ``Spiel beitreten'' erstellt. Daher ist etwas ungenau ob die Anwendungsfälle über den selben Dialog gehen oder ob einer der Anwendungsfälle unnötig 
+ist. Dies sollte bei einer nähreren Betrachtung der Anwendungsfälle festgelegt werden. Bei der Beschreibung fehlt auch, wie der Admin zu seinen 
+Verfügbaren Dialogen navigieren kann.
 
 
-        LeChat:
-            - Formuliert aktivitäten erst sehr grob. Sagt nicht was wie gespeichert wird.
-            - Benutzt andere Attribute als im FDM festgelegt. Bsp. Feld.x und Feld.y
-            - Entspricht nicht den normalen Regeln? "...die geschlagene Figur aus der Liste der Figuren des Spielers entfernt"
-            - Spielstand aktualisieren als eigenen AF? Wurde vorher nicht aufgeführt
-            - Führt Würfeln als Aktivität auf? Ist aber doch eigener Anwendungsfall
-            - Auf nachfrage, das aktuelle FDM auszugeben, wird ein völlig anderes erstellt. Auch wenn ich 
-            das zuletzt erstellte als Eingabe verwende, ändert er dies geringfügig.
+\subsection*{Dialog}
 
+Für die Erstellung der Dialoge wurden ebenfalls zwei recht einfache Prompts verwendet, die lediglich beschreiben, wie das Dokument 
+aufgebaut sein soll. Einmal für den Anwendungsfall ``Anmelden'' und einmal für den Dialog ``Spielbildschirm'':
 
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir nun für die Anforderungsspezifikation einen passenden Dialog für den Anwendungsfall „Anmelden“. Dabei wird zunächst 
+        beschrieben, wann der Dialog geöffnet wird und wozu er dient. Anschließend folgt eine Skizze des Dialoges. Zuletzt werden die 
+        einzelnen Elemente des Dialogs beschrieben und definiert, was dort eingetragen wird bzw. was beim drücken passiert.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Dialog Anmelden}
+    \label{Prompt Dialog Anmelden}
+\end{prompt}
 
-Benutzungsschnittstelle:
-
-- Prompt:
-
-- ChatGPT:
-    - Man startet im Hauptmenü und sieht alle Buttons. ``Spiel erstellen'' und ``Spiel beitreten'' können jedoch nur 
-    genutzt werden, wenn man Angemeldet ist.
-    - Erstellt Skizze und Textuelle Beschreibung. Skizze passt aber nicht ganz zu Beschreibung. Auch nach Hinweis wird 
-    selber Fehler nochmal gemacht. Wenn man auf die wiederholt Falsche Antwort negativ Reagiert mit dem Feedback, dass 
-    die Hinweise nicht richtig umgesetzt wurden, und dann im als Prompt die Eingabe ``Die Skizze ist unverändert. 
-    Setzt den "Spiel beitreten"-Dialog mit dem Hauptmenü in Verbindung.'' gibt, wird die Skizze richtig erstellt.
-    - Es wird auch beschrieben, welche Buttons und Eingabefelder die einzelnen Dialoge besitzen. Dies ist jedoch 
-    an dieser Stelle nicht nötig.
-    - Skizze kann auch nicht zu einem Dialog zurück gehen. Wird dann nochmal aufgeführt (ohne Buttons,...)
-
+ChatGPT hat in der Ausgabe wieder eine ``gezeichnete'' Skizze erstellt. Bei der ersten Ausgabe für den ``Anmelden'' Anwendungsfall wurde
+noch ein Button für ``Passwort vergessen?'' erstellt. Ansich macht dies natürlich Sinn hier einzufügen, allerdings wurde im Anwendungsfalldiagramm
+kein Anwendungsfall dafür erstellt. Positiv auffällig ist, dass die erste Ausgabe [GPT 01 Anmelden] in dem Chat erstellt wurde, wo GPT-3.5 
+den Anwendungsfall ``Anmelden'' erstellt hat und dort festgelegt hat, dass sich der User mit einem Benutzernamen und einem Passwort anmeldet [GPT 01 Anmelden]
+und die zweite Ausgabe [GPT 02 Anmelden] in dem Chat erstellt wurde, wo GPT-4o sich vorher beim Anwendungsfall für eine Email und ein Passwort 
+entschieden hat. Bemängeln kann man dabei, dass bei der Beschreibung der Elemente nicht auf das Fachliche Datenmodell verwiesen wurde. Nach einer 
+groben Eingabe, dass doch auf die Werte aus dem Fachlichen Datenmodell referenziert werden soll, wurde dies dann auch richtig gemacht. [GPT 03 Anmelden].\\
+Bei der Erstellung des Dialogs ``Spielbildschirm'' wurde auch wieder eine textuelle Beschreibung und eine Skizze erstellt. Die Skizze umfasst
+allerdings nur einen Vermerk in eckigen Klammern, wo das Spielbrett graphisch dargestellt werden soll. Außerdem wurde auch hier nochmal die Eingabe 
+gemacht, dass auf das Fachliche Datenmodell referenziert werden soll. Interessant ist, dass ein extra Button fürs Würfeln erstellt wurde und einer um 
+einen Zug zumachen. Bei dieser Implementierung ist es nahelegender, dass für beide Button ein eigener Anwendungsfall gestartet wird. Bei Nachfrage, zu 
+beschreiben, wenn ein Anwendungsfall gestartet wird, gibt ChatGPT aus, dass Würfel ein eigener Anwendungsfall ist. Die Restlichen Verweise auf das 
+Fachliche Datenmodell und beschreibung welcher Anwendungsfall gestartet wird passen soweit.\\
 
 - Gemini:
 
-- Le Chat:
-    - Erstellt für jeden Anwendungsfall einen Dialog, grundsätzlich gut.
-    - Spielbrett benötigt auch ein Dialog?
-    - Verbindungen zwischen den Dialogen macht keinen Sinn -> Nach Hinweis wird erneut ausgegeben, Beschreibung besser
-    aber Skizze immer noch unsinnig.
-    - Beschreibung beinhaltet aber nicht alle Anwendungsfälle (Admin wird ausgelassen). Außerdem werden Dialoge erstellt,
-    für die es keine Anwendungsfälle gibt (z.B. "Profil bearbeiten" um Benutzerdaten selber zu ändern)
-    - Auch nach genauer Beschreibung wird Skizze nicht richtig erstellt.
-    
+Beim ``Anmelden''-Dialog hat Le Chat wieder nur eine Textuelle Beschreibung erstellt. Diese ist soweit passend. Fürs Anmelden hat sich Le Chat auf die 
+Email-Adresse und ein Passwort festgelegt. Im Fachlichen Datenmodell wurde allerdings nur gesagt, dass die ID eindeutig ist, das heißt das entweder 
+die Email-Adresse ebenfalls eindeutig gemacht werden muss oder sich diese nicht eignet fürs Anmelden. Ansonsten könnten zwei Benutzer mit derselben
+Email-Adresse und dem selben Passwort nicht unterschieden werden. Außerdem fehlt ein Button um zum ``Registrieren''-Dialog zukommen, welcher zumindest
+laut dem Anwendungsfalldiagramm vorhanden sein sollte. Passen würde es jedoch zur Benutzungsschnittstelle, da hier kein Dialog fürs Registrieren
+eingebunden wurde.\\
+Bei der Beschreibung des Dialogs ``Spielbrett'' werden die Inhalte gut beschrieben. Es fehlt lediglich ein Button oder ähnliches um den Spielstand 
+anzuzeigen. Dies ist laut dem Anwendungsfalldiagramm ein eigener Anwendungsfall, wobei jedoch die Frage ist, was dieser beschreiben soll oder ob dieser
+durch das dauerhafte anzeigen des Spielbrettes hinfällig geworden ist. Bei Nachfrage, ob Le Chat beschreiben kann wann ein Anwendungsfall gestartet wird,
+gibt dieser eine zu dem Dialog passende Beschreibung aus. Auch hier fehlen allerdings die Anwendungsfälle ``Spielstand anzeigen'' und ``Spielergebnis anzeigen''.\\
 
 
-Dialog:
+\subsection*{Nichtfunktionale Anforderungen}
 
-- Prompt: Beschreibung des Inhalts reicht.
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir nun für die Anforderungsspezifikation die nichtfunktionalen Anforderungen und jeweils einen dazu gehörigen Test.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt nichtfunktionale Anforderungen}
+    \label{Prompt nichtfunktionale Anforderungen}
+\end{prompt}
 
-- ChatGPT:
-    - Erstellt Skizze
-    - beschreibt Validierung. Richtigen Stelle dafür?
-
-- Gemini:
-
-- Le Chat: 
-    - kleiner Formulierungsfehler bei ``Abbrechen''-Button. "Nutzer bleibt angemeldet. -> Wird bei Hinweis korrigiert
-    - Erklärt Skizze gut bei Nachfrage.
-
-
-Nichtfunktionale Anforderungen:
-
-- Prompt: 
-
-- ChatGPT:
-    - passt
+Dieser sehr einfach gehaltene Prompt wurde für die Erstellung der nichtfunktionalen Anforderungen verwendet. Es musste lediglich dazu erwähnt werden,
+dass zu jeder Anforderung ein Test erstellt werden soll. Bei [ChatGPT und Le Chat] werden gute Anforderungen erstellt und die Tests passen auch 
+sehr gut zu diesen. Hier werden die [beiden] Tools mit ``Sehr gut'' bewertet.
 
 - Gemini:
 
-- Le Chat: 
-    - passt
+
+\section{Architekturdokument} \index{Architekturdokument} \label{CompArchitekturdokument}
+
+Da auch das Architekturdokument ein umfangreiches Dokument ist, werden hier ebenfalls die Ausgaben der Technische Infrastruktur, des Komponentenmodell 
+und der dynmaischen Beschreibung exemplarischer Anwendungsfälle im Komponentenmodell jeweils einzeln beschrieben und bewertet.
+
+\subsection*{Technische Infrastruktur}
+
+Da die Technische Infrastruktur auf die Systemübersicht aufbaut und alle drei Tools Schwierigkeiten hatten sich an dieses zu Erinnern, wurde die Textuelle 
+Beschreibungen der jeweiligen Tools ihnen nochmal als Eingabe mitgegeben. Dazu beschreibt der Prompt, was die Technische Infrastruktur ist und was dort 
+beschrieben ist. So kommt folgender Prompt zustande:
+
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir nun, basierend auf folgender Systemarchitektur, ein Diagramm und/oder eine Textuelle Beschreibung der Technischen Infrastruktur. 
+        Diese Listet die Hardware- und Produktanforderungen auf: Hardware, Betriebssysteme, Produkte, Nachbarsysteme. Dabei sollen die einzelnen 
+        Betriebssysteme mit Versionsnummer und die Verbindungen zwischen den Komponenten mit der Verbindungsart beschrieben werden: [Textuelle 
+        Beschreibung der Systemübersicht des jeweiligen Tools]
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Technische Infrastruktur}
+    \label{Prompt Technische Infrastruktur}
+\end{prompt}
+
+ChatGPT erstellt hier wieder eine Skizze in die Ausgabe mit. Diese ist auch ganz gut, lediglich die Datenbank ist etwas verrutscht. Negativ aufgefallen
+ist die Beschreibung der Verbindung von der KI-Komponente. Hier wird beschrieben, dass diese in die Spiel-Logik auf der Server-Seite integriert ist und 
+daher keine externe Verbindung erforderlich ist. In der Beschreibung der Systemübersicht wird die Spiel-Logig allerdings nur auf der Client-Seite erstellt.
+Den Anwendsfällen entsprechend ist die Spiel-Logik auf der Server-Seite allerdings korrekt. Fragt man ChatGPT danach, wird ausgegeben, dass die Spiel-Logik 
+beim Server hinzugefügt werden soll. Ansonsten wurde die Technische Infrastruktur von ChatGPT gut erstellt.\\
+
+Gemini [[[[]]]]\\
+
+Auch Le Chat versucht eine Skizze in die Ausgabe mit einzufügen. Dies klappt hier allerdings nicht so richtig, da die Komponenten mit den Verbindungen nicht 
+richtig verbunden werden. Während ChatGPT die Datenbank extern, als eigene Komponente definiert, ist bei Le Chat diese Teil des Servers. Außerdem werden bei den
+Nachbarsystemen ein Externes Authentifizierungssystem sowie ein Zahlungssystem erstellt, was allerdings nicht Teil der Anforderungen war. Daher sind diese hier 
+falsch. Jedoch passt die Zuweisung der Versionen für die Betriebssysteme sowie der Produkte ganz gut.\\
+
+
+\subsection*{Komponentenmodell}
+
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        1) Erstell mir nun für das Architekturdokument das Komponentenmodell. Das Komponentenmodell beschreibt die fachliche Struktur der Lösung auf 
+        einer groben Ebene mittels eines UML-Komponenten-Diagramms.
+        
+        2) Beim Komponentenmodell handelt es sich nicht um die Technische Infrastruktur. Hier sollen die Komponenten und deren Schnittstellen erstellt 
+        werden, die später für die Programmierung verwendet werden.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Komponentenmodell}
+    \label{Prompt Komponentenmodell}
+\end{prompt}
+
+Mithilfe des ersten Promptes wurde versucht das Komponentenmodell zu erstellen. Dies hat jedoch bei [ChatGPT und Le Chat] eher weniger funktioniert.
+Beide Tools haben sich zu sehr an die Technische Infrastruktur gehalten und sind von diesem Format nicht weggekommen. Dadurch wurde bei [beiden] Tools
+mit dem zweiten Prompt versucht diese davon etwas wegzubringen.\\
+
+Bei ChatGPT hat dies dann auch schon ganz gut funktioniert, allerdings wird sich trotzdem noch stark an der Technischen Infrastruktur orientiert.
+Außerdem sind keine Schnittstellen zwischen den Komponenten beschrieben worden. Es fällt auch auf, dass ``Game-Logic'', welche die Spielregeln implementiert
+und lokale Spielzüge validiert, nur auf Client-Seite ist, was nicht den Anwendungsfällen entspricht, wo festgelegt wurde dass die Validierung der 
+Spielzüge auf Server-Seite geschieht. Nach einer Eingabe, wo ChatGPT dies erklärt wird, wird ``Game-Logic'' auf Server-Seite geschoben. Außerdem werden 
+die für die RMI nötigen Komponenten ``Client Communication'' und ``Server Communication'' hinzugefügt, welche vorher durch die ``Communication''- Komponente 
+zwischen Client und Server falsch dargestellt wurde. Da nun allerdings auf der Server-Seite ``Game Logic'' und ``Game Manager'' vorhanden waren, 
+urde ChatGPT gefragt ob man diese nicht zusammenfassen könnte. Dies wurde bejaht und die Komponenten wurde zu ``Game Manager/Logic'' 
+zusammengefasst. Da der vom Kunden angeforderte Chat nirgends erwähnt wurde, wurde ChatGPT diesbezüglich nochmal gefragt ob dieser in einer Komponente 
+enthalten sei oder eine eigene Komponente für diesen benötigt wird. Auch hier wurde dann die Komponente ``Chat Manager'' richtig erstellt und in das Diagramm 
+eingefügt. Zusaätzlich könnte man noch eine ``Authentication''-Komponente in das Diagramm mit aufnehmen, welche sich um die Anmeldungen und 
+Registrierungen und ähnliche Anwendungsfälle kümmert. Da der Chat ohne Probleme in das Diagramm mit aufgenommen wurde, wird das mit einer 
+``Authentication''-Komponente ähnlich sein, weshalb dies nicht als extra Eingabe getätigt wurde. Zum Schluss wurde ChatGPT nochmal nach den Schnittstellen 
+zwischen den Komponenten gefragt. Hier versucht ChatGPT allerdings die Funktionen, die dort benötigt werden, zu erstellen. Diese sind zum einen nicht 
+vollständig und zum anderen an dieser Stelle falsch. Auch mit weiteren Eingaben lassen sich die Schnittstellen nicht richtig darstellen.\\
+
+Gemini[[[]]]\\
+
+Wie zu beginn bereits erwähnt hatte Le Chat dasselbe Problem wie ChatGPT, dass dieser sich zu nah an der Technischen Infrastruktur orientiert hat.
+Allerdings hat man Le Chat auch nach mehreren Eingaben nicht davon weggebracht. Die Beschreibung der Komponenten war eher bedürftig und es wurden 
+keine Komponenten für die RMI Verbindung erstellt. Erst nach einer expliziten Eingabe, dass eine ``ClientCommunication''- und eine 
+``ServerCommunication''-Komponente erforderlich ist, wurden diese erstellt. Das daraufhin erstellte Diagramm war allerdings eher wieder in der Form 
+der Technischen Infrastruktur. Die Komponenten besaßen Interfaces, welche allerdings nicht richtig gepasst haben. Erst nach einer expliziten Eingabe, wie
+das Komponentendiagramm auszusehen hat, wurde dieses Anständig erstellt. Allerdings haben auch hier die Schnittstellen gefehlt. Auf nachfrage diesbezüglich
+wurden diese sogar einigermaßen ok erstellt. Allerdings werden auch hier schon die Methoden der Schnittstellen aufgelistet. Auch hier sind diese allerdings 
+an der falschen Stelle erstellt worden und sind ebenfalls nicht vollständig. Dazu wurde beschrieben, dass die ``Data''-Komponente auf andere Schnittstellen
+zugreif. Dies ist allerdings falsch, da die Datenbank ja keine Funktionen von alleine aufruft, sondern lediglich einen Return liefern soll. Nach einem Hinweis 
+korrigiert Le Chat dies allerdings auch. Ein ähnliches Verhalten sieht man bei den anderen Komponenten auch, dass die Komponenten auf der Server-Seite in Richtung
+Client-Seite Funktionen schicken können. Hier ist die Frage wie zum Beispiel eine Spielfeld aktualisierung umgesetzt werden soll. Wenn der Server die aktuellen 
+Positionen der Spielfiguren von alleine an den Client schicken soll, müssen die Komponenten auf der Server-Seite richtung Client-Seite kommunizieren können.
+Wenn man allerdings eine Funktion wie ``Spielfeld aktualisieren()'' auf der Client-Seite hinzufügt, könnte man die Daten über einen Return-Wert zurück schicken.
+In diesem Fall müssten die Komponenten auf der Server-Seite nicht in Richtung Client-Seite kommunizieren können. Der letzte Auffällige Punkt ist, dass die 
+Komponente ``ClientLogic'' die Schnittstelle ``ClientLogicInterface'' besitzt, auf welche von der Komponente ``Client-Anwendung'' zugegriffen wird. Nach dem 
+Komponentendiagramm ist die ``ClientLogic''-Komponente allerdings die letzte auf der Client-Seite. Hier ist vermutlich die Anweisung, ``Als erstes gibt es 
+eine ClientLogic-Komponente welche mit einer ClientCommunication-Komponente verbunden ist.'' ungeeignet gewesen, da hier interpretiert wird, dass die ``ClientLogic''
+nur die Logik auf der Client-Seite umsetzt, nicht aber die Visuelle Darstellung. Daher hätte man die Komponente in der Eingabe besser ``View'' oder ähnlich nennen
+sollen.\\
+

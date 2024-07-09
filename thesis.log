@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  6 JUL 2024 19:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  8 JUL 2024 19:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2322,12 +2322,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--120
  (./source/400_comparison.tex
 chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--18
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--31
+Underfull \hbox (badness 10000) in paragraph at lines 22--34
 
  []
 
@@ -2338,37 +2338,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--31
 
 
 ]
-Overfull \hbox (1.83362pt too wide) in paragraph at lines 58--59
+Overfull \hbox (1.83362pt too wide) in paragraph at lines 61--62
 []\T1/phv/m/n/10.95 (-20) wurden dann bei ChatGPT, Ge-mi-ni und Le Chat die Ein-ga-be ge-tä-tigt. Die Er-geb-nis-se [[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--67
+Underfull \hbox (badness 10000) in paragraph at lines 63--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--72
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--77
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 78--84
+Underfull \hbox (badness 10000) in paragraph at lines 81--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--88
+Underfull \hbox (badness 10000) in paragraph at lines 88--91
 
  []
 
@@ -2376,17 +2376,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--88
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+Underfull \hbox (badness 10000) in paragraph at lines 121--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
+Underfull \hbox (badness 10000) in paragraph at lines 138--141
 
  []
 
@@ -2395,33 +2390,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--144
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
+
+ []
+
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 151--153
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--186
+Underfull \hbox (badness 10000) in paragraph at lines 179--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--193
+Underfull \hbox (badness 10000) in paragraph at lines 190--196
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--205
+Underfull \hbox (badness 10000) in paragraph at lines 200--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--212
+Underfull \hbox (badness 10000) in paragraph at lines 209--215
 
  []
 
@@ -2429,32 +2429,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--212
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-Underfull \hbox (badness 10000) in paragraph at lines 233--239
+Underfull \hbox (badness 10000) in paragraph at lines 236--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--249
+Underfull \hbox (badness 10000) in paragraph at lines 245--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--254
+Underfull \hbox (badness 10000) in paragraph at lines 253--257
 
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 255--267
+Underfull \hbox (badness 10000) in paragraph at lines 258--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--280
+Underfull \hbox (badness 10000) in paragraph at lines 279--283
 
  []
 
@@ -2462,147 +2462,126 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--280
 Underfull \vbox (badness 2538) has occurred while \output is active []
 
  [30]
-Underfull \hbox (badness 10000) in paragraph at lines 297--306
+Underfull \hbox (badness 10000) in paragraph at lines 300--309
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--340
+Underfull \hbox (badness 10000) in paragraph at lines 333--348
 
  []
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 358--360
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- []
-
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 361--381
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 382--383
+ [32]
+Underfull \hbox (badness 10000) in paragraph at lines 376--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--405
-
- []
-
-[33]
-Underfull \vbox (badness 5548) has occurred while \output is active []
-
- [34]
-Underfull \hbox (badness 10000) in paragraph at lines 427--428
+Underfull \hbox (badness 10000) in paragraph at lines 379--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 429--442
+Underfull \vbox (badness 1521) has occurred while \output is active []
+
+ [33]
+Underfull \hbox (badness 10000) in paragraph at lines 418--439
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--444
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 445--453
+Underfull \hbox (badness 10000) in paragraph at lines 463--476
 
  []
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 478--481
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 482--500
+Underfull \hbox (badness 10000) in paragraph at lines 485--493
 
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 10000) in paragraph at lines 518--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--508
+Underfull \hbox (badness 10000) in paragraph at lines 522--540
 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 542--543
+Underfull \hbox (badness 10000) in paragraph at lines 563--568
 
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 575--576
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--592
+Underfull \hbox (badness 10000) in paragraph at lines 602--603
 
  []
 
 [39]
-Underfull \hbox (badness 10000) in paragraph at lines 593--594
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 637--652
 
  []
 
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 623--636
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+Underfull \hbox (badness 10000) in paragraph at lines 687--700
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 639--649
+Underfull \hbox (badness 10000) in paragraph at lines 710--720
 
  []
 
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 692--697
-
- []
-
-[42]
-Underfull \hbox (badness 10000) in paragraph at lines 698--699
+[42] [43]
+Underfull \hbox (badness 10000) in paragraph at lines 764--769
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--704
+Underfull \hbox (badness 10000) in paragraph at lines 778--782
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--724
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+Underfull \hbox (badness 10000) in paragraph at lines 799--802
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--739
+Underfull \hbox (badness 10000) in paragraph at lines 803--817
 
  []
 
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 740--741
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 829--848
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 742--761
-
- []
-
-[44]) [45]
+[46]) [47]
 \openout2 = `source/500_Problems.aux'.
 
- (./source/500_Problems.tex [46
+ (./source/500_Problems.tex [48
 
 
 
@@ -2610,10 +2589,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 742--761
 
 ]
 chapter 5.
-) [47]
+) [49]
 \openout2 = `source/600_Conclusion.aux'.
 
- (./source/600_Conclusion.tex [48
+ (./source/600_Conclusion.tex [50
 
 
 
@@ -2621,7 +2600,7 @@ chapter 5.
 
 ]
 chapter 6.
-) [49] [50
+) [51] [52
 
 
 
@@ -2760,18 +2739,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72233 strings out of 474049
- 1655582 string characters out of 5746277
+ 72235 strings out of 474049
+ 1655589 string characters out of 5746277
  2922565 words of memory out of 5000000
- 93049 multiletter control sequences out of 15000+600000
+ 93048 multiletter control sequences out of 15000+600000
  622968 words of font info for 236 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,22n,120p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (74 pages, 337916 bytes).
+Output written on thesis.pdf (76 pages, 346970 bytes).
 PDF statistics:
- 809 PDF objects out of 1000 (max. 8388607)
- 683 compressed objects within 7 object streams
- 151 named destinations out of 1000 (max. 500000)
+ 818 PDF objects out of 1000 (max. 8388607)
+ 690 compressed objects within 7 object streams
+ 154 named destinations out of 1000 (max. 500000)
  53257 words of extra memory for PDF output out of 61914 (max. 10000000)
 

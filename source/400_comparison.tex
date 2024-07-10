@@ -914,4 +914,26 @@ sollen.\\
         - Außerdem wird nicht geprüft ob das Figuren bewegen mit dem Würfel übereinstimmt wie im Anwendungsfall beschrieben
 
 
+\subsection*{Interfaces in Java}
+
+- erste Ausgabe nicht passend zu Sequenzdiagrammen -> Bei Hinweis werden Sequenzdiagramme neu definiert. Allerdings falsch
+- Schnittstellen passen nicht zu den Komponentendiagramm
+-> Die Beschreibung der Sequenzdiagramme wurde nochmal als Eingabe mitgegeben
+Anmelden:
+- es wird extra Interface AuthenticationService erstellt, wo die Anmeldung abläuft. Macht Funktionen der GameManagerLogic aus dem Sequenzdiagramm sowie die Funktion der 
+DatabaseAccess Komponente. GameManagerLogic leitet aufruf bei Java Implementierung nur weiter. AuthenticationService scheint daher Komponente zwischen GameManagerLogic 
+und DatabaseAccess zu sein. In diesem Fall hat dann GameManagerLogic keine Aufgabe außer Funktionen weiterzuleiten. Könnte entfernt werden.
+- UserInterface besitzt Mehtoden?? Sollte keine eigene Schnittstelle haben sondern nur auf ClientCommunication zugreifen
+- Methodennamen passen nicht ganz zu denen aus dem Sequenzdiagramm
+- Fraglich warum aufruf-Methoden auf Client-Seite void sind und dann extra Callback-Methoden erstellt werden, die True oder False zurückliefern. 
+Einfacher die Aufruf-Methoden zu boolean zu machen
+
+Zug Machen:
+- GameService äquivalten zu AuthenticationService
+- Auch Hier hier sind Aufruf-Methoden auf Client-Seite Void, warum nicht Rückgabewert MoveResponse, dann müssen keine Callback-Funktionen erstellt werden
+- DatabaseAccess fehlt moveOccupyingFigureToStart() Funktion. Nur in GameService enthalten
+
+-> Grundsätzlich ganz gut. GameService, AuthenticationService und DatabaseAccess nur etwas doppelt gemoppelt und nicht ganz ersichtlich welcher ablauf hier 
+stattfindet. Rückgabewerte auf Client-Seite immer nur Void und dafür Callback-Funktionen. Warum nicht auch einfach Rückgabetyp boolean oder MoveReturn?
+
 

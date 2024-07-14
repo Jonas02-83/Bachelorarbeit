@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  10 JUL 2024 11:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  14 JUL 2024 14:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2462,101 +2462,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 279--283
 Underfull \vbox (badness 2538) has occurred while \output is active []
 
  [30]
-Underfull \hbox (badness 10000) in paragraph at lines 300--309
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--348
-
- []
-
-[31]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-Underfull \hbox (badness 10000) in paragraph at lines 376--378
+Underfull \hbox (badness 10000) in paragraph at lines 303--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--399
+Underfull \hbox (badness 10000) in paragraph at lines 308--310
 
  []
 
 
-Underfull \vbox (badness 1521) has occurred while \output is active []
-
- [33]
-Underfull \hbox (badness 10000) in paragraph at lines 418--439
-
- []
-
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 461--462
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--476
+Underfull \vbox (badness 7685) has occurred while \output is active []
+
+ [31]
+Underfull \hbox (badness 10000) in paragraph at lines 334--336
 
  []
 
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 485--493
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--348
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--357
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 378--380
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--401
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 402--423
+
+ []
+
+
+Underfull \vbox (badness 5548) has occurred while \output is active []
+
+ [34]
+Underfull \hbox (badness 10000) in paragraph at lines 424--445
+
+ []
+
+
+Underfull \vbox (badness 5548) has occurred while \output is active []
+
+ [35]
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--483
 
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 518--521
+Underfull \hbox (badness 10000) in paragraph at lines 484--495
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--540
+Underfull \hbox (badness 10000) in paragraph at lines 496--504
 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 563--568
+Underfull \hbox (badness 10000) in paragraph at lines 531--534
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--553
 
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 602--603
+Underfull \hbox (badness 10000) in paragraph at lines 554--564
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--570
 
  []
 
 [39]
-Underfull \hbox (badness 10000) in paragraph at lines 635--636
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 637--652
+Underfull \hbox (badness 10000) in paragraph at lines 587--603
 
  []
 
 [40]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41]
-Underfull \hbox (badness 10000) in paragraph at lines 687--700
+Underfull \hbox (badness 10000) in paragraph at lines 604--614
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 710--720
+Underfull \hbox (badness 10000) in paragraph at lines 615--632
 
  []
 
-[42] [43]
-Underfull \hbox (badness 10000) in paragraph at lines 764--769
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--782
+Underfull \hbox (badness 10000) in paragraph at lines 649--664
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 699--712
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 722--732
 
  []
 
@@ -2564,38 +2609,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 778--782
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [44]
-Underfull \hbox (badness 10000) in paragraph at lines 799--802
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 803--817
+Underfull \hbox (badness 10000) in paragraph at lines 776--781
 
  []
 
 [45]
-Underfull \hbox (badness 10000) in paragraph at lines 829--848
+Underfull \hbox (badness 10000) in paragraph at lines 790--794
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 811--814
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--829
 
  []
 
 [46]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 841--860
 
- [47]) [48]
+ []
+
+[47] [48]) [49]
 \openout2 = `source/500_Problems.aux'.
 
- (./source/500_Problems.tex
-chapter 5.
-) [49
+ (./source/500_Problems.tex [50
 
 
 
 
 
 ]
+chapter 5.
+) [51]
 \openout2 = `source/600_Conclusion.aux'.
 
- (./source/600_Conclusion.tex [50
+ (./source/600_Conclusion.tex [52
 
 
 
@@ -2603,7 +2655,7 @@ chapter 5.
 
 ]
 chapter 6.
-) [51] [52
+) [53] [54
 
 
 
@@ -2742,18 +2794,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72236 strings out of 474049
- 1655600 string characters out of 5746277
+ 72238 strings out of 474049
+ 1655614 string characters out of 5746277
  2922565 words of memory out of 5000000
  93048 multiletter control sequences out of 15000+600000
  622968 words of font info for 236 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,22n,120p,10939b,2855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (76 pages, 348809 bytes).
+Output written on thesis.pdf (78 pages, 353980 bytes).
 PDF statistics:
- 819 PDF objects out of 1000 (max. 8388607)
- 691 compressed objects within 7 object streams
- 155 named destinations out of 1000 (max. 500000)
+ 828 PDF objects out of 1000 (max. 8388607)
+ 698 compressed objects within 7 object streams
+ 157 named destinations out of 1000 (max. 500000)
  53257 words of extra memory for PDF output out of 61914 (max. 10000000)
 

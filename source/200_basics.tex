@@ -1,12 +1,15 @@
 
 \chapter{Grundlagen} \index{Grundlagen}
 
-In diesem Kapitel wird erläutert, was LLM Tools sind, wie sie trainiert werden und wie sie funktionieren. Anschließend 
-werden die einzelnen Tools ChatGPT, Google Gemini und Le Chat vorgestellt und deren Entwicklung beschrieben.\\
+Im ersten Kapitel wird erläutert, was LLM Tools sind, wie sie trainiert werden und wie sie funktionieren. Anschließend 
+werden die einzelnen Tools, die in dieser Arbeit betrachtet werden, vorgestellt und deren Entwicklung beschrieben.\\
 
-Im zweiten Teil des Kapitels wird der Software Engineering Prozess erklärt und erläutert, was dieser umfasst. 
-Dabei wird als Softwareprozess ausschließlich das Wasserfallmodell betrachtet, da in dieser Arbeit nur mit diesem 
-Modell gearbeitet wird.
+Im zweiten Teil des Kapitels wird auf die einzelnen Dokumente, die während des Software Engineering Prozesses 
+erstellt werden, näher eingegangen und es wird festgelegt, welche Dokumente und Abschnitte in der Analyse 
+betrachtet werden. Dadurch, dass sich die Arbeit bei der Erstellung der Dokumente an das Modul ``Secure 
+Software Engineering'' orientiert, werden einige Kapitel und Abschnitte nicht betrachtet. Daher wird bei 
+der Beschreibung der Dokumente ohne Begründung erwähnt, dass diese im folgenden nicht richtig betrachtet werden.
+Der Vollständigkeit wegen, werden diese aber trotzdem hier im Grundlagen Kapitel aufgelistet.
 
 \section{LLM Tools} \index{LLM Tools} \label{LLM Tools}
 
@@ -66,20 +69,20 @@ zu sich selbst erstellen kann, erhält man die Antwort in \autoref{InfotextChatG
     Entwickelt im Rahmen der Forschung und Entwicklung im Bereich Künstliche Intelligenz, ist ChatGPT in der Lage, 
     natürliche Sprache zu verstehen und darauf zu antworten. Dies macht ihn zu einem vielseitigen Werkzeug für eine 
     Vielzahl von Anwendungen, von der Beantwortung alltäglicher Fragen bis hin zur Unterstützung bei komplexeren 
-    Aufgaben wie dem Schreiben von Texten, der Generierung von Ideen und der Bereitstellung von Informationen.\\
+    Aufgaben wie dem Schreiben von Texten, der Generierung von Ideen und der Bereitstellung von Informationen.
     
     Die GPT-4-Architektur, auf der ChatGPT basiert, verwendet tiefes maschinelles Lernen, um menschliche Sprache zu 
     verarbeiten und zu erzeugen. Durch die Analyse großer Mengen an Textdaten kann das Modell Muster und Zusammenhänge 
     erkennen, die es ihm ermöglichen, kontextuell relevante und kohärente Antworten zu geben. Diese Fähigkeiten machen 
-    ChatGPT zu einem nützlichen Instrument in Bereichen wie Bildung, Forschung, Kundenservice und mehr.\\
+    ChatGPT zu einem nützlichen Instrument in Bereichen wie Bildung, Forschung, Kundenservice und mehr.
     
     Ein weiterer bemerkenswerter Aspekt von ChatGPT ist seine Fähigkeit, sich an eine Vielzahl von Themen anzupassen 
     und Informationen auf klare und präzise Weise zu vermitteln. Dies wird durch kontinuierliches Training und 
     Verbesserung des Modells erreicht, wobei sowohl technische Fortschritte als auch Nutzerfeedback berücksichtigt 
-    werden.\\
+    werden.
     
     Zusammengefasst ist ChatGPT ein leistungsstarker und vielseitiger KI-Assistent, der durch seine fortschrittliche 
-    Technologie und seine breite Anwendbarkeit einen wertvollen Beitrag in vielen Bereichen leistet.\\
+    Technologie und seine breite Anwendbarkeit einen wertvollen Beitrag in vielen Bereichen leistet.
     \vfill
     \end{tcolorbox}
     \caption{Infotext ChatGPT, Quelle: ChatGPT}
@@ -113,7 +116,7 @@ Im Dezember 2023 stellte Google eine generative Künstliche Intelligenz mit dem 
 entwickelt und ist laut Aussage von Google das größte, leistungsstärkste und vielseitigste große Sprachmodell (LLM), das bisher von 
 Google entwickelt und realisiert wurde. In der ursprünglichen Ankündigung wurde das KI-Sprachmodell unter dem Namen Gemini vorgestellt. 
 Im Februar 2024 entschied Google, auch den bisher als Bard bekannten Chatbot in Gemini umzubenennen. Damit ist Gemini mittlerweile sowohl
-der Name des Google Chatbots als auch des zugrundeliegenden Sprachmodells.
+der Name des Google Chatbot als auch des zugrundeliegenden Sprachmodells.
 
 Bei Nachfrage an Gemini, ob es einen Infotext über sich erstellen kann, erhält man die Antwort in \autoref{InfotextGemini1} und \autoref{InfotextGemini2}.
 
@@ -199,7 +202,7 @@ Daten verschiedener Modalitäten trainiert, und als Trainingsplattform verwendet
 Processing Units (TPUs) der neuesten Generation v4 und v5 als KI-Beschleuniger.
 
 Google hat begonnen, die KI in zahlreiche eigene Produkte zu integrieren, um die Fähigkeiten der Websuche, des 
-Chrome-Browsers, des Gmail-Services, verschiedener Entwicklungstools und anderer Produkte und Services zu verbessern 
+Chrome-Browsers, des GMail-Services, verschiedener Entwicklungstools und anderer Produkte und Services zu verbessern 
 und zu erweitern. Mitte Februar 2024 stellte Google Gemini 1.5 und 1.5 Pro vor, welche bis zu eine Million Tokens 
 verarbeiten können. Diese neuen Versionen sollen die Benchmark-Ergebnisse der Vorgängerversion deutlich übertreffen \cite{GrundlagenGemini}.
 
@@ -212,13 +215,13 @@ verarbeiten können. Diese neuen Versionen sollen die Benchmark-Ergebnisse der V
         Le Chat ist ein fortschrittliches Sprachmodell, das auf künstlicher Intelligenz (KI) und maschinellem Lernen 
         basiert. Entwickelt von einem Team aus Experten für KI und Sprachverarbeitung, hat Le Chat die Fähigkeit, 
         menschliche Sprache zu verstehen, zu interpretieren und darauf zu reagieren, was es zu einem wertvollen 
-        Werkzeug in verschiedenen Branchen macht.\\
+        Werkzeug in verschiedenen Branchen macht.
 
         \textbf{Funktionsweise}\\
         Le Chat nutzt eine Kombination aus Techniken des Natural Language Processing (NLP) und des Deep Learning. NLP 
         ermöglicht es dem Modell, die Struktur und den Kontext der menschlichen Sprache zu verstehen, während Deep 
         Learning-Algorithmen verwendet werden, um Muster in den Daten zu erkennen und die Genauigkeit der Vorhersagen 
-        zu verbessern.\\
+        zu verbessern.
 
         \textbf{Anwendungsbereiche}\\
         Le Chat kann in einer Vielzahl von Anwendungen eingesetzt werden. Einige der wichtigsten Anwendungsbereiche sind:
@@ -238,8 +241,8 @@ verarbeiten können. Diese neuen Versionen sollen die Benchmark-Ergebnisse der V
             Genauigkeit der Vorhersagen zu verbessern und eine bessere Benutzererfahrung zu bieten.
             \item \textbf{Skalierbarkeit:} Le Chat kann leicht skaliert werden, um eine große Anzahl von Anfragen 
             gleichzeitig zu bearbeiten, was es zu einer idealen Lösung für Unternehmen mit hohem Kundenaufkommen macht.
-            \item \textbf{Kosteneffizienz:} Le Chat kann als kosteneffiziente Alternative zu menschlichen 
-            Kundenservice-Mitarbeitern eingesetzt werden, was zu erheblichen Einsparungen für Unternehmen führen kann.
+            \item \textbf{Kosteneffizienz:} Le Chat kann als kosteneffiziente Alternative zu menschlichen Kundenservice-Mitarbeitern 
+            eingesetzt werden, was zu erheblichen Einsparungen für Unternehmen führen kann.
             \end{itemize}
         \textbf{Fazit}\\
         Le Chat ist ein innovatives Sprachmodell, das die Fähigkeit hat, die Art und Weise, wie wir mit Maschinen 
@@ -292,7 +295,7 @@ werden. Aufträge müssen mit einem Fälligkeitsdatum und einem Verantwortlichen
 und unmissverständlich formuliert werden sollten. Im Rahmen der Anforderungsanalyse werden in Beschlüssen die 
 Benutzeranforderungen erfasst. Feststellungen hingegen sind Beschlüsse, die keine Abstimmung benötigen, können 
 aber ebenfalls Anforderungen an das System enthalten. Informationen bieten den Projektmitgliedern wichtige Hinweise. 
-Dabei ist zu beachten, dass ein Besprechungsprotokoll keine Erlebniserzählung sein soll.\\
+Dabei ist zu beachten, dass ein Besprechungsprotokoll keine Erlebniserzählung sein soll.
 
 Der Aufbau eines Besprechungsprotokolls gestaltet sich wie folgt: Am Anfang stehen Datum, Thema, Verfasser, 
 Teilnehmer und Verteiler. Anschließend wird eine Tabelle mit den Spalten Nummer, Art, Beschreibung, Termin und 
@@ -309,39 +312,43 @@ Vorgeschichte, Vertragsbasis, Grundlagen, Ziele, Ergebnisse und mehr. Es bietet 
 Projektorganisation, wie z.B. die Teamaufstellung, das Berichtswesen und die Dokumentenablage, sowie über wesentliche 
 Projektabläufe wie Änderungsverfahren, Risikomanagement und Aufwandsverfolgung. Ziel des Projekthandbuchs ist es, neuen 
 Teammitgliedern den Einstieg zu erleichtern und auf wichtige Dokumente hinzuweisen, die für die Projektabwicklung 
-notwendig sind. Damit fungiert das Projekthandbuch als zentrale Anlaufstelle für das Projekt.\\
+notwendig sind. Damit fungiert das Projekthandbuch als zentrale Anlaufstelle für das Projekt.
 
 Das Dokument beginnt mit einer Einleitung, die die Rahmenbedingungen klärt. Dieser Abschnitt enthält den Zweck des 
 Dokuments, Hinweise zur Redaktion, in denen festgelegt wird, wer für das Dokument verantwortlich ist, sowie 
-Informationen zum Verteiler, also wer bei Änderungen informiert werden muss.\\
+Informationen zum Verteiler, also wer bei Änderungen informiert werden muss.
 
 Im Anschluss folgt die Projektbeschreibung, die die Rahmenbedingungen des Projekts darlegt. Dieser Teil enthält einen 
 Abschnitt zur Vorgeschichte, in dem beschrieben wird, wie es zu dem Projekt kam. Ein weiterer Abschnitt bietet eine 
 inhaltliche Kurzdarstellung des Projekts. Danach werden in einem Abschnitt zur Vertragsbasis der zeitliche 
 Projektrahmen, die Anzahl der Teammitglieder und der Umfang der Bearbeiter-Stunden festgelegt. Es folgt eine 
 Beschreibung des Projektergebnisses, in der festgelegt wird, welche Produkte geliefert werden müssen. Ein weiterer 
-Abschnitt zu sonstigen Besonderheiten beschreibt informelle Ziele.\\
+Abschnitt zu sonstigen Besonderheiten beschreibt informelle Ziele.
 
-Ein nachfolgendes Kapitel verweist auf die Risikoliste.\\
+Ein nachfolgendes Kapitel verweist auf die Risikoliste.
 
 Daraufhin folgt ein Kapitel zur Projektorganisation, das die Teamstruktur und die Kommunikationswege beschreibt. 
 Dieses Kapitel beginnt mit dem Teamaufbau, in dem die Aufgabenverteilung und die E-Mail-Adressen der einzelnen 
 Teammitglieder vermerkt sind. Anschließend wird die Zusammenarbeit mit den Kunden definiert. Danach folgt ein 
-Abschnitt über regelmäßige Pflichtbesprechungen für die Teammitglieder.\\ %Danach wird beschrieben, ob das 
-%Projekt besondere Softwarelizenzen benötigt. Nachfolgend gibt es ein Abschnitt zu Sicherheit wo beschrieben wird, 
-%wie mit Sicherheitsaspekten wie Backup, Zugangskontrollen und Verschlüsselungen umgegangen wird. Als letztes gibt es ein 
-%Abschnitt für Sonstige Spielregeln.
+Abschnitt über regelmäßige Pflichtbesprechungen für die Teammitglieder. 
 
-Das folgende Kapitel widmet sich der Planung und behandelt verschiedene Planungsaspekte. Der erste Abschnitt befasst 
+Grundsätzlichen würden hier noch drei Abschnitte kommen, welche hier allerdings nicht weiter betrachtet werden:
+Zum einen wird beschrieben, ob das Projekt besondere Softwarelizenzen benötigt. Nachfolgend gibt es ein 
+Abschnitt zu Sicherheit wo beschrieben wird, wie mit Sicherheitsaspekten wie Backup, Zugangskontrollen 
+und Verschlüsselungen umgegangen wird. Als letztes gibt es ein Abschnitt für Sonstige Spielregeln.
+
+
+Nun würde ein Kapitel zum Thema ``Planungen'' folgen. Darauf wird jedoch, im Modul Secure Software Engineering, 
+aufgrund der kurzen Laufzeit des Projekts verzichtet. Daher wird dies auch im folgenden der Arbeit nicht weiter 
+betrachtet.\\
+Das Kapitel würde sich der Planung widmen und behandelt verschiedene Planungsaspekte. Der erste Abschnitt befasst 
 sich mit dem Projektplan. Hier werden die festgelegten Meilensteine beschrieben, einschließlich der Startzeiten der 
 einzelnen Aktivitäten, der parallelen Abläufe, der Abschlusszeiten der verschiedenen Tätigkeiten, der 
-Entstehungszeitpunkte der Produkte und der möglichen Entscheidungspunkte.\\ %Der zweite 
-%Abschnitt geht über die Restaufwandsschätzung. Bei diesem wird wöchentlich eine Schätzung abgegeben, damit der Aufwand nicht
-%aus dem Ruder läuft. Dafür gibt es einen Verweis auf ein externes Dokument.
+Entstehungszeitpunkte der Produkte und der möglichen Entscheidungspunkte. Der zweite 
+Abschnitt geht über die Restaufwandsschätzung. Bei diesem wird wöchentlich eine Schätzung abgegeben, damit der Aufwand nicht
+aus dem Ruder läuft. Dafür gibt es einen Verweis auf ein externes Dokument.
 
-%Anschließend gibt es ein Kapitel zur Qualitätssicherung
-
-%Danach kommt ein Kapitel zu Datenschutz
+Auch die folgenden beiden Kapitel zum Thema Qualitätssicherung und Datenschutz entfallen hier.
 
 Anschließend folgt ein Kapitel zur Dokumentation und Ablage, in dem beschrieben wird, wie und wo Produkte bzw. 
 Dokumente abgelegt werden. Es beginnt mit einem Abschnitt zum Dokumenteneingang und -ausgang, in dem festgelegt 
@@ -349,10 +356,10 @@ wird, wie mit extern eingehenden Informationen umgegangen wird und wie ausgehend
 werden. Im zweiten Abschnitt wird die Ablage und Archivierung geregelt, wobei erläutert wird, wie die Daten im 
 Projektarchiv zu organisieren sind und in welchen Verzeichnissen die jeweiligen Daten abgelegt werden.
 
-%Als vorletztes Kapitel wird in der Referenzliste auf alle sonstigen existierenden Dokumente verwiesen, die mit der 
-%Projektabwicklung in Zusammenhang stehen.
-
-%Zuletzt wird in einem Abkürzungsverzeichnis und Glossar spezielle Abkürzungen und wichtige Begriffe erklärt. 
+Die letzten beiden Kapitel werden ebenfalls nicht weiter betrachtet:\\
+Als vorletztes Kapitel wird in der Referenzliste auf alle sonstigen existierenden Dokumente verwiesen, die mit der 
+Projektabwicklung in Zusammenhang stehen.\\
+Zuletzt wird in einem Abkürzungsverzeichnis und Glossar spezielle Abkürzungen und wichtige Begriffe erklärt. 
 
 \subsection{Risikoliste} \index{Risikoliste} \label{Risikoliste}
 
@@ -360,12 +367,12 @@ Die Risikoliste ist ein zentrales Instrument, das dem gesamten Team einen umfass
 und die entsprechenden Maßnahmen bietet. Der Projektleiter muss diese Risiken stets im Auge behalten, um eine 
 fundierte Projektplanung sicherzustellen. Zusätzlich kann die Risikoliste dem Anforderungsanalysten bei der 
 Identifikation von Anforderungen, dem Systemarchitekten bei der Wahl geeigneter technischer Lösungen und dem 
-Testmanager bei der Entwicklung von Testfällen nützlich sein.\\
+Testmanager bei der Entwicklung von Testfällen nützlich sein.
 
 Der Inhalt der Risikoliste umfasst die Autoren des Dokuments, die Historie des Dokuments mit einer Zusammenfassung 
 der Änderungen, die Liste der Risiken sowie eine Liste der möglichen Maßnahmen für jedes identifizierte Risiko. 
 Die Historie enthält Spalten für Datum, Autor*in und Änderungen, um später vorgenommene Modifikationen leichter 
-nachvollziehbar zu machen.\\
+nachvollziehbar zu machen.
 
 Die Risikoliste selbst setzt sich aus mehreren Attributen zusammen. Die Identifikationsnummer ist eine eindeutige 
 Nummer zur Identifizierung des Risikos, während die Risikobezeichnung eine kurze Beschreibung des Risikos bietet. 
@@ -376,7 +383,7 @@ Eintrittswahrscheinlichkeit des Risikos, und der Risikoschaden oder das Risikoau
 Schadensausmaß, einschließlich eventueller Vertragsstrafen. Das Risikomaß berechnet sich aus der Multiplikation von 
 Risikowahrscheinlichkeit und Risikoschaden. Die Risikoklasse ist eine Priorisierung der Risiken, typischerweise in 
 Kategorien wie tolerierbar, unerwünscht, kritisch oder katastrophal. Schließlich wird für jedes Risiko ein Status 
-festgelegt, der zwischen aktiv, eingetragen und geschlossen unterscheiden kann.\\
+festgelegt, der zwischen aktiv, eingetragen und geschlossen unterscheiden kann.
 
 Die Maßnahmen zur Risikobewältigung umfassen ebenfalls mehrere Attribute. Zunächst wird der Typ der Maßnahme festgelegt, 
 wobei zwischen Risiko verhindern, Risiko lindern oder minimieren, Risiko übertragen oder teilen und Risiko akzeptieren 
@@ -397,7 +404,7 @@ Die Anforderungsspezifikation definiert formell, welche Leistungen das zu entwic
 beschreibt detailliert, was das System leisten soll, ohne jedoch festzulegen, wie diese Leistungen erbracht werden. 
 Das ``Wie'' wird im Architekturdokument behandelt. In der Praxis sind Anforderungen und Systementwurf eng miteinander 
 verknüpft. Die Anforderungsspezifikation ist oft Teil eines Vertrags und muss daher so vollständig und eindeutig wie 
-möglich formuliert sein.\\
+möglich formuliert sein.
 
 Diese Spezifikation dient mehreren Zwecken: Sie hilft Kunden und Endbenutzern zu beurteilen, ob das System die 
 gewünschten Leistungen erbringen wird und wie es später zu bedienen ist. Projektmanager nutzen die Spezifikation 
@@ -405,38 +412,38 @@ zur Erstellung des Angebots und zur Planung des detaillierten Entwicklungsprozes
 entscheiden, wie das System verwaltet werden muss. Für Systemarchitekten dient sie als Grundlage für ihr 
 Architekturdokument, und Softwareentwickler nutzen sie, um zu verstehen, welches System entwickelt werden soll. 
 Zusammen mit dem Architekturdokument bildet sie die Basis für die Implementierung. Testmanager verwenden die 
-Spezifikation, um Validierungstests und Testfallspezifikationen zu entwickeln.\\
+Spezifikation, um Validierungstests und Testfallspezifikationen zu entwickeln.
 
 Der Inhalt einer Anforderungsspezifikation ist folgendermaßen aufgebaut:
 
 Zunächst werden der Name des Softwareprodukts und des Herstellers genannt. Es folgt ein Vorwort, das die erwartete 
 Leserschaft definiert, eine Versionshistorie des Dokuments mit Begründungen für neue Versionen und eine Zusammenfassung 
-der Änderungen enthält sowie die Autoren des Dokuments nennt.\\
+der Änderungen enthält sowie die Autoren des Dokuments nennt.
+
 Die Einleitung beschreibt den Zweck und Umfang des Dokuments. Dies umfasst eine Beschreibung der Notwendigkeit des 
 Systems, eine Kurzbeschreibung der Funktionalität und der Nachbarsysteme sowie eine Definition der Bedeutung des 
 Systems für die gesamtwirtschaftlichen oder strategischen Ziele des Unternehmens. Es folgen Verweise auf weitere 
-Ressourcen sowie Definitionen von Begriffen und Abkürzungen. Eine Übersicht des Dokuments schließt die Einleitung ab.\\
-Anschließend werden die Benutzeranforderungen definiert. Diese enthalten eine Beschreibung der für den Benutzer 
-bereitgestellten Dienste und der nichtfunktionalen Anforderungen in verständlicher Sprache, Diagrammen oder anderen 
-für den Kunden nachvollziehbaren Notationen.\\
+Ressourcen sowie Definitionen von Begriffen und Abkürzungen. Eine Übersicht des Dokuments schließt die Einleitung ab, 
+welche allerdings nicht weiter betrachtet wird.
+
+Anschließend werden die Benutzeranforderungen definiert, welches aber ebenfalls nicht betrachtet wird. 
+Diese enthalten eine Beschreibung der für den Benutzer bereitgestellten Dienste und der nichtfunktionalen 
+Anforderungen in verständlicher Sprache, Diagrammen oder anderen für den Kunden nachvollziehbaren Notationen.
+
 Es folgt ein Überblick über die Systemarchitektur, der die erwartete Systemarchitektur und die Einordnung des Systems 
-in die Systemlandschaft des Kunden beschreibt.\\
-Daraufhin wird die Spezifikation der Systemanforderungen behandelt, die sowohl funktionale als auch nichtfunktionale 
-Anforderungen beschreibt. Hier können auch Schnittstellendefinitionen zu externen Systemen enthalten sein.\\
-Abschließend werden die Systemmodelle vorgestellt, zu denen Klassen-, Datenfluss- und semantische Modelle gehören, 
-die die Beziehungen zwischen Systemkomponenten sowie zwischen dem System und seiner Umgebung darstellen.\\
+in die Systemlandschaft des Kunden beschreibt.
 
-Ein spezielles Modell ist das fachliche Datenmodell, das aus Entitätstypen besteht. Eine Entität ist ein individuelles 
+Danach folgt das fachliche Datenmodell, das aus Entitätentypen besteht. Eine Entität ist ein individuelles 
 und identifizierbares Exemplar von Dingen, Personen oder Begriffen der realen oder Vorstellungswelt, beschrieben 
-durch ihre Eigenschaften. Entitätstypen besitzen Attribute und Beziehungen, jedoch keine Fähigkeiten. Das fachliche 
-Datenmodell wird mit Hilfe eines UML Klassendiagrammes mit ergänzenden Beschreibungen bzw. Einschränkungen spezifiziert.
-Dieses enthält alle Entitätstypen mit deren Eigenschaften, Beziehungen und Einschränkungen.\\
+durch ihre Eigenschaften. Entitätentypen besitzen Attribute und Beziehungen, jedoch keine Fähigkeiten. Das fachliche 
+Datenmodell wird mit Hilfe eines UML Klassendiagramms mit ergänzenden Beschreibungen bzw. Einschränkungen spezifiziert.
+Dieses enthält alle Entitätentypen mit deren Eigenschaften, Beziehungen und Einschränkungen.
 
-Zu den Systemmodellen gehören auch Anwendungsfälle, die die funktionalen Anforderungen an das System beschreiben. 
+Anschließend folgen Anwendungsfälle, die die funktionalen Anforderungen an das System beschreiben. 
 Ein Anwendungsfalldiagramm gibt eine Übersicht über alle Anwendungsfälle. Ein Anwendungsfall besteht aus mehreren 
 Szenarien, die konkrete Abläufe beschreiben, wie das System genutzt werden kann. Anwendungsfälle können textuell 
 beschrieben oder durch Aktivitäts- oder Sequenzdiagramme ergänzt werden.\\
-Ein Anwendungsfall hat mehrere Bestandteile: Der Titel dient als eindeutige Identifikation, die Kurzbeschreibung 
+Die Beschreibung eines Anwendungsfalls hat mehrere Bestandteile: Der Titel dient als eindeutige Identifikation, die Kurzbeschreibung 
 definiert das Thema, und das Ziel legt fest, was erreicht werden soll. Akteure beschreiben, wer den Anwendungsfall 
 auslöst, und der Auslöser definiert den Grund für die Ausführung. Die Vorbedingung legt fest, welche Bedingungen zu 
 Beginn vorherrschen müssen, das Szenario beschreibt den Ablauf, und das Ergebnis erläutert die gelieferten 
@@ -448,11 +455,11 @@ zwischen den Anwendungsfällen darstellt. Ebenfalls gibt es eine Spezifikation j
 von UML Aktivitätsdiagrammen und ergänzenden Beschreibungen. Diese enthalten eine genaue Ablaufbeschreibung, den Akteur, 
 die Aufrufhäufigkeit, die Vorbedingung und den Auslöser sowie eine Dokumentation des Datenflusses. 
 
-Neben den Anwendungsfällen müssen auch die Dialoge und Schnittstellen beschrieben werden, über die die Anwendungsfälle 
+Neben den Anwendungsfällen müssen auch die Benutzungsschnittstelle und die Dialoge beschrieben werden, über die die Anwendungsfälle 
 ausgeführt werden. Eine Dialogbeschreibung enthält alle Details, einschließlich der Feldlängen und der zugeordneten 
-Aktionen für jeden Button. In den Schnittstellen müssen die Parameter genau festgelegt werden.\\
+Aktionen für jeden Button. Die Benutzungsschnittstelle stellt dar, wie die Dialoge miteinander verbunden sin.\\
 Im Dokument werden alle Dialoge mit Bildern und strukturierter und detaillierter Beschreibung der Bestandteile spezifiziert.
-Auch alle Schnittstellen zu den Nachbarsystemen werden Spezifiziert.\\
+Die Benutzungsschnittstelle kann eine beliebige Darstellungform sein.
 
 Zum Schluss werden die nichtfunktionalen Anforderungen in natürlicher Sprache inklusiver Abnahmebeschreibung aufgelistet.
 
@@ -461,23 +468,25 @@ Zum Schluss werden die nichtfunktionalen Anforderungen in natürlicher Sprache i
 Das Architekturdokument, auch bekannt als Softwarearchitektur-Dokument, beschreibt die Umsetzung des zu entwickelnden 
 Systems. Die Anforderungsspezifikation [\ref{Anforderungsspezifikation}] legt fest, „was“ das System leisten soll, 
 jedoch nicht „wie“ dies erreicht wird. Diese Umsetzung wird im Architekturdokument detailliert beschrieben. In der 
-Praxis sind die Anforderungsspezifikation und das Architekturdokument eng miteinander verzahnt.\\
+Praxis sind die Anforderungsspezifikation und das Architekturdokument eng miteinander verzahnt.
 
 Die Zielgruppe des Architekturdokuments umfasst hauptsächlich Softwareentwickler und Testmanager. Softwareentwickler 
 nutzen das Dokument, um zu verstehen, wie das in der Anforderungsspezifikation beschriebene System entwickelt werden 
 soll. Zusammen mit der Anforderungsspezifikation bildet es die Grundlage für die Implementierung. Testmanager verwenden 
-das Architekturdokument, um Komponententests für das System zu entwickeln.\\
+das Architekturdokument, um Komponententests für das System zu entwickeln.
 
 Der Inhalt des Architekturdokuments gliedert sich in drei Hauptabschnitte: Technische Architektur, Anwendungsarchitektur 
 und IT-Konzept.\\
 Die Technische Architektur umfasst zwei Hauptkomponenten. Die Technische Infrastruktur (TI-Architektur) beschreibt 
 die Hardware- und Produktanforderungen.
-%Der andere Teil ist die T-Architektur, also die Technische Struktur, und beschreibt die Technischen Lösungen und Strukturen. 
+Der andere Teil ist die T-Architektur, also die Technische Struktur, und beschreibt die Technischen Lösungen und Strukturen.
+Diese wird in der Arbeit aber nicht weiter betrachtet.
 Beide Komponenten werden durch erklärende Texte und Grafiken dargestellt.\\
 Die Anwendungsarchitektur besteht ebenfalls aus zwei Hauptteilen: dem Komponentenmodell und dem Datenmodell. Das 
 Komponentenmodell beschreibt die fachliche Struktur der Lösung auf einer groben Ebene mittels eines 
 UML-Komponenten-Diagramms. Das Datenmodell hingegen beschreibt die Struktur der persistenten Daten und wird 
-entweder durch ein UML-Komponenten-Diagramm oder Entity-Relationship-Diagramme dargestellt.\\
+entweder durch ein UML-Komponenten-Diagramm oder Entity-Relationship-Diagramme dargestellt. Aber auch dieses wird hier 
+nicht weiter betrachtet.\\
 Das IT-Konzept enthält die detaillierte Schnittstellenbeschreibung. Diese beschreibt die Semantik und Syntax der 
 Komponentenschnittstellen ausführlich und wird durch Code oder Code-Dokumentation dokumentiert.\\ 
 Darüber hinaus beinhaltet das IT-Konzept dynamische Beschreibungen exemplarischer Anwendungsfälle im Komponentenmodell, die mittels 
@@ -488,7 +497,7 @@ Aktivitätsdiagrammen oder Sequenzdiagrammen veranschaulicht werden.
 Die Testfallspezifikation oder auch Software Test Dokumentation dient dazu die Testdurchführung zu planen, die Testfälle 
 zu Spezifizieren und die Testergebnisse zu protokollieren. Mit Hilfe dieser ist es möglich die Anwendung systematisch 
 und strukturiert zu testen. Die Protokollierung der Testergebnisse ermöglicht es eine Aussage über die Qualität zu geben.
-Nach einer Fehlerbehebung können die selben Tests erneut durchgeführt werden. Dadurch wird nichts vergessen.\\
+Nach einer Fehlerbehebung können die selben Tests erneut durchgeführt werden. Dadurch wird nichts vergessen.
 
 Die Testspezifikation besteht aus einem Testkonzept, einer Testfall-Spezifikation und einem Testprotokoll.\\
 Das Testkonzept legt die Vorgehensweise, die verwendeten Mittel und den Ablauf der Testaktivitäten fest. In diesem Rahmen

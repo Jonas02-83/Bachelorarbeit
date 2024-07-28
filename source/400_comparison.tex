@@ -3,15 +3,9 @@
 
 TODO!!!!!!!!
 
-Generell:
-    - Schwierigkeiten in einem gorßen/langen Chat, die Tools von einer Formulierung weg zu bringen. 
-    - Le Chat erstellt immer Link mit Bild aber /Xyxyxyxy ?
-    - Le Chat warnt manchmal vor Eingabe: "Der Inhalt kann gefährliche oder sensible Themen beinhalten" für Eingabe:
-    "Formulier die Beschreibung der Aktivitäten etwas genauer. Beschreibe welcher Wert wo gespeichert wird mithilfe des Fachlichen Datenmodells."
-    - Gemini wechselt gerne einfach mal auf Englisch um
-    - Gemini generell sehr stark von der Eingabe abhängig
-    - Gemini häufig falsche und unsinnge Antworten, wenn neu generiert oder Eingabe etwas umformuliert wurde es manchmal besser
-
+In den Text hier schreiben!!!: Die Ausgaben der Tools befinden sich auf dem beigelegten USB-Stick. Im Anhang 
+(\autoref{BeigelegteDateien}) werden die sich auf dem USB-Stick befindlichen Dateien kurz erklärt. Im Text 
+wird als Beleg, auf die Kapitel der entsprechenden Datei, in eckigen Klammern verwiesen. 
 
 \section{Bewertung} \index{Bewertung} \label{BewertungLLMTools}
 
@@ -58,7 +52,8 @@ und \autoref{Kundengespräch2}]. Mit diesem Gespräch und dem Prompt:
     \label{Prompt Besprechungsprotokoll}
 \end{prompt}
 
-wurden dann bei ChatGPT, Gemini und Le Chat die Eingabe getätigt. Die Ergebnisse [[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]].\\
+wurden dann bei ChatGPT, Gemini und Le Chat die Eingabe getätigt. Die Ergebnisse befinden sich in der Datei 01\_Besprechungsprotokolle.pdf 
+auf dem beiligenden USB-Stick.\\
 
 Zunächst fiel auf, dass trotz der Verwendung desselben Prompts die Ausgaben der verschiedenen Tools teilweise erheblich abwichen. 
 Dies betraf sowohl die Anzahl der erstellten Einträge im Besprechungsprotokoll als auch die Art und Weise, wie die Informationen 
@@ -66,34 +61,35 @@ zusammengefasst wurden. In einigen Fällen wurden mehrere Punkte zu einem Eintra
 Einträge daraus entstanden. Dies trat insbesondere bei der Anforderung auf, dass die Anwendung mit JavaFX als Server-Client-Architektur 
 mit RMI entworfen werden sollte. Hier haben die Tools teilweise einen Eintrag dafür erstellt und manchmal drei einzelne Einträge. 
 Dieses Verhalten zeigte sich auch, wenn derselbe Prompt in neuen Chats mit demselben Tool verwendet wurde. Besonders bei Gemini trat 
-dieses Problem sehr häufig und extrem auf.\\
+dieses Problem sehr häufig auf [Kap. Gemini 01/Gemini 05/...].\\
 
 Ein wichtiger Aspekt bei der Erstellung des Prompts war die Notwendigkeit einer genauen Beschreibung der Spalten und der verschiedenen 
 Arten (Information, Auftrag, Feststellung, Beschluss). Ohne diese genaue Beschreibung benutzten die Tools ein eigenes Format, was eher  
-einer Stichpunktlisten ähnelte. Doch auch die genaue Definition der Arten führt nicht immer zu konsistenten Ergebnissen, da die Zuweisung 
-der Kategorien häufig unterschiedlich vorgenommen werden.\\
+einer Stichpunktlisten ähnelte [Kap. GPT 05/Gemini 06/Le Chat 03]. Doch auch die genaue Definition der Arten führt nicht immer 
+zu konsistenten Ergebnissen, da die Zuweisung der Kategorien häufig unterschiedlich vorgenommen werden.\\
 
 Auf die Spalte ``Termin'' musste ebenfalls ein besonderes Augenmerk gelegt werden. Wenn im Prompt nicht explizit angegeben war, dass ein 
-genaues Datum erforderlich ist, arbeiteten die Tools oft mit relativen Angaben wie ``+2 Wochen''. Selbst mit der Klarstellung, dass der 
-Termin ein genaues Datum sein sollte, traten bei Le Chat Probleme auf: Es wurden immer Termine gewählt, die in der Vergangenheit lagen. 
-Dazu wurde angegeben, dass die Termine beispielhaft gewählt und auf das aktuelle Datum, den 29.03.2023, bezogen seien.\\
+genaues Datum erforderlich ist, arbeiteten die Tools oft mit relativen Angaben wie ``+2 Wochen'' [Kap. GPT 04/Le Chat 02]. Selbst mit der Klarstellung, dass der 
+Termin ein genaues Datum sein sollte, traten bei Le Chat Probleme auf: Es wurden immer Termine gewählt, die in der Vergangenheit lagen [Kap. Le Chat 01]. 
+Bei Nachfrage wurde angegeben, dass die Termine beispielhaft gewählt und auf das aktuelle Datum, den 29.03.2023, bezogen seien.\\
 
 Google Gemini hatte, wie bereits erwähnt, erhebliche Schwierigkeiten, nur die wichtigsten Punkte aus dem Gespräch herauszufiltern. 
 Häufig wurden Besprechungsprotokolle mit etwa 30 Punkten erstellt, wobei jede einzelne Information separat und auch unwichtige 
 Informationen aufgeführt wurden. Gemini fügte zudem eine neue Art, ``Frage'', selbstständig hinzu, wodurch im Besprechungsprotokoll 
 teilweise mehrere Punkte für eine Information erstellt wurden. Bei erneuten Eingaben variierte die Länge des Besprechungsprotokolls 
 stark. Trotz des Hinweises, nur die wichtigen Punkte in das Protokoll aufzunehmen, neigte Gemini weiterhin dazu, sehr detaillierte und 
-kleinteilige Protokolle zu erstellen.\\
+kleinteilige Protokolle zu erstellen [Kap. Gemini 05/Gemini 03].\\
 
 Le Chat hingegen hielt sich häufig zu knapp. Dadurch wurden immer wieder wichtige Anforderungen nicht in das Besprechungsprotokoll 
-aufgenommen, und es musste besonders darauf geachtet werden, ob alle relevanten Informationen enthalten waren. Besonders, dass mehrere
-Spiele gleichzeitig gespielt werden können und das ansprechende Animationen verwendet werden sollen, wurden nicht mit aufgeführt.\\
+aufgenommen, und es musste darauf geachtet werden, ob alle relevanten Informationen enthalten waren. Besonders, dass mehrere
+Spiele gleichzeitig gespielt werden können und das ansprechende Animationen verwendet werden sollen, wurden nicht mit aufgeführt
+[Kap. Le Chat 01/Le Chat 02].\\
 
 Zusammenfassend lässt sich sagen, dass die Erstellung des Besprechungsprotokolls durch die LLM Tools grundsätzlich schon ganz gut 
 funktioniert. Besonders ChatGPT hat wenig Schwankungen in seinen generierten Ausgaben und hat eigentlich immer die gleichen 
-Punkte im Besprechungsprotokoll, formuliert diese nur ein bisschen unterschiedlich. Daher wird ChatGPT mit ``Sehr gut'' bewertet.
+Punkte im Besprechungsprotokoll, formuliert diese nur ein bisschen unterschiedlich aufgelistet. Daher wird ChatGPT mit ``Sehr gut'' bewertet.
 Die anderen beiden haben damit etwas mehr Schwierigkeiten, doch wenn man sich das Besprechungsprotokoll immer wieder neu generieren 
-lässt, kommt irgendwann ein anständig erstelltes Protokoll. Da die Zusammenfassung des Gesprächs auf die wesentlichen Punkte, die 
+lässt, kommt irgendwann ein anständig erstelltes Protokoll. Da die Zusammenfassung des Gespräches auf die wesentlichen Punkte, die 
 Hauptaufgabe eines Besprechungsprotokolls ist, erhalten Le Chat und Gemini lediglich die Bewertung ``Ausreichend''. Das Le Chat und 
 Gemini nicht alle Anforderungen in das Protokoll aufnehmen, kann, falls dies nicht auffällt, im Nachhinein das Projekt verzögern 
 und die Kosten in die Höhe treiben. Geminis erstelle Protokolle mit etwa 30 Punkten verfehlen dahingegen komplett denn Sinn eines
@@ -119,8 +115,8 @@ erstellt wurde:
 \end{prompt}
 
 Für die Einleitung sind spezifische Informationen erforderlich, die im Prompt angegeben werden müssen. In diesem Projekt sind das die 
-Verantwortlichkeit des Projektleiters und der Verteiler über den Discord-Channel. Es fiel lediglich auf, dass ChatGPT im Abschnitt 
-``Verteiler'' alle Teammitglieder nannte, was nicht unbedingt nötig ist. Ansonsten wurden die Abschnitte gut erstellt [Verweis!!!!!!!!!!!!!!!!!!!!!!].\\
+Verantwortlichkeit des Projektleiters und der Verteiler über den Discord-Channel. Die Ausgaben der Tools sind im Dokument 02\_Projekthandbuch.pdf
+zufinden. Die Abschnitte wurde von allen drei Tools gut erstellt und es gab keine Auffälligkeiten.\\ 
 
 Der zweite Teil betrifft das Kapitel ``Projektdefinition'' mit den Abschnitten ``Vorgeschichte'' und ``Inhaltliche Kurzdarstellung''. Dazu wurde 
 der folgende Prompt verwendet, welcher nach der Ausgabe der Einleitung im Chat eingegeben wurde:
@@ -136,25 +132,22 @@ der folgende Prompt verwendet, welcher nach der Ausgabe der Einleitung im Chat e
 \end{prompt}
 
 Diese zweite Eingabe erforderte keine weiteren Informationen, da diese im Gespräch bereits vorgegeben waren und die Tools darauf zugreifen 
-können sollten. Auch hier wurden die Abschnitte gut erstellt, und die Tools konnten die benötigten Informationen aus dem Gespräch gut 
-extrahieren [Verweis!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!].\\
+können sollten. Die Ausgaben hierzu sind ebenfalls im Dokument 02\_Projekthandbuch.pdf zufinden. Auch hier wurden die Abschnitte gut 
+erstellt, und die Tools konnten die benötigten Informationen aus dem Gespräch gut extrahieren.\\
 
 Bei der Erstellung der Einleitung zeigte sich, dass eine genaue Beschreibung der benötigten Abschnitte entscheidend war. Ohne diese klare 
-Vorgabe neigten die Tools dazu, eigene Strukturen und Inhalte zu erstellen, die nicht den Anforderungen entsprachen.\\
+Vorgabe neigten die Tools dazu, eigene Strukturen und Inhalte zu erstellen, die nicht den Anforderungen entsprachen [Kap. Le Chat 03].\\
 
-Außerdem traten bei Gemini teilweise Fehler in den Namen auf. Einmal wurde beispielsweise geschrieben, dass Frau Schmidt (Teamchefin) mit 
-Herrn Müller (Kunde) Kontakt aufnahm, was eine fehlerhafte Zuordnung darstellt.\\
-
-Abschließend lässt sich sagen, dass die Abschnitte von allen drei Tools gut waren. Der Fehler von Gemini zeigt allerdings, dass man sich 
-die Ausgaben trotzdem nochmal achtsam durchlesen sollte. Aufgrund der Bewertungskriterien wird Gemini durch seinen Fehler mit ``Gut''
-bewertet. Le Chat und Gemini werden beide mit ``Sehr gut'' benotet.
+Abschließend lässt sich sagen, dass die Abschnitte von allen drei Tools gut erstellt wurden und daher alle drei mit der Note ``Sehr gut'' 
+bewertet werden.
 
 \section{Risikoliste} \index{Risikoliste} \label{CompRisikoliste}
 
 Auch die Risikoliste wurde in zwei Schritten erstellt. Zunächst wurde nur die Risikotabelle erstellt und im zweiten 
-Schritt die Tabelle mit den Maßnahmen. Die beiden Ergebnisse sind [Verweis!!!!!!!!!!!!!!].\\
+Schritt die Tabelle mit den Maßnahmen. Die Ergebnisse der Tools sind in den entsprechenden Excel Tabellen 
+03\_Gemini\_Risikoliste.xlsx, 03\_GPT\_Risikoliste.xlsx sowie 03\_LeChat\_Risikoliste.xlsx zu finden.\\
 
-Der Prompt für die Risikotabelle
+Im folgenden ist der Prompt für die Risikotabelle wiedergegeben:
 
 \begin{prompt}[H]
     \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
@@ -176,7 +169,7 @@ Der Prompt für die Risikotabelle
     \label{Prompt Risikotabelle}
 \end{prompt}
 
-ist sehr umfangreich formuliert. Damit die Tabelle mit den richtigen Spalten erstellt wird, wurde im Prompt jede
+Dieser ist sehr umfangreich formuliert. Damit die Tabelle mit den richtigen Spalten erstellt wird, wurde im Prompt jede
 einzelne Spalte aufgezählt und beschrieben. Ebenfalls ist es wichtig, die möglichen Werte für die Risikoklasse zu 
 definieren, da hier sonst immer ``Hoch'', ``Mittel'' und ``Niedrig'' von den Tools verwendet wird. Es musste auch 
 festgelegt werden, wann die einzelnen Risikoklassen auftreten, da die Zuweisung ansonsten recht schwammig ausfällt und
@@ -195,14 +188,14 @@ Kundenrisiken vom Kunden, also Herr Müller, erstellt werden, da dieser an der E
 nicht beteiligt ist.\\
 
 ChatGPT hat die Tabelle sehr gut erstellt. Lediglich die Zuweisung der Risikoklasse war falsch. Nach einem Hinweis 
-diesbezüglich wurden diese jedoch, mit einer Ausnahme, richtig korrigiert.\\
+diesbezüglich wurden diese jedoch, mit einer Ausnahme, richtig korrigiert [Tabelle 2 \& 3 im Abschnitt 02\_Risiken].\\
 
 Ein Problem bei Gemini ist, dass das Risikomaß nicht richtig berechnet wird und auch die Risikoklassen nicht korrekt 
 zugewiesen werden. Das Komma der Werte ist um eine Stelle zu weit links. Es muss alles einmal *10 gerechnet werden, damit die 
-Werte stimmen. Kritisch bei Gemini ist, dass die Tabelle nicht in einem Zug erstellt werden kann. Es wird während der 
-Generierung einfach aufgehört. Auch wenn man Gemini fragt, ob die vollständige Tabelle generiert werden kann, wird mitten 
+Werte stimmen. Ein noch größeres Problem ist, dass die Tabelle nicht in einem Zug erstellt werden kann. Es wird während der 
+Generierung einfach aufgehört [Tabelle 1 in 02\_Risiken]. Auch wenn man Gemini fragt, ob die vollständige Tabelle generiert werden kann, wird mitten 
 drin aufgehört. Man muss explizit nur nach den noch offenen Risikoarten fragen. Diese werden dann erstellt, jedoch soll man 
-den Schaden und das Maß selbst eintragen und berechnen. Nach anschließender Frage, ob er den Risikoschaden und das Schadensmaß 
+den Schaden und das Maß selbst eintragen und berechnen [Tabelle 2 in 02\_Risiken]. Nach anschließender Frage, ob er den Risikoschaden und das Schadensmaß 
 festlegen kann, sagt er, dass er detaillierte Informationen über das Projekt und die potenziellen Risiken benötigt um genaue Werte 
 festlegen zu können.\\
 
@@ -211,7 +204,7 @@ Datum immer auf den 01.04.2023 gesetzt wird. Außerdem hatte Le Chat Probleme da
 zu bringen, dass die Risikoarten in einer Zeile stehen und die dazugehörigen Risiken darunter aufgelistet werden. Sie wurden 
 lediglich mit 1.x bis 8.x beschriftet wodurch Sie sich zu den Arten zuweisen ließen. Auch 
 hier wurden die Risikoklassen falsch bestimmt und auch nach einem Hinweis wurden diese nicht korrigiert. Jedoch wurde 
-dabei der Risikoschaden der einzelnen Risiken geändert. Auch hier ist die Zuweisung der Risikoklassen nicht richtig.\\
+dabei der Risikoschaden der einzelnen Risiken geändert. Auch hier ist die Zuweisung der Risikoklassen nicht richtig [02\_Risiken].\\
 
 Die Maßnahmentabelle wurde mit folgendem Prompt erstellt:
 
@@ -240,20 +233,22 @@ mit in die Tabelle übernommen werden soll, damit man die Maßnahmen den Risiken
 Bei allen dreien fühlt sich allerdings die Zuweisung der Attribute zu den Maßnahmen repetitiv an. Häufig wechseln sich die 
 auswählbaren Parameter ab und auch die Wahrscheinlichkeiten und der Restschaden sind meistens immer wieder die gleichen Zahlen.\\
 
-ChatGPT erstellt auch die Maßnahmentabelle sehr gut. Lediglich die Zuweisung der Restklasse stimmt nicht überein.\\
+ChatGPT erstellt auch die Maßnahmentabelle zunächst sehr gut. Lediglich die Zuweisung der Restklasse stimmt nicht überein 
+[Tabelle 1 in 03\_Maßnahmen]. Bei der zweiten Ausgabe ist der Restschaden falsch dargestellt. Dieser müsste *1000 gerechnet 
+werden damit das Restmaß dazu passt [Tabelle 2 in 03\_Maßnahmen].\\
 
 Bei Gemini wird für die Begründung, warum ein Risiko als nicht mehr relevant eingestuft wird, eine eigene Spalte erstellt.
 Auch wenn man die Beschreibung dafür im Prompt ändert, wird die Spalte erstellt. Außerdem ist die Formatierung bei Gemini
 manchmal nicht so gut, da bei jeder 2. Zeile alle Daten ab der Spalte "Begründung" um eine Stelle nach links verschoben wird.
 Lässt man sich die Antwort neu generieren und auch wenn man Gemini sagt er soll die Formatierung korrigieren bleibt das 
 Problem bestehen. Ein weiteres Problem ist, dass die Spalte "Trigger" nicht gefüllt wird und auch das Problem, dass
-die Tabelle nicht ganz vollständig generiert wird sondern mitten drin aufhört, tritt wieder auf. Teilweise ist das Restmaß 
-falsch berechnet und auch die Zuweisung der Restklasse ist nicht immer richtig.\\
+die Tabelle nicht vollständig generiert wird sondern mitten drin aufhört, tritt wieder auf. Teilweise ist das Restmaß 
+falsch berechnet und auch die Zuweisung der Restklasse ist nicht immer richtig [03\_Maßnahmen].\\
 
 Besonders aufgefallen bei Le Chat ist, dass die Attribute für die Maßnahmen sehr repetitiv festgelegt wurden. Die Restwahrscheinlichkeit
 beträgt für jede Maßnahme 5\% und auch der Restschaden ist häufig für die Maßnahmen für eine Risikoart gleich. Auch hier ist die 
 Restklasse nicht entsprechend zugewiesen worden sondern ist, bis auf bei der ersten Maßnahme, auf Unerwünscht festgelegt. Auch 
-die Festlegung des Typs der Maßnahmen wirkt sehr repetitiv, da hier immer zwischen ``verhindern'' und ``lindern'' gewechselt wird.\\
+die Festlegung des Typs der Maßnahmen wirkt sehr repetitiv, da hier immer zwischen ``verhindern'' und ``lindern'' gewechselt wird [03\_Maßnahmen].\\
 
 Zusammenfassend lässt sich sagen, das die Erstellung von Risiken und dazu gehörigen Maßnahmen gut funktioniert, allerdings die 
 Festlegung der zusätzlichen Attribute nicht den Vorgaben entspricht und häufig zu Fehlern führt. Auch die richtige Formatierung 
@@ -273,13 +268,13 @@ Wenn man allerdings sich nur die Erstellung von Risiken mit dazugehörigen Maßn
 Projekt unabhängig sind, wurden aber dennoch sehr gut erstellt. Auch bei Gemini werden einzelne Risiken mit dazugehörigen Maßnahmen 
 in einem rutsch erstellt, weshalb man dieses Problem bei der Erstellung der Risiken und Maßnahmen nicht ankreiden kann.
 
-
 \section{Anforderungsspezifikation} \index{Anforderungsspezifikation} \label{CompAnforderungsspezifikation}
 
 Für die Anforderungsspezifikation wurde für jeden Inhalt ein eigener Prompt erstellt. Daher wird im folgenden die Erstellung der Einleitung, 
 der Systemarchitektur, des Fachliche Datenmodells, des Anwendungsfalldiagramms, der detaillierten Anwendungsfall Beschreibung mit Aktivitätsdiagramm, 
 der Benutzungsschnittstelle mit der Dialog Navigation, der detaillierten Ausarbeitung von Dialogen und der nichtfunktionalen Anforderungen einzelnen
-Beschrieben und anschließend bewertet.\\
+Beschrieben und anschließend bewertet. Die Ergebnisse der Tools für die einzelnen Eingaben sind in der Datei 04\_Anforderungsspezifikation.pdf auf 
+dem beiligenden USB-Stick zu finden.\\
 
 \subsection*{Einleitung}
 
@@ -303,19 +298,13 @@ die generierte Ausgabe sehr ausschweifend und unspezifisch erstellt werden. Grun
 Bei ChatGPT ist lediglich auffällig, dass beim Abschnitt ``Zweck und Umfang des Dokuments'' nicht der Zweck der Anwendung beschrieben wurde, sondern der Zweck 
 des Dokuments. Die Kurzbeschreibung der Funktionalität wurde dafür gut erstellt. Bei der Kurzbeschreibung der Nachbarsysteme wurden die einzelnen Teile 
 der Anwendungs erläutert, also das Spielsystem, das Kommunikationsprotokoll für RMI und die Benutzeroberfläche, und keine anderweitigen System, da die 
-Anwendungs alleinstehend ist.\\
+Anwendungs alleinstehend ist [1 Einleitung (GPT 01), S. 6].\\
 
-Die Erstellung der Texte mit Gemini hat sehr gut funktioniert. Auffällig war hier allerdings, dass bei der Beschreibung der Funktionalität des System 
-nur die Anforderungen an das Spiel selbst beschrieben wurden. Die auflistung der Anforderungen an die Implementierung wurden hier vernachlässigt.\\
-
-Le Chat hat die Beschreibung gut erstellt. Der einzige Aspekt der auffällig war ist, dass beim Abschnitt ``Verweis auf sonstige Ressourcen'' ein Link 
-auf eine Webseite für die Regeln von Mensch ärgere dich nicht eingefügt wird.\\
+Die Erstellung der Texte mit Gemini und Le Chat hat sehr gut funktioniert. [2 Einleitung (Gemini 01), S. 7 \& 3 Einleitung (Le Chat 01), S. 8].\\
 
 Bewertet wird ChatGPT mit ``Gut'', da hier der Zweck des Dokuments beschrieben wurde, obwohl im Prompt explizit nach einer Beschreibung der Notwendigkeit
 des Systems für den Kunden gefragt wurde.\\
-Le Chat und Gemini werden mit ``Sehr gut'' benotet, da hier keine Inhatlichen Fehler vorhanden sind und soweit alles gepasst hat. Die bei Gemini nicht 
-aufgelisteten Anforderungen an die Implementierung sind hier nicht tragisch, da diese im Projekthandbuch bereits vermerkt sind und nicht nochmal 
-wiederholt werden müssen.
+Le Chat und Gemini werden mit ``Sehr gut'' benotet, da es hier keine Auffälligkeiten gibt.
 
 \subsection*{Systemarchitektur}
 
@@ -336,15 +325,15 @@ schon erstellt hat. Dadurch wissen die Tools was zu erstellen ist.\\
 
 Bei ChatGPT wurde sogar ein Diagramm in den Chat ``gezeichnet''. Die Beschreibung und das Diagramm ist jedoch für die Systemarchitektur schon viel zu genau.
 Es hätte gereicht den Client, den Server und die Datenbank darzustellen und diese richtig miteinander zu verbinden. Bei der ersten Erstellung wurden 
-die Verbindungen zwischen Client und Server und Server und Datenbank unidirektional dargstellt. Nach einer weiteren Eingabe, ob das so gewollt ist, wurde 
-dies jedoch korrigiert und die Verbindung wurde bidirektional eingezeichnet.\\
+die Verbindungen zwischen Client und Server und Server und Datenbank unidirektional dargstellt [4 Systemübersicht (GPT 01), S. 9]. Nach einer weiteren Eingabe, ob das so gewollt ist, wurde 
+dies jedoch korrigiert und die Verbindung wurde bidirektional eingezeichnet [5 Systemübersicht (GPT 02), S. 12].\\
 
 Gemini hatte das gleiche Problem wie ChatGPT, dass hier die Komponenten bereits zu genau beschrieben werden. Die Komponenten ähneln teilweise denen, die bei 
 dem Komponentendiagramm erstellt werden müssen, als auch den Klassen aus dem Fachlichen Datenmodell. Desweiteren hat Gemini zunächst keine 
-Datenbank miterstellt. Auf Nachfrage, ob eine Datenbank miterstellt werden sollte, wurde zunächst nur erklärt, woran man dies ausmachen kann. 
-Erst mit einer expliziten Eingabe, die Datenbank mit hinzu zu fügen, wird dies gemacht. Bei der Beschreibung der Schnittstellen wurde beschrieben, 
-dass zwischen Client und Server RMI verwendet wird. Allerdings wird bei der Datenbank nur von der Datenbank-Schnittstelle geschrieben. Daher ist hier 
-nicht richitg definiert worden, mit was und wie die Datenbank verbunden ist.\\
+Datenbank erstellt [6 Systemübersicht (Gemini 01), S. 15]. Auf Nachfrage, ob eine Datenbank hinzugefügt werden sollte, wurde zunächst nur erklärt, woran man dies ausmachen kann. 
+Erst mit einer expliziten Eingabe, die Datenbank mit hinzu zu fügen, wird dies gemacht . Bei der Beschreibung der Schnittstellen wurde beschrieben, 
+dass zwischen Client und Server RMI verwendet wird. Allerdings wird bei der Datenbank nur von der Datenbank-Schnittstelle geschrieben und es wurde 
+nicht richtig definiert, mit was und wie die Datenbank verbunden ist [7 Systemübersicht (Gemini 02), S. 17].\\
 
 Nach der Eingabe kam bei Le Chat eine kurze Textuelle Beschreibung der Client- und Server-Anwendung sowie der Datenbank. Außerdem wurde beschrieben, 
 dass Schnittstellen zu Nachbarsystemen ebenfalls mit aufgenommen werden sollen. Diese Beschreibungen haben soweit gut gepasst. Auf nachfrage, wie denn 
@@ -353,10 +342,10 @@ richtig. Es wurde jedoch nicht genau Beschrieben wie die Beziehungen zwischen de
 die Beziehung zwischen den Komponenten aussieht. Hier wurde richtig dargestellt, dass der Client und der Server kommunizieren und der Server mit der Datenbank, 
 jedoch nicht der Client mit der Datenbank. Die restliche Beschreibung, wie diese Komponenten kommunizieren, ist wieder etwas zu ausführlich. Die Beschreibung 
 reicht jedoch, um die Skizze selber zu erstellen, was kein negatives Kriterium ist, da bei den kostenfreien Versionen nicht davon ausgegangen wird, dass diese 
-das können.\\
+das können [8 Systemübersicht (Le Chat 01), S. 19].\\
 
 Zusammenfassend lässt sich hier sagen das alle drei Tools die Systemarchitektur etwas zu genau erzeugen. Jedoch lassen sich bei ChatGPT und Le Chat die richtigen Inhalte 
-aus der Ausgabe kopieren und die zu detaillierten Beschreibungen können einfach rausgelöscht werden, weshalb die Tools mit der Note ``Gut'' bewertet werden. Geminis Ausgabe
+aus der Ausgabe kopieren und die zu detaillierten Beschreibungen können einfach gelöscht werden, weshalb die Tools mit der Note ``Gut'' bewertet werden. Geminis Ausgabe
 kann allerdins aufgrund der fehlenden Beschreibung, wie die Datenbank mit den anderen Komponenten verbunden ist, nicht einfach kopiert und gekürzt werden. Daher wird Gemini 
 hier mit ``Befriedigend'' bewertet.
 
@@ -384,40 +373,49 @@ einzigartig machen und damit den User identifizieren. Des weiteren haben die Bez
 ``Spielfigur'' und ``Feld''. Es muss natürlich nicht auf jedem Feld eine Spielfigur stehen sondern auf einem Feld kann (0..1) eine Spielfigur stehen. Dieses Problem
 zieht sich auch durch die gesamten Versuche, das Fachliche Datenmodell zu korrigieren. Häufig passiert es auch, dass wenn ein anderer Fehler korrigiert wird, 
 eine richtige Beziehung zu etwas falschem geändert wird. Bei der erstellten Skizze waren ebenfalls die Beziehungen falsch eingezeichnet. Außerdem zeigten Beide Pfeile 
-zwischen zwei Klassen in die gleiche Richtung. Bei Nachfrage, ob die Beziehung nicht in beide richtungen zeigen sollten, wurde gesagt, dass das stimmt und die 
-Beziehungen Bidirektional sein sollten, jedoch wurde an der Zeichnung nichts geändert. Desweiteren ist aufgefallen, dass bei der Klasse ``Feld'' ein Attribut gefehlt
+zwischen zwei Klassen in die gleiche Richtung [9 Fachliches Datenmodell (GPT 01), S. 21]. Bei Nachfrage, ob die Beziehung nicht in beide Richtungen 
+zeigen sollten, wurde gesagt, dass das stimmt und die Beziehungen Bidirektional sein sollten, jedoch wurde an der Zeichnung nichts geändert 
+[10 Fachliches Datenmodell (GPT 02), S. 25]. Desweiteren ist aufgefallen, dass bei der Klasse ``Feld'' ein Attribut gefehlt
 hat, das beschreibt, ob das Feld belegt ist oder nicht. Außerdem wurde in einem String in ``Spiel'' das Spielbrett gespeichert. Auf Nachfrage wie dies Implementiert
-werden soll, wurde geantwortet das dies nicht die beste Lösung ist, sondern das Spielbrett dynamisch in der Anwendung generiert und angezeigt werden sollte.
+werden soll, wurde geantwortet das dies nicht die beste Lösung ist, sondern das Spielbrett dynamisch in der Anwendung generiert und angezeigt werden 
+sollte [18 Fachliches Datenmodell (GPT 10), S. 65].
 Weitere Probleme hatte ChatGPT mit der Speicherung der Farbe und der Position. Manchmal wurden diese Attribute in ``Spieler'', manchmal in ``Spielfigur'' und teilweise
-auch in beiden gespeichert. Damit es später einfacher zu realisieren ist an mehreren Spielen teilnehmen zu können, wurde die Eingabe, dass es mehr Sinn macht den 
-``Spieler'' in ``User'' und ``Spieler'' aufzuteilen, getätigt. ChatGPT hat dies dann genau wie beschrieben gemacht. Desweiteren wurde der Würfel vergessen, welcher 
-jedoch nach Hinweis diesbezüglich in ``Spiel'' hinzugefügt wurde. Nach der letzten Ausgabe des Fachlichen Datenmodells wurde, nach Aufforderung, ein PlantUML-Diagramm 
-erstellt. In diesem wurde an den Assoziationen Leseunterstützung angefügt. Diese Leseunterstützung sind jedoch nur von oben nach unten hilfreich. Zum Beispiel ``Feld 
+auch in beiden gespeichert [16 Fachliches Datenmodell (GPT 08), S. 54 \& 17 Fachliches Datenmodell (GPT 09), S. 60]. 
+Damit es später einfacher zu realisieren ist an mehreren Spielen teilnehmen zu können, wurde die Eingabe, dass es mehr Sinn macht den 
+``Spieler'' in ``User'' und ``Spieler'' aufzuteilen, getätigt. ChatGPT hat dies dann genau wie beschrieben gemacht [13 Fachliches Datenmodell (GPT 05), S. 37]. 
+Desweiteren wurde der Würfel vergessen, welcher 
+jedoch nach Hinweis diesbezüglich in ``Spiel'' hinzugefügt wurde [19 Fachliches Datenmodell (GPT 11), S. 79 \& 20 Fachliches Datenmodell (GPT 12), S. 76]. 
+Nach der letzten Ausgabe des Fachlichen Datenmodells wurde, nach Aufforderung, ein PlantUML-Diagramm 
+erstellt [20 Fachliches Datenmodell (GPT 12), S.76]. In diesem wurde an den Assoziationen Leseunterstützung angefügt. Diese Leseunterstützung sind jedoch nur von oben nach unten hilfreich. Zum Beispiel ``Feld 
 steht auf Spielfigur'' ist keine Hilfreiche Beschriftung. Des weiteren sind alle Festlegungen der Vielfachheit auf der falschen Seite. Als Beispiel muss an der 
 Assoziation zwischen ``Spieler'' und ``Spielfigur'' die ``1'' auf der Seite von ``Spieler'' sein und die ``1..4'' auf der Seite von ``Spielfigur''. Desweiteren würden 
 Pfeile an den Assoziationen helfen, die Flussrichtung zu verdeutlichen.\\
-Die zu dem Dokument gehörige ergänzende Beschreibungen und Einschränkungen wurden erst auf Nachfrage erstellt, doch ab da an passten diese ganz gut. Auch, dass beim 
-Format direkt die Länge der Strings begrenzt wurden, zeigt das ChatGPT hier auch Sicherheitstechnische Aspekte mit einbezieht.\\
+Die zu dem Dokument gehörige ergänzende Beschreibungen und Einschränkungen wurden erst auf Nachfrage erstellt, doch ab da an passten diese ganz gut. Dass beim 
+Format direkt die Länge der Strings begrenzt wurden, zeigt das ChatGPT hier auch Sicherheitstechnische Aspekte mit einbezieht 
+[ab 14 Fachliches Datenmodell (GPT 06), S. 42].\\
 
 Geminis Ausgabe war ähnlich zu der von ChatGPT. Auch hier wurden für alle Klassen eine ID erstellt und es wurden bereits die Referenzen in den Klassen auf andere Klassen
 eingefügt. Dies gehört jedoch nicht in das Fachliche Datenmodell. Ebenfalls auffällig ist, dass lediglich die IDs eindeutig sind. Dadurch müsste man sich mit seiner ID
 anmelden, da es sonst passieren kann, dass es mehrere ``Spieler'' mit dem gleichen Namen und Passwort gibt. Grundsätzlich ist die Implementierung etwas eigenartig, da jeder 
 ``Spieler'' einen ``Spielstand'' besitzt. Hier werden allerdings auch allgemeine Informationen wie ein Spielbrett, ein Spielstand und das Datum und die Uhrzeit gespeichert. 
 Es würde mehr Sinn machen diese Eigenschaften in ``Spiel'' nur einmal für alle ``Spielstände'' zu speichern. Ebenfalls eher schlecht umgesetzt sind die Beschreibungen 
-der Assoziationen zwischen den Klassen. Hier werden entweder ``... zu 1'' oder ``... zu *'' Beziehungen beschrieben und teilweise sind die Assoziationen nur unidirektional 
-beschrieben. Desweiteren haben manche Klassen die für das Spiel benötigt werden Assoziationen mit ``Spieler''. Da aber die Spielinformationen eines Spielers über 
+der Assoziationen zwischen den Klassen. Hier werden entweder ``... zu 1'' oder ``... zu *'' Beziehungen beschrieben und teilweise sind die Assoziationen nur 
+unidirektional. Desweiteren haben manche Klassen die für das Spiel benötigt werden Assoziationen mit ``Spieler''. Da aber die Spielinformationen eines Spielers über 
 ``Spielstand'' laufen, benötigt man diese nicht, sondern es reichen Assoziationen mit ``Spielstand''. Dann lässt sich automatisch der dazugehörige ``Spieler'' 
 damit verbinden. Andersrum verhält es sich mit der Assoziation ``Nimmt an vielen Spielen teil'' von der Klasse ``Spieler''. Da ``Spieler'' mehrere ``Spielstände'' haben 
 kann und diese zu einem ``Spiel'' gehören, ist diese Assoziation unnötigt. Die Eigenschaften haben auch keine, wie bei einem UML-Klassendiagramm üblich, festlegung des 
-Typs der Eigenschaften. Als zweite Eingabe wurde angewiesen, die Klasse ``Spieler'' zu einer Klasse ``User'' und einer 
+Typs der Eigenschaften [21 Fachliches Datenmodell (Gemini 01), S. 83]. Als zweite Eingabe wurde angewiesen, die Klasse ``Spieler'' zu einer Klasse ``User'' und einer 
 Klasse ``Spieler'' aufzuteilen, um den LogIn-Prozess zu vereinfachen. Da allerdings bereits bei der ersten Eingabe die Klasse ``Spieler'' lediglich die allgemeinen 
 Benutzerinformationen umfasst, und die Spielinformationen in den entsprechenden Klassen gespeichert werden, war die Eingabe unnötig, hätte aber trotzdem funktioniert sollen.
-Gemini hatte jedoch mit der Umsetzung probleme. Zum einen wurde die Klasse ``Spielfigur'' entfernt und die Klasse ``Spieler'' hat die Eigenschaft ``Position'' erhalten.
-Auf Nachfrage, warum die ``Spielfigur'' Klasse entfernt wurde, wurde diese einzeln neu Ausgegeben und nicht in das Fachliche Datenmodell wieder eingebunden. Mit der 
+Gemini hatte jedoch mit der Umsetzung probleme. Zum einen wurde die Klasse ``Spielfigur'' entfernt und die Klasse ``Spieler'' hat die Eigenschaft 
+``Position'' erhalten [22 Fachliches Datenmodell (Gemini 02), S. 87]. Auf Nachfrage, warum die ``Spielfigur'' Klasse entfernt wurde, wurde diese 
+einzeln neu Ausgegeben und nicht in das Fachliche Datenmodell wieder eingebunden [23 Fachliches Datenmodell (Gemini 03), S. 90]. Mit der 
 Eingabe, nochmal das gesamte UML-Klassendiagramm auszugeben, wurde die Spielfigur einfach wieder eingesetzt, allerdings hat dann ``Spieler'' aufeinmal eine ``Spielfigur''
-und ``Spielstand'' sind ebenfalls nochmal mehrere ``Spielfiguren'' zugeordnet. Ebenfalls gehörte nur noch ein ``Spielstand'' zu einem ``Spiel'' und zu einem ``Spieler''.
-Hier wurde also nur noch ein Einzelspieler-Modus implementiert. Auf Nachfrage, ob dies so ist, wurde zugestimmt und mehrere Lösungsvorschläge gemacht und auf einer weiteren
-Nachfrage, einen davon in das Diagramm einzubinden, wurde dies geamcht, allerdings sind immernoch zahlreiche Fehler in dem Diagramm vorhanden. Bereits die erste Erstellung 
+und  einem ``Spielstand'' sind ebenfalls nochmal mehrere ``Spielfiguren'' zugeordnet. Ebenfalls gehörte nur noch ein ``Spielstand'' zu einem ``Spiel'' 
+und zu einem ``Spieler''.Hier wurde also nur noch ein Einzelspieler-Modus implementiert [24 Fachliches Datenmodell (Gemini 04), S. 91]. 
+Auf Nachfrage, ob nur ein Einzelspieler Spiel erstellt wird, wurde zugestimmt und mehrere Lösungsvorschläge gemacht und auf einer weiteren
+Nachfrage, einen davon in das Diagramm einzubinden, wurde dies geamcht, allerdings sind immernoch zahlreiche Fehler in dem Diagramm vorhanden 
+[25 Fachliches Datenmodell (Gemini 05), S. 94 \& 26 Fachliches Datenmodell (Gemini 06), S. 96]. Bereits die erste Erstellung 
 des Fachlichen Datenmodells und auch die späteren Ausgaben betrachten alle die Anforderung, dass ein Chat im Spiel vorhanden sein soll und das es ein Punktesystem 
 geben soll, nicht. Dies ist sehr kritisch, da die nachträgliche Einfügung von Anforderung kosten- und zeitintensiv ist.\\
 
@@ -426,30 +424,32 @@ Klasse auf zwei Klassen, ``User'' und ``Player'', aufzuteilen. Desweiteren wurde
 Attribute nicht festgelegt. Außerdem ist die Frage, wenn die E-Mail-Adresse eines Spieler eindeutig sein muss, warum dann trotzdem eine eindeutige ID benötigt wird.
 Daneben wurde auch die Anforderung des Kunden, das ein Punktesystem eingebunden werden soll, ignoriert, da es kein Attribut zum Speichern der Punktzahl gibt.
 Die Bezeichung der Beziehungen zwischen den Klassen ist, in der Textuellen Beschreibung für die Beziehung, eher an einem ER-Modell orientiert und nicht an einem 
-UML-Klassendiagramm. Die genaue Bezeichnung für die Vielfachheit muss aus der Beschreibung selbst erstellt werden. Diese war jedoch auch teilweise fehlerhaft. Zum 
+UML-Klassendiagramm. Die genaue Bezeichnung für die Vielfachheit muss aus der Beschreibung selbst erstellt werden. Diese ist jedoch auch teilweise fehlerhaft. Zum 
 Beispiel, dass ein Player an einem oder mehreren Spielen teilnehmen kann, macht kein Sinn, da die Klasse ``Player'' die Eigenschaften eines Spielers
 im Spiel beschreibt. Diese kann schlecht in mehreren Spielen gleich sein. Auch einfachere Sachen wie die Zuweisung der Spielfiguren war ein Problem. Zum Beispiel bei 
 der Beschreibung der Beziehung zwischen Player und Spielfigur wurde definiert, dass ein Player eine oder mehrere Spielfiguren besitzen kann. Dies entspricht aber nicht 
 den normalen Regeln von Mensch ärgere dich nicht, wo jeder Spieler immer genau vier Spielfiguren besitzt. Daneben wurde auch hier der ``Player''-Klasse ein Attribut
-für die Position auf dem Spielbrett festgelegt. Nach der Eingabe [Verweis!!!! 05\_03\_LeChat] wurden genau diese Beziehungen richtig geändert, jedoch waren immer noch Fehler enthalten
+für die Position auf dem Spielbrett festgelegt. Nach der Eingabe [29 Fachliches Datenmodell (Le Chat 03), S. 103] wurden genau diese Beziehungen 
+richtig geändert, jedoch waren immer noch Fehler enthalten
 wie zum Beispiel, dass ein Spiel eine oder mehrere Spielfiguren enthalten kann. Anschließend wurde gefragt ob der Würfel auch in das Fachliche Datenmodell mit aufgenommen
 werden sollte, woraufhin sowohl eine eigene Klasse ``Dice'' als auch ein Attribut ``dice: Dice'' in der ``Game''-Klasse erstellt wurde. Anschließend wurde gefragt ob 
-das Fachliche Datenmodell in PlantUML erstellt werden kann. Hier fällt besonders auf, dass die Verbindungen zwischen den Klassen alles Kompositionen sind, was aber soweit
+das Fachliche Datenmodell in PlantUML erstellt werden kann [30 Fachliches Datenmodell (Le Chat 04), S. 105]. Hier fällt besonders auf, dass die 
+Verbindungen zwischen den Klassen alles Kompositionen sind, was aber soweit
 auch Sinn ergibt. Außerdem fällt auch auf, dass hier bereits die Primär- und Fremdschlüssel dargestellt werden. Dies ist für das Fachliche Datenmodell allerdings zu spezifisch.
 Ein weiterer Fehler ist die Beziehung zwischen ``Game'' und ``Figure''. Hier wird festgelegt, dass ein Spiel aus 16 Figuren besteht. Allerdings gibt es auch ein 
-Attribut ``max\_players'' und es wurde bereits festgelegt, dass ein Spiel aus 1..4 Spieler besteht. Daher kann es auch sein, falls nicht immer auf 4 Spieler mit KI-Gegner aufgefüllt 
+Attribut ``max\_players'' und es wurde bereits festgelegt, dass ein Spiel aus 1..4 Spieler besteht. Daher kann es auch sein, falls nicht immer mit KI-Gegner auf 4 Spieler aufgefüllt 
 wird, das weniger als 16 Figuren auf dem Spielfeld sind. Hier lässt sich allerdings eh kritisch hinterfragen ob die Komposition zwischen ``Game'' und ``Figure'' überhaupt 
 notwendig ist, da durch die Verbindung zwischen ``Figure'' und ``Player'' und der zwischen ``Game'' und ``Player'' die Figuren sowieso genau einem Spiel zugeordnet sind.\\
-Le Chat erstellt das Format und die Beschreibung der Attribute auch erst auf Nachfrage. Jedoch hält sich die Ausgabe in Grenzen. Bei dem Format wird lediglich der Typ der
+Le Chat erstellt das Format und die Beschreibung der Attribute auch erst auf Nachfrage [30 Fachliches Datenmodell (Le Chat 04), S. 107]. Jedoch hält sich die Ausgabe in Grenzen. Bei dem Format wird lediglich der Typ der
 Attribute beschrieben und es gibt keine Eingrenzung der Größe und der Länge der Werte.\\
 
-Alle drei Tools schaffen es, ein grobes Grundgerüst für das Fachliche Datenmodell zu erstellen. Bei allen drei war dabei auffällig, dass für jede Klasse eine 
+Alle drei Tools schaffen es, ein grobes Grundgerüst für das Fachliche Datenmodell zu erstellen, jedoch war bei allen dreien auffällig, dass für jede Klasse eine 
 eindeutige ID erstellt wurde und auch schon Referenzen in die Klassen eingefügt wurde. Das Hauptproblem bei ChatGPT und Gemini stellt die richtige Darstellung der 
 Assoziationen zwischen den Klassen dar. Besonders die Beschreibung der Vielfachheit stellt die beiden Tools vor Schwierigkeiten. Dies funktioniert bei Le Chat etwas besser, 
 aber immer noch nicht fehlerfrei. Dafür hatte Le Chat mit mehreren kleineren generellen Problemen zu kämpfen. Es ist außerdem auffällig das ab einem gewissen 
 Punkt, die Erstellung des Prompts und das analysieren der neuen Antwort länger dauert als die Fehler selbstständig anzupassen. Daher ist es nicht allzu schlimm 
 wenn ein Attribut irgendwo doppelt vorkommt oder eine Assoziation falsch beschriftet ist. Deshalb und aufgrund der Komplexität dieses Diagrammes erhalten 
-sowohl ChatGPT und Le Chat die bewertung ``Gut''. Das Grundgerüst kann hier ohne Probleme übernommen werden und anschließend an die eigenen Bedürfnisse 
+sowohl ChatGPT und Le Chat die Bewertung ``Gut''. Das Grundgerüst kann hier ohne Probleme übernommen werden und anschließend an die eigenen Bedürfnisse 
 und Anforderungen angepasst werden. Gemini erhält aufgrund der nicht betrachtung der Anforderungen die Note ``Ausreichend''.
 
 
@@ -467,52 +467,60 @@ und Anforderungen angepasst werden. Gemini erhält aufgrund der nicht betrachtun
 
 Mit diesem Prompt wurde das Anwendungsfalldiagramm erstellt. Der Prompt ist sehr einfach gehalten und beschreibt lediglich kurz den Inhalt des Diagrammes.\\
 
-ChatGPTs erste Ausgabe enthielt zwei Rollen, den ``Spieler'' und den ``User''. Der ``User'' hatte den Anwendungsfall ``Spiel erstellen''. Dadurch kamm die 
+ChatGPTs erste Ausgabe enthielt zwei Rollen, den ``Spieler'' und den ``User''. Der ``User'' hatte den Anwendungsfall ``Spiel erstellen'' 
+[31 Anwendungsfälle (GPT 01), 109]. Dadurch kam die 
 Frage auf, ob man als Spielersteller besondere Rechte haben sollte. ChatGPT hat darauf hin die neue Rolle ``Gastgeber'' hinzugefügt. Fraglich ist allerdings
 die Einzeichnung in das PlantUML-Diagramm. Dem zufolge erbt der ``Gastgeber'' von ``Spieler'' und dieser von ``User''. Das ist allerdings nur Teilweise richtig.
 Der ``Gastgeber'' muss von ``Spieler'' erben, da auch der ``Gastgeber'' die zum Spielen benötigten Anwendungsfälle benötigt. Allerdings sollte ``Spieler'' nicht 
 von ``User'' erben, da die Anwendungsfälle auf die der ``User'' zugreifen kann, während eines Spiels nicht benötigt werden. Des weiteren hatte ``Spieler'' die 
-Anwendungsfälle ``Zug machen'' und ``Spielfigur bewegen''. Dadurch war zunächst unklar welche Tätigkeiten ``Zug machen'' beinhaltet. Auf Nachfrage antwortete 
+Anwendungsfälle ``Zug machen'' und ``Spielfigur bewegen''. Dadurch war zunächst unklar welche Tätigkeiten ``Zug machen'' beinhaltet 
+[32 Anwendungsfälle (GPT 02), S. 112]. Auf Nachfrage antwortete 
 ChatGPT allerdings, dass zu ``Zug machen'' alle Tätigkeiten beinhaltet, die man während einem Zug durchführen muss (Würfeln, Auswählen und Bewegen der Spielfigur, 
 Schlagen gegnerischer Figuren und Beenden des Zuges). Daher ist der Anwendungsfall ``Spielfigur bewegen'' unnötig. Auf einen Hinweis diesbezüglich entfernt ChatGPT 
-den Anwendungsfall aus dem Diagramm. Zuletzt konnte der Anwendungsfall ``Chat nutzen'' mit der Rolle ``User'' durchgeführt werden. Dies entspricht allerdings nicht 
-den Anforderungen, da nur während eines Spiels ein Chat vorhanden sein soll. Auch hier wird der Anwendungsfall nach einem Hinweis von ChatGPT wieder entfernt. 
-Grundsätzlich wurde das Anwendungsfalldiagramm so passen, allerdings muss man sich die Frage stellen, ob man noch eine Rolle für Administrative Zwecke benötigt, 
+den Anwendungsfall aus dem Diagramm [33 Anwendungsfälle (GPT 03), S. 115]. Zuletzt konnte der Anwendungsfall ``Chat nutzen'' mit der Rolle 
+``User'' durchgeführt werden. Dies entspricht allerdings nicht 
+den Anforderungen, da nur während eines Spiels ein Chat vorhanden sein soll. Auch hier wird der Anwendungsfall nach einem Hinweis von ChatGPT wieder entfernt 
+[34 Anwendungsfälle (GPT 04), S. 118]. 
+Grundsätzlich würde das Anwendungsfalldiagramm so passen, allerdings muss man sich die Frage stellen, ob man noch eine Rolle für Administrative Zwecke benötigt, 
 welcher direkt Daten, wie zum Beispiel User, aus der Datenbank löschen und hinzufügen kann. Positiv herausheben sollte man, dass ChatGPT bei jeder Ausgabe 
 automatisch Code für ein Diagramm bei PlantUML erzeugt hat.\\
 
 Das Anwendungsfalldiagramm von Gemini erstellt bei der ersten Ausgabe lediglich Anwendungsfälle die zum Spielen benötigt werden. Die Rolle ``Spielverwaltung'' 
 beschreibt dabei die Aufgaben die auf dem Server passieren. Die Rollen ``Spieler'' und ``Spielverwaltung'' sind laut Gemini miteinander verwoben. 
 Die Rolle ``Spieler'' beschreibt dabei, was der Spieler auf der Client-Seite macht. Die Rolle ``Spielverwaltung'' beschreibt was anschließend auf der 
-Server-Seite passiert. Dies ist allerdings nicht das, was ein Anwendungsfalldiagramm darstellen soll. Daher wurde mit derselben Eingabe eine neue Antwort 
+Server-Seite passiert. Dies ist allerdings nicht das, was ein Anwendungsfalldiagramm darstellen soll [35 Anwendungsfälle (Gemini 01), S. 121]. 
+Daher wurde mit derselben Eingabe eine neue Antwort 
 generiert. Hier fällt zum einen auf, dass die Rolle ``Gast'', obwohl in der Beschreibung der Rolle definiert wird, dass diese zum Beispiel keine Spiele 
 spielen kann, den Anwendungsfall ``Spiel suchen'' und ``Spiel beitreten'' durchführen kann. Zumanderen kann die Rolle ``Spieler'' sowohl generelle 
-Benutzerinteraktionen durchführen, als auch Spielaktionen. Es macht Sinn dies voneinander zu trennen, was Gemini auch richtig macht. Ein weiterer 
-negativer Punkt ist der Anwendungsfall ``Benutzer verwalten'' vom ``Administrator''. Dieser Anwendungsfall ist zu grob definiert und sollte in die 
-einzelne Anwendungsfälle, also ``Benutzer erstellen''. ``Benutzer bearbeiten'' und ``Benutzer löschen'' unterteilt werden. Auch Gemini erstellt für 
+Benutzerinteraktionen durchführen, als auch Spielaktionen [36 Anwendungsfälle (Gemini 02), S. 124]. Es macht Sinn dies voneinander zu 
+trennen, was Gemini auch richtig macht. Ein weiterer negativer Punkt ist der Anwendungsfall ``Benutzer verwalten'' vom ``Administrator''. 
+Dieser Anwendungsfall ist zu grob definiert und sollte in die einzelne Anwendungsfälle, also ``Benutzer erstellen''. ``Benutzer bearbeiten'' 
+und ``Benutzer löschen'' unterteilt werden. Auch Gemini erstellt für 
 die Aktionen im Spiel einen großen Anwendungfall ``Spiel spielen'', wo Gewürfelt wird, die Spielfigur bewegt wird und Spielaktionen ausgeführt werden.
-Negativ fällt außerdem auf, dass auch hier die Anforderungen, das es ein Chat und ein Punktesystem geben soll, nicht eingebunden wurden.\\
+Negativ fällt außerdem auf, dass auch hier die Anforderungen, dass es ein Chat und ein Punktesystem geben soll, nicht eingebunden wurden 
+[37 Anwendungsfälle (Gemini 03), S. 126].\\
 
 Eine erste Ausgabe mit direkt vier Rollen erstellt dahingegen Le Chat. Hier wird eine eigene Rolle ``Gast'' erstellt, welche ein Benutzer erhält der noch nicht eingeloggt ist, und 
-es wird direkt ein Rolle ``Admin'' mit angegeben. Ein unterschied zu [ChatGPT] ist hier, dass wenn ein Spieler am Zug ist, jede Aktion ein eigener Anwendungsfall
+es wird direkt ein Rolle ``Admin'' mit angegeben. Ein unterschied zu ChatGPT und Gemini ist hier, dass wenn ein Spieler am Zug ist, jede Aktion ein eigener Anwendungsfall
 ist. Dabei ist zu beachten, dass ``Figur setzen'' und ``Figur schlagen'' nicht getrennt werden dürfen, da diese Aktionen zusammengehören. Wenn eine Figur gesetzt 
 wird muss automatisch überprüft werden ob sich auf dem Feld bereits eine Figur befindet, wenn ja muss diese automatich geschlagen werden. Außerdem sind die 
-Anwendungsfälle ``Benutzer verwalten'' und ``Profil bearbeiten'' zu ungenau definiert. Hier muss man für jede Aktion einen eigenen Anwendungsfall erstellen. Diese beiden Punkte wurden 
-Le Chat als Eingabe gegeben und anschließend anständig korriegiert. Auf Nachfrage wurde hier auch Code für ein PlantUML-Diagramm erzeugt. Dieses ist jedoch sehr
-unübersichtlich, da für jeden Anwendungsfall ein ``Männchen'' erstellt wird und diese einfach untereinander aufgelistet werden. Die Versuche, ihn davon wegzubringen 
-und das Diagramm ähnlich wie ChatGPT zu erstellen waren alle vergebens.\\
+Anwendungsfälle ``Benutzer verwalten'' und ``Profil bearbeiten'' zu ungenau definiert. Hier muss man für jede Aktion einen eigenen Anwendungsfall erstellen 
+[38 Anwendungsfälle (Le Chat 01), S. 129]. Diese beiden Punkte wurden Le Chat als Eingabe gegeben und anschließend anständig korriegiert. 
+Auf Nachfrage wurde hier auch Code für ein PlantUML-Diagramm erzeugt. Dieses ist jedoch sehr unübersichtlich, da für jeden Anwendungsfall 
+ein ``Männchen'' erstellt wird und diese einfach untereinander aufgelistet werden. Die Versuche, ihn davon wegzubringen 
+und das Diagramm ähnlich wie ChatGPT zu erstellen, waren alle vergebens [39 Anwendungsfälle (Le Chat 02), S. 130].\\
 
 Zusammenfassend lässt sich sagen, dass alle drei Tools das Anwendungsfalldiagramm schon ganz gut beschreiben. Ein paar Ungenauigkeiten gibt es dennoch und aus 
 diesem Grund werden sowohl ChatGPT als auch Le Chat mit ``Gut'' bewertet. Dass Le Chat das PlantUML-Diagramm nicht übersichtlich erstellen kann fließt hier nicht
 negativ in die Bewertung mit ein, da dass erstellen des Diagramms keine Anforderung war sondern es reicht wenn die Diagramme anständig beschrieben werden, so das man 
 diese selbst erstellen kann. Dies ist bei der Beschreibung von Le Chat gegegeben. Gemini hingegen wird auch hier nur mit ``Ausreichend'' benotet, da die Anforderungen 
 nicht alle umgesetzt werden und dies ein sehr wichtiger Punkt bei der Erstellung der Anforderungsspezifikation ist. Nachträglich eingefügte Anforderungen sind kosten- 
-und zeitintensiv und sollten unbedingt vermieden werden. Vorallem weil Sie einfach vergessen werden. 
+und zeitintensiv und sollten unbedingt vermieden werden. Vor allem weil Sie einfach vergessen werden. 
 
 \subsection*{Anwendungsfälle}
 
 Nun geht es um die Erstellung der detaillierten Beschreibung für die einzelnen Anwendungsfälle. Dazu wurden zwei Anwendungsfälle ausgesucht.
-Einmal ``Anmelden'' als leichteren Anwendungsfall und ``Zug machen'' [ChatGPT] bzw. ``Figur setzen oder schlagen'' [Le Chat] 
+Einmal ``Anmelden'' als leichteren Anwendungsfall und ``Zug machen'' (ChatGPT), ``Figur setzen oder schlagen'' (Le Chat) bzw. ``Spiel spielen'' (Gemini)
 als komplexeren Anwendungsfall. Dazu wurde mit zwei Prompts gearbeitet. Für den Anwendungsfall ``Anmelden'' wurde folgende Eingabe benutzt:
 
 \begin{prompt}[H]
@@ -532,41 +540,49 @@ Der Prompt beschreibt die Struktur des Dokuments mit den Inhalten. Außerdem wir
 in das Diagramm gehören. Einige Sachen werden hier direkt ganz gut erstellt. Auffällig ist, dass bei der ``Häufigkeit'' keine grobe Schätzung angegeben wird sondern 
 Aussagen wie ``Jedes Mal, wenn der Benutzer die Anwendung nutzen möchte.''. Dies ist keine Sinnvolle Beschreibung der Häufigkeit.\\
 
-Die erste Ausgabe wurde mit ChatGPT-4o erstellt. Dabei ist vorallem aufgefallen, dass die Beschreibung nicht zu dem PlantUML-Diagramm passt. Die Aktivitäten
-sind anders benannt und auch die Anzahl der Aktivitäten simmt nicht überein. Außerdem wird sowohl in der Beschreibung als auch in dem Diagramm bereits 
+Die erste Ausgabe wurde mit ChatGPT-4o erstellt [42 AF Anmelden (GPT 03), S. 138]. Dabei ist vorallem aufgefallen, dass die Beschreibung nicht zu dem PlantUML-Diagramm passt. Die Aktivitäten
+sind anders benannt und auch die Anzahl der Aktivitäten stimmt nicht überein. Außerdem wird sowohl in der Beschreibung als auch in dem Diagramm bereits 
 viel zu genau beschrieben was passiert. Zum Beispiel die Aktivität ``Session erstellen'' ist für die Beschreibung eines Anwendungsfalls viel zu genau.
 Dies beschreibt bereits ``Wie'' der Anwendungsfall umgesetzt wird und gehört somit in das Architekturdokument. Aufgrund, dass 4o hier zuviel erstellt hat, 
-wurde die Nachricht mit ChatGPT-3.5 nochmal generiert. Man sieht schonmal direkt, dass deutlich weniger Aktivitäten und keine Beschreibung der Implementierung 
+wurde die Nachricht mit ChatGPT-3.5 nochmal generiert [40 AF Anmelden (GPT 01), S. 133]. Man sieht schonmal direkt, dass deutlich weniger Aktivitäten und keine Beschreibung der Implementierung 
 erstellt wurden. Die Aktivitäten passen zum Anwendungsfall und beschreiben diesen gut. Wenn man jedoch die Diagramme von 4o und von 3.5 vergleicht,
 fallen einem einige Fehler auf, die beide machen. Zum einen wird die Aktivtät, die überprüft wird, in den Entscheidungsknoten reingeschrieben. Diese muss jedoch als eigene 
 Aktivität oben drüber stehen. Des weiteren sollten die Beschriftungen an den Pfeilen des Entscheidungsknoten in eckige Klammern. Auch das die Pfade, die 
 aus dem Entscheidungsknoten entstehen, wieder zusammenführen, ist falsch. Bei dem Diagramm der 3.5er Version fehlt außerdem der Start- und Endknoten und auch 
-bei der 4o Version sollten zwei Endknoten vorhanden sein. Einmal für ``Anmeldung fehlgeschlagen'' und einmal für ``Anmeldung erfolgreich'' [01\&02 GPT Anmelden].
-Wenn man die 3.5er Version auf diese Hinweise allgemein Hinweist [siehe 2. Prompt 03 GPT Anmelden] führen zwar die beiden Pfade nach dem Entscheidungsknoten nicht mehr 
+bei der 4o Version sollten zwei Endknoten vorhanden sein. Einmal für ``Anmeldung fehlgeschlagen'' und einmal für ``Anmeldung erfolgreich''.
+Wenn man die 3.5er Version auf diese Hinweise allgemein Hinweist [42 AF Anmelden (GPT 93), S. 139] führen zwar die beiden Pfade nach dem Entscheidungsknoten nicht mehr 
 zusammen, jedoch endet der eine ohne Endknoten und im Entscheidungsknoten steht immernoch die Aktivität. Wenn man ihm genau sagt, was er mit welcher Aktivität
-machen soll, wird das Aktivitätsdiagramm komplett Fehlerhaft mit unterbrochenen Verbindungen und einer alleinestehenden Aktivität erstellt.\\
-Gibt man den groben Hinweis der 4o-Version [05 GPT Anmelden] setzt dieser die Vorgaben richtig um. Ledliglich die Dialog Interaktion ``Benutzer klickt auf ``Anmelden''''
-ist noch vorhanden, welche jedoch nach einem Hinweis auch entfernt wird [06 GPT Anmelden]. Die letzten Kleinigkeiten die noch auffallen sind zum einen, dass
+machen soll, wird das Aktivitätsdiagramm komplett Fehlerhaft mit unterbrochenen Verbindungen und einer alleinestehenden Aktivität erstellt [42 AF Anmelden (GPT 93), S. 139].\\
+Gibt man den groben Hinweis der 4o-Version [44 AF Anmelden (GPT 05), S. 143] setzt dieser die Vorgaben richtig um. Ledliglich die Dialog Interaktion ``Benutzer klickt auf ``Anmelden''''
+ist noch vorhanden, welche jedoch nach einem Hinweis auch entfernt wird [45 AF Anmelden (GPT 06), S. 145]. Zuletzt fällt noch auf, dass
 im Entscheidungsknoten nur ``ja'' steht. Hier ist die Frage ob man in PlantUML einen leeren Entscheidungsknoten ohne Text erstellen kann. Ähnlich 
 verhält es sich an den Endknoten. Diese können vermutlich auch nicht beschriftet werden, weshalb direkt davor noch Aktivitäten mit der Beschreibung erstellt
-werden.\\
+werden. Desweiteren verwendet ChatGPT den Benutzernamen bzw. die E-Mail-Adresse und ein Passwort als Anmeldedaten. Im Fachlichen Datenmodell 
+[20 Fachliches Datenmodell (GPT 12), S. 76] ist jedoch keiner dieser Attribute als einzigartig definiert weshalb sich aus diesen Daten nicht eindeutig 
+auf einen User schließen lässt. Es könnten mehrere User mit diesen Daten existieren.\\
 
 Der von Gemini erstelle Anwendungsfall weißt ebenfalls einige Probleme auf. Zum einen definiert Gemini folgende Vorbedingung: Die Anmeldeinformationen des 
 Users (Benutzername und Passwort) müssen korrekt sein. Dies ist jedoch nicht richtig, da man auch ohne Konto oder mit falschen Daten versuchen kann sich 
 anzumelden. Dazu ist auch die Anmeldung mit dem Benutzername und Passwort nicht richtig, da keines dieser Attribute im Fachlichen Datenmodell als einzigartig
-definiert worden sind. Dadurch kann man mit diesen beiden Daten nicht eundeutig einen Benutzer identifizieren. Die einzelnen Aktivitäten passen soweit, 
+definiert worden sind [26 Fachliches Datenmodell (Gemini 06), S. 96]. Dadurch kann man mit diesen beiden Daten nicht eindeutig einen Benutzer 
+identifizieren. Die einzelnen Aktivitäten passen soweit, 
 lediglich die Aktivität ``Sende Anmeldebestätigung'' und ``Speichere Anmeldesitzung'' sind etwas zu genau für die Anwendungsfallbeschreibung. Zu der ersten 
-Ausgabe wird auch ein Mermaid-Code generiert, welcher allerdings zu einem Syntax Fehler führt. Daher wurde gesagt, dass doch ein PlantUML-Code für das 
+Ausgabe wird auch ein Mermaid-Code generiert, welcher allerdings zu einem Syntax Fehler führt [46 AF Anmelden (Gemini 01), S. 147]. 
+Daher wurde gesagt, dass doch ein PlantUML-Code für das 
 Aktivitätsdiagramm erstellt werden soll. Dies wurde auch gemacht, allerdings zeigte war das Aktivitätsdiagramm in Form eines Sequenzdiagrammes. Dazu wurde 
 geschrieben, dass der PlantUML Code folgendes Bild beschreibt, wo dann auf ein Link zu einem Aktivitätsdiagramm aus dem Internet verlinkt wurde. Dieses hat 
 jedoch nicht zu dem PlantUML Code gepasst. Es ist zwar ein UML-Aktivitätsdiagramm für ein Anmeldeprozess, allerdings ist dieses nicht in dem Format wie es 
-sein soll und außerdem entspricht es auch nicht der vorherigen Beschreibung von Gemini.\\
+sein soll und außerdem entspricht es auch nicht der vorherigen Beschreibung von Gemini [47 AF Anmelden (Gemini 02), S. 150].\\
 
 Le Chat erstellt wieder nur auf Nachfrage ein PlantUML-Diagramm, welches vom Format her auch nicht ganz passend ist, da hier Client und Server übereinander 
 stehen und nicht nebeneinander. Außerdem gibt es hier die selben Probleme wie bei ChatGPT, dass im Entscheidungsknoten die Aktivität steht und die Pfade 
 danach wieder zusammengeführt werden. Die Textuelle Beschreibung von der ersten Ausgabe [01 Le Chat Anmelden] ist ganz gut und man könnte daraus, mit 
-einbisschen mitdenken, ein richtiges Aktivitätsdiagramm erstellen. Bei der zweiten Ausgabe, die mit der selben Eingabe erstellt worden ist, fällt auf 
-das trotz des Hinweises, dass keine Dialog Eigenschaften beschrieben werden sollen, die erste Aktivität ``Anmeldeformular anzeigen'' genau das tut.\\
+einbisschen mitdenken, ein richtiges Aktivitätsdiagramm erstellen [48 AF Anmelden (Le Chat 01), S. 153]. Bei der zweiten Ausgabe, 
+die mit der selben Eingabe erstellt worden ist, fällt auf 
+das trotz des Hinweises, dass keine Dialog Eigenschaften beschrieben werden sollen, die erste Aktivität ``Anmeldeformular anzeigen'' genau das tut. 
+Desweiteren hat auch Le Chat für die Anmeldedaten kein Attribut gewählt, was laut dem Fachlichen Datenmodell einzigartig ist 
+[30 Fachliches Datenmodell (Le Chat 04), S. 105]. Daher tritt hier das gleiche 
+Problem wie bei Gemini und ChatGPT auf, dass nicht eindeutig ein Benutzer bestimmt werden kann [49 AF Anmelden (Le Chat 02), S. 155].\\
 
 Der Anwendungsfall ``Zug machen'' oder ``Spielfigur setzen oder schlagen'' wurde direkt nach dem Anwendungsfall ``Anmelden'' erstellt. Dadurch wurde
 beim Prompt die Beschreibung, was erstellt wurde weggelassen. Stattdessen wurde beschrieben, dass wenn in einer Aktivität ein Wert gespeichert werden
@@ -585,7 +601,7 @@ Für ChatGPT sieht der Prompt zum Beispiel wie folgt aus:
 \end{prompt}
 
 Die Aussgabe von ChatGPT scheint zunächst sehr überwaltigend, doch beim nähreren betrachten ist diese eigentlich schon ziemlich gut. Das Format des PlantUML-Diagrammes
-zeigt die selben Fehler auf wie bereits beim Anwendungsfall ``Anmelden'', lassen sich aber alle korrigieren. Eine Aktivität die etwas erschrenkend klingt ist Aktivität 6 
+zeigt die selben Fehler auf wie bereits beim Anwendungsfall ``Anmelden'', lassen sich aber später alle korrigieren. Eine Aktivität die etwas erschrenkend klingt ist Aktivität 6 
 ``Berechne möglichen Züge''. Grundsätzlich ist dies nicht grade eine effiziente herangehensweise, was bei einem Mensch ärgere dich nicht Spiel allerdings nicht ganz so
 schlimm ist, da sich hier die möglichen Züge auf maximal vier beschränkt. Es fällt auch auf, dass das Würfeln auf Server-Seite stattfindet. Dies ist ansich kein gutes 
 Spielerlebnis, wenn man als Spieler nicht würfelt. Das 
@@ -599,7 +615,7 @@ Ebenfalls negativ ist, dass die ``Client''-Seite im Aktivitätsdiagramm zu ``Spi
 umbenannt wurde. Dies wird jedoch nach einem Hinweis wieder zurück geändert. Ein Fehler ist auch, dass die Position der Spielfigur zweimal gespeichert wird. Einmal in Aktivität 7
 und einmal in Aktivität 9 [04 GPT Zug machen]. Was nach einem Hinweis aber auch korrigiert wird.\\ % Grunsätzlich wird die Beschreibung des Anwendungsfalls aber gut erstellt.
 % Man erhält ein Überblick über die nötigen Aktivitäten und den Ablauf des Anwendungsfalls, muss aber einige Fehler selbst aussbessern, da auch hier recht schnell der Punkt 
-% erreicht ist, wo die Erstellung der Prompts länger dauert als 
+% erreicht ist, wo die Erstellung der Prompts länger dauert als
 
 Da das zueletzt erstelle Fachliche Datenmodell voller Fehler war und nicht verwendet werden kann, wurde hier die Frage nach den Verweisen aufs Fachliche Datenmodell 
 weggelassen. Die erste Ausgabe konnte scheinbar mit dem Anwendungsfall ``Spiel spielen'' nichts anfangen und wusste nicht so richtig was dieser laut dem 
@@ -616,21 +632,37 @@ Bei Le Chat war zu beginn die Beschreibung etwas kurz und es gab auch, außer ``
 Erst nach der nächsten Eingabe [LeChat 02 ZugMachen] wurden die Beschreibungen etwas ausführlicher und es gab Referenzen aufs Fachliche Datenmodell. Diese Referenzen waren 
 jedoch falsch und entsprachen nicht dem zuvor erstellten Fachlichen Datenmodell. Hier wurde nämlich häufig auf die Position der Figuren und der Felder über ``.x'' und ``.y''
 Werte zugegriffen. Grundsätzlich ist das natürlich eine gute Art und Weise, die Position leichter zu definieren. Jedoch wurde im Fachlichen Datenmodell über einfache Int-Werte
-gespeichert. Außerdem ist die Beschreibung der Aktivitäten nicht entsprechend der Regeln von Mensch ärgere dich nicht. In der Aktivität ``Figur setzen oder schlagen'' wird 
-beschrieben, dass eine geschlagene Figur aus der Liste der Figuren des Spielers entfern wird. Dies ist natürlich nicht richtig, sondern die Figur sollte einfach auf ein Startfeld 
-der entsprechenden Farbe bzw. des entsrpechenden Spielers gesetzt werden. Außerdem wurde Würfeln als eine Aktivität hier aufgeführt. Im Anwendungsfalldiagramm wurde allerdings
+die Position des Felds gespeichert. Außerdem ist die Beschreibung der Aktivitäten nicht entsprechend der Regeln von Mensch ärgere dich nicht. In der 
+Aktivität ``Figur setzen oder schlagen'' wird 
+beschrieben, dass eine geschlagene Figur aus der Liste der Figuren des Spielers entfernt wird. Dies ist natürlich nicht richtig, sondern die Figur sollte einfach auf ein Startfeld 
+der entsprechenden Farbe bzw. des entsprechenden Spielers gesetzt werden. Außerdem wurde Würfeln als eine Aktivität hier aufgeführt. Im Anwendungsfalldiagramm wurde allerdings
 für Würfeln ein eigener Anwendungsfall erstellt, weshalb die Aktivität hier unnötig und falsch ist. Nach einem Hinweis diesbezüglich, hat Le Chat ausgegeben, dass das stimmt und
 die Aktivität entfernt werden muss. Anschließend wurde, auf Nachfrage, eine Beschreibung des Aktivitätsdiagramms erstellt. Dabei wurde einmal die Aktivität ``Figur setzen oder 
 schlagen'' in zwei Aktivitäten aufgeteilt. Einmal ``Figur setzen'' und ``Figur schlagen'' wobei mit einem Entscheidungsknoten entschieden wird, in welche Aktivität gegangen wird.
 Die Beschreibung der Flusslinien ist sehr sporadisch und sagt sogar eigentlich aus, dass die erst die Aktivitäten miteinander verbunden sind und diese dann erst mit den 
 Entscheidungsknoten und den Endpunkten verbunden werden. Dies sollte aber nicht so sein, da die Entscheidungsknoten ja zwischen den Aktivitäten stehen müssen. Dazu wird beschrieben, 
-dass es zwei Endpunkte gibt. Für den Fall, dass erfolgreich die Figur gesetzt oder geschlagen wird und das Verweigern des Zugs. Ebenfalls negativ auffällig ist, dass bei den ersten
+dass es nur zwei Endpunkte gibt. Für den Fall, dass erfolgreich die Figur gesetzt oder geschlagen wird und das Verweigern des Zugs.
+Dies wäre natürlich möglich, um dem Spieler aber eine bessere Rückmeldung zugeben, macht es Sinn, für jeden Fehler der 
+auftauchen kann, einen Endzustand zu erstellen. Ebenfalls negativ auffällig ist, dass bei den ersten
 beiden Aktivitäten ``Figur auswählen'' und ``Zielfeld auswählen'', jeweils die Information an den Server übermittelt wird. Besser und einfacher wäre es aber, die Infos zusammen in einem
 Zug an den Server zusenden. Damit würde es reichen eine Funktion zu erstellen und an den Server zu senden. Der ``Trick'', das zuletzt erstellte Fachliche Datenmodell als Eingabe 
 zu nutzen, hat nicht wie bei ChatGPT funktioniert. Wenn man Le Chat nach dem aktuellen Fachlichen Datenmodell fragt, auf welches er sich referenziert, wird auch ein völlig anderes
 Datenmodell ausgegeben [LeChat 05 ZugMachenFDM].\\
 
-Fazit[[[[[[[[[[]]]]]]]]]]
+Es lässt sich sagen, dass alle drei Tools es ganz gut geschafft den leichten Anwendungsfall ``Anmelden'' zu erstellen. Es hatten alle drei Tools nur Probleme mit 
+Dialoginteraktionen oder schon zu genauen Beschreibungen der Implementierung. Außerdem haben alle drei es nicht geschafft richtige 
+Daten für die Anmeldung zu nutzen, mit denen ein Nutzer eindeutig zuordnenbar ist.\\
+Bei der Beschreibung des Anwendungsfalls um einen Zug zu machen, hatten allerdings alle drei etwas größere Probleme. Die Verweise auf das Fachliche 
+Datenmodell haben bei ChatGPT und Le Chat zu beginn kaum funktioniert, was allerdings zumindest bei ChatGPT nach der Eingabe mit der Beschreibung des 
+Fachlichen Datenmodells größenteils funktioniert hat. Generell hatte ChatGPT am wenigsten Probleme von den dreien und hat das Aktivitätsdiagramm entsprechend 
+den vorherigen Diagrammen gut erstellt. Daher wird ChatGPT hier mit ``Gut'' benotet, da dennoch ein paar kleine Fehler vorhanden waren. Le Chat konnte nicht 
+dazu gebracht werden, richtige Verweise aufs Fachliche Datenmodell zu geben und die Beschreibung passte auch nicht zum Anwendungsfalldiagramm,
+allerdings ist die grundsätzliche Beschreibung der Aktivitäten als grober Ablauf gut erstellt worden 
+und man könnte mit dieser leicht das selbstständig Aktivitätsdiagramm erstellen. Daher wird Le Chat grade noch so mit der Note ``Befriedigend'' benotet. 
+Bei Gemini wurden die Verweise auf das das Fachliche Datenmodell weggelassen, da dieses falsch und nicht verwendbar ist. Doch trotzdem 
+hatte Gemini Probleme bei der Erstellung der Aktivitäten und die Ausgabe musste zweimal neu generiert werden, da Gemini nicht wusste was zum Anwendungsfall
+``Spiel spielen'' dazugehört. Da die dritte Ausgabe dann ganz ok war und man aus der Beschreibung selbstständig das Aktivitätsdiagramm erstellen kann, 
+wird Gemini mit ``Ausreichend'' benotet.
 
 \section*{Benutzungsschnittstelle}
 
@@ -651,34 +683,39 @@ Die erste Eingabe hat im Chat ein ``gezeichnetes'' Diagramm enthalten. Dort ware
 die Einzeichnung der Navigation etwas schwierig, da hier nur in eine Richtung navigiert wird. Außerdem passte dieses auch nicht richtig zu 
 der textuellen Beschreibung die mit generiert wurde. Bei der Beschreibung ist aufgefallen, dass ein ``Passwort-zurücksetzen-Dialog'' enthalten 
 ist. Allerdings ist in dem Anwendungsfalldiagramm kein Anwendungsfall für das Passwort zurücksetzen erstellt worden, weshalb man entweder 
-den Dialog aus dem Diagramm löscht oder den Anwendungsfall ``Passwort zurücksetzen'' nachträglich erstellen muss. Ähnlich verhält es sich mit 
+den Dialog aus dem Diagramm löschen oder den Anwendungsfall ``Passwort zurücksetzen'' nachträglich erstellen muss. Ähnlich verhält es sich mit 
 den Anwendungsfällen ``Punkte anzeigen'' und dem Dialog ``Anzeige der Spieler-Liste''. Außerdem ist Fraglich 
 ob ein noch nicht angemeldeter Nutzer die Buttons ``Spiel erstellen'' und ``Spiel beitreten'' sehen soll. Hier wäre es angebrachter einen 
 eigenen Dialog für nicht-angemeldete Nutzer zu erstellen und zusätzlich ein Hauptmenü.\\
 Nach der zweiten Eingabe erhielt man ebenfalls eine textuelle Beschreibung von welchem Dialog man wohin navigieren kann, einen PlantUML-Code
 für ein UML-Diagramm sowie eine Beschreibung der Dialoge. Das PlantUML-Diagramm hatte zunächst einen Syntax Fehler, welcher jedoch nach einem 
-Hinweis korrigiert wurde. Jedoch ist das Diagramm recht unübersichtlich, da zum einen die Pfiele nur in eine Richtung zeigen und zum anderen
-die Struktur etwas durcheinander ist. Die Beschreibung ist dafür abgesehen von einem Punkt sehr gut. Wenn man einem Spiel beigetreten oder 
-ein Spiel gestartet hat gelangt man zu dem Dialog ``Spielbildschirm''. Wenn man dort direkt das Spielfeld sieht, was bei einem Hauptbilschirm
-während des Spiels wohl der Fall ist, muss man den Anwendungsfall ``Spiel anzeigen'' aus dem Anwendungsfalldiagramm wieder entfernen.\\
+Hinweis korrigiert wurde. Jedoch ist das Diagramm recht unübersichtlich, da zum einen die Pfeile nur in eine Richtung zeigen und zum anderen
+die Struktur etwas durcheinander ist. Die Beschreibung ist dafür, abgesehen von einem Punkt, sehr gut. Wenn man einem Spiel beigetreten ist oder 
+ein Spiel gestartet hat gelangt man zu dem Dialog ``Spielbildschirm''. Wenn man dort direkt das Spielfeld sieht, was bei einem Hauptbildschirm
+während des Spiels eigentlich der Fall ist, muss man den Anwendungsfall ``Spiel anzeigen'' aus dem Anwendungsfalldiagramm wieder entfernen.\\
 
-Gemini[[[[[[]]]]]]\\
-    - Spieltypen? Soll doch normales MÄDN sein
-    - Beschreibt den Inhalt der einzelnen Dialoge, zuviel hier
-    - Startbildschirm nach öffnen der Anwendung nicht beschrieben -> Wird noch genauer beschrieben als die anderen Dialoge
-    - Dialoge und Anwendungsfälle stimmen nicht überein. z.B.: Passwort vergessen, Pausieren des Spiels
+Die von Gemini Erstellte Textuelle Beschreibung der Benutzungsschnittstelle sieht für sich ganz gut aus. Allerdings passt diese nicht mit dem Anwendungsfalldiagramm 
+zusammen. In den Dialogen wurden Buttons bzw. Dialognavigationen beschrieben, für die es keine Anwendungsfälle gibt. Zum Beispiel 
+``Pausieren des Spiels''. Desweiteren startet man scheinbar direkt im ``Hauptmenü'' und es gibt keinen Startdialog für nicht 
+angemeldete User, in welchem die Anwendungsfälle ``Anmelden'' und ``Registrieren'' umgesetzt werden. Nach der Eingabe, dass 
+noch ein Startdialog erstellt werden soll, wurde dies aber nachträglich erstellt. Hier gibt es dann allerdings die Möglichkeit als 
+Gast einem Spiel beizutreten. Dies passt weder zu dem Fachlichen Datenmodell noch zu dem Anwendungsfalldiagramm.\\
 
 Le Chat hat bei der Erstellung der Benutzungsschnittstelle probiert, diese in die Ausgabe mit zu ``Zeichnen''. Die Abbildung war jedoch 
 völlig durcheinander und unübersichtlich. Die Verbindung zwischen den Dialogen ist unverständlich und ergeben keinen Sinn. Auch mit Eingaben, 
 das die Verbindung doch überarbeitet werden soll, wurde dies nicht besser. Dafür kann man sagen, dass die erstellen Dialoge soweit zu den 
 Anwendungsfällen passen und die meisten enthalten sind. Jedoch sind auch einige Dialoge erstellt worden, für die man eigentlich keinen eigenen
-Dialog erstellen muss. Zum Beispiel ``Spiel verlassen''. Da würde ein Button reichen, mit dem man zurück zum Hauptmenü gelangt. Auch die 
-Textuelle Beschreibung ist nicht vollständig. Bei der Beschreibung des Verlaufes werden Anwendungsfälle, wie zum Beispiel ``Registrieren'' vergessen.
-Außerdem stellt sich die Frage, was man beim ``Spiel beitreten'' Dialog sieht. In dem Anwendungsfalldiagramm wurden die Anwendungsfälle ``Spiel suchen'' 
-und ``Spiel beitreten'' erstellt. Daher ist etwas ungenau ob die Anwendungsfälle über den selben Dialog gehen oder ob einer der Anwendungsfälle unnötig 
-ist. Dies sollte bei einer nähreren Betrachtung der Anwendungsfälle festgelegt werden. Bei der Beschreibung fehlt auch, wie der Admin zu seinen 
-Verfügbaren Dialogen navigieren kann.
+Dialog erstellen muss. Zum Beispiel ``Spiel verlassen''. Da würde ein Button reichen, mit dem man zurück zum Hauptmenü gelangt.\\
+Auch die Textuelle Beschreibung, welche nicht zu der Zeichnung passt, ist nicht vollständig. Bei der Beschreibung des Verlaufes 
+werden Anwendungsfälle, wie zum Beispiel ``Registrieren'' vergessen.
+Außerdem wird nur die Möglichkeit, ein Spiel zu erstellen oder beizutreten, beschrieben. In dem Anwendungsfalldiagramm gibt es aber noch den Anwendungsfall 
+``Spiel suchen''. Bei der Beschreibung fehlt auch, wie der Admin zu seinen Verfügbaren Dialogen navigieren kann.\\
 
+Keines der drei Tools schafft es die Benutzungsschnittstelle passend zu dem Anwendungsfalldiagramm zu erstellen. Es werden Dialoge für 
+Anwendungsfälle erstellt, die vorher nicht beschrieben wurden und für manche Anwendungsfälle, für die es ein Dialog geben sollte, 
+gibt es überhaupt kein Dialog. Bei Gemini und Le Chat ist dieses Problem deutlich stärker aufgetreten als bei ChatGPT, weshalb Gemini und 
+Le Chat nur mit ``Befriedigend'' bewertet werden. Das Grundgerüst wird einiger maßen ok erstellt und man kann die Überflüssigen kürzen bzw. 
+die Beschreibung um die restlichen Sachen erweitern. ChatGPT wird hier mit ``Gut'' Bewertet, da das Problem hier nicht so häufig auftritt.
 
 \subsection*{Dialog}
 
@@ -696,28 +733,32 @@ aufgebaut sein soll. Einmal für den Anwendungsfall ``Anmelden'' und einmal für
     \label{Prompt Dialog Anmelden}
 \end{prompt}
 
-ChatGPT hat in der Ausgabe wieder eine ``gezeichnete'' Skizze erstellt. Bei der ersten Ausgabe für den ``Anmelden'' Anwendungsfall wurde
-noch ein Button für ``Passwort vergessen?'' erstellt. Ansich macht dies natürlich Sinn hier einzufügen, allerdings wurde im Anwendungsfalldiagramm
+ChatGPT hat in der Ausgabe wieder eine ``gezeichnete'' Skizze erstellt. Bei der ersten Ausgabe des ``Anmelden'' Dialogs wurde
+noch ein Button für ``Passwort vergessen?'' erstellt. Grundsätzlich macht dies natürlich Sinn hier einzufügen, allerdings wurde im Anwendungsfalldiagramm
 kein Anwendungsfall dafür erstellt. Positiv auffällig ist, dass die erste Ausgabe [GPT 01 Anmelden] in dem Chat erstellt wurde, wo GPT-3.5 
-den Anwendungsfall ``Anmelden'' erstellt hat und dort festgelegt hat, dass sich der User mit einem Benutzernamen und einem Passwort anmeldet [GPT 01 Anmelden]
+in dem Anwendungsfall ``Anmelden'' festgelegt hat, dass sich der User mit einem Benutzernamen und einem Passwort anmeldet [GPT 01 Anmelden]
 und die zweite Ausgabe [GPT 02 Anmelden] in dem Chat erstellt wurde, wo GPT-4o sich vorher beim Anwendungsfall für eine Email und ein Passwort 
-entschieden hat. Bemängeln kann man dabei, dass bei der Beschreibung der Elemente nicht auf das Fachliche Datenmodell verwiesen wurde. Nach einer 
-groben Eingabe, dass doch auf die Werte aus dem Fachlichen Datenmodell referenziert werden soll, wurde dies dann auch richtig gemacht. [GPT 03 Anmelden].\\
+entschieden hat. Dies passt mit den Dialogen überein. Bemängeln kann man dabei, dass bei der Beschreibung der Elemente nicht auf das 
+Fachliche Datenmodell verwiesen wurde. Nach einer 
+groben Eingabe, dass doch auf die Werte aus dem Fachlichen Datenmodell referenziert werden soll, wurde dies jedoch richtig gemacht. [GPT 03 Anmelden].\\
 Bei der Erstellung des Dialogs ``Spielbildschirm'' wurde auch wieder eine textuelle Beschreibung und eine Skizze erstellt. Die Skizze umfasst
 allerdings nur einen Vermerk in eckigen Klammern, wo das Spielbrett graphisch dargestellt werden soll. Außerdem wurde auch hier nochmal die Eingabe 
 gemacht, dass auf das Fachliche Datenmodell referenziert werden soll. Interessant ist, dass ein extra Button fürs Würfeln erstellt wurde und einer um 
-einen Zug zumachen. Bei dieser Implementierung ist es nahelegender, dass für beide Button ein eigener Anwendungsfall gestartet wird. Bei Nachfrage, zu 
+einen Zug zumachen. Bei dieser Implementierung ist es naheliegender, dass für beide Buttons ein eigener Anwendungsfall gestartet wird. Bei Nachfrage, zu 
 beschreiben, wenn ein Anwendungsfall gestartet wird, gibt ChatGPT aus, dass Würfel ein eigener Anwendungsfall ist. Die Restlichen Verweise auf das 
-Fachliche Datenmodell und beschreibung welcher Anwendungsfall gestartet wird passen soweit.\\
+Fachliche Datenmodell und Beschreibung welcher Anwendungsfall gestartet wird passen soweit.\\
 
-- Gemini:
-    - Beschreibt Anwendungsfall?
-    - Schreibt Verweise auf andere Anwendungsfälle oder Dialoge, allerdings eher ungenau
-    - Soll geöffnet werden wenn sich der Spieler abmelden möchte?
-
-    - Auch hier wird Anwendungsfall nochmal beschrieben
-    - Möglichen Züge werden angezeigt, da aber im Anwendungsfall nicht beschrieben wird, dass die möglichen Züge vom Server an den Client
-    geschickt werden, müsste wohl eine Spiel-Logik-Komponente auf der Client-Seite vorhanden sein.
+Gemini erstellt in der Beschreibung der Buttons Verweise auf andere Dialoge und Anwendungsfälle. Negativ fällt dafür auf, 
+dass in der Beschreibung des Dialoges auch das Verhalten beschrieben wird. Hier fügt Gemini unter anderem eine Beschreibung ein, was passiert wenn 
+man auf ``Anmelden'' klickt. Diese Beschreibung entspricht der eines Sequenzdiagrammes von einem Anwendungsfall und ist hier, in der Beschreibung eines 
+Dialoges, falsch. Die Benutzerdaten entsprechen dem Anwendungsfalldiagramm, allerdings ist auch hier das Problem vorhanden, dass im Fachlichen Datenmodell
+keiner der Anmeldedaten als einzigartig beschrieben wurde.\\
+Ähnlich verhält es sich bei dem Dialog für den Spielbildschirm. Auch hier werden im Abschnitt ``Verhalten'' eher die Anwendungsfälle beschrieben. Genauso 
+wie bei ChatGPT gibt es auch hier einen Button für das Würfeln und die getrennte Möglichkeit einen Zug zu machen. Dies indiziert, dass für diese beiden 
+Aktionen getrennte Anwendungsfälle erstellt werden sollten. In dem Dialog werden außerdem die möglichen Züge für den Spieler angezeigt. Dies passt 
+allerdings nicht zu den Beschreibungen der Anwendungsfälle, da dies nirgends aufgeführt wird. Grundsätzlich kann man hier allerdings sagen, dass die 
+Beschreibungen der Anwendungsfälle hier deutlich besser sind als es bei den Anwendungsfällen selbst. Hier wird auch wieder ein Chat eingebunden. Ob 
+das allerdings zufällig ist oder weil sich Gemini wieder an die Anforderung erinnert hat ist fraglich. Das Punktesystem wird weiterhin nicht betrachtet.\\
 
 Beim ``Anmelden''-Dialog hat Le Chat wieder nur eine Textuelle Beschreibung erstellt. Diese ist soweit passend. Fürs Anmelden hat sich Le Chat auf die 
 Email-Adresse und ein Passwort festgelegt. Im Fachlichen Datenmodell wurde allerdings nur gesagt, dass die ID eindeutig ist, das heißt das entweder 
@@ -730,6 +771,13 @@ anzuzeigen. Dies ist laut dem Anwendungsfalldiagramm ein eigener Anwendungsfall,
 durch das dauerhafte anzeigen des Spielbrettes hinfällig geworden ist. Bei Nachfrage, ob Le Chat beschreiben kann wann ein Anwendungsfall gestartet wird,
 gibt dieser eine zu dem Dialog passende Beschreibung aus. Auch hier fehlen allerdings die Anwendungsfälle ``Spielstand anzeigen'' und ``Spielergebnis anzeigen''.\\
 
+Alle drei Tools haben die Dialoge gut und passend erstellt. Es gab lediglich ein paar Inkonsistenzen zu den vorherigen Dokumenten. Die Anwendungsfälle wurden 
+hier anders dargestellt, wie im Anwendungsfalldiagramm und bei der detaillierten Beschreibung der einzelnen Anwendungsfälle. Allerdings waren eigentlich die 
+Lösungen, die hier bei den Dialogen ausgegeben wurden, besser als die vorherigen. Dadurch und, da die Dialoge zum Größtenteils so übernommen werden können 
+und nur die Überflüssigen Teile selbstständig gestrichen werden können werden alle drei Tools hier mit ``Gut'' bewertet. Das die Konsistenz hier 
+nicht richtig geben ist wird dadurch wieder gut gemacht, dass die größten Probleme in den vorherigen Dokumenten, wie zum Beispiel die Trennung der Anwendungsfälle 
+``Würfeln'' und ``Zug machen'' sowie die Erstellung der IDs jeder Klasse und nicht Erstellung eines einzigartigen Benutzernamen oder ähnliches, hier richtig 
+geändert werden. Dadurch könnte man an dieser Stelle sagen, dass man die vorherigen Dokumente nochmal anpasst. 
 
 \subsection*{Nichtfunktionale Anforderungen}
 
@@ -744,11 +792,7 @@ gibt dieser eine zu dem Dialog passende Beschreibung aus. Auch hier fehlen aller
 
 Dieser sehr einfach gehaltene Prompt wurde für die Erstellung der nichtfunktionalen Anforderungen verwendet. Es musste lediglich dazu erwähnt werden,
 dass zu jeder Anforderung ein Test erstellt werden soll. Bei [ChatGPT und Le Chat] werden gute Anforderungen erstellt und die Tests passen auch 
-sehr gut zu diesen. Hier werden die [beiden] Tools mit ``Sehr gut'' bewertet.
-
-- Gemini:
-    - passt
-
+sehr gut zu diesen. Hier werden alle drei Tools mit ``Sehr gut'' bewertet.
 
 \section{Architekturdokument} \index{Architekturdokument} \label{CompArchitekturdokument}
 
@@ -775,23 +819,27 @@ beschrieben ist. So kommt folgender Prompt zustande:
 
 ChatGPT erstellt hier wieder eine Skizze in die Ausgabe mit. Diese ist auch ganz gut, lediglich die Datenbank ist etwas verrutscht. Negativ aufgefallen
 ist die Beschreibung der Verbindung von der KI-Komponente. Hier wird beschrieben, dass diese in die Spiel-Logik auf der Server-Seite integriert ist und 
-daher keine externe Verbindung erforderlich ist. In der Beschreibung der Systemübersicht wird die Spiel-Logig allerdings nur auf der Client-Seite erstellt.
-Den Anwendsfällen entsprechend ist die Spiel-Logik auf der Server-Seite allerdings korrekt. Fragt man ChatGPT danach, wird ausgegeben, dass die Spiel-Logik 
+daher keine externe Verbindung erforderlich ist. In der Beschreibung der Systemübersicht wird die Spiel-Logik allerdings nur auf der Client-Seite erstellt.
+Den Anwendungsfällen entsprechend ist die Spiel-Logik auf der Server-Seite allerdings korrekt, da zum Beispiel der Zug erst auf der Server-Seite 
+vallidiert wird [GPT 05 Zug Machen]. Fragt man ChatGPT danach, wird ausgegeben, dass die Spiel-Logik 
 beim Server hinzugefügt werden soll. Ansonsten wurde die Technische Infrastruktur von ChatGPT gut erstellt.\\
 
-Gemini [[[[]]]]\\
-    - Client-Anwendung ist Web-Anwendung
-    - Datenbank auf Client-Seite?
-    -> Erneute eingabe auch hier mit Systemübersicht
-    - Auch hier wieder lokale Datenbank
-    - Auch hier kein RMI -> Bei Hinweis wird nur Anpassungen, Vor- und Nachteile genannt
-    - 
+Bei Gemini fällt direkt auf, dass sowohl eine Datenbank für den Client als auch für den Server erstellt wird. Diese ist eigentlich unnötig, da es vermutlich 
+einfacher und effizienter ist, die Spielstände und die Benutzerdaten, wenn diese benötigt werden, vom Server an den Client zu senden, als diese die ganze 
+Zeit doppelt gespeichert zu haben. Desweiteren fällt auf, dass die Verbindung zwischen Client und Server nicht über RMI sondern über HTTPS läuft. Aus diesem 
+Grund wurde als zweite Eingabe auch hier die Beschreibung der Systemübersicht mitgegeben. Dies hat allerdings nix geändert. Auf eine explizite Eingabe, dass 
+das die Kommunikation zwischen Client und Server über RMI läuft wurde nur erklärt was verändert werden muss, wie der Ablauf dann ist und was die Vor- und 
+Nachteile davon sind. Es wurde allerdings nicht in die Technische Infrastruktur übernommen.\\
 
 Auch Le Chat versucht eine Skizze in die Ausgabe mit einzufügen. Dies klappt hier allerdings nicht so richtig, da die Komponenten mit den Verbindungen nicht 
 richtig verbunden werden. Während ChatGPT die Datenbank extern, als eigene Komponente definiert, ist bei Le Chat diese Teil des Servers. Außerdem werden bei den
 Nachbarsystemen ein Externes Authentifizierungssystem sowie ein Zahlungssystem erstellt, was allerdings nicht Teil der Anforderungen war. Daher sind diese hier 
 falsch. Jedoch passt die Zuweisung der Versionen für die Betriebssysteme sowie der Produkte ganz gut.\\
 
+Die Erstellung der Technischen Infrastruktur funktioniert bei ChatGPT und Le Chat schon ganz gut und es gibt nur ein paar Kleinigkeiten die angepasst 
+werden müssen. Daher werden diese mit ``Gut'' bewertet. Gemini hingegen hat ein paar mehr Problem und beschreibt unter anderem nicht, dass die 
+Kommunikation zwischen Client und Server über RMI läuft. Da dies allerdings eine Anforderung an das System ist wird Gemini nur mit ``Befriedigend''
+bewertet.
 
 \subsection*{Komponentenmodell}
 
@@ -808,8 +856,8 @@ falsch. Jedoch passt die Zuweisung der Versionen für die Betriebssysteme sowie 
     \label{Prompt Komponentenmodell}
 \end{prompt}
 
-Mithilfe des ersten Promptes wurde versucht das Komponentenmodell zu erstellen. Dies hat jedoch bei [ChatGPT und Le Chat] eher weniger funktioniert.
-Beide Tools haben sich zu sehr an die Technische Infrastruktur gehalten und sind von diesem Format nicht weggekommen. Dadurch wurde bei [beiden] Tools
+Mithilfe des ersten Promptes wurde versucht das Komponentenmodell zu erstellen. Dies hat jedoch bei keinem der Tools funktioniert.
+Alle drei Tools haben sich zu sehr an die Technische Infrastruktur gehalten und sind von diesem Format nicht weggekommen. Dadurch wurde bei den dreien Tools
 mit dem zweiten Prompt versucht diese davon etwas wegzubringen.\\
 
 Bei ChatGPT hat dies dann auch schon ganz gut funktioniert, allerdings wird sich trotzdem noch stark an der Technischen Infrastruktur orientiert.
@@ -827,16 +875,12 @@ Registrierungen und ähnliche Anwendungsfälle kümmert. Da der Chat ohne Proble
 zwischen den Komponenten gefragt. Hier versucht ChatGPT allerdings die Funktionen, die dort benötigt werden, zu erstellen. Diese sind zum einen nicht 
 vollständig und zum anderen an dieser Stelle falsch. Auch mit weiteren Eingaben lassen sich die Schnittstellen nicht richtig darstellen.\\
 
-Gemini[[[]]]\\
-    - PlantUML Code wird erstellt, aber Syntax Error
-    - Misch-Masch aus Komponentenmodell und Technische Infrastruktur
-    - Gewünschten Komponenten werden in der Beschreibung der erstellten Komponenten aufgelistet
-    - 2. Prompt bringt nix
-    -> Kann nicht davon weggebracht werden
-    - Gleicher Prompt wie bei LeChat, nur ClientLogic in View umbenannt:
-        - Hat gut funktioniert
-        - Bei Nachfrage nach Schnittstellen wird wieder von den Komponenten von davor (Client, Server, DB) gesprochen
-
+Bei Gemini war die erste Ausgabe sehr oberflächlich und nach der Beschreibung der Beziehungen gibt es auch mehrere Spielserver. Die 2. Eingabe hat 
+nix an dem Komponentenmodell verändert, weshalb entscheiden wurde, als dritte Eingabe eine genaue Beschreibung mit den benötigten Komponenten 
+zu benutzen. Daraufhin wurde dann das Komponentendiagramm gut erstellt. Es wurde allerdings nicht beschrieben, wer welche Schnittstelle 
+bereitstellt und wer auf diese Zugreift. Auf Nachfrage, wie diese aufgebaut sind und wer auf welche Schnittstelle zugreift, ist Gemini 
+mit der Antwort wieder mehr in Richtung Technische Infrastruktur gegangen. Hier wurde wieder von der Kommunikation zwischen den unterschiedlichen 
+Systemen wie Client, Server, Datenbank und KI-Modul gesprochen.\\
 
 Wie zu beginn bereits erwähnt hatte Le Chat dasselbe Problem wie ChatGPT, dass dieser sich zu nah an der Technischen Infrastruktur orientiert hat.
 Allerdings hat man Le Chat auch nach mehreren Eingaben nicht davon weggebracht. Die Beschreibung der Komponenten war eher bedürftig und es wurden 
@@ -857,6 +901,12 @@ Komponentendiagramm ist die ``ClientLogic''-Komponente allerdings die letzte auf
 eine ClientLogic-Komponente welche mit einer ClientCommunication-Komponente verbunden ist.'' ungeeignet gewesen, da hier interpretiert wird, dass die ``ClientLogic''
 nur die Logik auf der Client-Seite umsetzt, nicht aber die Visuelle Darstellung. Daher hätte man die Komponente in der Eingabe besser ``View'' oder ähnlich nennen
 sollen.\\
+
+Zusammenfassend lässt sich sagen, dass alle drei Tools zunächst Schwierigkeiten hatten von der Technischen Infrastruktur wegzukommen. ChatGPT hat dies 
+dann aber mit der 2. Eingabe von alleine ganz gut geschafft. Le Chat und Gemini musste genau gesagt werden welche Komponenten das Komponentenmodell 
+beinhalten soll. Die Verbindung zwischen diese hat Le Chat dann ganz ok erstellt, während Gemini auch dies nicht selbstständig geschafft hat, sondern
+wieder zurück zur Technischen Infrastruktur gegangen ist. Aus diesem Grund wird ChatGPT hier am besten, mit der Note ``Befriedigend'', benotet, 
+anschließend folgt Le Chat mit der Note ``Ausreichend'' und dann Gemini mit der Bewertung ``Mangelhaft''.
 
 
 \subsection*{Sequenzdiagramm}

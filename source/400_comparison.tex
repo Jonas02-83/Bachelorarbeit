@@ -960,91 +960,143 @@ der Note "Befriedigend", benotet, anschließend folgt Le Chat mit der Note "Ausr
 
 \subsection*{Sequenzdiagramm}
 
-- Prompt: Kann einfach gehalten werden
+Für das Sequenzdiagramm werden ebenfalls die beiden Anwendungsfälle "Anmelden" und "Zug machen" betrachtet. Der Prompt 
+kann dabei einfach gehalten werden und sieht wie folgt aus:
 
-- ChatGPT:
-    Anmelden:
-        - Ansich sehr gut direkt erstellt, lediglich ein paar Kleinigkeiten:
-        - Benutzer interaktion mit angegeben, ist hier unnötigt. -> Wird gut geändert
-        - ``GameManager/Logic''-Komponente validiert die Benutzerdaten mit den aus der DB erhaltenen Daten. -> Wird sowohl mit genauer Beschreibung, als uach mit ungenauer richtig 
-        geändert.
-        - Keine Schnittstellen namen, da diese auch nicht in Komponentenmodell erstellt werden konnten.
-        - Zieht Benutzer mit Email und Passwort aus der Datenbank. Da keiner dieser Werte als einzigartig beschrieben wurde, können hier mehrere Benutzer zurückgegeben werden.
-        [Mit Aktivitätsdiagramm vergleichen]
-    Zug Machen:
-        - Kein Würfeln enthalten und nicht passend zum Aktivitätsdiagramm
-        - Sequenzdiagramm eher richtig als Aktivitätsdiagramm
-        - Ebenfalls keine Schnittstellen
-        - Frage wie Spiellbrett für die anderen Client aktualisiert wird. Über extra Anwendungsfall?
-        - Betrachtet Figuren schlagen nicht -> Wird gemacht, überprüft aber nicht ob Figur selbe Farbe hat
-        - Betrachtet überprüfung der Würfelzahl nicht
+\begin{prompt}[H]
+    \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        Erstell mir für den Anwendungsfall ``Anmelden'' ein Sequenzdiagramm für das Architekturdokument.
+        \vfill
+    \end{tcolorbox}
+    \caption{Prompt Sequenzdiagramm}
+    \label{Prompt Sequenzdiagramm}
+\end{prompt}
 
-- Gemini:
-    Anmelden:
-        - Komponenten werden nicht übernommen -> Nach Hinweis, die Komponenten aus dem Modell zunutzen wird dies gemacht
-        - Auch hier wieder Spieler eingaben mit beschrieben -> Auch nach Hinweis wird dies gemacht.
-        - beschreibt nur was passiert, nennt keine Funktionen -> Wird nach Hinweis gemacht
-        - Beteiligte Komponenten auch Spiellogik? Warum und wo?
-        - ClientCommunication sendet an Spielserver
-        - Authentication prüft Anmeldeinformationen in Data?? Daten müssen aus Data geholt werden und in Authentication geprüft werden.
-        - Authentication sendet ergebnis an Spielserver?
-        - ServerCommunication wurde überhaupt nicht verwendet
-    
-    Zug Machen:
-        - Wird mehr oder weniger passend erstellt, besser als sonst
-        - Beteiligte Komponenten auch Spielfigur und Würfel? Warum?? Dafür kein Authentication, schonmal besser als bei Anmelden
-        - Auch hier erstmal wieder keine Funktionen erstellt sondern nur beschrieben was passiert -> Selbe eingabe wie bei Anmelden funktioniert
-        wieder, allerdings wird auch hier wieder beschrieben, was der Spieler tut
-        - Auch hier wird wieder von Spielserver gesprochen
-        - Spielserver simuliert Würfelwurf in Würfel? Ähnelt eher einer Aktivität in einem Aktivitätsdiagramm
-        - Wieso kann man Würfeln obwohl man nicht an der Reihe ist? Unnötigte Rechenzeit nutzung
-        - Figur wird vom Server alleine bewegt? Oder die Parameter werden nicht übergeben? Beides doof
-        - hört bei ClientCommunication auf? Denke mal die Ausgabe wurde einfach wieder abgebrochen 
+Bei allen drei Tools und bei beiden Anwendungsfällen werden keine Schnittstellen in das Sequenzdiagramm mit 
+aufgenommen. Da diese allerdings auch nicht beim Komponentenmodell erstellt wurden, wundert dies hier nicht allzu sehr.
 
+Die erste Ausgabe von ChatGPT ist schon sehr gut. Die Komponenten passen soweit zum Komponentenmodell und die Übergabeparameter passen 
+soweit auch zu dem Aktivitätsdiagramm vom Anwendungsfall ``Anmelden''. Dennoch gibt es ein paar Kleinigkeiten die auffallen. 
+Des Weiteren wird die Benutzerinteraktion, ``Anmelden klicken()'' und ``Anmeldeergebnis anzeigen(success)'', mit in das 
+Sequenzdiagramm aufgenommen. Dies gehört hier natürlich nicht mit rein. Es wird außerdem im Diagramm nicht dargestellt, dass 
+die ``GameManagerLogic''-Komponente die Anmeldedaten, die Sie aus der Datenbank erhält, mit den eingegeben vergleicht. Dies 
+wurde hier nur als Beschreibung bei der Komponente mit angegeben. Hier kann man aber auch eine extra Funktion für erstellen, 
+die die Komponente bei sich selbst aufruft. Diese beiden Sachen werden nach einem Hinweis gut korrigiert. Die Erstellung 
+der Validierung wird sowohl mit einer genauen Beschreibung [ChatGPT02] als auch mit einer ungenauen Beschreibung 
+[ChatGPT03] richtig erstellt. Bei der ungenauen Beschreibung wird lediglich zwischen der erfolgreichen und 
+nicht-erfolgreichen Validierung unterschieden und, je nach dem, unterschiedliche Funktionen zurück gesendet. Dies muss 
+allerdings nicht gemacht werden, vor allem wenn ab der ``ServerCommunication''-Komponente wieder immer die gleiche 
+Funktion oder Response zurück geht. Man könnte bereits bei der ``GameManagerLogic''-Komponente z.B. 
+ein ``true'' oder ``false'' und entweder die Daten eines Users oder ``null'' zurück liefern. Grundsätzlich gilt allerdings 
+auch hier beim Sequenzdiagramm, dass man einen eindeutigen Parameter beim Anmelden benötigt, da ansonsten die Anmeldung 
+nicht eindeutig einem User zugewiesen werden kann.
 
+Geminis erste Ausgabe verwendet nicht die Komponenten aus dem Fachlichen Datenmodell. Hier wird lediglich beschrieben, was 
+der Spieler, die Client-Anwendung, der Spielserver und eine Authentifizierungskomponente macht. Erst nach einem Hinweis, 
+die Komponenten aus dem Komponentenmodell zu verwenden, wird dies gemacht. Hier wird dann allerdings rein textuell 
+beschrieben, was passiert und nicht mit Methoden und Übergabeparametern. Doch auch dies wird nach einem Hinweis geändert.
+Gemini macht hier, und auch schon vorher, den gleichen Fehler wie ChatGPT und beschreibt was der Benutzer macht. Dies wird 
+auch nicht mit einem Hinweis von Gemini geändert. Des weiteren fällt auf, dass bei der Auflistung der Beteiligten Komponenten 
+auch die Spiellogik aufgeführt wird. Allerdings kommt diese in der Beschreibung von dem Sequenzdiagramm nicht vor. Grundsätzlich
+passen die Beschreibungen nicht immer. Zum einen wird statt ``ServerCommunication'', welche auch bei den beteiligten Komponenten 
+aufgelistet wird, immer von ``Spielserver'' geschrieben. Zum anderen wird beschrieben, dass ``Authentication'' in ``Data'' die 
+Anmeldeinformationen prüft. Dies funktioniert allerdings nicht. Man sollte besser sich Daten mit dem Benutzernamen ausgeben 
+lassen und diese dann in ``Authentication'' überprüfen. Des weiteren ist auch hier wieder der Fehler mit den nicht eindeutigen 
+Anmeldedaten.
 
-- Le Chat:
-    Anmelden:
-        - Schafft es nicht PlantUML-Code fehlerfrei zu erstellen. Führt immer zu Syntax Error
-        - Textuelle Beschreibung beschreibt Diagramm nur grob und nennt nicht die Funktionen. 
-        - Arbeitet wieder mit ``Client-Anwendung''-Komponente
-        - In Dialog und Anwendungsfall wurde Email-Adresse und Passwort als Eingabedaten verwendet. Kein Benutzernamen
-        - Benutzername laut FDM nicht eindeutig, Daher können hier auch mehrere Benutzer gefunden werden
-        - Muss benutzer zurück gegeben werden??
-    Spielfigur setzen oder schlagen:
-        - Auch hier wird wieder PlantUMl erstellt, aber auch wieder fehlerhaft
-        - Passt nicht zu Anwendungsfall. Dort wurde Feld.x und Feld.y an Server übergeben, hier nur Zielfeld
-        - spielID eigentlich nicht nötig übergeben zu werden, da Figuren einzigartige ID haben
-        - Effizient das ganze Spiel aus der DB zu laden, einen Wert zu ändern und wieder zu speichern? -> Wird zu eigener Funktion geändert, wo
-        nur Position der Figur geändert wird.
-        - Lieber eine Funktion um Positionen der Figuren zu ändern, da dies sehr häufig gemacht werden muss.
-        - Frage ob Punkt 10 nur an Client, der zug gemacht hat gesendet wird, oder an alle. -> Sagt das dies 
-        an alle gemacht werden muss und dafür die ServerCommunication-Komponente eine Liste der Clients führen muss, 
-        die am selben Spiel teilnehmen, und das Ereignis an alle Clients in dieser Liste senden.
-        - Betrachtet Figuren schlagen nicht. -> Wird auf nachfrage korrigiert, erstellt aber keine Funktionen dafür sondern beschreibt nur
-        - Außerdem wird nicht geprüft ob das Figuren bewegen mit dem Würfel übereinstimmt wie im Anwendungsfall beschrieben
+Bei Le Chat wird ein PlantUML-Code mit erstellt, welcher allerdings zu einem Syntaxfehler führt. Die dazu erstellte 
+Beschreibung ist nur grob und nennt keine Funktionen. Es wird nur der Ablauf beschrieben, wer an wen sendet. Dadurch, 
+dass beim Komponentenmodell keine ``View''-Komponente oder ähnliches befindet, verwendet Le Chat hier von alleine 
+eine ``Client-Anwendung''-Komponente. Dies ist daher ok. Nach einem Hinweis, das Funktionen mit erstellt werden sollen, macht Le Chat 
+das ganz gut. Ein Fehler der auffällt, ist dass als Anmeldedaten ein Benutzername und Passwort verwendet wird. In dem Dialog 
+und auch dem Anwendungsfall wurde allerdings die E-Mail-Adresse und ein Passwort verwendet. Auch hier ist aber in beiden Fällen 
+wieder das Problem, dass keiner der Attribute einzigartig ist und dadurch nicht eindeutig ein Benutzer identifiziert werden kann.
 
+Der Prompt für den Anwendungsfall ``Zug machen'' ist äquivalten. Bei allen dreien fällt hier allerdings auf, dass 
+keine Aktualisierung der anderen Clients stattfindet. Daher stellt sich die Frage, ob dies einfach vergessen wurde 
+oder ob die Tools an dieser Stelle davon ausgehen, dass die Aktualisierung in einem separierten Anwendungsfall 
+passiert.
+
+Grundsätzlich stellt man bei ChatGPT fest, dass das Sequenzdiagramm nicht zum Aktivitätsdiagramm passt. Es wird nicht mehrmals 
+zwischen Client und Server hin und her gewechselt. Außerdem wird das Würfeln hier nicht betrachtet. Das Sequenzdiagramm 
+passt allerdings deutlich besser als das Aktivitätsdiagramm, weshalb die Inkonsistenzen hier nicht negativ ist. An der Stelle 
+könnte man das Anwendungsfalldiagramm nochmal überarbeiten lassen. Zum einen fällt aber trotzdem auf, dass nicht betrachtet 
+wird, was passiert wenn das Feld bereits besetzt ist. Nach einem Hinweis wird dies allerdings hinzugefügt. Dabei ist 
+allerdings immer noch unvollständig, dass nicht überprüft wird, welche Farbe die Figur auf dem Feld hat. Diese wird 
+einfach automatisch auf das Startfeld zurückgesetzt. Zusätzlich stellt man sich die Fragen ob und wo der Zug mit dem
+gewürfelten Wert verglichen und überprüft wird und wie das Spielbrett bei den anderen Spielern aktualisiert wird.
+Dies wird hier nicht beschrieben und da es keinen Anwendungsfall bisher dafür gibt, wird dies noch nicht gemacht. 
+
+Bei Geminis Ausgabe wird unter den Beteiligten Komponenten eine ``Spielfigur''- und eine ``Würfel''-Komponente 
+aufgelistet. Dies ist nicht passend zum Komponentenmodell. Des weiteren wird auch wieder der Spieler mit in die 
+Beschreibung aufgenommen. Zusätzlich wird auch hier wieder, wie beim Sequenzdiagramm für ``Anmelden'', nur 
+Beschrieben was passiert und keine Methoden erstellt. Nach einem Hinweis werden diese allerdings wieder erstellt. 
+Es wird außerdem zweimal vom Client zum Server und wieder zurückgegangen: Einmal fürs Würfeln und einmal für den
+Zug. Dazu fehlt bei den Funktionen die Attribute die zum Zug dazugehören. Es wird hier außerdem wieder von Spielserver 
+statt ServerCommunication gesprochen. Des weiteren gibt es keine Überprüfung, ob der Spieler Würfeln darf. Erst nachdem 
+die gewürfelte Zahl wieder beim Client Angekommen ist, wird überprüft ob der Spieler am Zug ist. Dadurch könnte man 
+zum Beispiel ganz häufig Würfeln und damit den Server überlasten. Grundsätzlich ist es recht ineffizient, erst am 
+Ende zu überprüfen, ob der Spieler überhaupt am Zug ist. Dadurch wird unnötig Rechenzeit verwendet, welche man auch sparen 
+kann, in dem man die Überprüfung als erstes auf dem Server macht. Ebenfalls auffällig ist, dass die Beschreibung bei Punkt 
+13 einfach aufhört. Vermutlich hat Gemini hier die Ausgabe einfach wieder abgebrochen.
+
+Der von Le Chat erstellte PlantUML-Code ist auch hier wieder fehlerhaft und auch die Beschreibung ist hier wieder nur 
+grob. Daher wurde auch hier nach einer genauen Beschreibung mit Funktionen gefragt, welche dann erstellt wurden.
+Bei den Funktionen fällt zum einen auf, das es nur ein Attribut für das zielFeld gibt. Dies entspricht nicht dem 
+Aktivitätsdiagramm. Dort wurden zwei Attribute, ``Figur.x'' und ``Figur.y'', verwendet. Außerdem stellt sich die 
+Frage, warum eine spielId übergeben wird. Da ``Figur'' im Fachlichen Datenmodell eine einzigartige Id besitzt, 
+kann, benötigt man die spielId eigentlich nicht. Außerdem stellt sich hier unter anderem die Frage, wie die anderen
+Clients das aktualisierte Spiel erhalten. Bei Frage, ob der Punkt 10 an einen Client oder an alle gesendet wird, 
+antwortet Le Chat, dass die Aktualisierung an alle Clients gesendet werden muss und erklärt, wie das umgesetzt wird.
+Eine weitere Sache die auffällt ist, dass das gesamte Spiel aus der Datenbank geholt wird, die neue Position 
+aktualisiert wird und anschließend das gesamte Spiel wieder in die Datenbank geladen wird. Hier ist es aber 
+eigentlich effizienter einfach den entsprechenden Wert von der Spielfigur zu aktualisieren. Wenn man dies 
+Le Chat fragt, wird die Frage mit ``Ja'' beantwortet. Ein weiterer Punkt der auffällt ist, dass auch hier nicht 
+geprüft wird, ob das Feld bereits belegt ist. Le Chat fügt dies zwar in die Beschreibung mit ein, allerdings 
+ohne Methoden sondern als reine Beschreibung. Des Weiteren wird auch nicht geprüft, ob der Spieler, der den 
+Zug durchführen will, an der Reihe ist und ob der Zug dem gewürfelten Wert entspricht. 
+Zusammenfassend lässt sich sagen, dass die Tools das Sequenzdiagramm recht gut erstellen. Vor allem wenn man 
+bedenkt, dass die Erstellung des Komponentenmodells eher schlecht funktioniert hat. Das größte Problem stellt 
+die Konsistenz zu den vorherigen Dokumenten dar, die teilweise schon viele Eingaben zurück liegen und an die 
+sich die Tools nicht mehr dran erinnern können. ChatGPT schafft es als einziges das Sequenzdiagramm graphisch in 
+PlantUML zu erstellen und auch die Beschreibung ist gut. Dadurch das ChatGPT neben der Aktualisierung nur die 
+überprüfung des Feldes vergisst, wird ChatGPT hier mit ``Gut'' bewertet. Geminis Beschreibung der beteiligten
+Komponenten passen wieder nicht und auch das wieder nach Funktionen und der Entfernung des Users gefragt werden 
+muss, obwohl dies in den Eingaben direkt davor schon gemacht wurde, fällt negativ auf. Ebenso der Ablauf 
+des Anwendungsfalls ist schlecht gewählt. Hier könnte man allerdings noch argumentieren das man diesen einfach 
+selbstständig auf zwei Anwendungsfälle aufsplittet, da aber auch die Parameter vom Bewegen der Spielfigur 
+unvollständig sind wird Gemini hier nur mit ``Ausreichend'' bewertet. Le Chat ist eine Mischung aus ChatGPT und 
+Gemini was die Qualität angeht. Zum einen muss auch hier wieder nach einer genauen Beschreibung gefragt werden 
+und das nicht Einfügen der Methoden, zum prüfen ob das Feld bereits belegt ist, sind negativ aufgefallen. Dafür 
+sind die anderen Methoden gut erstellt worden, weshalb Gemini grade noch so mit ``Befriedigend'' bewertet wird.
+Man erhält aber bei allen drei Tools ein Grundgerüst und eine Idee, was erstellt werden soll und wie das in etwa
+aussehen soll.
 
 \subsection*{Interfaces in Java}
 
-- erste Ausgabe nicht passend zu Sequenzdiagrammen -> Bei Hinweis werden Sequenzdiagramme neu definiert. Allerdings falsch
-- Schnittstellen passen nicht zu den Komponentendiagramm
--> Die Beschreibung der Sequenzdiagramme wurde nochmal als Eingabe mitgegeben
-Anmelden:
-- es wird extra Interface AuthenticationService erstellt, wo die Anmeldung abläuft. Macht Funktionen der GameManagerLogic aus dem Sequenzdiagramm sowie die Funktion der 
-DatabaseAccess Komponente. GameManagerLogic leitet aufruf bei Java Implementierung nur weiter. AuthenticationService scheint daher Komponente zwischen GameManagerLogic 
-und DatabaseAccess zu sein. In diesem Fall hat dann GameManagerLogic keine Aufgabe außer Funktionen weiterzuleiten. Könnte entfernt werden.
-- UserInterface besitzt Mehtoden?? Sollte keine eigene Schnittstelle haben sondern nur auf ClientCommunication zugreifen
-- Methodennamen passen nicht ganz zu denen aus dem Sequenzdiagramm
-- Fraglich warum aufruf-Methoden auf Client-Seite void sind und dann extra Callback-Methoden erstellt werden, die True oder False zurückliefern. 
-Einfacher die Aufruf-Methoden zu boolean zu machen
+Da die Erstellung mit ChatGPT bis hier hin am besten geklappt hat, wurde probiert die Interfaces in Java 
+zu erstellen. Dabei fällt direkt auf, dass die erstellten Klassen nicht zu den Schnittstellen bzw. zu den 
+Komponenten aus dem Komponentenmodell und damit auch nicht zu den Sequenzdiagrammen passen, da hier 
+die Klassen ``AuthenticationService.java'' und ``GameService.java'' keiner 
+Komponente zugewiesen werden können. Es könnte allerdings sein, dass ChatGPT mehrere Schnittstellen für eine 
+Komponente erstellt hat. Doch wenn man ChatGPT fragt, welche Klassen zu welchen Komponenten gehören
+listet er für jede Klasse eine Komponente auf. Dazu fällt auf, dass auch für die Komponente ``UserInterface''
+eine Klasse erstellt wurde, wo sich die Frage stellt, wer darauf zugreifen soll. Grundsätzlich sollte diese 
+Komponente nur von ``ClientCommunication'' Funktionen aufrufen und dann einen Return erhalten. Darüber hinaus 
+passen die Namen in den Klassen nicht immer zu denen aus den Sequenzdiagrammen. Teilweise fehlen auch 
+Funktionen bzw. sind in den Klassen falsch. Zum Beispiel ist die Methode ``moveOccupyingFigureToStart(int figureID)''
+nicht in der Klasse ``DatabaseAccess'' sondern bei ``GameService'' mit drinnen. Außerdem ist etwas komisch, dass 
+zum Beispiel in ``ClientCommunication.java'' die Methoden ``void'' sind aber dafür eine Callback-Funktion 
+implementiert ist. Besonders bei der Methode für den LogIn, da hier nur true oder false zurückgegeben wird und 
+es eigentlich auch nie vorkommen sollte, dass der Server von selbst eine LoginResponse zurückschickt. Dies könnte 
+man nämlich noch bei der ``MoveResponse'' argumentieren. Man könnte hier die Callback-Funktion nutzen um die Züge 
+von den anderen Spielern zu erhalten. Doch da dies in den Dokumenten noch nicht betrachtet wurde, wird dies 
+nicht der hinter Gedanke von ChatGPT gewesen sein.
 
-Zug Machen:
-- GameService äquivalten zu AuthenticationService
-- Auch Hier hier sind Aufruf-Methoden auf Client-Seite Void, warum nicht Rückgabewert MoveResponse, dann müssen keine Callback-Funktionen erstellt werden
-- DatabaseAccess fehlt moveOccupyingFigureToStart() Funktion. Nur in GameService enthalten
-
--> Grundsätzlich ganz gut. GameService, AuthenticationService und DatabaseAccess nur etwas doppelt gemoppelt und nicht ganz ersichtlich welcher ablauf hier 
-stattfindet. Rückgabewerte auf Client-Seite immer nur Void und dafür Callback-Funktionen. Warum nicht auch einfach Rückgabetyp boolean oder MoveReturn?
-
+Grundsätzlich kann man daher sagen das die Erstellung der Interface nicht wirklich funktioniert. Man erhält 
+hier ein ganz grobes Grundgerüst, muss dieses aber selbstständig anpassen, da die Beziehungen zwischen 
+den Komponenten auf der Server Seite durch die beiden extra Komponenten umgestellt wurden. Auch die 
+Art und Weise wie die Rückgaben umgesetzt wurden, führt dazu, dass man die Interfaces nochmal anpassen muss.
+Als Bewertung würde ChatGPT hier ``Ausreichend'' erhalten, da einige Sachen fehlen, aber wenn man diese vervollständigt 
+eigentlich funktionieren sollte. Es ist allerdings nicht Konsistent zu den anderen Dokumenten erstellt worden.
 

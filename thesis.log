@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  28 JUL 2024 14:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  30 JUL 2024 21:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -2130,13 +2130,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [35] [36] [37] [38] [39] [40]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41] [42] [43] [44] [45] [46] [47] [48] [49]
+ [41] [42] [43] [44] [45] [46] [47] [48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50]) [51]
+ [49] [50] [51] [52]) [53]
 \openout2 = `source/500_Problems.aux'.
 
- (./source/500_Problems.tex [52
+ (./source/500_Problems.tex [54
 
 
 
@@ -2144,10 +2144,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 chapter 5.
-) [53]
+) [55]
 \openout2 = `source/600_Conclusion.aux'.
 
- (./source/600_Conclusion.tex [54
+ (./source/600_Conclusion.tex [56
 
 
 
@@ -2155,7 +2155,7 @@ chapter 5.
 
 ]
 chapter 6.
-[55]) [56]
+[57]) [58]
 \openout2 = `source/801_appendix.aux'.
 
  (./source/801_appendix.tex
@@ -2308,18 +2308,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72293 strings out of 474049
- 1656794 string characters out of 5746277
- 2922468 words of memory out of 5000000
- 93096 multiletter control sequences out of 15000+600000
+ 72298 strings out of 474049
+ 1656892 string characters out of 5746277
+ 2922525 words of memory out of 5000000
+ 93098 multiletter control sequences out of 15000+600000
  622968 words of font info for 236 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,22n,120p,10939b,2857s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,22n,120p,10948b,2857s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (80 pages, 366263 bytes).
+Output written on thesis.pdf (82 pages, 372947 bytes).
 PDF statistics:
- 841 PDF objects out of 1000 (max. 8388607)
- 708 compressed objects within 8 object streams
- 161 named destinations out of 1000 (max. 500000)
+ 851 PDF objects out of 1000 (max. 8388607)
+ 716 compressed objects within 8 object streams
+ 164 named destinations out of 1000 (max. 500000)
  53257 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -1,0 +1,139 @@
+
+\chapter{Zusammenfassung und Ausblick} \index{Zusammenfassung und Ausblick}
+
+Im Verlauf dieser Arbeit wurde deutlich, wie LLM-Tools bei der Erstellung von Dokumenten im Software Engineering 
+Prozess unterstützen können. Im abschließenden Kapitel werden die Ergebnisse der Analyse zusammengefasst, um die 
+Erkenntnisse und die Effektivität der eingesetzten Tools zu bewerten. Anschließend wird ein Ausblick gegeben, der 
+eine grobe Einschätzung zur zukünftigen Entwicklung und dem Potenzial von LLM-Tools im Software Engineering liefert. 
+Hierbei wird sowohl auf die erwarteten technologischen Fortschritte als auch auf mögliche neue Anwendungsfelder 
+eingegangen.
+
+\section{Zusammenfassung der Ergebnisse} \index{Zusammenfassung der Ergebnisse} \label{Zusammenfassung der Ergebnisse}
+
+Es lässt sich grundsätzlich sagen, dass alle drei Tools es geschafft haben, bei den meisten Dokumenten eine solide 
+Basis zu erstellen, die auch richtig ist. Dabei fällt vor allem auf, dass einfachere Sachen wie die Erstellung von 
+Texten oder das Designen von Dialogen sehr gut klappt. Schwierige Diagramme, die vielleicht auch aufeinander 
+aufbauen klappen dahingegen noch nicht so gut und beinhalten häufig noch einige Fehler. Auch die Konsistenz 
+zwischen den einzelnen Dokumenten klappt mal mehr und mal weniger gut. Dies stellt sich besonders bei den 
+Sequenzdiagrammen raus, da diese recht wenig zu dem dazugehörigen Aktivitätsdiagramm und dem Fachlichen 
+Datenmodell passen. Daher sind die Tools aktuell noch eher ungeeignet für große Zusammenhängende Projekte. Wobei 
+man dabei beachten muss, das ChatGPT und Le Chat da deutlich weniger Probleme hatten als Gemini. 
+Zusätzlich ist es manchmal schwierig die Tools von einer gewissen Formulierung oder 
+Implementierung weg zu bekommen, was man besonders bei dem Komponentenmodell und dem zuvor verwendeten Begriff 
+``Komponente'' im Rahmen der Technischen Infrastruktur gemerkt hat. Wenn sich die Tools mal mit einer Ausgabe in 
+die komplett falsche Richtung bewegen, kann es helfen sich die erste Ausgabe zu einem Dokument nochmal ausgeben zu 
+lassen. Da diese immer etwas verschieden waren, konnte man so die Tools leicht korrigieren. Dies war besonders 
+beim Besprechungsprotokoll hilfreich. 
+
+Es wurde probiert die Anfangseingaben einfach zu halten und so zu formulieren, dass auch Nutzer ohne Vorwissen 
+diese stellen würden. Dabei muss beachtet werden, dass wenn man spezielle Anforderungen an die Ausgabe hat, 
+diese mit in die Eingabe eingefügt werden muss. Besonders bei Tabellen, die ein gewissen Format haben sollen 
+muss dieses mit angegeben werden und auch falls zusätzliche Informationen, die die Tools nicht wissen können,
+müssen diese mit in die Eingabe geschrieben werden. Fraglich ist es dann teilweise, ob unwissende Nutzer es 
+schaffen, die Ausgaben auf ihre Korrektheit zu prüfen und nachfolgend richtige und passende Eingaben zu tätigen.
+Aber auch ohne das erhält man eine grobe Idee was gefordert ist und wie die Inhalte erstellt werden müssen. 
+
+Im Bezug auf die Handhabung, war ChatGPT sehr angenehm und hat wenig Probleme gemacht. Es lässt sich leicht 
+eine Antwort neu generieren und auch alte Eingaben konnten nach belieben nochmal geändert werden. Auch die 
+Qualität der Ausgaben war von ChatGPT am besten, was vermutlich auch mit an der Version 4o liegt. Negativ ist 
+dabei allerdings, dass man nur eine gewisse Anzahl an Eingaben machen kann. Wenn man diese verbraucht hat, kann 
+man mit der 3.5er Version weiter arbeiten, bis zu einer gewissen Uhrzeit warten und dann mit 4o weiterarbeiten oder 
+ein Abo abschließen um Unbegrenzt mit 4o arbeiten zu können. Da die Ausgaben der 3.5er Version allerdings einen spürbaren 
+negativen Qualitätsunterschied im Vergleich zu 4o haben, ist dies eher unangenehm. Wenn man Zeit hat ist es besser 
+einfach zu warten und dann mit 4o weiter zu arbeiten. Im Verlauf meiner Arbeit hat es sich bewährt, erst mit 
+den anderen Tools, vor allem Le Chat, die Eingaben zu machen, da die Eingaben häufig umgeschrieben werden mussten, bis man
+das gewünschte Ergebnis erhalten hat. Anschließend kann man die ``fertige'' Eingabe ChatGPT geben. Dadurch verbraucht man 
+keine ``Aufladungen'' bei ChatGPT mit Eingaben, die einen zunächst nicht weiter bringen, sondern gibt ChatGPT nur die 
+Qualitativen und wichtigen Eingaben.
+
+Die Arbeit mit Gemini war sehr problematisch, da das Erinnerungsvermögen vergleichsweise kurz war. Bereits nach ein oder 
+zwei Tagen wusste ChatGPT nicht mehr, was vorher erstellt wurde, obwohl man im selben Chat weiter arbeitet. Teilweise 
+wurde sogar direkt nach einer Eingabe das erstellte wieder vergessen. Aus diesem Grund musste die Erstellung mit Gemini 
+in einem Zug gemacht werden, was aber in der Praxis im Alltag nicht umsetzbar ist, da man vermutlich über mehrere Wochen 
+oder sogar Monaten an so einem Projekt arbeitet. Besonders als Student verläuft so ein Projekt meistens während eines Semesters oder 
+Trimesters. Die Alternative wäre, Gemini bei jeder Eingabe den Rahmen des Projektes mit den benötigten Informationen mit zu geben.
+Dies ist aber grade zum ende hin nicht umsetzbar da die Dokumente von immer mehr anderen Dokumenten abhängig werden.
+Des Weiteren ist Gemini sehr stark von den Eingaben abhängig und hat bei Fragen häufig nur eine Antwort mit Erklärung 
+geliefert und nicht in Kontext mit den vorherigen Eingaben gesetzt. Man musste extra die Anweisungen geben dies zu tun.
+Zusätzlich hat Gemini gerne mal die Ausgaben auf Englisch geschrieben. Außerdem kann man nur die letzte Eingabe nochmal verändern 
+und es gab auch keine Funktion um eine Antwort neu generieren zu lassen. Hier musste dann der Punkt am Ende eines Satzes entfernt werden 
+damit dies nochmal gemacht wurde. Dazu kommt noch das Ausgaben irgendwann einfach abbrechen. Diese Aspekte führten dazu, dass die Arbeit mit 
+Gemini sehr mühsam und schwierig war. 
+
+Le Chat war eine kleine Mischung aus den ChatGPT und Gemini. Bei der Qualität der Ausgaben hat man häufig gemerkt, dass Le Chat
+noch nicht so weit entwickelt ist wie ChatGPT-4o, allerdings ist die Bedienung ähnlich angenehm wie mit ChatGPT und auf jeden fall 
+besser als mit Gemini. Grundsätzlich gab es hier keine besonderen Vorkommnisse bei der Arbeit mit Le Chat. Lediglich wurden bei den 
+Ausgaben häufig ein Link mit eingefügt, der auf Bild führen soll, allerdings mit ``/XyXyXy'' geendet hat und nur ein Platzhalter war.
+Dies war zu beginn sehr verwirrend da der Link nicht sichtbar war, sondern nur gesehen werden konnte, wenn man die gesamte Eingabe kopiert.
+Des Weiteren ist manchmal die Warnung, ``Der Inhalt kann gefährliche oder sensible Themen beinhalten'', für die Eingabe, 
+``Formulier die Beschreibung der Aktivitäten etwas genauer. Beschreibe welcher Wert wo gespeichert wird mithilfe des Fachlichen 
+Datenmodells.'' angezeigt worden. 
+
+\section{Kritik an der Arbeit} \index{Kritik an der Arbeit} \label{Kritik an der Arbeit}
+
+Die Kritik an meiner Arbeit dient dazu, die Schwächen meiner Vorgehensweise zu reflektieren und Bereiche für zukünftige 
+Verbesserungen zu identifizieren.\\
+Dabei gibt es zwei große Bereiche: Die Erstellung der Dokumente bzw. die Arbeit mit den LLM Tools und die Analyse der 
+Ergebnisse.
+
+Bei der Arbeit der LLM Tools wäre es sinnvoller gewesen, im Vorhinein festzulegen, wie umfangreich und wie viele Eingaben 
+für ein Dokument für ein Tool getätigt werden sollen. Der Gedanke, die selben Eingaben zu benutzen war schon gut, durch 
+die unterschiedlichen Ausgaben ist es allerdings nicht möglich, dies für ein Inhalt fortzuführen. Daher hätte man 
+entweder festlegen sollen, dass nur die erste Ausgabe analysiert wird oder sich auf eine gewisse Anzahl an Eingaben 
+und die Genauigkeit festzulegen. Bei beiden werden allerdings die Möglichkeiten der Tools eingegrenzt und auch der 
+Bezug zur Realität wäre geschmälert worden. Dafür könnten die Ergebnisse und die Tools allerdings deutlich besser verglichen werden.
+Hier muss man entscheiden, welcher Aspekt wichtiger ist. Eine weitere Möglichkeit wäre eine Art Mischung zu machen. 
+Man könnte sich auf eine grobe Anzahl an Eingaben festlegen, was aber keine feste Grenze ist. Dadurch wären die Ergebnisse 
+etwas vergleichbarer und man würde nicht den Aspekt der Verbesserung außer acht lassen. In jedem Fall sollte sich aber darüber 
+im Vorhinein Gedanken gemacht und festgelegt werden. 
+
+Bei der Analyse hätte man sich ebenfalls zunächst im Vorhinein überlegen sollen, wie man vorgeht. Durch die unterschiedlichen
+Ergebnisse und die vielen Anforderungen, die vom Kunden festgelegten als auch die Spielregeln, gab es viele Dinge zu bedenken.
+Das die Tools dann die Dokumente nicht Konsistent erstellt haben, hat die Analyse zusätzlich erschwert. Dadurch gab es Punkte, die 
+beim erstellen der Prompts oder bei der Analyse der Ausgaben nicht bedacht wurden, dann beim Schreiben der Texte allerdings erkannt wurden
+und nicht nachträglich geändert werden konnten. Auch wenn in späteren Dokumenten auf einmal Aspekte aufkommen, welche bei den 
+vorherigen Dokumenten nicht näher betrachtet wurden, lässt sich dies schwer korrigieren. Dafür hätte es geholfen sich eine 
+Liste mit allen Dingen, die implementiert werden müssen, zu schreiben und in welchen Dokumenten diese vorkommen müssen um dann 
+strukturiert sagen zu können, welche Aspekte fehlen, welche Inkonsistent zu vorherigen Angaben sind und welche richtig enthalten 
+sind. Dadurch hätte man die Analyse strukturierter und vollständiger schreiben können und es müsste weniger nachträglich verbessert werden.
+
+\section{Ausblick und zukünftige Entwicklungen} \index{Ausblick und zukünftige Entwicklungen} \label{Ausblick und zukünftige Entwicklungen}
+
+Zunächst wird ein kleiner Ausblick auf mögliche Fortführungen und Weiterentwicklungen zu diesem Thema gegeben und anschließend 
+eine Einschätzung, wo die Reise mit LLM Tools noch hingehen könnte.
+
+Zum einen wurde es nicht geschafft, die Testspezifikation erstellen zu lassen. Dies sollte größtenteils kein Problem sein, da 
+in dem Dokument nur textuell beschrieben wird, wie der Testablauf aussieht und einzelne Tests schriftlich erstellt werden. 
+In den bisherigen Dokumenten waren solche Beschreibung nie ein Problem, weshalb es nicht zu erwarten ist, dass es hier anders ist.
+Lediglich Gemini könnte Probleme bei der Erstellung der Testdaten bekommen, da es sich hierbei häufig um eine sehr große Tabelle handelt.
+Bei Gemini könnte es wieder passieren, dass die Generierung der Ausgabe einfach abgebrochen wird.\\
+Anschließend könnte man die Implementierung des Spiels als Java-Code fortsetzten.\\
+Auch die Abschnitte und Inhalte, die hier bisher nicht betrachtet wurden, da sie keine allzu große Relevanz haben, könnten noch 
+erstellt werden.\\
+Als zusätzliche Unterstützungsmöglichkeiten könnte man sich die Pflege der Dokumente angucken. Schaffen es die Tools zum Beispiel 
+die Risikoliste passend zum aktuellen Abschnitt anzupassen? Oder bei einem eingetretenen oder gelösten Risiko anzupassen? Können 
+die Tools zum Beispiel die Anwendungsfälle nachträglich überarbeiten, dass diese zu den Sequenzdiagrammen passen? All dies wären weitere 
+Unterstützungsmöglichkeiten die die Tools bereitstellen könnten.
+
+Die Unterstützungsmöglichkeiten lassen sich grundsätzlich auch in Unternehmen und Behörden einsetzten. Hier sollte man 
+allerdings beachten, dass die in dieser Arbeit vorgestellten LMM Tools Produkte von Unternehmen sind. Hier wird immer 
+der Gewinn an erster Stelle stehen und daher wird sich vermutlich auch an den Daten, die als Eingaben benutzt werden, 
+bedient. Daher sollte man aufpassen was man als Eingabe gibt. Eine Lösung könnten zukünftig Lokale LLM Tools bieten,
+die vollständig auf einem eigenen System laufen. Innerhalb Unternehmen und Behörden, wo meistens auch mehr Rechenleistung 
+zur Verfügung steht, können auch größere LLMs als Inselsystem laufen. Also das diese keine Schnittstellen nach außen 
+haben. Besonders in Behörden, wo mit eingestuften Inhalten gearbeitet wird, wäre das eine gute Möglichkeit, die Vorteile 
+von LLM Tools mit einzubinden.\\
+Eine weitere Möglichkeit wären speziell trainierte LLM Tools. Es könnten irgendwann LLM Tools zum kaufen zur 
+Verfügung stehen, die nur allgemeine Informationen zum Trainieren erhalten haben, damit die Grundfähigkeiten zur 
+Verfügung stehen. Anschließend könnte man das LLM Tool auf einen speziellen Wunsch hin trainieren. In diesem 
+Fall zum Beispiel fürs Software Engineering. Dadurch könnten sich die Fähigkeiten des LLM Tools in diesem Bereich 
+verstärken und weniger Rechenleistung benötigen, als ein Tool, welches alles ein bisschen kann.
+
+Um nochmal zurück auf den Studenten und auf Schüler zugehen: Es lässt sich mit ziemlicher Sicherheit sagen, 
+dass in Zukunft die Bedenken, dass KI für diese nicht förderlich sondern eher schädlich sind, nicht abnehmen 
+werden. Wenn allerdings die LLM Tools in der Arbeitswelt eine unabdingbare Rolle spielen, ist es nicht schlecht 
+wenn Schüler und Studenten sich mit diesen Tools schon im Vorhinein auseinander setzten. Sie lernen mit den Tools 
+umzugehen und wie Eingaben gestellt werden müssen. Des Weiteren wird auch geübt die Ausgaben auf ihre Korrektheit 
+zu analysieren.
+
+Auf jeden fall sind die Large Lange Modells auf dem Weg einen großen Einfluss auf das zukünftige Leben zu nehmen.

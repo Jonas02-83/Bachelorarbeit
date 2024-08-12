@@ -1,50 +1,72 @@
 
 \chapter{Einleitung} \index{Einleitung}
 
-TODO!!!!!!!!!
+Die rasante Entwicklung im Bereich der Künstlichen Intelligenz hat in den letzten Jahren bedeutende Fortschritte ermöglicht, 
+insbesondere durch den Einsatz von Large Language Models (LLM). Diese mächtigen Tools, die auf umfangreichen Textkorpora 
+trainiert wurden, haben das Potenzial, vielfältige Aufgaben im Software Engineering Prozess zu optimieren und zu transformieren. 
+In dieser Bachelorarbeit wird untersucht, wie LLM-Tools im Software Engineering eingesetzt werden können, um die Effizienz und 
+Qualität der Entwicklungsprozesse zu verbessern.
+
+In diesem ersten Kapitel wird zunächst auf die Motivation hinter dieser Arbeit eingegangen. Anschließend wird die Zielsetzung 
+und dann die Struktur der Arbeit beschrieben.
 
 \section{Motivation} \index{Motivation} \label{Motivation}
 
-KIs ersetzten irgendwann die Menschen! Dies ist eine Aussage die man mittlerweile recht häufig hört. Unteranderem durch Filme und Serien ist das ansehen von KIs nicht 
-immer positiv und einige Menschen sehen eine große Gefahr darin. Besonders durch die rasante Entwicklung in den letzten zwei Jahren, haben sogenannte Large Language Modells, Abkegürzt LLM, 
-viel Aufmerksamkeit auf sich gezogen und die Möglichkeiten, zum Beispiel in der Informationsbeschaffung, stark vergrößert. Grade in Schulen und 
-Universitäten haben solche Tools mittlerweile eine große Relevanz erhalten, was nicht von jedem positiv gesehen wird. Viele Pädagogen behaupten, dass LLM Tools 
-schlecht für die Entwicklung von Schülern und Studenten sind, da man diese nun Hausaufgaben oder ähnliche Arbeiten einfach an LLM Tools abdrücken und in wenigen Sekunden 
-autmatisch erstellen lassen können. Auch in meinem Alltag als Student habe ich mir schon das ein oder andere mal mit LLM Tools Fragen beantworten lassen und zum Beispiel 
-Code erklären lassen. Doch wie gut sind eigentlich die Ausgaben von LLM Tools?
+KIs ersetzen irgendwann die Menschen! Dies ist eine Aussage, die man mittlerweile recht häufig hört. Unter anderem durch Filme 
+und Serien ist das Ansehen von KIs nicht immer positiv, und einige Menschen sehen eine große Gefahr darin. Besonders durch die 
+rasante Entwicklung in den letzten zwei Jahren haben sogenannte Large Language Models (LLMs) viel Aufmerksamkeit auf sich gezogen 
+und die Möglichkeiten, zum Beispiel in der Informationsbeschaffung, stark vergrößert. Gerade in Schulen und Universitäten haben 
+solche Tools mittlerweile eine große Relevanz erlangt, was nicht von jedem positiv gesehen wird. Viele Pädagogen behaupten, dass 
+LLM-Tools schlecht für die Entwicklung von Schülern und Studenten sind, da man nun Hausaufgaben oder ähnliche Arbeiten einfach an 
+LLM-Tools abgeben und in wenigen Sekunden automatisch erstellen lassen kann. Doch wie gut sind eigentlich die Ausgaben von LLM Tools?
 
-Dazu gibt es schon zahlreiche Benchmark Tests oder andere professionell erstellte Analysen in den unterschiedlichen Bereichen, die die Tools an ihre Gerenzen bringen.
-Doch diese betrachten eher sehr spezifische Bereiche und absolut optimierte Eingaben. Mich interessiert es eher, wie es mit einfachen Anliegen und Eingaben aus
-sieht, die einen Schüler oder Studenten beschäftigen und erstellen? Wie gut können die Tools diesen Personengruppen helfen?
-
-Dazu habe ich bereits in meinem letzten Trimester eine Projektarbeit zum Thema "Erzeugung von Algorithmen mit LLM Tools für Java" ausgearbeitet. Dort habe ich mir 
-angeguckt, wie gut drei unterschiedliche Tools, einfache Algorithmen zum Sortieren von Listen und einen etwas komplexeren Algorithmus für Spiele wie TicTacToe oder
-4 Gewinnt, erstellen können. Dies hatte, zumindest bei den einfacheren Algorithmen, bereits sehr gut funktioniert, solange man bei richtigem Code nicht immer weiter nachfragt 
-und etwas verbessern lassen will. Durch ein Modul welches ich im Trimester vor der Projektarbeit belegt habe, Secure Software Engineering, habe ich gefallen an der Entwicklung 
-von Projekten gefunden und bin so auf die Frage gekommen, wie gut LLM Tools selbstständig die Dokumenten aus einem Software Engineering Prozess erstellen können oder zumindest 
-Unterstützen können? So bin ich zu meinem Thema für diese Arbeit gekommen: "Einsatz von LLM Tools im Software Engineering Prozess".
+In einer vorherigen Projektarbeit zum Thema ``Erzeugung von Algorithmen mit LLM-Tools für Java'' wurde bereits untersucht 
+wie gut drei unterschiedliche Tools einfache Algorithmen zum Sortieren von Listen und einen etwas komplexeren Algorithmus 
+für Spiele wie Tic-Tac-Toe oder Vier Gewinnt erstellen können. Dies hat, zumindest bei den einfacheren Algorithmen, bereits 
+sehr gut funktioniert, solange man bei richtigem Code nicht immer weiter nachfragt und etwas verbessern lassen will.
+Angestoßen durch ein begleitendes Modul zum Thema 'Secure Software Engineering' entstand das Interesse an der Frage, inwieweit 
+LLMs auch bei der Erstellung von Software-Dokumentation unterstützen können. Insbesondere stellt sich dabei die Frage, ob LLMs 
+in der Lage sind, eine vollständige und aussagekräftige Dokumentation autonom zu generieren oder ob sie eher als Hilfsmittel zur 
+Unterstützung menschlicher Autoren dienen können.
 
 \section{Zielsetzung der Arbeit} \index{Zielsetzung der Arbeit} \label{Zielsetzung der Arbeit}
 
-Das Ziel der Arbeit ist es, herauszufinden wie gut LLM Tools geeignet sind Dokumente aus dem Software Engineering Prozess zu erstellen oder bei der Erstellung zu 
-Unterstützen. Desweiteren sollen Studenten einen eindruck erhalten, wie Sie die Eingaben formulieren müssen und warauf es dabei ankommt. Der Fokus liegt dabei 
-vorallem auf der Erstellung von den Kernabschnitten der einzelnen Dokumente. Also zum Beispiel das Fachliche Datenmodell und die einzelnen UML Diagramme.
-Zusätzlich soll eine Tendenz abgegeben werden, welche Tools für die Erstellung vielleicht besonders gut geeignet sind und welche Tools nicht so gut zum Arbeiten sind.
-Dies ist, zumindes teilweise, eine Subjektive Meinung und ich kann hier nur eine Empfehlung anhand meiner Erfahrungen abgeben. Es kann natürlich immer sein, dass
-ich mit einem Tool zurecht komme und jemand anderes damit Probleme hat und anders rum.
-
+Das Ziel der Arbeit ist es, herauszufinden, wie gut LLM-Tools geeignet sind, Dokumente aus dem Software-Engineering-Prozess zu 
+erstellen oder bei der Erstellung zu unterstützen. Der Fokus liegt dabei vor allem auf der Erstellung der Kernabschnitte der 
+einzelnen Dokumente, wie zum Beispiel das fachliche Datenmodell und die einzelnen UML-Diagramme. Des Weiteren sollen Studenten 
+einen Eindruck erhalten, wie sie die Eingaben formulieren müssen und worauf es dabei ankommt. Zusätzlich soll eine Tendenz 
+abgegeben werden, welche Tools für die Erstellung besonders gut geeignet sind und welche Tools weniger geeignet erscheinen. 
 
 \section{Struktur der Arbeit} \index{Struktur der Arbeit} \label{Struktur der Arbeit}
 
-Grundsätzlich befasst sich die Arbeit mit drei ausgewählten LLM Tools: ChatGPT und Google Gemini als vermutlich die bekanntesten Tools und als kleine europäische 
-Alternative Le Chat von Mistral AI. Mit diesen Tools wird versucht die Dokumente für ein "Mensch ärgere dich nicht"-Spiel selbstständig zu erstellen. Dabei wird 
-lediglich mit den Ausgaben gearbeitet. Ich werde daran nichts ändern oder verbessern sondern nur mithilfe von Eingaben die Tools zu korrigieren. Die zu erstellenden 
-Dokumente und die Vorraussetzungen an das Projekt beziehen sich auf die Vorgaben aus dem Modul "Secure Software Engineering" an der Universität der Bundeswehr München 
-an der Faklutät "ETTI6" am Institut "Software Engineering". Bei der Verantwortlichen(?) Professorin handelt es sich um Prof. Dr. rer. nat. Andrea Baumann. Diese ist 
-im Literaturverzeichnis mit den Kontaktdaten nochmal aufgelistet.\\
+Grundsätzlich befasst sich die Arbeit mit drei ausgewählten LLM-Tools: ChatGPT und Google Gemini als vermutlich die 
+bekanntesten Tools sowie Le Chat von Mistral AI als kleine europäische Alternative. Mit diesen Tools wird versucht, 
+die Dokumente für ein ``Mensch ärgere dich nicht''-Spiel selbstständig zu erstellen. Dabei wird ausschließlich mit den 
+Ausgaben der Tools gearbeitet, ohne sie zu verändern oder zu verbessern. Stattdessen wird mithilfe von Eingaben 
+versucht, die Tools zu korrigieren. Die zu erstellenden Dokumente und die Anforderungen an das Projekt orientieren 
+sich an den Vorgaben des Moduls ``Secure Software Engineering'' an der Universität der Bundeswehr München, in der 
+Fakultät ``ETTI6'' am Institut für ``Software Engineering''. Die verantwortliche Professorin ist Prof. Dr. rer. nat. Andrea Baumann, 
+die mit ihren Kontaktdaten im Literaturverzeichnis aufgeführt ist.
 
-Der Aufbau der Arbeit sieht dabei wie folgt aus: Zu beginn kommt eine Einführung in die Historie der drei Tools und anschließend eine Beschreibung, welche 
-Dokumente in einem Software Engineering Prozess erstellt werden müssen und welche Inhalte diese beinhalten. Danach folgt eine Beschreibung, wie die LLM Tools 
-bei der erstellung unterstützen können. Dieses Kapitel bildet zeitgleich die "Aufgabenstellung" für die Analyse dar. Die Analyse folgt dann anschließend im 
-Kapitel "??????" wo auf die Ausgaben und die Fehler darin eingegangen wird. Zu guter letzt folgt ein abschließend Kapitel mit einer Zusammenfassung der Ergebnisse,
-einem Abschnitt wo ich die Kritik an der Arbeit und meiner Herangehensweise übe und was man besser machen kann und zuletzt einen Ausblick auf offene Punkte gebe.
+Die Arbeit ist wie folgt strukturiert: Zunächst wird eine Einführung in die Historie der drei betrachteten Tools gegeben. 
+Anschließend erfolgt eine detaillierte Beschreibung der in einem Software-Engineering-Prozess typischerweise erstellten 
+Dokumente, einschließlich ihrer Inhalte und ihres Zwecks. Darauf aufbauend wird untersucht, wie die eingesetzten Large 
+Language Models (LLMs) die Erstellung dieser Dokumente unterstützen können. Dieses Kapitel formuliert zugleich die 
+zentrale Fragestellung der Analyse.\\
+Im folgenden Kapitel werden die Ergebnisse der praktischen Anwendung der LLMs präsentiert und vergleichend betrachtet. 
+Dabei wird insbesondere auf die Qualität der generierten Inhalte sowie auf mögliche Fehler und Limitationen eingegangen.\\
+Die Arbeit schließt mit einer Zusammenfassung der wichtigsten Erkenntnisse ab. Zudem werden kritisch die Stärken und 
+Schwächen der durchgeführten Analyse reflektiert sowie mögliche Ansatzpunkte für zukünftige Forschungsarbeiten aufgezeigt.
+
+Die erstellten Ausgaben, welche im Kapitel 4 analysiert werden, befinden sich auf dem beigelegten USB-Stick 
+in Form von PDF-Dokumenten \autoref{BeigelegteDateien}. In der Überschrift der Dokumente steht jeweils, 
+um was es sich dabei handelt und dann in runden klammern das Tool das für die Erstellung verwendet 
+wurde und eine Zahl, die wievielte Eingabe dies zu diesem Thema war. In den einzelnen Abschnitten wird als erstes der 
+Prompt niedergeschrieben, der für die Erstellung der Ausgabe genutzt wurde und anschließend folgt die Ausgabe. In der Analyse wird immer auf 
+das Kapitel innerhalb eines Dokuments und die Seite verwiesen. Der Verweis bezieht sich dabei immer auf 
+den äquivalenten Abschnitt. Als Beispiel: Wenn auf einen Inhalt im Abschnitt ``Anforderungsspezifikation'' verwiesen wird, 
+ist dieser in dem Dokument ``04\_Anforderungsspezifikation.pdf'' zu finden. Zu beginn jedes Unterkapitels wird aber auch nochmal 
+erwähnt, in welchem Dokument sich die Ausgaben befinden.
+
+Im Rahmen der Arbeit wurde eine Tabelle erstellt, die als Übersicht dient. In den einzelnen Kapiteln wird diese Tabelle 
+schrittweise aufgedeckt, um einen schnellen Überblick über die Ergebnisse des jeweiligen Kapitels zu liefern.

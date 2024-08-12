@@ -1,65 +1,68 @@
 
 \chapter{Grundlagen} \index{Grundlagen}
 
-Im ersten Kapitel wird erläutert, was LLM Tools sind, wie sie trainiert werden und wie sie funktionieren. Anschließend 
-werden die einzelnen Tools, die in dieser Arbeit betrachtet werden, vorgestellt und deren Entwicklung beschrieben.\\
+Im ersten Kapitel wird erläutert, was LLM-Tools sind, wie sie trainiert werden und wie sie funktionieren. 
+Anschließend werden die einzelnen Tools, die in dieser Arbeit betrachtet werden, vorgestellt und deren 
+Entwicklung beschrieben.
 
-Im zweiten Teil des Kapitels wird auf die einzelnen Dokumente, die während des Software Engineering Prozesses 
-erstellt werden, näher eingegangen und es wird festgelegt, welche Dokumente und Abschnitte in der Analyse 
-betrachtet werden. Dadurch, dass sich die Arbeit bei der Erstellung der Dokumente an das Modul ``Secure 
-Software Engineering'' orientiert, werden einige Kapitel und Abschnitte nicht betrachtet. Daher wird bei 
-der Beschreibung der Dokumente ohne Begründung erwähnt, dass diese im folgenden nicht richtig betrachtet werden.
-Der Vollständigkeit wegen, werden diese aber trotzdem hier im Grundlagen Kapitel aufgelistet.
+Im zweiten Teil des Kapitels wird auf die einzelnen Dokumente, die während des Software-Engineering-Prozesses 
+erstellt werden, näher eingegangen und es wird festgelegt, welche Dokumente und Abschnitte in der Analyse betrachtet 
+werden. Da sich die Arbeit bei der Erstellung der Dokumente an das Modul ``Secure Software Engineering'' orientiert, 
+werden einige Kapitel und Abschnitte nicht betrachtet. Daher wird bei der Beschreibung der entsprechenden Abschnitte ohne 
+weitere Begründung erwähnt, dass diese im Folgenden nicht weiter betrachtet werden. Der Vollständigkeit halber werden 
+diese aber trotzdem hier im Grundlagenkapitel aufgelistet.
 
 \section{LLM Tools} \index{LLM Tools} \label{LLM Tools}
 
 Unter LLM-Tools versteht man Sprachmodelle, die auf einem Large Language Model (LLM) basieren. Ein LLM ist ein 
-Deep-Learning-Algorithmus, der mit sehr großen Datensätzen trainiert wird. Diese Modelle finden häufig Anwendung im 
-Bereich des Natural Language Processing (NLP), wo sie verwendet werden, um Abfragen in natürlicher Sprache zu beantworten 
-oder Ergebnisse zu liefern. LLMs können neue Inhalte verstehen, zusammenfassen, generieren und vorhersagen. Durch das Training 
-sammeln LLMs Milliarden von Parametern, bei denen es sich um Variablen handelt, die im Modell angepasst werden, um neue 
-Inhalte abzuleiten.\\
+Deep-Learning-Algorithmus, der mit sehr großen Datensätzen trainiert wird. Diese Modelle finden häufig Anwendung 
+im Bereich des Natural Language Processing (NLP), wo sie verwendet werden, um Abfragen in natürlicher Sprache zu 
+beantworten oder Ergebnisse zu liefern. LLMs können neue Inhalte verstehen, zusammenfassen, generieren und vorhersagen. 
+Durch das Training sammeln LLMs Milliarden von Parametern, bei denen es sich um Variablen handelt, die im Modell angepasst 
+werden, um neue Inhalte abzuleiten.
+
 LLMs basieren auf einem Transformer-Modell, das Eingaben in Token umwandelt und dann gleichzeitig mathematische 
 Gleichungen ausführt, um Beziehungen zwischen den Token zu ermitteln. Dadurch kann der Computer Muster erkennen, 
 die auch ein Mensch wahrnehmen würde, wenn ihm die gleiche Frage gestellt wird. Zudem verwenden Transformer-Modelle 
-Selbstaufmerksamkeitsmechanismen, die es dem Modell ermöglichen, schneller zu lernen als herkömmliche Modelle. 
-Somit kann das Transformer-Modell verschiedene Teile der Sequenz oder den gesamten Kontext eines Satzes berücksichtigen, 
-um Vorhersagen zu generieren.
+Selbstaufmerksamkeitsmechanismen, die es dem Modell ermöglichen, schneller zu lernen als herkömmliche Modelle. Somit 
+kann das Transformer-Modell verschiedene Teile der Sequenz oder den gesamten Kontext eines Satzes berücksichtigen, um 
+Vorhersagen zu generieren.
 
 Grundsätzlich bestehen LLMs aus vier neuronalen Netzwerkschichten: der wiederkehrenden Ebene, der Einbettungsebene, 
-der Feedforward-Ebene und der Aufmerksamkeitsebene. Diese Schichten arbeiten zusammen, um den Eingabetext zu verarbeiten 
-und Ausgabeinhalte zu generieren.\\
-Die wiederkehrende Ebene dient dazu, die Wörter des Eingabetextes der Reihe nach zu interpretieren und die Beziehungen 
-zwischen den Wörtern in einem Satz zu erfassen. Die Einbettungsebene erfasst die semantische und syntaktische Bedeutung 
-der Eingabe, sodass das Modell den Kontext verstehen kann. Die Feedforward-Schicht besteht aus mehreren vollständig 
-verbundenen Schichten, die die Eingabeeinbettungen transformieren. Dadurch ermöglichen diese Schichten dem Modell, 
-Abstraktionen auf höherer Ebene zu verstehen und somit die Absicht des Benutzers mit der Texteingabe zu erfassen. Die 
-Aufmerksamkeitsebene ermöglicht es dem Sprachmodell, sich auf einzelne Teile des Eingabetextes zu konzentrieren, die für 
-die Aufgabe relevant sind, und dadurch die genausten Ausgaben zu generieren.
+der Feedforward-Ebene und der Aufmerksamkeitsebene. Diese Schichten arbeiten zusammen, um den Eingabetext zu 
+verarbeiten und Ausgabeinhalte zu generieren.\\
+Die wiederkehrende Ebene dient dazu, die Wörter des Eingabetextes der Reihe nach zu interpretieren und die 
+Beziehungen zwischen den Wörtern in einem Satz zu erfassen. Die Einbettungsebene erfasst die semantische und 
+syntaktische Bedeutung der Eingabe, sodass das Modell den Kontext verstehen kann. Die Feedforward-Schicht besteht 
+aus mehreren vollständig verbundenen Schichten, die die Eingabeeinbettungen transformieren. Dadurch ermöglichen 
+diese Schichten dem Modell, Abstraktionen auf höherer Ebene zu verstehen und somit die Absicht des Benutzers mit 
+der Texteingabe zu erfassen. Die Aufmerksamkeitsebene ermöglicht es dem Sprachmodell, sich auf einzelne Teile des 
+Eingabetextes zu konzentrieren, die für die Aufgabe relevant sind, und dadurch die genausten Ausgaben zu generieren.
 
 Damit ein großes Sprachmodell Texteingaben empfangen und eine Ausgabevorhersage generieren kann, muss es zunächst 
 allgemein geschult und anschließend feinabgestimmt werden, um spezifische Aufgaben ausführen zu können. Für die 
-Schulung werden riesige Datenmengen im Petabyte-Bereich benötigt. Das Training verläuft mehrstufig und beginnt in 
-der Regel mit einem unbeaufsichtigten Lernansatz, bei dem das Modell mit unstrukturierten und unbeschrifteten Daten 
-trainiert wird, da diese in größeren Mengen verfügbar sind. In dieser Phase leitet das Modell Beziehungen zwischen 
-verschiedenen Wörtern und Konzepten ab.\\
-Anschließend erfolgt die Schulung und Feinabstimmung durch eine Form des selbstüberwachten Lernens. Dabei wird eine 
-Datenkennzeichnung durchgeführt, durch die das Modell verschiedene Konzepte besser und genauer identifizieren kann. 
-Im nächsten Schritt durchläuft das LLM den transformatorischen neuronalen Netzwerkprozess im Rahmen des Deep Learning. 
-Die Transformer-Modellarchitektur ermöglicht es dem LLM, mittels eines Selbstaufmerksamkeitsmechanismus Beziehungen 
-und Verbindungen zwischen Wörtern und Konzepten zu erkennen, indem bestimmten Elementen (Token) Bewertungen zugewiesen 
-werden, um die Beziehungen festzulegen.
+Schulung werden riesige Datenmengen im Petabyte-Bereich benötigt. Das Training verläuft mehrstufig und beginnt 
+in der Regel mit einem unbeaufsichtigten Lernansatz, bei dem das Modell mit unstrukturierten und unbeschrifteten 
+Daten trainiert wird, da diese in größeren Mengen verfügbar sind. In dieser Phase leitet das Modell Beziehungen 
+zwischen verschiedenen Wörtern und Konzepten ab.\\
+Anschließend erfolgt die Schulung und Feinabstimmung durch eine Form des selbstüberwachten Lernens. Dabei wird 
+eine Datenkennzeichnung durchgeführt, durch die das Modell verschiedene Konzepte besser und genauer identifizieren 
+kann. Im nächsten Schritt durchläuft das LLM den Transformationsprozess im Rahmen des Deep Learning. Die 
+Transformer-Modellarchitektur ermöglicht es dem LLM, mittels eines Selbstaufmerksamkeitsmechanismus Beziehungen 
+und Verbindungen zwischen Wörtern und Konzepten zu erkennen, indem bestimmten Elementen (Token) Bewertungen 
+zugewiesen werden, um die Beziehungen festzulegen.
 
-Entscheidend über die Leistungsfähigkeit und die Qualität des Sprachmodells sind die Datensätze, welche zum trainieren
-benutzt werden. Im folgenden wird auf die drei unterschiedliche LLM-Tools eingeganden, welche in dieser Arbeit näher 
-untersucht werden \cite{GrundlagenLLM}. 
+
+Entscheidend für die Leistungsfähigkeit und die Qualität eines Sprachmodells sind die Datensätze, die zum 
+Trainieren verwendet werden. Daher wird im weiteren mit drei unterschiedlichen LLM Tools gearbeitet, auf die 
+in den folgenden Abschnitten einzeln eingegangen wird \cite{GrundlagenLLM}. 
 
 \subsection{ChatGPT} \index{ChatGPT} \label{ChatGPT}
 
 
 ChatGPT wurde von OpenAI am 30. November 2022 veröffentlicht und entwickelte sich aufgrund seiner fortschrittlichen 
 generativen KI-Fähigkeiten rasch zu einer internationalen Sensation. Wenn man ChatGPT fragt, ob es einen Infotext 
-zu sich selbst erstellen kann, erhält man die Antwort in \autoref{InfotextChatGPT}
+zu sich selbst erstellen kann, erhält man die Antwort in \autoref{InfotextChatGPT}.
 
 \begin{prompt} 
     \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
@@ -274,18 +277,19 @@ Next ist ein Prototyp-Modell für erhöhte Kürze und Small arbeitet schnell und
 
 \begin{figure}
     \centering
-    \includegraphics{pictures/Kapitel2Tabelle.PNG}
+    \includegraphics{pictures/TabelleKap2.PNG}
     \caption{Dokumente im Software Engineering}
     \label{Dokumente Software Engineering}
 \end{figure}
 
 Software-Engineering ist eine technische Disziplin, die sich umfassend mit der Erstellung von Software beschäftigt, 
-beginnend bei der Konzeption, über den Betrieb, bis hin zur Wartung. Die wesentlichen Aktivitäten im Software-Engineering 
-umfassen die Softwarespezifikation, -entwicklung, -validierung und -weiterentwicklung \cite{Sommerville10}. Während des Prozesses werden 
-mehrere Dokumente erstellt und im Verlauf angepasst. Diese umfassen Besprechungsprotokolle, eine Risikoliste,
-ein Projekthandbuch, eine Anforderungsspezifikation, ein Architekturdokument und eine Testspezifikation. In der 
-\autoref{Dokumente Software Engineering} sieht man welche Inhalte die einzelnen Dokumente umfassen. Außerdem wird im 
-folgenden zu jedem Dokument und dessen Inhalte ein Überblick gegeben.
+beginnend bei der Konzeption, über den Betrieb, bis hin zur Wartung. Die wesentlichen Aktivitäten im 
+Software-Engineering umfassen die Softwarespezifikation, -entwicklung, -validierung und -weiterentwicklung 
+\cite{Sommerville10}. Während des Prozesses werden mehrere Dokumente erstellt und im Verlauf angepasst. 
+Diese umfassen Besprechungsprotokolle, eine Risikoliste, ein Projekthandbuch, eine Anforderungsspezifikation, 
+ein Architekturdokument und eine Testspezifikation. In der \autoref{Dokumente Software Engineering} sieht man, 
+welche Inhalte die einzelnen Dokumente umfassen. Diese werden im Folgenden etwas genauer beschrieben, um einen 
+Überblick über die Dokumente zu vermitteln.
 
 \subsection{Besprechungsprotokoll} \index{Besprechungsprotokoll} \label{Besprechungsprotokoll}
 
@@ -330,36 +334,37 @@ Ein nachfolgendes Kapitel verweist auf die Risikoliste.
 Daraufhin folgt ein Kapitel zur Projektorganisation, das die Teamstruktur und die Kommunikationswege beschreibt. 
 Dieses Kapitel beginnt mit dem Teamaufbau, in dem die Aufgabenverteilung und die E-Mail-Adressen der einzelnen 
 Teammitglieder vermerkt sind. Anschließend wird die Zusammenarbeit mit den Kunden definiert. Danach folgt ein 
-Abschnitt über regelmäßige Pflichtbesprechungen für die Teammitglieder. 
+Abschnitt über regelmäßige Pflichtbesprechungen für die Teammitglieder.
 
-Grundsätzlichen würden hier noch drei Abschnitte kommen, welche hier allerdings nicht weiter betrachtet werden:
-Zum einen wird beschrieben, ob das Projekt besondere Softwarelizenzen benötigt. Nachfolgend gibt es ein 
-Abschnitt zu Sicherheit wo beschrieben wird, wie mit Sicherheitsaspekten wie Backup, Zugangskontrollen 
-und Verschlüsselungen umgegangen wird. Als letztes gibt es ein Abschnitt für Sonstige Spielregeln.
+Grundsätzlich würden hier noch drei Abschnitte folgen, die jedoch nicht weiter betrachtet werden: Zum einen 
+wird beschrieben, ob das Projekt besondere Softwarelizenzen benötigt. Danach gibt es einen Abschnitt zur 
+Sicherheit, in dem beschrieben wird, wie mit Sicherheitsaspekten wie Backup, Zugangskontrollen und 
+Verschlüsselungen umgegangen wird. Als Letztes gibt es einen Abschnitt für sonstige Spielregeln.
 
+Nun würde ein Kapitel zum Thema ``Planungen'' folgen. Darauf wird jedoch im Modul ``Secure Software Engineering'' 
+aufgrund der kurzen Laufzeit des Projekts verzichtet. Daher wird dies auch im Folgenden der Arbeit nicht weiter 
+betrachtet.
 
-Nun würde ein Kapitel zum Thema ``Planungen'' folgen. Darauf wird jedoch, im Modul Secure Software Engineering, 
-aufgrund der kurzen Laufzeit des Projekts verzichtet. Daher wird dies auch im folgenden der Arbeit nicht weiter 
-betrachtet.\\
-Das Kapitel würde sich der Planung widmen und behandelt verschiedene Planungsaspekte. Der erste Abschnitt befasst 
-sich mit dem Projektplan. Hier werden die festgelegten Meilensteine beschrieben, einschließlich der Startzeiten der 
-einzelnen Aktivitäten, der parallelen Abläufe, der Abschlusszeiten der verschiedenen Tätigkeiten, der 
-Entstehungszeitpunkte der Produkte und der möglichen Entscheidungspunkte. Der zweite 
-Abschnitt geht über die Restaufwandsschätzung. Bei diesem wird wöchentlich eine Schätzung abgegeben, damit der Aufwand nicht
-aus dem Ruder läuft. Dafür gibt es einen Verweis auf ein externes Dokument.
+Das Kapitel würde sich der Planung widmen und verschiedene Planungsaspekte behandeln. Der erste Abschnitt 
+befasst sich mit dem Projektplan. Hier werden die festgelegten Meilensteine beschrieben, einschließlich der 
+Startzeiten der einzelnen Aktivitäten, der parallelen Abläufe, der Abschlusszeiten der verschiedenen 
+Tätigkeiten, der Entstehungszeitpunkte der Produkte und der möglichen Entscheidungspunkte. Der zweite 
+Abschnitt behandelt die Restaufwandsschätzung. Hier wird wöchentlich eine Schätzung abgegeben, damit der 
+Aufwand nicht aus dem Ruder läuft. Dafür gibt es einen Verweis auf ein externes Dokument.
 
 Auch die folgenden beiden Kapitel zum Thema Qualitätssicherung und Datenschutz entfallen hier.
 
-Anschließend folgt ein Kapitel zur Dokumentation und Ablage, in dem beschrieben wird, wie und wo Produkte bzw. 
-Dokumente abgelegt werden. Es beginnt mit einem Abschnitt zum Dokumenteneingang und -ausgang, in dem festgelegt 
-wird, wie mit extern eingehenden Informationen umgegangen wird und wie ausgehende Informationen protokolliert 
-werden. Im zweiten Abschnitt wird die Ablage und Archivierung geregelt, wobei erläutert wird, wie die Daten im 
-Projektarchiv zu organisieren sind und in welchen Verzeichnissen die jeweiligen Daten abgelegt werden.
+Anschließend folgt ein Kapitel zur Dokumentation und Ablage, in dem beschrieben wird, wie und wo Produkte 
+bzw. Dokumente abgelegt werden. Es beginnt mit einem Abschnitt zum Dokumenteneingang und -ausgang, in dem 
+festgelegt wird, wie mit extern eingehenden Informationen umgegangen wird und wie ausgehende Informationen 
+protokolliert werden. Im zweiten Abschnitt wird die Ablage und Archivierung geregelt, wobei erläutert wird, 
+wie die Daten im Projektarchiv zu organisieren sind und in welchen Verzeichnissen die jeweiligen Daten 
+abgelegt werden.
 
-Die letzten beiden Kapitel werden ebenfalls nicht weiter betrachtet:\\
-Als vorletztes Kapitel wird in der Referenzliste auf alle sonstigen existierenden Dokumente verwiesen, die mit der 
-Projektabwicklung in Zusammenhang stehen.\\
-Zuletzt wird in einem Abkürzungsverzeichnis und Glossar spezielle Abkürzungen und wichtige Begriffe erklärt. 
+Die letzten beiden Kapitel werden ebenfalls nicht weiter betrachtet:
+Als vorletztes Kapitel wird in der Referenzliste auf alle sonstigen existierenden Dokumente verwiesen, 
+die mit der Projektabwicklung in Zusammenhang stehen.\\
+Zuletzt werden in einem Abkürzungsverzeichnis und Glossar spezielle Abkürzungen und wichtige Begriffe erklärt.
 
 \subsection{Risikoliste} \index{Risikoliste} \label{Risikoliste}
 
@@ -426,7 +431,7 @@ Systems für die gesamtwirtschaftlichen oder strategischen Ziele des Unternehmen
 Ressourcen sowie Definitionen von Begriffen und Abkürzungen. Eine Übersicht des Dokuments schließt die Einleitung ab, 
 welche allerdings nicht weiter betrachtet wird.
 
-Anschließend werden die Benutzeranforderungen definiert, welches aber ebenfalls nicht betrachtet wird. 
+Anschließend werden die Benutzeranforderungen definiert, welche aber ebenfalls nicht betrachtet werden. 
 Diese enthalten eine Beschreibung der für den Benutzer bereitgestellten Dienste und der nichtfunktionalen 
 Anforderungen in verständlicher Sprache, Diagrammen oder anderen für den Kunden nachvollziehbaren Notationen.
 
@@ -435,7 +440,7 @@ in die Systemlandschaft des Kunden beschreibt.
 
 Danach folgt das fachliche Datenmodell, das aus Entitätentypen besteht. Eine Entität ist ein individuelles 
 und identifizierbares Exemplar von Dingen, Personen oder Begriffen der realen oder Vorstellungswelt, beschrieben 
-durch ihre Eigenschaften. Entitätentypen besitzen Attribute und Beziehungen, jedoch keine Fähigkeiten. Das fachliche 
+durch seine Eigenschaften. Entitätentypen besitzen Attribute und Beziehungen, jedoch keine Fähigkeiten. Das fachliche 
 Datenmodell wird mit Hilfe eines UML Klassendiagramms mit ergänzenden Beschreibungen bzw. Einschränkungen spezifiziert.
 Dieses enthält alle Entitätentypen mit deren Eigenschaften, Beziehungen und Einschränkungen.
 
@@ -443,12 +448,6 @@ Anschließend folgen Anwendungsfälle, die die funktionalen Anforderungen an das
 Ein Anwendungsfalldiagramm gibt eine Übersicht über alle Anwendungsfälle. Ein Anwendungsfall besteht aus mehreren 
 Szenarien, die konkrete Abläufe beschreiben, wie das System genutzt werden kann. Anwendungsfälle können textuell 
 beschrieben oder durch Aktivitäts- oder Sequenzdiagramme ergänzt werden.\\
-Die Beschreibung eines Anwendungsfalls hat mehrere Bestandteile: Der Titel dient als eindeutige Identifikation, die Kurzbeschreibung 
-definiert das Thema, und das Ziel legt fest, was erreicht werden soll. Akteure beschreiben, wer den Anwendungsfall 
-auslöst, und der Auslöser definiert den Grund für die Ausführung. Die Vorbedingung legt fest, welche Bedingungen zu 
-Beginn vorherrschen müssen, das Szenario beschreibt den Ablauf, und das Ergebnis erläutert die gelieferten 
-Informationen. Die Häufigkeit gibt eine grobe Schätzung, wie oft der Anwendungsfall ausgeführt wird, und 
-nicht-funktionale Anforderungen werden ebenfalls beschrieben. Schließlich können Bemerkungen hinzugefügt werden.\\
 In der Anforderungsspezifikation gibt es dazu eine Übersicht aller Anwendungsfälle im UML Use-Case-Diagramm, welches 
 alle Akteure, Anwendungsfälle, Beziehungen zwischen Akteur und Anwendungsfällen und eventuell include- und extend-Beziehungen
 zwischen den Anwendungsfällen darstellt. Ebenfalls gibt es eine Spezifikation jedes einzelnen Anwendungsfalls mit Hilfe 
@@ -457,17 +456,17 @@ die Aufrufhäufigkeit, die Vorbedingung und den Auslöser sowie eine Dokumentati
 
 Neben den Anwendungsfällen müssen auch die Benutzungsschnittstelle und die Dialoge beschrieben werden, über die die Anwendungsfälle 
 ausgeführt werden. Eine Dialogbeschreibung enthält alle Details, einschließlich der Feldlängen und der zugeordneten 
-Aktionen für jeden Button. Die Benutzungsschnittstelle stellt dar, wie die Dialoge miteinander verbunden sin.\\
+Aktionen für jeden Button. Die Benutzungsschnittstelle stellt dar, wie die Dialoge miteinander verbunden sind.\\
 Im Dokument werden alle Dialoge mit Bildern und strukturierter und detaillierter Beschreibung der Bestandteile spezifiziert.
-Die Benutzungsschnittstelle kann eine beliebige Darstellungform sein.
+Die Benutzungsschnittstelle kann eine beliebige Darstellungsform sein.
 
-Zum Schluss werden die nichtfunktionalen Anforderungen in natürlicher Sprache inklusiver Abnahmebeschreibung aufgelistet.
+Zum Schluss werden die nichtfunktionalen Anforderungen in natürlicher Sprache inklusiver Testbeschreibung aufgelistet.
 
 \subsection{Architekturdokument} \index{Architekturdokument} \label{Architekturdokument}
 
 Das Architekturdokument, auch bekannt als Softwarearchitektur-Dokument, beschreibt die Umsetzung des zu entwickelnden 
-Systems. Die Anforderungsspezifikation [\ref{Anforderungsspezifikation}] legt fest, „was“ das System leisten soll, 
-jedoch nicht „wie“ dies erreicht wird. Diese Umsetzung wird im Architekturdokument detailliert beschrieben. In der 
+Systems. Die Anforderungsspezifikation [\ref{Anforderungsspezifikation}] legt fest, ``was'' das System leisten soll, 
+jedoch nicht ``wie'' dies erreicht wird. Diese Umsetzung wird im Architekturdokument detailliert beschrieben. In der 
 Praxis sind die Anforderungsspezifikation und das Architekturdokument eng miteinander verzahnt.
 
 Die Zielgruppe des Architekturdokuments umfasst hauptsächlich Softwareentwickler und Testmanager. Softwareentwickler 
@@ -475,8 +474,8 @@ nutzen das Dokument, um zu verstehen, wie das in der Anforderungsspezifikation b
 soll. Zusammen mit der Anforderungsspezifikation bildet es die Grundlage für die Implementierung. Testmanager verwenden 
 das Architekturdokument, um Komponententests für das System zu entwickeln.
 
-Der Inhalt des Architekturdokuments gliedert sich in drei Hauptabschnitte: die Technische Architektur, Anwendungsarchitektur 
-und IT-Konzept.\\
+Das Architekturdokument besteht aus drei Hauptabschnitten: der Technischen Architektur, der Anwendungsarchitektur 
+und das IT-Konzept:
 Die Technische Architektur umfasst zwei Hauptkomponenten. Die Technische Infrastruktur (TI-Architektur) beschreibt 
 die Hardware- und Produktanforderungen.
 Der andere Teil ist die T-Architektur, also die Technische Struktur, und beschreibt die Technischen Lösungen und Strukturen.
@@ -485,7 +484,7 @@ Beide Komponenten werden durch erklärende Texte und Grafiken dargestellt.\\
 Die Anwendungsarchitektur besteht ebenfalls aus zwei Hauptteilen: dem Komponentenmodell und dem Datenmodell. Das 
 Komponentenmodell beschreibt die fachliche Struktur der Lösung auf einer groben Ebene mittels eines 
 UML-Komponenten-Diagramms. Das Datenmodell hingegen beschreibt die Struktur der persistenten Daten und wird 
-entweder durch ein UML-Komponenten-Diagramm oder Entity-Relationship-Diagramme dargestellt. Aber auch dieses wird hier 
+entweder durch ein UML-Komponenten-Diagramm oder Entity-Relationship-Diagramm dargestellt. Aber auch dieses wird hier 
 nicht weiter betrachtet.\\
 Das IT-Konzept enthält die detaillierte Schnittstellenbeschreibung. Diese beschreibt die Semantik und Syntax der 
 Komponentenschnittstellen ausführlich und wird durch Code oder Code-Dokumentation dokumentiert.\\ 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  30 JUL 2024 21:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  11 AUG 2024 14:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1715,7 +1715,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
- (./thesis.aux (./source/000_title.aux) (./source/001_declaration.aux) (./source/002_abstract.aux) (./source/100_introduction.aux) (./source/200_basics.aux) (./source/300_usage.aux) (./source/400_comparison.aux) (./source/500_Problems.aux) (./source/600_Conclusion.aux) (./source/801_appendix.aux))
+ (./thesis.aux (./source/000_title.aux) (./source/001_declaration.aux) (./source/002_abstract.aux) (./source/100_introduction.aux) (./source/200_basics.aux) (./source/300_usage.aux) (./source/400_comparison.aux) (./source/500_Conclusion.aux) (./source/801_appendix.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
@@ -2026,17 +2026,17 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface.
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 6.
-) [1
+(Font)              scaled to size 13.67995pt on input line 13.
+[1
 
 
 
 
 
-]
+] [2]) [3]
 \openout2 = `source/200_basics.aux'.
 
- (./source/200_basics.tex [2
+ (./source/200_basics.tex [4
 
 
 
@@ -2044,70 +2044,63 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
 ]
 chapter 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
-
- []
-
-[3]
+[5]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 57.
+(Font)              scaled to size 11.39996pt on input line 60.
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-Package hyperref Info: bookmark level for unknown prompt defaults to 0 on input line 88.
-[4] [5]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 132.
+Package hyperref Info: bookmark level for unknown prompt defaults to 0 on input line 91.
+[6] [7]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 135.
  (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 132.
+(Font)              scaled to size 10.40245pt on input line 135.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 2253) in paragraph at lines 244--246
+Underfull \hbox (badness 2253) in paragraph at lines 247--249
 []\T1/phv/b/n/10.95 (+20) Kosteneffizienz: \T1/phv/m/n/10.95 (+20) Le Chat kann als kos-tenef-fi-zi-en-te Al-ter-na-ti-ve zu mensch-li-chen
  []
 
-[6] [7]
-<./images/pictures/Kapitel2Tabelle.PNG, id=274, 172.01765pt x 378.66469pt>
-File: ./images/pictures/Kapitel2Tabelle.PNG Graphic file (type png)
-<use ./images/pictures/Kapitel2Tabelle.PNG>
-Package pdftex.def Info: ./images/pictures/Kapitel2Tabelle.PNG  used on input line 277.
-(pdftex.def)             Requested size: 172.01723pt x 378.66376pt.
+[8] [9]
+<./images/pictures/TabelleKap2.PNG, id=272, 368.1253pt x 375.27704pt>
+File: ./images/pictures/TabelleKap2.PNG Graphic file (type png)
+<use ./images/pictures/TabelleKap2.PNG>
+Package pdftex.def Info: ./images/pictures/TabelleKap2.PNG  used on input line 280.
+(pdftex.def)             Requested size: 368.1244pt x 375.27612pt.
 
 Underfull \vbox (badness 4765) has occurred while \output is active []
 
- [8] [9] [10 <./images/pictures/Kapitel2Tabelle.PNG>] [11] [12] [13] [14]
-Overfull \hbox (0.3939pt too wide) in paragraph at lines 478--494
-\T1/phv/m/n/10.95 (-20) Die Tech-ni-sche Ar-chi-tek-tur um-fasst zwei Haupt-kom-po-nen-ten. Die Tech-ni-sche In-fra-struk-tur (TI-Architektur)
- []
-
-[15]) [16]
+ [10] [11] [12 <./images/pictures/TabelleKap2.PNG>] [13] [14] [15] [16] [17]) [18]
 \openout2 = `source/300_usage.aux'.
 
  (./source/300_usage.tex
 chapter 3.
-<./images/pictures/Kapitel3Tabelle.PNG, id=321, 344.78813pt x 379.04109pt>
-File: ./images/pictures/Kapitel3Tabelle.PNG Graphic file (type png)
-<use ./images/pictures/Kapitel3Tabelle.PNG>
-Package pdftex.def Info: ./images/pictures/Kapitel3Tabelle.PNG  used on input line 5.
-(pdftex.def)             Requested size: 344.78728pt x 379.04015pt.
-[17
+<./images/pictures/TabelleKap3.PNG, id=320, 768.62157pt x 374.90062pt>
+File: ./images/pictures/TabelleKap3.PNG Graphic file (type png)
+<use ./images/pictures/TabelleKap3.PNG>
+Package pdftex.def Info: ./images/pictures/TabelleKap3.PNG  used on input line 5.
+(pdftex.def)             Requested size: 469.47055pt x 228.99223pt.
+[19
 
 
 
 
 
-] [18 <./images/pictures/Kapitel3Tabelle.PNG>] [19] [20]) [21]
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20 <./images/pictures/TabelleKap3.PNG>] [21] [22]) [23]
 \openout2 = `source/400_comparison.aux'.
 
- (./source/400_comparison.tex [22
+ (./source/400_comparison.tex [24
 
 
 
@@ -2115,28 +2108,38 @@ Package pdftex.def Info: ./images/pictures/Kapitel3Tabelle.PNG  used on input li
 
 ]
 chapter 4.
-[23] [24]
+<./images/pictures/TabelleKap4.PNG, id=356, 773.51485pt x 374.90062pt>
+File: ./images/pictures/TabelleKap4.PNG Graphic file (type png)
+<use ./images/pictures/TabelleKap4.PNG>
+Package pdftex.def Info: ./images/pictures/TabelleKap4.PNG  used on input line 12.
+(pdftex.def)             Requested size: 469.47055pt x 227.53922pt.
+[25] [26 <./images/pictures/TabelleKap4.PNG>] [27] [28] [29]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25] [26] [27] [28] [29] [30] [31] [32]
+ [30] [31] [32] [33] [34] [35]
+Overfull \hbox (1.58919pt too wide) in paragraph at lines 425--455
+\T1/phv/m/n/10.95 (-20) ``Spieler'' auf einmal eine ``Spielfigur'' und einem ``Spielstand'' sind ebenfalls nochmal mehrere ``Spielfiguren''
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
+ [36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
+ [37] [38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35] [36] [37] [38] [39] [40]
+ [39] [40]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41] [42] [43] [44] [45] [46] [47] [48]
+ [41] [42] [43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49] [50] [51] [52]) [53]
-\openout2 = `source/500_Problems.aux'.
+ [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54]) [55]
+\openout2 = `source/500_Conclusion.aux'.
 
- (./source/500_Problems.tex [54
+ (./source/500_Conclusion.tex [56
 
 
 
@@ -2144,18 +2147,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 chapter 5.
-) [55]
-\openout2 = `source/600_Conclusion.aux'.
-
- (./source/600_Conclusion.tex [56
-
-
-
-
-
-]
-chapter 6.
-[57]) [58]
+[57] [58] [59]) [60]
 \openout2 = `source/801_appendix.aux'.
 
  (./source/801_appendix.tex
@@ -2279,6 +2271,7 @@ chapter without number
 
 
 
+
 ]) [14
 
 
@@ -2296,7 +2289,7 @@ chapter without number
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 87.
 See the caption package documentation for explanation.
 
-(./thesis.aux (./source/000_title.aux) (./source/001_declaration.aux) (./source/002_abstract.aux) (./source/100_introduction.aux) (./source/200_basics.aux) (./source/300_usage.aux) (./source/400_comparison.aux) (./source/500_Problems.aux) (./source/600_Conclusion.aux) (./source/801_appendix.aux))
+(./thesis.aux (./source/000_title.aux) (./source/001_declaration.aux) (./source/002_abstract.aux) (./source/100_introduction.aux) (./source/200_basics.aux) (./source/300_usage.aux) (./source/400_comparison.aux) (./source/500_Conclusion.aux) (./source/801_appendix.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
@@ -2308,18 +2301,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72298 strings out of 474049
- 1656892 string characters out of 5746277
- 2922525 words of memory out of 5000000
- 93098 multiletter control sequences out of 15000+600000
- 622968 words of font info for 236 fonts, out of 8000000 for 9000
+ 72256 strings out of 474049
+ 1655856 string characters out of 5746277
+ 2919204 words of memory out of 5000000
+ 93058 multiletter control sequences out of 15000+600000
+ 623085 words of font info for 239 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,22n,120p,10948b,2857s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (82 pages, 372947 bytes).
+Output written on thesis.pdf (84 pages, 602576 bytes).
 PDF statistics:
- 851 PDF objects out of 1000 (max. 8388607)
- 716 compressed objects within 8 object streams
+ 837 PDF objects out of 1000 (max. 8388607)
+ 699 compressed objects within 7 object streams
  164 named destinations out of 1000 (max. 500000)
- 53257 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 53230 words of extra memory for PDF output out of 61914 (max. 10000000)
 

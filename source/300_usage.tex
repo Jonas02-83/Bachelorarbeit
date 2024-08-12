@@ -2,33 +2,34 @@
 
 \begin{figure}
     \centering
-    \includegraphics{pictures/Kapitel3Tabelle.PNG}
+    \includegraphics[width=\textwidth]{pictures/TabelleKap3.PNG}
     \caption{Mögliche LLM Tool Unterstützung}
     \label{Dokumente mit LLM}
 \end{figure}
 
-Dieses Kapitel benennt einige potenzielle Anwendungsfälle von LLM-Tools in der Erstellung der Dokumente aus dem 
-Software Engineering Prozess und anschließend wird festgelegt, was im folgenden Kapitel der Arbeit, der Analyse 
-der Ausgaben der Tools, versucht wird zu erstellen. Die \autoref{Dokumente mit LLM} bietet eine Übersicht 
-darüber, in welchen Dokumenten und bei welchen Inhalten LLM-Tools unterstützend eingesetzt 
-werden können und dient als Beschreibung der Aufgabe für das nächste Kapitel.
+Dieses Kapitel befasst sich mit der Frage, wie LLM Tools im Software Engineering Prozess unterstützen können.
+Grundsätzlich gibt es da natürlich zahlreiche Möglichkeiten, die unmöglich alle im Rahmen einer Arbeit untersucht 
+werden können. Daher widmet sich die Arbeit eher der selbstständigen Erstellung als der Unterstützung bei 
+der Pflege oder ähnlichen Unterstützungsmöglichkeiten. Dazu wird im folgenden zu jedem Dokument beschrieben,
+was im anschließenden Kapitel ``Praxisergebnisse und Vergleich'' betrachtet wird. Die \autoref{Dokumente mit LLM}
+zeigt eine Tabelle mit möglichen KI Unterstützungen im Bezug auf die Inhalte der einzelnen Dokumente und bildet 
+einen kurzen Überblick ab.
 
 \section{Besprechungsprotokoll} \index{Besprechungsprotokoll} \label{LLMBesprechungsprotokoll}
 
 Im \autoref{Besprechungsprotokoll} wurde bereits erläutert, welche Inhalte in einem Besprechungsprotokoll enthalten 
 sind. Nun stellt sich die Frage, wie LLM-Tools bei der Erstellung eines solchen Dokuments unterstützen können.
 
-Eine Möglichkeit wäre, das Besprechungsprotokoll aufzeichnen zu lassen und anschließend automatisch daraus das Protokoll 
-erstellen zu lassen. Da aktuell jedoch nur die kostenfreie Version ChatGPT-4o mit Dokumenten arbeiten kann, ist dies 
-nur in begrenztem Umfang und ohne Vergleiche testbar, weshalb dies hier nicht betrachtet wird.
+Eine Möglichkeit wäre, das Besprechungsprotokoll aufzeichnen zu lassen und anschließend automatisch daraus das 
+Protokoll zu erstellen. Da derzeit jedoch nur die kostenfreie Version von ChatGPT-4o mit Dokumenten arbeiten kann, 
+ist dies nur in begrenztem Umfang und ohne Vergleiche testbar, weshalb dieser Ansatz hier nicht betrachtet wird.
 
-Daher wäre eine Möglichkeit, das Meeting zu verschriftlichen und damit als Texteingabe zu arbeiten. Mit dem 
-schriftlichen Gespräch könnten die Tools dann automatisch die Tabelle des Besprechungsprotokoll erstellt 
-werden. Die beim Besprechungsprotokoll zu beginn aufgezählten Daten  Datum, Thema, Verfasser, Teilnehmer 
-und Verteiler könnten dabei 
-vernachlässigt werden, da diese Informationen vermutlich extra in die Eingabe eingefügt werden müssten damit 
-diese erstellt werden würden. Dadurch gäbe es kein Zeitersparnis oder sonstigen Vorteil, sich dies erstellen 
-zu lassen.
+Eine alternative Möglichkeit wäre, das Meeting zu verschriftlichen und die schriftlichen Inhalte als Texteingabe zu 
+verwenden. Mithilfe dieses schriftlichen Gesprächs könnten die Tools dann automatisch die Tabelle des 
+Besprechungsprotokolls erstellen. Die zu Beginn des Besprechungsprotokolls aufgelisteten Daten – Datum, Thema, 
+Verfasser, Teilnehmer und Verteiler – könnten dabei vernachlässigt werden, da diese Informationen vermutlich separat 
+in die Eingabe eingefügt werden müssten, um erstellt zu werden. Dadurch gäbe es keinen Zeitersparnis oder sonstigen 
+Vorteil, sich diese Informationen automatisch erstellen zu lassen.
 
 
 \section{Projekthandbuch} \index{Projekthandbuch} \label{LLMProjekthandbuch}
@@ -38,21 +39,22 @@ Richtlinien eines Projekts zusammenfasst. Die spezifischen Inhalte dieses Dokume
 \autoref{Projekthandbuch} dargelegt. Doch wie können LLM-Tools bei der Erstellung des 
 Projekthandbuches unterstützend wirken?
 
-Hier wird sich auf die Abschnitte ``Zweck des Dokuments'', ``Redaktion'' und ``Verteiler'' im Kapitel ``Einleitung''
-und auf die Abschnitte ``Vorgeschichte'' und ``Inhaltliche Kurzdarstellung'' im Kapitel ``Projektdefinition'' beschränkt. 
-Dies hat den Grund, dass sich die restlichen Abschnitte des Projekthandbuches aus den Unterlagen für das Modul ``Secure Software 
-Engineering'' ergeben und hauptsächlich als Bild aus der Präsentation in das Projekthandbuch eingefügt werden.\\
-Die aufgezählten Abschnitte könnte man versuchen, sich automatisch erstellen zu lassen. Falls spezifische Informationen 
-dafür benötigt werden, müssten diese mit in die Eingabe geschrieben werden.
+Hier wird sich auf die Abschnitte ``Zweck des Dokuments'', ``Redaktion'' und ``Verteiler'' im Kapitel ``Einleitung'' 
+sowie auf die Abschnitte ``Vorgeschichte'' und ``Inhaltliche Kurzdarstellung'' im Kapitel ``Projektdefinition'' 
+beschränkt. Der Grund dafür ist, dass die restlichen Abschnitte des Projekthandbuchs aus den Unterlagen für 
+das Modul ``Secure Software Engineering'' stammen und hauptsächlich als Bild aus der Präsentation in das Projekthandbuch 
+eingefügt werden.\\
+Die aufgezählten Abschnitte könnten automatisch erstellt werden. Falls spezifische Informationen dafür benötigt 
+werden, müssten diese in die Eingabe integriert werden.
 
 \section{Risikoliste} \index{Risikoliste} \label{LLMRisikoliste}
 
 Nachdem im \autoref{Risikoliste} die Bestandteile der Risikoliste beschrieben wurden, stellt sich auch hier die Frage, 
 wie LLM Tools bei der Erstellung und Pflege der Risikoliste mitwirken und unterstützen können.
 
-Eine Möglichkeit besteht darin, die gesamte Risikoliste einschließlich der zugehörigen Maßnahmentabelle von 
-LLM Tools erstellen zu lassen. Dabei sollten alle Attribute für die Risiken festgelegt werden. Die Werte der einzelnen 
-Risikoattribute sollten zudem zueinander in einem konsistenten Verhältnis stehen.
+Eine Möglichkeit besteht darin, die gesamte Risikoliste einschließlich der zugehörigen Maßnahmentabelle von LLM Tools 
+erstellen zu lassen. Dabei sollten alle Attribute für die Risiken klar festgelegt werden. Zudem sollten die Werte 
+der einzelnen Risikoattribute in einem konsistenten Verhältnis zueinander stehen.
 
 
 \section{Anforderungsspezifikation} \index{Anforderungsspezifikation} \label{LLMAnforderungsspezifikation}
@@ -60,32 +62,31 @@ Risikoattribute sollten zudem zueinander in einem konsistenten Verhältnis stehe
 Das \autoref{Anforderungsspezifikation} beschreibt die einzelnen Inhalte der Anforderungsspezifikation. Doch wie 
 können LLM-Tools bei der Erstellung dieser unterstützen?
 
-Zunächst könnte die Einleitung des Dokuments komplett von den Tools erstellt werden. Falls hier spezifische 
-Informationen benötigt werden, sollten diese mit in die Eingabe eingefügt werden.
+Zunächst könnte die Einleitung des Dokuments vollständig von den Tools erstellt werden. Falls hierfür spezifische 
+Informationen benötigt werden, sollten diese in die Eingabe integriert werden.
 
-Danach kommt die Systemübersicht. Da außer ChatGPT-4o keines der Tools eigenständig Dokumente erstellen kann, 
-wird die Zeichnung vermutlich selbstständig erstellt werden müssen. Es sollte jedoch möglich sein, die 
-Beschreibung der Komponenten und deren 
-Beziehungen von den Tools erstellen zu lassen und diese Beschreibung dann selbstständig in eine Zeichnung 
-umzusetzen. Ebenso 
-kann der Text, der das System beschreibt und in die Systemlandschaft einordnet, automatisch generiert werden. Der 
-Fokus liegt hier allerdings auf der Zeichnung bzw. auf der Beschreibung der Komponenten und deren Beziehungen.
+Anschließend folgt die Systemübersicht. Da außer ChatGPT-4o keines der Tools eigenständig Dokumente erstellen kann, 
+wird die Zeichnung vermutlich selbst erstellt werden müssen. Es sollte jedoch möglich sein, die Beschreibung der 
+Komponenten und deren Beziehungen von den Tools erstellen zu lassen und diese dann in eine Zeichnung umzusetzen. 
+Ebenso kann der Text, der das System beschreibt und in die Systemlandschaft einordnet, automatisch generiert werden. 
+Der Fokus liegt hier jedoch auf der Zeichnung sowie auf der Beschreibung der Komponenten und deren Beziehungen.
 
-Ähnlich verhält es sich beim fachlichen Datenmodell. Hier könnte das UML-Klassendiagramm als 
-PlantUML-Code oder einen ähnlichen Code ausgegeben werden. Da dies dann allerdings eher an den Programmierfähigkeiten 
-scheitert als an der Fähigkeit, ein fachliches Datenmodell zu erstellen, ist dies keine Bedingung, die mit in die Bewertung 
-einfließt, sondern ein nettes extra wäre. Die Beschreibung des Diagramms sollte dann allerdings so gut sein, dass die Erstellung 
-manuell erfolgen kann. Die dazugehörigen Beschreibungen und Einschränkungen können ebenfalls von den Tools generiert werden.
+Ähnlich verhält es sich beim fachlichen Datenmodell. Hier könnte das UML-Klassendiagramm als PlantUML-Code oder 
+in einem ähnlichen Format ausgegeben werden. Da dies jedoch eher an den Programmierfähigkeiten scheitert als an 
+der Fähigkeit, ein fachliches Datenmodell zu erstellen, fließt es nicht negativ in die Bewertung ein, wenn dieses 
+nicht erstellt werden kann. Die Beschreibung des Diagramms sollte allerdings so präzise sein, dass die Erstellung 
+des Diagramms manuell erfolgen kann. Die dazugehörigen Beschreibungen und Einschränkungen können ebenfalls von den 
+Tools generiert werden.
 
-Anschließend folgt das Anwendungsfalldiagramm. Dieses könnte ebenfalls mittels PlantUML oder ähnlichen Tools grafisch 
-erstellt werden, was aber auch hier, aus oben angegebenen Gründen keine Bedingung ist. Andernfalls können 
+Anschließend folgt das Anwendungsfalldiagramm. Dieses könnte ebenfalls mittels PlantUML oder ähnlichen Tools 
+grafisch erstellt werden, was jedoch aus den oben genannten Gründen keine Voraussetzung ist. Alternativ können 
 die LLM-Tools die Rollen, deren Verbindungen und die zugehörigen Anwendungsfälle auflisten. Falls zusätzliche 
-Bemerkungen zu den Anwendungsfällen erforderlich sind, können diese auch von den Tools erstellt werden.
+Bemerkungen zu den Anwendungsfällen erforderlich sind, können diese ebenfalls von den Tools erstellt werden.
 
 Bei den detaillierten Beschreibungen der einzelnen Anwendungsfälle mit Aktivitätsdiagramm sollte der Fokus auf 
 dem Aktivitätsdiagramm und den dazugehörigen Beschreibungen der Aktivitäten liegen. Das Aktivitätsdiagramm 
 könnte ebenfalls mit PlantUML oder ähnlichen Tools erstellt werden. Dies ist aber auch hier keine Anforderung an 
-die Tools wegen den oben angegebenen Gründen. Falls dies jedoch nicht erstellt werden kann, ist eine genaue 
+die Tools, aufgrund den oben angegebenen Gründen. Falls dies jedoch nicht erstellt werden kann, ist eine genaue 
 und detaillierte Beschreibung des Aktivitätsdiagramms erforderlich. Die Beschreibung der Aktivitäten 
 sollte, unabhängig von der Darstellung des Diagramms, vollständig von den Tools generiert werden können.
 
@@ -93,12 +94,13 @@ Darauf folgt die Benutzungsschnittstelle welche entweder vollständig durch Plan
 oder textuell beschrieben werden sollte. Die zusätzliche Bemerkungen und die Zuordnung der Dialoge zu den Anwendungsfällen 
 spielen hier erst einmal eine untergeordnete Rolle.
 
-Die einzelnen Dialoge können textuell beschrieben werden oder in den Chat ``skizziert'' werden, wobei es egal ist, 
-für was sich die Tools entscheiden. Die einzelnen Eingabefelder und Buttons sollten ebenfalls erläutert werden sowie 
-die Beschreibung, wann der Dialog aufgerufen wird und was beim Schließen des Dialogs passiert, sollten erstellt werden.
+Die einzelnen Dialoge können textuell beschrieben oder im Chat skizziert werden, wobei es den Tools überlassen 
+bleibt, welche Methode sie wählen. Die einzelnen Eingabefelder und Buttons sollten dabei erläutert werden. 
+Die Beschreibung, wann der Dialog aufgerufen wird und was beim Schließen des Dialogs passiert, spielt zunächst 
+eine untergeordnete Rolle.
 
 Zuletzt werden die nichtfunktionalen Anforderungen mitsamt den dazugehörigen Tests aufgelistet. Beides sollte 
-von Tools eigenständig erstellt werden können.
+von den Tools eigenständig erstellt werden können.
 
 \section{Architekturdokument} \index{Architekturdokument} \label{LLMArchitekturdokument}
 
@@ -106,24 +108,23 @@ Das Architekturdokument beschreibt die grundlegende Struktur und die Designentsc
 Die genauen Inhalte wurden bereits im \autoref{Architekturdokument} erläutert. Doch wie können LLM-Tools bei der 
 Erstellung dieses Dokuments unterstützen?
 
-Die technische Infrastruktur besteht aus einer Grafik und einem erklärenden Text. Die Erstellung der Grafik 
-könnte wieder als ``Skizze'' im Chat erstellt werden, was aber keine Anforderung an die Tools ist. Wenn 
-eine Skizze erstellt wird, sollte aber ein erklärender Text mit erstellt werden. Ansonsten wird sich auf 
-die Erstellung der Grafik konzentriert. Ob dies dabei in Stichpunkten oder als Fließtext erfolgt, ist dabei 
-zunächst egal.
+Die technische Infrastruktur besteht aus einer Grafik und einem erläuternden Text. Die Grafik kann optional als 
+``Skizze'' im Chat erstellt werden, was jedoch keine zwingende Anforderung an die verwendeten Tools darstellt. 
+Wenn eine Skizze erstellt wird, sollte auch ein erläuternder Text hinzugefügt werden. Andernfalls liegt der 
+Fokus auf der textuellen Ausarbeitung. Dabei ist es zunächst unerheblich, ob der Text in Stichpunkten oder als 
+Fließtext verfasst wird.
 
-Anschließend folgt das Komponentenmodell. Dieses könnte wieder in PlantUML oder ähnlichen Tools erstellt 
-werden. Es kann auch eine detaillierte Beschreibung erstellt werden. Hierzu gibt es einen begleitenden Text, der die 
-Komponenten und Schnittstellen beschreibt und deren Funktion erläutert. Ob dies in Stichpunkten oder als 
-Fließtext erstellt wird spielt auch hier keine Rolle. Hauptaugenmerk liegt auf dem Komponentenmodell.
+Anschließend folgt das Komponentenmodell, das optional wieder in PlantUML oder ähnlichen Tools erstellt werden 
+kann. Alternativ kann auch eine detaillierte Beschreibung angefertigt werden. Dazu gehört ein begleitender Text, 
+der die Komponenten und Schnittstellen beschreibt und deren Funktion erläutert. Ob dieser Text in Stichpunkten 
+oder als Fließtext verfasst wird, spielt auch hier keine Rolle. Das Hauptaugenmerk liegt auf dem Komponentenmodell.
 
-
-
-Nach der Schnittstellenbeschreibung folgt die dynamische Beschreibung exemplarischer Anwendungsfälle. Diese besteht 
-aus einem Sequenzdiagramm und den für den Anwendungsfall benötigten Vorbedingungen. Das Sequenzdiagramm kann ebenfalls 
-als PlantUML-Code oder ähnlich erstellt werden, was aber keine Anforderung an die Tools ist. Falls dies nicht klappt 
-reicht auch eine detaillierte Beschreibung des Diagramms. Die Vorbedingungen sollten ohne Schwierigkeiten 
-generiert werden können, spielt hier aber zunächst keine Rolle. Das Hauptaugenmerk liegt wieder auf dem Diagramm.
+Nach der Schnittstellenbeschreibung folgt die dynamische Beschreibung exemplarischer Anwendungsfälle. Diese umfasst 
+ein Sequenzdiagramm sowie die für den Anwendungsfall erforderlichen Vorbedingungen. Das Sequenzdiagramm kann ebenfalls 
+als PlantUML-Code oder mit ähnlichen Tools erstellt werden, was jedoch keine zwingende Anforderung darstellt. Sollte 
+dies nicht möglich sein, genügt auch eine detaillierte Beschreibung des Diagramms. Die Vorbedingungen sollten ohne 
+größere Schwierigkeiten erstellt werden können, wobei sie hier zunächst von untergeordneter Bedeutung sind. Das 
+Hauptaugenmerk liegt erneut auf dem Diagramm.
 
 \section{Testspezifikation} \index{Testspezifikation} \label{LLMTestspezifikation}
 

@@ -9,7 +9,7 @@
 
 Dieses Kapitel befasst sich mit der Frage, wie LLM Tools im Software Engineering Prozess unterstützen können.
 Grundsätzlich gibt es da natürlich zahlreiche Möglichkeiten, die unmöglich alle im Rahmen einer Arbeit untersucht 
-werden können. Daher widmet sich die Arbeit eher der selbstständigen Erstellung als der Unterstützung bei 
+werden können. Daher widmet sich die Arbeit eher der selbstständigen Erstellung der Dokumente als der Unterstützung bei 
 der Pflege oder ähnlichen Unterstützungsmöglichkeiten. Dazu wird im folgenden zu jedem Dokument beschrieben,
 was im anschließenden Kapitel ``Praxisergebnisse und Vergleich'' betrachtet wird. Die \autoref{Dokumente mit LLM}
 zeigt eine Tabelle mit möglichen KI Unterstützungen im Bezug auf die Inhalte der einzelnen Dokumente und bildet 
@@ -21,14 +21,15 @@ Im \autoref{Besprechungsprotokoll} wurde bereits erläutert, welche Inhalte in e
 sind. Nun stellt sich die Frage, wie LLM-Tools bei der Erstellung eines solchen Dokuments unterstützen können.
 
 Eine Möglichkeit wäre, das Besprechungsprotokoll aufzeichnen zu lassen und anschließend automatisch daraus das 
-Protokoll zu erstellen. Da derzeit jedoch nur die kostenfreie Version von ChatGPT-4o mit Dokumenten arbeiten kann, 
-ist dies nur in begrenztem Umfang und ohne Vergleiche testbar, weshalb dieser Ansatz hier nicht betrachtet wird.
+Protokoll zu erstellen. Dies wird jedoch in dieser Arbeit nicht betrachtet, da lediglich bei der kostenfreien Version 
+ChatGPT-4o Dokumente als Eingabe genutzt werden können. Daher wäre dies nur in einem begrenzten Umfang und ohne Vergleiche 
+testbar.
 
 Eine alternative Möglichkeit wäre, das Meeting zu verschriftlichen und die schriftlichen Inhalte als Texteingabe zu 
 verwenden. Mithilfe dieses schriftlichen Gesprächs könnten die Tools dann automatisch die Tabelle des 
 Besprechungsprotokolls erstellen. Die zu Beginn des Besprechungsprotokolls aufgelisteten Daten – Datum, Thema, 
 Verfasser, Teilnehmer und Verteiler – könnten dabei vernachlässigt werden, da diese Informationen vermutlich separat 
-in die Eingabe eingefügt werden müssten, um erstellt zu werden. Dadurch gäbe es keinen Zeitersparnis oder sonstigen 
+in die Eingabe eingefügt werden müssten, um erstellt zu werden. Dadurch gäbe es keine Zeitersparnis oder sonstigen 
 Vorteil, sich diese Informationen automatisch erstellen zu lassen.
 
 
@@ -39,11 +40,11 @@ Richtlinien eines Projekts zusammenfasst. Die spezifischen Inhalte dieses Dokume
 \autoref{Projekthandbuch} dargelegt. Doch wie können LLM-Tools bei der Erstellung des 
 Projekthandbuches unterstützend wirken?
 
-Hier wird sich auf die Abschnitte ``Zweck des Dokuments'', ``Redaktion'' und ``Verteiler'' im Kapitel ``Einleitung'' 
-sowie auf die Abschnitte ``Vorgeschichte'' und ``Inhaltliche Kurzdarstellung'' im Kapitel ``Projektdefinition'' 
-beschränkt. Der Grund dafür ist, dass die restlichen Abschnitte des Projekthandbuchs aus den Unterlagen für 
-das Modul ``Secure Software Engineering'' stammen und hauptsächlich als Bild aus der Präsentation in das Projekthandbuch 
-eingefügt werden.\\
+Im Rahmen dieser Arbeit wird sich auf die Abschnitte ``Zweck des Dokuments'', ``Redaktion'' und ``Verteiler'' im Kapitel 
+``Einleitung'' des Projekthandbuches sowie auf die Abschnitte ``Vorgeschichte'' und ``Inhaltliche Kurzdarstellung'' im 
+Kapitel ``Projektdefinition'' beschränkt. Der Grund dafür ist, dass die restlichen Abschnitte des Projekthandbuchs aus den 
+Unterlagen für das Modul ``Secure Software Engineering'' stammen und hauptsächlich als Bild aus der Präsentation in das 
+Projekthandbuch eingefügt werden.\\
 Die aufgezählten Abschnitte könnten automatisch erstellt werden. Falls spezifische Informationen dafür benötigt 
 werden, müssten diese in die Eingabe integriert werden.
 
@@ -90,8 +91,8 @@ die Tools, aufgrund den oben angegebenen Gründen. Falls dies jedoch nicht erste
 und detaillierte Beschreibung des Aktivitätsdiagramms erforderlich. Die Beschreibung der Aktivitäten 
 sollte, unabhängig von der Darstellung des Diagramms, vollständig von den Tools generiert werden können.
 
-Darauf folgt die Benutzungsschnittstelle welche entweder vollständig durch PlantUML-Code oder ähnlichen Tools 
-oder textuell beschrieben werden sollte. Die zusätzliche Bemerkungen und die Zuordnung der Dialoge zu den Anwendungsfällen 
+Darauf folgt die Benutzungsschnittstelle, welche entweder vollständig durch PlantUML-Code oder ähnlichen Tools 
+oder textuell beschrieben werden sollte. Die zusätzlichen Bemerkungen und die Zuordnung der Dialoge zu den Anwendungsfällen 
 spielen hier erst einmal eine untergeordnete Rolle.
 
 Die einzelnen Dialoge können textuell beschrieben oder im Chat skizziert werden, wobei es den Tools überlassen 
@@ -105,8 +106,8 @@ von den Tools eigenständig erstellt werden können.
 \section{Architekturdokument} \index{Architekturdokument} \label{LLMArchitekturdokument}
 
 Das Architekturdokument beschreibt die grundlegende Struktur und die Designentscheidungen eines Softwareprojekts. 
-Die genauen Inhalte wurden bereits im \autoref{Architekturdokument} erläutert. Doch wie können LLM-Tools bei der 
-Erstellung dieses Dokuments unterstützen?
+Die genauen Inhalte wurden bereits im \autoref{Architekturdokument} erläutert. In welchem Maße bestehen hier 
+Unterstützungsmöglichkeiten durch LLM-Tools?
 
 Die technische Infrastruktur besteht aus einer Grafik und einem erläuternden Text. Die Grafik kann optional als 
 ``Skizze'' im Chat erstellt werden, was jedoch keine zwingende Anforderung an die verwendeten Tools darstellt. 
@@ -128,8 +129,8 @@ Hauptaugenmerk liegt erneut auf dem Diagramm.
 
 \section{Testspezifikation} \index{Testspezifikation} \label{LLMTestspezifikation}
 
-Im \autoref{Testspezifikation} wurde bereits erklärt, welche Inhalte die Testspezifikation umfasst. Doch wie können 
-LLM-Tools bei der Erstellung dieses Dokuments unterstützen?
+Im \autoref{Testspezifikation} wurde bereits erklärt, welche Inhalte die Testspezifikation umfasst. Wie wäre hier eine 
+Unterstützung durch LLM-Tools möglich?
 
 Zunächst kommt das Testkonzept. Dieses kann automatisch generiert werden. Falls das generierte Konzept nicht den 
 eigenen Vorstellungen entspricht, kann man zunächst Stichpunkte selbst schreiben und sich dann den Text daraus 
@@ -139,6 +140,6 @@ Anschließend folgen die Tests für die einzelnen Anwendungsfälle. Die Testfäl
 erstellen lassen. Die Testdaten, die bei diesen Tests benötigt werden, werden in einer Tabelle zusammengefasst. 
 Auch diese Tabelle könnten die Tools automatisch generieren.
 
-Der Rahmen der Tabelle mit dem Testprotokoll kann ebenfalls von den LLM-Tools erstellt werden. Die Ergebnisse 
-könnten die Tools auch generieren: allerdings stellt sich hier die Frage, ob dies zu einer Zeitersparnis oder 
-einer Arbeitserleichterung führt.
+Die unausgefüllte Tabelle des Testprotokolls könnte ebenfalls von den LLM-Tools erstellt werden. Die Ergebnisse 
+könnten die Tools auch in die Tabelle mit eintragen, diese müssten allerdings in der Eingabe mit gegeben werden. 
+Allerdings stellt sich hier in beiden Fällen die Frage, ob dies zu einer Zeitersparnis oder einer Arbeitserleichterung führt.

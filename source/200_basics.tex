@@ -106,7 +106,7 @@ Webentwickler und Content-Ersteller nutzten ChatGPT zunehmend als Recherche- und
 
 Im März 2023 brachte OpenAI eine neue Version heraus, bekannt als GPT-4. Ein bedeutender Unterschied zu früheren Versionen 
 bestand darin, dass GPT-4 Eingaben sowohl in Text- als auch in Bildformaten akzeptierte. Dies ermöglichte dem Chatbot, Daten 
-aus Diagrammen, Grafiken und Screenshots zu interpretieren. Zudem machte GPT-4 deutlich weniger Denkfehler und sachliche Fehler, 
+aus Diagrammen, Grafiken und Screen\-shots zu interpretieren. Zudem machte GPT-4 deutlich weniger Denkfehler und sachliche Fehler, 
 auch ``Halluzinationen'' genannt, als das zuvor verwendete GPT-3.5-Modell. Am Ende des Jahres hatte sich ChatGPT weiterentwickelt 
 und konnte beispielsweise Bilder analysieren, Sprachansagen verarbeiten und gesprochene Antworten geben.
 
@@ -411,7 +411,7 @@ Das ``Wie'' wird im Architekturdokument behandelt. In der Praxis sind Anforderun
 verknüpft. Die Anforderungsspezifikation ist oft Teil eines Vertrags und muss daher so vollständig und eindeutig wie 
 möglich formuliert sein.
 
-Diese Spezifikation dient mehreren Zwecken: Sie hilft Kunden und Endbenutzern zu beurteilen, ob das System die 
+Diese Spezifikation dient mehreren Zwecken: Sie hilft Kunden und Endnutzern zu beurteilen, ob das System die 
 gewünschten Leistungen erbringen wird und wie es später zu bedienen ist. Projektmanager nutzen die Spezifikation 
 zur Erstellung des Angebots und zur Planung des detaillierten Entwicklungsprozesses. Administratoren können damit 
 entscheiden, wie das System verwaltet werden muss. Für Systemarchitekten dient sie als Grundlage für ihr 
@@ -429,13 +429,13 @@ Die Einleitung beschreibt den Zweck und Umfang des Dokuments. Dies umfasst eine 
 Systems, eine Kurzbeschreibung der Funktionalität und der Nachbarsysteme sowie eine Definition der Bedeutung des 
 Systems für die gesamtwirtschaftlichen oder strategischen Ziele des Unternehmens. Es folgen Verweise auf weitere 
 Ressourcen sowie Definitionen von Begriffen und Abkürzungen. Eine Übersicht des Dokuments schließt die Einleitung ab, 
-welche allerdings nicht weiter betrachtet wird.
+welche allerdings in dieser Arbeit nicht weiter betrachtet wird.
 
 Anschließend werden die Benutzeranforderungen definiert, welche aber ebenfalls nicht betrachtet werden. 
 Diese enthalten eine Beschreibung der für den Benutzer bereitgestellten Dienste und der nichtfunktionalen 
 Anforderungen in verständlicher Sprache, Diagrammen oder anderen für den Kunden nachvollziehbaren Notationen.
 
-Es folgt ein Überblick über die Systemarchitektur, der die erwartete Systemarchitektur und die Einordnung des Systems 
+Es folgt ein Überblick über die Systemarchitektur, die die erwartete Systemarchitektur und die Einordnung des Systems 
 in die Systemlandschaft des Kunden beschreibt.
 
 Danach folgt das fachliche Datenmodell, das aus Entitätentypen besteht. Eine Entität ist ein individuelles 
@@ -475,12 +475,10 @@ soll. Zusammen mit der Anforderungsspezifikation bildet es die Grundlage für di
 das Architekturdokument, um Komponententests für das System zu entwickeln.
 
 Das Architekturdokument besteht aus drei Hauptabschnitten: der Technischen Architektur, der Anwendungsarchitektur 
-und das IT-Konzept:
-Die Technische Architektur umfasst zwei Hauptkomponenten. Die Technische Infrastruktur (TI-Architektur) beschreibt 
-die Hardware- und Produktanforderungen.
-Der andere Teil ist die T-Architektur, also die Technische Struktur, und beschreibt die Technischen Lösungen und Strukturen.
-Diese wird in der Arbeit aber nicht weiter betrachtet.
-Beide Komponenten werden durch erklärende Texte und Grafiken dargestellt.\\
+und das IT-Konzept.\\
+Die Technische Architektur umfasst zwei Hauptkomponenten, die Technische Infrastruktur (TI-Architektur) und die Technische 
+Struktur. Erstere beschreibt die Hardware- und Produktanforderungen, Zweitere die technischen Lösungen und Strukturen. 
+Diese wird in der Arbeit aber nicht weiter betrachtet. Beide Komponenten werden durch erklärende Texte und Grafiken dargestellt.\\
 Die Anwendungsarchitektur besteht ebenfalls aus zwei Hauptteilen: dem Komponentenmodell und dem Datenmodell. Das 
 Komponentenmodell beschreibt die fachliche Struktur der Lösung auf einer groben Ebene mittels eines 
 UML-Komponenten-Diagramms. Das Datenmodell hingegen beschreibt die Struktur der persistenten Daten und wird 
@@ -493,9 +491,9 @@ Aktivitätsdiagrammen oder Sequenzdiagrammen veranschaulicht werden.
 
 \subsection{Testspezifikation} \index{Testspezifikation} \label{Testspezifikation}
 
-Die Testfallspezifikation oder auch Software Test Dokumentation dient dazu die Testdurchführung zu planen, die Testfälle 
-zu Spezifizieren und die Testergebnisse zu protokollieren. Mit Hilfe dieser ist es möglich die Anwendung systematisch 
-und strukturiert zu testen. Die Protokollierung der Testergebnisse ermöglicht es eine Aussage über die Qualität zu geben.
+Die Testfallspezifikation oder auch Software Test Dokumentation dient dazu, die Testdurchführung zu planen, die Testfälle 
+zu spezifizieren und die Testergebnisse zu protokollieren. Mit Hilfe dieser ist es möglich, die Anwendung systematisch 
+und strukturiert zu testen. Die Protokollierung der Testergebnisse ermöglicht es, eine Aussage über die Qualität zu geben.
 Nach einer Fehlerbehebung können die selben Tests erneut durchgeführt werden. Dadurch wird nichts vergessen.
 
 Die Testspezifikation besteht aus einem Testkonzept, einer Testfall-Spezifikation und einem Testprotokoll.\\
@@ -503,6 +501,6 @@ Das Testkonzept legt die Vorgehensweise, die verwendeten Mittel und den Ablauf d
 muss festgelegt werden, ob es irgendwelche Anforderungen an die Umsetzung gibt oder ob irgendwelche Dummy-Komponenten 
 entwickelt werden müssen.\\
 Die Testfall-Spezifikation listet die Testfälle auf. Ein Testfall besteht aus einer Kurzbeschreibung, der Testvoraussetzung, 
-den Eingabewerten inkl. dem Testablauf, und den erwarteten Ausgabewerte.\\
-Im Testprotokoll wird die Testdurchführung protokolliert. Dies beinhaltet wann welcher Test durchgeführt wurde und ob 
+den Eingabewerten inkl. dem Testablauf, und den erwarteten Ausgabewerten.\\
+Im Testprotokoll wird die Testdurchführung protokolliert. Dies beinhaltet, wann welcher Test durchgeführt wurde und ob 
 der Test erfolgreich war oder nicht.

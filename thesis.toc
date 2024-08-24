@@ -27,8 +27,8 @@
 \contentsline {section}{\numberline {4.1}Besprechungsprotokoll}{26}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Projekthandbuch}{28}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Risikoliste}{29}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Anforderungsspezifikation}{33}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Architekturdokument}{49}{section.4.5}%
+\contentsline {section}{\numberline {4.4}Anforderungsspezifikation}{32}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Architekturdokument}{48}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{57}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Zusammenfassung der Ergebnisse}{57}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Kritik an der Arbeit}{59}{section.5.2}%

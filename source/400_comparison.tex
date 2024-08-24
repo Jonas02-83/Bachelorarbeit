@@ -7,7 +7,7 @@ diese näher erläutert. Die \autoref{Ergebnisse} zeigt die Endgültige Tabelle 
 der Tools bei den unterschiedlichen Unterstützungsmöglichkeiten. Im folgenden wird beschrieben, wie diese Bewertungen 
 entstanden sind.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{pictures/TabelleKap4.PNG}
     \caption{Ergebnisse}
@@ -21,20 +21,16 @@ mit fünf Stufen entwickelt. Diese Bewertungsstufen ermöglichen eine strukturie
 der Qualität der Ausgaben von LLM-Tools. Die fünf Bewertungsstufen sind wie folgt definiert:
 
 ``Sehr gut'' wird vergeben, wenn der Inhalt der Ausgabe fachlich korrekt ist und das Format den Vorgaben entspricht, sodass 
-die Ausgabe direkt in das entsprechende Dokument eingefügt werden kann.
-
-Die Bewertung ``Gut'' wird vergeben, wenn der Inhalt leichte Fehler enthält, die jedoch mit wenigen Anpassungen korrigiert 
+die Ausgabe direkt in das entsprechende Dokument eingefügt werden kann.\\
+``Gut'' wird vergeben, wenn der Inhalt leichte Fehler enthält, die jedoch mit wenigen Anpassungen korrigiert 
 werden können, und das Format den Vorgaben entspricht. Eine Ausgabe wird ebenfalls als ``Gut'' eingestuft, wenn der Inhalt 
 korrekt ist, das Format jedoch kleinere Fehler aufweist. In diesem Fall sollte der richtige Inhalt leicht aus der Ausgabe 
-kopiert und in das entsprechende Dokument im richtigen Format eingefügt werden können.
-
-Als ``Befriedigend'' wird eine Ausgabe bewertet, wenn sowohl der Inhalt als auch das Format kleinere Fehler aufweisen, die sich 
-jedoch mit wenigen Anpassungen korrigieren lassen, oder wenn der korrekte Inhalt aus der Ausgabe kopiert werden kann.
-
-Die Bewertung ``Ausreichend'' wird vergeben, wenn in der Ausgabe inhaltlich Teile fehlen, diese aber durch präzisere Eingaben 
-teilweise verbessert werden können, auch wenn die Ausgabe immer noch nicht vollständig ist.
-
-Zuletzt wird eine Ausgabe als ``Mangelhaft'' bewertet, wenn der Inhalt der Ausgabe falsch oder unverständlich ist und sich 
+kopiert und in das entsprechende Dokument im richtigen Format eingefügt werden können.\\
+``Befriedigend'' wird vergeben, wenn sowohl der Inhalt als auch das Format kleinere Fehler aufweisen, die sich 
+jedoch mit wenigen Anpassungen korrigieren lassen, oder wenn der korrekte Inhalt aus der Ausgabe kopiert werden kann.\\
+``Ausreichend'' wird vergeben, wenn in der Ausgabe inhaltlich Teile fehlen, diese aber durch präzisere Eingaben 
+teilweise verbessert werden können, auch wenn die Ausgabe immer noch nicht vollständig ist.\\
+``Mangelhaft'' wird vergeben, wenn der Inhalt der Ausgabe falsch oder unverständlich ist und sich 
 auch nicht korrigieren lässt.
 
 Diese Bewertungslinien sind allerdings nur grobe Orientierungen. In die Bewertung fließen auch noch spezifische 
@@ -49,7 +45,7 @@ jeweilige Dokument erstellt wurde.
 \section{Besprechungsprotokoll} \index{Besprechungsprotokoll} \label{CompBesprechungsprotokoll}
 
 Für die Erstellung des Besprechungsprotokolls wurde ein verschriftlichtes Gespräch verwendet 
-(siehe \autoref{Kundengespräch1} und \autoref{Kundengespräch2} im \nameref{Anhang}). Es wurde der Folgende Prompt 
+(siehe \autoref{Kundengespräch1} und \autoref{Kundengespräch2} im \nameref{Anhang}). Es wurde der folgende Prompt 
 genutzt:
 
 \begin{prompt}[H]
@@ -182,12 +178,12 @@ Im folgenden ist der Prompt für die Risikotabelle wiedergegeben:
         das Risiko gemeldet hat, ``Wahrscheinlichkeit (in\%)'' für einen Schätzwert der Eintrittswahrscheinlichkeit 
         des Risikos, ``Schaden (in €)'' für eine Schätzung wie groß der Schaden ist, ``Maß (in €)'' was das Produkt aus 
         Wahrscheinlichkeit und Schaden ist, ``Risikoklasse'' für eine Priorisierung der potentiellen Risiken wo 
-        zwischen Tolerierbar, Unerwünscht, Kritisch und Katastrophal Unterschieden wird und ``Status'' wo zwischen 
+        zwischen Tolerierbar, Unerwünscht, Kritisch und Katastrophal unterschieden wird und ``Status'' wo zwischen 
         aktiv, eingetreten und geschlossen unterschieden wird. Das Risiko ist Tolerierbar wenn das Risikomaß geringer 
         als 0,1\% des Projektvolumen ist, Unerwünscht wenn es größer als 0,1\% ist, Kritisch wenn es größer als 1\% 
         ist und Katastrophal wenn es größer als 10\% ist. In der Risikoliste sollen Team-, Technische-, Methodische-, 
         Kunden-, Fachliche-, Produkt-, Management- und Planungsrisiken betrachtet werden. Diese sollen mit einer 
-        leer Zeile getrennt werden, in welchen die Oberbegriffe stehen. Das Projektvolumen beträgt 500000€.
+        Leerzeile getrennt werden, in welcher die Oberbegriffe stehen. Das Projektvolumen beträgt 500000€.
         \vfill
     \end{tcolorbox}
     \caption{Prompt Risikotabelle}
@@ -207,7 +203,7 @@ werden. Ansonsten wird auch dieses von Tools festgelegt und führt zu Ungenauigk
 
 Grundsätzlich war die Erstellung der Risiken kein Problem. Schwierig war es eher, die gewünschte Formatierung zu erhalten, 
 sowie eine richtige Zuweisung der restlichen Attribute. Besonders Gemini und Le Chat haben dabei Schwierigkeiten.
-Bei allen dreien Tools war auffällig, dass die Person die in der Spalte ``Autor'' eingetragen wird, die Person ist, in dessen
+Bei allen dreien Tools war auffällig, dass die Person, die in der Spalte ``Autor'' eingetragen wird, die Person ist, in dessen
 Tätigkeitsbereich das Risiko fällt. Zum Beispiel das Risiko, dass jemand krank wird, wodurch Verzögerungen entstehen, wurde von 
 der Projektleiterin erstellt. Dabei werden auch Kunden Risiken vom Kunden erstellt, was falsch ist.
 
@@ -570,7 +566,7 @@ als komplexeren Anwendungsfall. Dazu wurde mit zwei Prompts gearbeitet. Für den
         Erstell mir nun für die Anforderungsspezifikation, basierend auf dem Anwendungsfalldiagramm, eine detaillierte Beschreibung für den Anwendungsfall ``Anmelden''. Dabei 
         soll zunächst der Anwendungsfall in einem Satz beschrieben werden, was dieser macht. Anschließend soll der Akteur, der Auslöser, die Vorbedingung und die Häufigkeit 
         beschrieben werden. Danach soll ein Aktivitätsdiagramm erstellt werden. Dabei werden die Aktivitäten dem Client oder dem Server zugewiesen, wo diese bearbeitet werden. 
-        In dem Diagramm sollen keine Dialog beschreibung, wie Fenster mit Fehlermeldung anzeigen, beschrieben werden. Es sollen lediglich Dienste beschrieben werden, die der 
+        In dem Diagramm sollen keine Dialogbeschreibung, wie Fenster mit Fehlermeldung anzeigen, beschrieben werden. Es sollen lediglich Dienste beschrieben werden, die der 
         Server anbietet. Zuletzt werden die Aktivitäten aus dem Diagramm kurz beschrieben.
         \vfill
     \end{tcolorbox}
@@ -653,7 +649,7 @@ Format des PlantUML-Diagramms zeigt dieselben Fehler auf wie bereits beim Anwend
 korrigieren. Eine Aktivität, die etwas erschreckend klingt, ist Aktivität 6 ``Berechne mögliche Züge''. Grundsätzlich ist dies nicht 
 gerade eine effiziente Herangehensweise, was bei einem Mensch-ärgere-dich-nicht-Spiel allerdings nicht ganz so schlimm ist, da sich 
 hier die möglichen Züge auf maximal vier beschränken. Es fällt auch auf, dass das Würfeln auf der Server-Seite stattfindet. Dies ist 
-an sich kein gutes Spielerlebnis, wenn man als Spieler nicht würfelt. Das Würfeln sollte am besten ein eigener Anwendungsfall sein, da 
+an sich kein gutes Spielerlebnis, wenn man als Spieler nicht würfelt und auch das Ergebnis nicht sieht. Das Würfeln sollte am besten ein eigener Anwendungsfall sein, da 
 das Würfelergebnis wieder auf die Client-Seite gebracht werden muss und dies innerhalb eines Anwendungsfalls schwierig zu implementieren 
 ist. Auch die Verweise auf das fachliche Datenmodell halten sich mit zwei Verweisen in Grenzen, und die Klasse ``Spielzug'' wird überhaupt 
 nicht betrachtet. Als Hilfe wurde daher nochmal eine Eingabe mit dem fachlichen Datenmodell [12 GPT FDM] und der Anweisung, sich dieses 
@@ -872,7 +868,7 @@ Infrastruktur zu erstellen:
 \begin{prompt}[H]
     \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
         Erstell mir nun, basierend auf folgender Systemarchitektur, ein Diagramm und/oder eine Textuelle Beschreibung der Technischen Infrastruktur. 
-        Diese Listet die Hardware- und Produktanforderungen auf: Hardware, Betriebssysteme, Produkte, Nachbarsysteme. Dabei sollen die einzelnen 
+        Diese listet die Hardware- und Produktanforderungen auf: Hardware, Betriebssysteme, Produkte, Nachbarsysteme. Dabei sollen die einzelnen 
         Betriebssysteme mit Versionsnummer und die Verbindungen zwischen den Komponenten mit der Verbindungsart beschrieben werden: [Textuelle 
         Beschreibung der Systemübersicht des jeweiligen Tools]
         \vfill
@@ -1086,7 +1082,7 @@ Da die Erstellung mit ChatGPT bis hierhin am besten geklappt hat, wurde probiert
 direkt auf, dass die erstellten Klassen nicht zu den Schnittstellen bzw. zu den Komponenten aus dem Komponentenmodell und damit auch 
 nicht zu den Sequenzdiagrammen passen, da hier die Klassen ``AuthenticationService.java'' und ``GameService.java'' keiner Komponente 
 zugewiesen werden können. Es könnte allerdings sein, dass ChatGPT mehrere Schnittstellen für eine Komponente erstellt hat. Doch wenn 
-man ChatGPT fragt, welche Klassen zu welchen Komponenten gehören, listet er für jede Klasse eine Komponente auf. Dazu fällt auf, dass 
+man ChatGPT fragt, welche Klassen zu welchen Komponenten gehören, wird für jede Klasse eine Komponente aufgelistet. Dazu fällt auf, dass 
 auch für die Komponente ``UserInterface'' eine Klasse erstellt wurde, wobei sich die Frage stellt, wer darauf zugreifen soll. 
 Grundsätzlich sollte diese Komponente nur von ``ClientCommunication'' Funktionen aufrufen und dann einen Return erhalten. Darüber hinaus 
 passen die Namen in den Klassen nicht immer zu denen aus den Sequenzdiagrammen. Teilweise fehlen auch Funktionen bzw. sind in den 

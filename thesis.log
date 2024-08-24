@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  23 AUG 2024 11:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  24 AUG 2024 10:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2108,14 +2108,8 @@ File: ./images/pictures/TabelleKap4.PNG Graphic file (type png)
 <use ./images/pictures/TabelleKap4.PNG>
 Package pdftex.def Info: ./images/pictures/TabelleKap4.PNG  used on input line 12.
 (pdftex.def)             Requested size: 469.47055pt x 227.53922pt.
-[25]
+[25 <./images/pictures/TabelleKap4.PNG>] [26] [27] [28] [29]
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26 <./images/pictures/TabelleKap4.PNG>] [27] [28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
-Underfull \vbox (badness 1168) has occurred while \output is active []
 
  [30] [31] [32] [33] [34] [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2123,30 +2117,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
+ [37] [38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38] [39] [40] [41] [42] [43]
+ [39] [40]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44] [45]
+ [41] [42] [43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46] [47] [48]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49] [50] [51] [52] [53] [54] [55]) [56]
+ [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54]) [55]
 \openout2 = `source/500_Conclusion.aux'.
 
- (./source/500_Conclusion.tex
+ (./source/500_Conclusion.tex [56
+
+
+
+
+
+]
 chapter 5.
-[57
-
-
-
-
-
-] [58] [59]) [60]
+[57] [58] [59]) [60]
 \openout2 = `source/801_appendix.aux'.
 
  (./source/801_appendix.tex
@@ -2302,15 +2293,15 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72258 strings out of 474049
- 1655868 string characters out of 5746277
+ 72259 strings out of 474049
+ 1655878 string characters out of 5746277
  2919232 words of memory out of 5000000
- 93060 multiletter control sequences out of 15000+600000
+ 93061 multiletter control sequences out of 15000+600000
  623085 words of font info for 239 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,22n,120p,10948b,2857s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (84 pages, 603644 bytes).
+Output written on thesis.pdf (84 pages, 603283 bytes).
 PDF statistics:
  844 PDF objects out of 1000 (max. 8388607)
  705 compressed objects within 8 object streams

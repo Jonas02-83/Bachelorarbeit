@@ -45,7 +45,7 @@ jeweilige Dokument erstellt wurde.
 \section{Besprechungsprotokoll} \index{Besprechungsprotokoll} \label{CompBesprechungsprotokoll}
 
 Für die Erstellung des Besprechungsprotokolls wurde ein verschriftlichtes Gespräch verwendet 
-(siehe \autoref{Kundengespräch1} und \autoref{Kundengespräch2} im \nameref{Anhang}). Es wurde der folgende Prompt 
+(siehe \nameref{Kundengespräch} im \nameref{Anhang}). Es wurde der folgende Prompt 
 genutzt:
 
 \begin{prompt}[H]
@@ -296,6 +296,8 @@ der Systemarchitektur, des Fachliche Datenmodells, des Anwendungsfalldiagramms, 
 der Benutzungsschnittstelle mit der Dialognavigation, der detaillierten Ausarbeitung von Dialogen und der nichtfunktionalen Anforderungen einzeln
 Beschrieben und anschließend bewertet. Die Ergebnisse der Tools für die einzelnen Eingaben sind in der Datei 04\_Anforderungsspezifikation.pdf auf 
 dem beiligenden USB-Stick zu finden.
+
+\clearpage
 
 \subsection*{Einleitung}
 
@@ -644,38 +646,38 @@ entsprechend angepasst. Für ChatGPT sieht der Prompt zum Beispiel wie folgt aus
 Alle drei Tools haben dabei nicht geprüft, ob mindestens eine Figur das Startfeld bereits verlassen hat oder nicht. Wenn nicht, müsste mit maximal 
 drei Würfen probiert werden, eine sechs zu würfeln.
 
-Die Ausgabe von ChatGPT scheint zunächst sehr überwältigend, doch beim näheren Betrachten ist diese eigentlich schon ziemlich gut. Das 
+Die Ausgabe von ChatGPT [50 AF Zug Machen (GPT 01), S. 158] scheint zunächst sehr überwältigend, doch beim näheren Betrachten ist diese eigentlich schon ziemlich gut. Das 
 Format des PlantUML-Diagramms zeigt dieselben Fehler auf wie bereits beim Anwendungsfall ``Anmelden'', lassen sich aber später alle 
-korrigieren. Eine Aktivität, die etwas erschreckend klingt, ist Aktivität 6 ``Berechne mögliche Züge''. Grundsätzlich ist dies nicht 
+korrigieren [52 AF Zug Machen (GPT 03), S. 166]. Eine Aktivität, die etwas erschreckend klingt, ist Aktivität 6 ``Berechne mögliche Züge''. Grundsätzlich ist dies nicht 
 gerade eine effiziente Herangehensweise, was bei einem Mensch-ärgere-dich-nicht-Spiel allerdings nicht ganz so schlimm ist, da sich 
 hier die möglichen Züge auf maximal vier beschränken. Es fällt auch auf, dass das Würfeln auf der Server-Seite stattfindet. Dies ist 
 an sich kein gutes Spielerlebnis, wenn man als Spieler nicht würfelt und auch das Ergebnis nicht sieht. Das Würfeln sollte am besten ein eigener Anwendungsfall sein, da 
 das Würfelergebnis wieder auf die Client-Seite gebracht werden muss und dies innerhalb eines Anwendungsfalls schwierig zu implementieren 
 ist. Auch die Verweise auf das fachliche Datenmodell halten sich mit zwei Verweisen in Grenzen, und die Klasse ``Spielzug'' wird überhaupt 
-nicht betrachtet. Als Hilfe wurde daher nochmal eine Eingabe mit dem fachlichen Datenmodell [12 GPT FDM] und der Anweisung, sich dieses 
-zu merken, erstellt. Anschließend wurde der \autoref{Prompt AF Zug Machen} erneut eingegeben. Diese Ausgabe schafft es etwas besser, 
+nicht betrachtet. Als Hilfe wurde daher nochmal eine Eingabe mit dem fachlichen Datenmodell [20 Fachliches Datenmodell (GPT 12), S. 76] und der Anweisung, sich dieses 
+zu merken, erstellt. Anschließend wurde der \autoref{Prompt AF Zug Machen} erneut eingegeben. Diese Ausgabe [51 AF Zug Machen (GPT 02), S. 162] schafft es etwas besser, 
 die Verweise auf das fachliche Datenmodell zu beschreiben. Lediglich ``Spiel.status'' und ``Feld.belegt'' werden nicht erwähnt. Das Würfeln 
 wird auf die ``Client''-Seite geschoben. Jedoch ist dieser Ablauf, wie bereits beschrieben, schwierig zu implementieren, und man sollte das 
 Würfeln als eigenen Anwendungsfall beschreiben. Es entfällt auch die Aktivität, die überprüft, ob ein Spieler an der Reihe ist. Ebenfalls 
 negativ ist, dass die ``Client''-Seite im Aktivitätsdiagramm zu ``Spieler'' umbenannt wurde. Dies wird jedoch nach einem Hinweis wieder zurück 
-geändert. Ein Fehler ist auch, dass die Position der Spielfigur zweimal gespeichert wird: einmal in Aktivität 7 und einmal in Aktivität 9 
-[04 GPT Zug machen]. Was nach einem Hinweis aber auch korrigiert wird.
+geändert [53 AF Zug Machen (GPT 04), S. 169]. Ein Fehler ist auch, dass die Position der Spielfigur zweimal gespeichert wird: einmal in Aktivität 7 und einmal in Aktivität 9. 
+Was nach einem Hinweis aber auch korrigiert wird [54 AF Zug Machen (GPT 05), S. 173].
 
 Da das zuletzt erstellte fachliche Datenmodell voller Fehler war und nicht verwendet werden kann, wurde hier die Frage nach den Verweisen 
-auf das fachliche Datenmodell weggelassen. Die erste Ausgabe konnte scheinbar mit dem Anwendungsfall ``Spiel spielen'' nichts anfangen und 
+auf das fachliche Datenmodell weggelassen [55 AF Zug Machen (Gemini 01), S. 176]. Die erste Ausgabe konnte scheinbar mit dem Anwendungsfall ``Spiel spielen'' nichts anfangen und 
 wusste nicht so richtig, was dieser laut dem Anwendungsfalldiagramm beinhaltet. Hier wurden Aktivitäten wie ``Wähle Spieltyp und Spieloptionen:'' 
 erstellt, wo zum Beispiel gewählt wird, ob Einzelspieler oder Mehrspieler gespielt werden soll. Daher wurde die Eingabe nochmal gemacht, 
-mit dem Zusatz, dass die Beschreibung des Anwendungsfalls aus dem Anwendungsfalldiagramm mit in den Prompt eingefügt wurde. In der Ausgabe 
-werden Aktivitäten wie ``Wähle Aktion:'' und ``Verarbeite Aktion:'' beschrieben. Dieses Aktivitätsdiagramm beschreibt keinen genauen Ablauf, 
+mit dem Zusatz, dass die Beschreibung des Anwendungsfalls aus dem Anwendungsfalldiagramm mit in den Prompt eingefügt wurde [56 AF Zug Machen (Gemini 02), S. 179]. In der Ausgabe 
+werden Aktivitäten wie ``Wähle Aktion:'' und ``Verarbeite Aktion:'' beschrieben. Daher beschreibt dieses Aktivitätsdiagramm keinen genauen Ablauf, 
 sondern beschreibt grob, was allgemein passiert. Dies ist allerdings für die Beschreibung eines Anwendungsfalls falsch. Was man hier allerdings 
 positiv anmerken muss, ist, dass überprüft wird, ob das Spiel beendet ist oder nicht. Dennoch wurde auch hier nochmal eine neue Antwort 
-generiert mit dem gleichen Prompt. Diese beschreibt auch brauchbar den Ablauf des Zuges im Aktivitätsdiagramm. Dennoch ist auch hier das 
+generiert mit dem gleichen Prompt [57 AF Zug Machen (Gemini 03), S. 182]. Diese beschreibt auch brauchbar den Ablauf des Zuges im Aktivitätsdiagramm. Dennoch ist auch hier das 
 Problem, dass der Spieler erst würfelt, das Ergebnis an den Server geschickt wird und der Spieler anschließend eine Spielfigur auswählt. 
 Dies ist in der Implementierung schwer umzusetzen, weshalb das Würfeln als eigener Anwendungsfall betrachtet werden sollte. Ebenfalls 
 negativ fällt auf, dass hier nicht mehr geprüft wird, ob das Spiel beendet ist, wie bei der vorherigen Antwort.
 
-Bei Le Chat war zu Beginn die Beschreibung etwas kurz und es gab, außer ``Spiel.wuerfel'', was explizit im Prompt genannt wurde, keine 
-Referenz auf das fachliche Datenmodell. Erst nach der nächsten Eingabe [LeChat 02 ZugMachen] wurden die Beschreibungen etwas ausführlicher 
+Bei Le Chat [58 AF Zug Machen (Le Chat 01), S. 185] war zu Beginn die Beschreibung etwas kurz und es gab, außer ``Spiel.wuerfel'', was explizit im Prompt genannt wurde, keine 
+Referenz auf das fachliche Datenmodell. Erst mit der nächsten Eingabe [59 AF Zug Machen (Le Chat 02), S. 187] wurden die Beschreibungen etwas ausführlicher 
 und es gab Referenzen auf das fachliche Datenmodell. Diese Referenzen waren jedoch falsch und entsprachen nicht dem zuvor erstellten 
 fachlichen Datenmodell. Hier wurde nämlich häufig auf die Position der Figuren und der Felder über ``.x'' und ``.y'' Werte zugegriffen. 
 Grundsätzlich ist das natürlich eine gute Art und Weise, die Position leichter zu definieren. Jedoch wurde im fachlichen Datenmodell über 
@@ -684,19 +686,19 @@ einfache Int-Werte die Position des Feldes gespeichert. Außerdem ist die Beschr
 Figuren des Spielers entfernt wird. Dies ist natürlich nicht richtig, sondern die Figur sollte einfach auf ein Startfeld der entsprechenden 
 Farbe bzw. des entsprechenden Spielers gesetzt werden. Außerdem wurde Würfeln als eine Aktivität hier aufgeführt. Im Anwendungsfalldiagramm 
 wurde allerdings für Würfeln ein eigener Anwendungsfall erstellt, weshalb die Aktivität hier unnötig und falsch ist. Nach einem Hinweis 
-diesbezüglich hat Le Chat ausgegeben, dass das stimmt und die Aktivität entfernt werden muss. Anschließend wurde, auf Nachfrage, eine 
-Beschreibung des Aktivitätsdiagramms erstellt. Dabei wurde einmal die Aktivität ``Figur setzen oder schlagen'' in zwei Aktivitäten aufgeteilt: 
+diesbezüglich hat Le Chat ausgegeben, dass das stimmt und die Aktivität entfernt werden muss [60 AF Zug Machen (Le Chat 03), S. 189]. Anschließend wurde, auf Nachfrage, eine 
+Beschreibung des Aktivitätsdiagramms erstellt [61 AF Zug Machen (Le Chat 04), S. 190]. Dabei wurde einmal die Aktivität ``Figur setzen oder schlagen'' in zwei Aktivitäten aufgeteilt: 
 einmal ``Figur setzen'' und ``Figur schlagen'', wobei mit einem Entscheidungsknoten entschieden wird, in welche Aktivität gegangen wird. Die 
 Beschreibung der Flusslinien ist sehr sporadisch und sagt sogar eigentlich aus, dass erst die Aktivitäten miteinander verbunden sind und 
 diese dann erst mit den Entscheidungsknoten und den Endpunkten verbunden werden. Dies sollte aber nicht so sein, da die Entscheidungsknoten 
-ja zwischen den Aktivitäten stehen müssen. Dazu wird beschrieben, dass es nur zwei Endpunkte gibt: für den Fall, dass erfolgreich die Figur 
+zwischen den Aktivitäten stehen müssen. Dazu wird beschrieben, dass es nur zwei Endpunkte gibt: für den Fall, dass erfolgreich die Figur 
 gesetzt oder geschlagen wird und das Verweigern des Zugs. Dies wäre natürlich möglich, um dem Spieler aber eine bessere Rückmeldung zu geben, 
 macht es Sinn, für jeden Fehler, der auftauchen kann, einen Endzustand zu erstellen. Ebenfalls negativ auffällig ist, dass bei den ersten 
 beiden Aktivitäten ``Figur auswählen'' und ``Zielfeld auswählen'', jeweils die Information an den Server übermittelt wird. Besser und einfacher 
 wäre es aber, die Infos zusammen in einem Zug an den Server zu senden. Damit würde es reichen, eine Funktion zu erstellen und an den Server 
 zu senden. Der ``Trick'', das zuletzt erstellte fachliche Datenmodell als Eingabe zu nutzen, hat nicht wie bei ChatGPT funktioniert. Wenn man 
 Le Chat nach dem aktuellen fachlichen Datenmodell fragt, auf welches er sich referenziert, wird auch ein völlig anderes Datenmodell ausgegeben 
-[LeChat 05 ZugMachenFDM].
+[62 AF Zug Machen (Le Chat 05), S. 192].
 
 Es lässt sich zusammenfassen, dass alle drei Tools es ganz gut geschafft haben, den leichten Anwendungsfall ``Anmelden'' zu erstellen. Alle drei Tools 
 hatten jedoch Probleme mit Dialoginteraktionen oder zu genauen Beschreibungen der Implementierung. Außerdem haben alle drei es nicht umgesetzt, 
@@ -728,7 +730,7 @@ kann, wird Gemini mit ``Ausreichend'' benotet.
 Mit diesem Prompt wird die Benutzungsschnittstelle beschrieben, die zeigt, wie man zwischen den Dialogen navigieren kann.
 
 Bei ChatGPT wurde die Eingabe zweimal getätigt.\\
-Die erste Eingabe enthielt im Chat ein ``gezeichnetes'' Diagramm. Dort waren jedoch sowohl die Verbindungen zwischen den 
+Die erste Eingabe [63 Benutzungsschnittstelle (GPT 01), S. 195] enthielt im Chat ein ``gezeichnetes'' Diagramm. Dort waren jedoch sowohl die Verbindungen zwischen den 
 Dialogen als auch die Einzeichnung der Navigation etwas schwierig, da hier nur in eine Richtung navigiert wird. Außerdem 
 passte dieses auch nicht richtig zu der textuellen Beschreibung, die mit generiert wurde. Bei der Beschreibung ist aufgefallen, 
 dass ein ``Passwort-zurücksetzen-Dialog'' enthalten ist. Allerdings ist im Anwendungsfalldiagramm kein Anwendungsfall für das 
@@ -737,7 +739,7 @@ Passwort zurücksetzen erstellt worden, weshalb man entweder den Dialog aus dem 
 Dialog ``Anzeige der Spieler-Liste''. Außerdem ist fraglich, ob ein noch nicht angemeldeter Nutzer die Buttons ``Spiel erstellen'' 
 und ``Spiel beitreten'' sehen soll. Hier wäre es angebrachter, einen eigenen Dialog für nicht-angemeldete Nutzer zu erstellen und 
 zusätzlich ein Hauptmenü.\\
-Nach der zweiten Eingabe erhielt man ebenfalls eine textuelle Beschreibung, von welchem Dialog man wohin navigieren kann, einen 
+Nach der zweiten Eingabe [64 Benutzungsschnittstelle (GPT 02), S. 198] erhielt man ebenfalls eine textuelle Beschreibung, von welchem Dialog man wohin navigieren kann, einen 
 PlantUML-Code für ein UML-Diagramm sowie eine Beschreibung der Dialoge. Das PlantUML-Diagramm hatte zunächst einen Syntaxfehler, 
 welcher jedoch nach einem Hinweis korrigiert wurde. Jedoch ist das Diagramm recht unübersichtlich, da zum einen die Pfeile nur in 
 eine Richtung zeigen und zum anderen die Struktur etwas durcheinander ist. Die Beschreibung ist dafür, abgesehen von einem Punkt, 
@@ -745,14 +747,14 @@ sehr gut. Wenn man einem Spiel beigetreten ist oder ein Spiel gestartet hat, gel
 dort direkt das Spielfeld sieht, was bei einem Hauptbildschirm während des Spiels eigentlich der Fall ist, muss man den Anwendungsfall 
 ``Spiel anzeigen'' aus dem Anwendungsfalldiagramm wieder entfernen.
 
-Die von Gemini erstellte textuelle Beschreibung der Benutzungsschnittstelle sieht für sich ganz gut aus. Allerdings passt diese nicht 
+Die von Gemini erstellte textuelle Beschreibung der Benutzungsschnittstelle sieht für sich ganz gut aus [65 Benutzungsschnittstelle (Gemini 01), S. 202]. Allerdings passt diese nicht 
 mit dem Anwendungsfalldiagramm zusammen. In den Dialogen wurden Buttons bzw. Dialognavigationen beschrieben, für die es keine 
 Anwendungsfälle gibt, zum Beispiel ``Pausieren des Spiels''. Des Weiteren startet man scheinbar direkt im ``Hauptmenü'' und es gibt keinen 
 Startdialog für nicht angemeldete User, in welchem die Anwendungsfälle ``Anmelden'' und ``Registrieren'' umgesetzt werden. Nach der Eingabe, 
-dass noch ein Startdialog erstellt werden soll, wurde dies aber nachträglich erstellt. Hier gibt es dann allerdings die Möglichkeit, 
+dass noch ein Startdialog erstellt werden soll, wurde dies aber nachträglich erstellt [66 Benutzungsschnittstelle (Gemini 02), S. 205]. Hier gibt es dann allerdings die Möglichkeit, 
 als Gast einem Spiel beizutreten. Dies passt weder zu dem fachlichen Datenmodell noch zu dem Anwendungsfalldiagramm.
 
-Le Chat hat bei der Erstellung der Benutzungsschnittstelle probiert, diese in die Ausgabe mit zu ``zeichnen''. Die Abbildung war jedoch 
+Le Chat hat bei der Erstellung der Benutzungsschnittstelle probiert, diese in die Ausgabe mit zu ``zeichnen'' [67 Benutzungsschnittstelle (Le Chat 01), S. 207]. Die Abbildung war jedoch 
 völlig durcheinander und unübersichtlich. Die Verbindung zwischen den Dialogen ist unverständlich und ergeben keinen Sinn. Auch mit 
 Eingaben, dass die Verbindung doch überarbeitet werden soll, wurde dies nicht besser. Dafür kann man sagen, dass die erstellten Dialoge 
 soweit zu den Anwendungsfällen passen und die meisten enthalten sind. Jedoch sind auch einige Dialoge erstellt worden, für die man 
@@ -787,28 +789,28 @@ sein soll. Einmal für den Anwendungsfall ``Anmelden'' und einmal für den Dialo
     \label{Prompt Dialog Anmelden}
 \end{prompt}
 
-ChatGPT hat in der Ausgabe wieder eine ``gezeichnete'' Skizze erstellt. Bei der ersten Ausgabe des ``Anmelden''-Dialogs wurde noch ein Button 
+ChatGPT hat in der Ausgabe wieder eine ``gezeichnete'' Skizze erstellt [68 Dialog Anmelden (GPT 01), S. 209]. Bei der ersten Ausgabe des ``Anmelden''-Dialogs wurde noch ein Button 
 für ``Passwort vergessen?'' erstellt. Grundsätzlich macht dies natürlich Sinn, hier einzufügen, allerdings wurde im Anwendungsfalldiagramm 
-kein Anwendungsfall dafür erstellt. Positiv auffällig ist, dass die erste Ausgabe [GPT 01 Anmelden] in dem Chat erstellt wurde, wo GPT-3.5 
-in dem Anwendungsfall ``Anmelden'' festgelegt hat, dass sich der User mit einem Benutzernamen und einem Passwort anmeldet [GPT 01 Anmelden] 
-und die zweite Ausgabe [GPT 02 Anmelden] in dem Chat erstellt wurde, wo GPT-4o sich vorher beim Anwendungsfall für eine E-Mail und ein 
-Passwort entschieden hat. Dies passt mit den Dialogen überein. Bemängeln kann man dabei, dass bei der Beschreibung der Elemente nicht auf 
+kein Anwendungsfall dafür erstellt. Positiv auffällig ist, dass die erste Ausgabe in dem Chat erstellt wurde, wo GPT-3.5 
+in dem Anwendungsfall ``Anmelden'' festgelegt hat, dass sich der User mit einem Benutzernamen und einem Passwort anmeldet [40 AF Anmelden (GPT 01), S. 133] 
+und die zweite Ausgabe [69 Dialog Anmelden (GPT 02), S. 211] in dem Chat erstellt wurde, wo GPT-4o sich vorher beim Anwendungsfall für eine E-Mail und ein 
+Passwort entschieden hat [41 AF Anmelden (GPT 02), S. 135]. Dies passt mit den Dialogen überein. Bemängeln kann man dabei, dass bei der Beschreibung der Elemente nicht auf 
 das Fachliche Datenmodell verwiesen wurde. Nach einer groben Eingabe, dass doch auf die Werte aus dem Fachlichen Datenmodell referenziert 
-werden soll, wurde dies jedoch richtig gemacht [GPT 03 Anmelden].\\
-Bei der Erstellung des Dialogs ``Spielbildschirm'' wurde auch wieder eine textuelle Beschreibung und eine Skizze erstellt. Die Skizze umfasst 
+werden soll, wurde dies jedoch richtig gemacht [70 Dialog Anmelden (GPT 03), S. 213].\\
+Bei der Erstellung des Dialogs ``Spielbildschirm'' [73 Dialog Spielbildschirm (GPT 01), S. 219] wurde auch wieder eine textuelle Beschreibung und eine Skizze erstellt. Die Skizze umfasst 
 allerdings nur einen Vermerk in eckigen Klammern, wo das Spielbrett graphisch dargestellt werden soll. Außerdem wurde auch hier nochmal die 
-Eingabe gemacht, dass auf das Fachliche Datenmodell referenziert werden soll. Interessant ist, dass ein extra Button für das Würfeln erstellt 
+Eingabe gemacht, dass auf das Fachliche Datenmodell referenziert werden soll [74 Dialog Spielbildschirm (GPT 02), S. 221]. Interessant ist, dass ein extra Button für das Würfeln erstellt 
 wurde und einer, um einen Zug zu machen. Bei dieser Implementierung ist es naheliegender, dass für beide Buttons ein eigener Anwendungsfall 
 gestartet wird. Bei Nachfrage, zu beschreiben, wenn ein Anwendungsfall gestartet wird, gibt ChatGPT aus, dass Würfeln ein eigener 
-Anwendungsfall ist. Die restlichen Verweise auf das Fachliche Datenmodell und die Beschreibung, welcher Anwendungsfall gestartet wird, 
+Anwendungsfall ist [75 Dialog Spielbildschirm (GPT 03), S. 224]. Die restlichen Verweise auf das Fachliche Datenmodell und die Beschreibung, welcher Anwendungsfall gestartet wird, 
 passen soweit.
 
-Gemini erstellt in der Beschreibung der Buttons Verweise auf andere Dialoge und Anwendungsfälle. Negativ fällt dafür auf, dass in der 
+Gemini erstellt in der Beschreibung der Buttons Verweise auf andere Dialoge und Anwendungsfälle [71 Dialog Anmelden (Gemini 01), S. 215]. Negativ fällt dafür auf, dass in der 
 Beschreibung des Dialoges auch das Verhalten beschrieben wird. Hier fügt Gemini unter anderem eine Beschreibung ein, was passiert, wenn man 
 auf ``Anmelden'' klickt. Diese Beschreibung entspricht der eines Sequenzdiagrammes von einem Anwendungsfall und ist hier, in der Beschreibung 
 eines Dialoges, falsch. Die Benutzerdaten entsprechen dem Anwendungsfalldiagramm, allerdings ist auch hier das Problem vorhanden, dass im 
 Fachlichen Datenmodell keiner der Anmeldedaten als einzigartig beschrieben wurde.\\
-Ähnlich verhält es sich bei dem Dialog für den Spielbildschirm. Auch hier werden im Abschnitt ``Verhalten'' eher die Anwendungsfälle beschrieben. 
+Ähnlich verhält es sich bei dem Dialog für den Spielbildschirm [76 Dialog Spielbildschirm (Gemini 01), S. 227]. Auch hier werden im Abschnitt ``Verhalten'' eher die Anwendungsfälle beschrieben. 
 Genauso wie bei ChatGPT gibt es auch hier einen Button für das Würfeln und die getrennte Möglichkeit, einen Zug zu machen. Dies indiziert, dass 
 für diese beiden Aktionen getrennte Anwendungsfälle erstellt werden sollten. In dem Dialog werden außerdem die möglichen Züge für den Spieler 
 angezeigt. Dies passt allerdings nicht zu den Beschreibungen der Anwendungsfälle, da dies nirgends aufgeführt wird. Grundsätzlich kann man hier 
@@ -816,16 +818,16 @@ allerdings sagen, dass die Beschreibungen der Anwendungsfälle hier deutlich bes
 wieder ein Chat eingebunden. Ob das allerdings zufällig ist oder weil sich Gemini wieder an die Anforderung erinnert hat, ist fraglich. Das 
 Punktesystem wird weiterhin nicht betrachtet.
 
-Beim ``Anmelden''-Dialog hat Le Chat wieder nur eine textuelle Beschreibung erstellt. Diese ist soweit passend. Für das Anmelden hat sich Le Chat 
+Beim ``Anmelden''-Dialog hat Le Chat wieder nur eine textuelle Beschreibung erstellt [72 Dialog Anmelden (Le Chat 01), S.217]. Diese ist soweit passend. Für das Anmelden hat sich Le Chat 
 auf die E-Mail-Adresse und ein Passwort festgelegt. Im Fachlichen Datenmodell wurde allerdings nur gesagt, dass die ID eindeutig ist, das 
 heißt, dass entweder die E-Mail-Adresse ebenfalls eindeutig gemacht werden muss oder sich diese nicht fürs Anmelden eignet. Ansonsten könnten 
 zwei Benutzer mit derselben E-Mail-Adresse und demselben Passwort nicht unterschieden werden. Außerdem fehlt ein Button, um zum 
 ``Registrieren''-Dialog zu kommen, welcher zumindest laut dem Anwendungsfalldiagramm vorhanden sein sollte. Passen würde es jedoch zur 
 Benutzungsschnittstelle, da hier kein Dialog fürs Registrieren eingebunden wurde.\\
-Bei der Beschreibung des Dialogs ``Spielbrett'' werden die Inhalte gut beschrieben. Es fehlt lediglich ein Button oder Ähnliches, um den 
+Bei der Beschreibung des Dialogs ``Spielbrett'' werden die Inhalte gut beschrieben [77 Dialog Spielbildschirm (Le Chat 01), S. 230]. Es fehlt lediglich ein Button oder Ähnliches, um den 
 Spielstand anzuzeigen. Dies ist laut dem Anwendungsfalldiagramm ein eigener Anwendungsfall, wobei jedoch die Frage ist, was dieser beschreiben 
 soll oder ob dieser durch das dauerhafte Anzeigen des Spielbrettes hinfällig geworden ist. Bei Nachfrage, ob Le Chat beschreiben kann, wann 
-ein Anwendungsfall gestartet wird, gibt dieser eine zu dem Dialog passende Beschreibung aus. Auch hier fehlen allerdings die Anwendungsfälle 
+ein Anwendungsfall gestartet wird, gibt dieser eine zu dem Dialog passende Beschreibung aus [78 Dialog Spielbildschirm (Le Chat 02), S. 232]. Auch hier fehlen allerdings die Anwendungsfälle 
 ``Spielstand anzeigen'' und ``Spielergebnis anzeigen''.
 
 Alle drei Tools haben die Dialoge gut und passend erstellt. Es gab lediglich ein paar Inkonsistenzen zu den vorherigen Dokumenten. Die 
@@ -849,7 +851,8 @@ man die vorherigen Dokumente nochmal anpasst.
 \end{prompt}
 
 Dieser sehr einfach gehaltene Prompt wurde für die Erstellung der nichtfunktionalen Anforderungen verwendet. Es musste lediglich erwähnt werden, 
-dass zu jeder Anforderung ein Test erstellt werden soll. Sowohl bei ChatGPT als auch bei Le Chat werden gute Anforderungen erstellt, und die 
+dass zu jeder Anforderung ein Test erstellt werden soll. Bei ChatGPT [79 Nichtfunktionale Anforderungen (GPT 01), S. 224], Gemini [80 Nichtfunktionale Anforderungen (Gemini 01), S. 235] 
+und Le Chat [81 Nichtfunktionale Anforderungen (Le Chat 01), S. 237] werden gute Anforderungen erstellt, und die 
 Tests passen auch sehr gut zu diesen. Hier werden alle drei Tools mit ``Sehr gut'' bewertet.
 
 \section{Architekturdokument} \index{Architekturdokument} \label{CompArchitekturdokument}
@@ -877,21 +880,21 @@ Infrastruktur zu erstellen:
     \label{Prompt Technische Infrastruktur}
 \end{prompt}
 
-ChatGPT erstellt hier wieder eine Skizze in die Ausgabe mit. Diese ist auch ganz gut, lediglich die Datenbank ist etwas verrutscht. Negativ aufgefallen 
+ChatGPT erstellt hier wieder eine Skizze in die Ausgabe mit [1 Technische Infrastruktur (GPT 01), S. 4]. Diese ist auch ganz gut, lediglich die Datenbank ist etwas verrutscht. Negativ aufgefallen 
 ist die Beschreibung der Verbindung von der KI-Komponente. Hier wird beschrieben, dass diese in die Spiel-Logik auf der Server-Seite integriert ist und 
 daher keine externe Verbindung erforderlich ist. In der Beschreibung der Systemübersicht wird die Spiel-Logik allerdings nur auf der Client-Seite erstellt. 
 Den Anwendungsfällen entsprechend ist die Spiel-Logik auf der Server-Seite allerdings korrekt, da zum Beispiel der Zug erst auf der Server-Seite validiert 
-wird [GPT 05 Zug Machen]. Fragt man ChatGPT danach, wird ausgegeben, dass die Spiel-Logik beim Server hinzugefügt werden soll. Ansonsten wurde die 
+wird [04\_Anforderungsspezifikation, S. 173 ff.]. Fragt man ChatGPT danach, wird ausgegeben, dass die Spiel-Logik beim Server hinzugefügt werden soll. Ansonsten wurde die 
 technische Infrastruktur von ChatGPT gut erstellt.
 
-Bei Gemini fällt direkt auf, dass sowohl eine Datenbank für den Client als auch für den Server erstellt wird. Diese ist eigentlich unnötig, da es 
+Bei Gemini fällt direkt auf, dass sowohl eine Datenbank für den Client als auch für den Server erstellt wird [2 Technische Infrastruktur (Gemini 01), S. 8]. Diese ist eigentlich unnötig, da es 
 vermutlich einfacher und effizienter ist, die Spielstände und die Benutzerdaten, wenn diese benötigt werden, vom Server an den Client zu senden, als 
 diese die ganze Zeit doppelt gespeichert zu haben. Des Weiteren fällt auf, dass die Verbindung zwischen Client und Server nicht über RMI, sondern über 
-HTTPS läuft. Aus diesem Grund wurde als zweite Eingabe auch hier die Beschreibung der Systemübersicht mitgegeben. Dies hat allerdings nichts geändert. 
+HTTPS läuft. Aus diesem Grund wurde als zweite Eingabe auch hier die Beschreibung der Systemübersicht mitgegeben [3 Technische Infrastruktur (Gemini 02), S. 10]. Dies hat allerdings nichts geändert. 
 Auf eine explizite Eingabe, dass die Kommunikation zwischen Client und Server über RMI läuft, wurde nur erklärt, was verändert werden muss, wie der Ablauf 
-dann ist und was die Vor- und Nachteile davon sind. Es wurde allerdings nicht in die technische Infrastruktur übernommen.
+dann ist und was die Vor- und Nachteile davon sind [4 Technische Infrastruktur (Gemini 03), S. 13]. Es wurde allerdings nicht in die technische Infrastruktur übernommen.
 
-Auch Le Chat versucht, eine Skizze in die Ausgabe mit einzufügen. Dies klappt hier allerdings nicht so richtig, da die Komponenten mit den 
+Auch Le Chat versucht, eine Skizze in die Ausgabe mit einzufügen [5 Technische Infrastruktur (Le Chat 01), S. 15]. Dies klappt hier allerdings nicht so richtig, da die Komponenten mit den 
 Verbindungen nicht richtig verbunden werden. Während ChatGPT die Datenbank extern, als eigene Komponente definiert, ist bei Le Chat diese 
 Teil des Servers. Außerdem werden bei den Nachbarsystemen ein externes Authentifizierungssystem sowie ein Zahlungssystem erstellt, was 
 allerdings nicht Teil der Anforderungen war. Daher sind diese hier falsch. Jedoch passt die Zuweisung der Versionen für die 
@@ -921,40 +924,41 @@ Mithilfe des ersten Prompts wurde versucht, das Komponentenmodell zu erstellen. 
 haben sich zu sehr an die technische Infrastruktur gehalten und sind von diesem Format nicht weggekommen. Dadurch wurde bei den drei Tools mit dem 
 zweiten Prompt versucht, diese davon etwas wegzubringen.
 
-Bei ChatGPT hat dies dann auch schon ganz gut funktioniert, allerdings wird sich trotzdem noch stark an der technischen Infrastruktur orientiert. 
+Bei ChatGPT hat dies dann auch schon ganz gut funktioniert, allerdings wird sich trotzdem noch stark an der technischen Infrastruktur orientiert [7 Komponentenmodell (GPT 02), S. 19]. 
 Außerdem sind keine Schnittstellen zwischen den Komponenten beschrieben worden. Es fällt auch auf, dass die ``Game-Logic'', welche die Spielregeln 
 implementiert und lokale Spielzüge validiert, nur auf der Client-Seite ist, was nicht den Anwendungsfällen entspricht, wo festgelegt wurde, dass 
 die Validierung der Spielzüge auf der Server-Seite geschieht. Nach einer Eingabe, in der ChatGPT dies erklärt wird, wird die ``Game-Logic'' auf die 
-Server-Seite geschoben. Außerdem werden die für RMI nötigen Komponenten ``Client Communication'' und ``Server Communication'' hinzugefügt, welche 
+Server-Seite geschoben [8 Komponentenmodell (GPT 03), S. 23]. Außerdem werden die für RMI nötigen Komponenten ``Client Communication'' und ``Server Communication'' hinzugefügt, welche 
 vorher durch die ``Communication''-Komponente zwischen Client und Server falsch dargestellt wurden. Da nun allerdings auf der Server-Seite ``Game Logic'' 
-und ``Game Manager'' vorhanden waren, wurde ChatGPT gefragt, ob man diese nicht zusammenfassen könnte. Dies wurde bejaht und die Komponenten wurden 
+und ``Game Manager'' vorhanden waren, wurde ChatGPT gefragt, ob man diese nicht zusammenfassen könnte [9 Komponentenmodell (GPT 04), S. 27]. Dies wurde bejaht und die Komponenten wurden 
 zu ``Game Manager/Logic'' zusammengefasst. Da der vom Kunden angeforderte Chat nirgends erwähnt wurde, wurde ChatGPT diesbezüglich nochmal gefragt, 
-ob dieser in einer Komponente enthalten sei oder eine eigene Komponente für diesen benötigt wird. Auch hier wurde dann die Komponente ``Chat Manager'' 
+ob dieser in einer Komponente enthalten sei oder eine eigene Komponente für diesen benötigt wird [10 Komponentenmodell (GPT 05), S. 31]. Auch hier wurde dann die Komponente ``Chat Manager'' 
 richtig erstellt und in das Diagramm eingefügt. Zusätzlich könnte man noch eine ``Authentication''-Komponente in das Diagramm mit aufnehmen, welche 
 sich um die Anmeldungen, Registrierungen und ähnliche Anwendungsfälle kümmert. Da der Chat ohne Probleme in das Diagramm mit aufgenommen 
 wurde, wird das mit einer ``Authentication''-Komponente ähnlich sein, weshalb dies nicht als extra Eingabe getätigt wurde. Zum Schluss 
-wurde ChatGPT nochmal nach den Schnittstellen zwischen den Komponenten gefragt. Hier versucht ChatGPT allerdings, die Funktionen, die 
+wurde ChatGPT nochmal nach den Schnittstellen zwischen den Komponenten gefragt [11 Komponentenmodell (GPT 06), S. 35]. Hier versucht ChatGPT allerdings, die Funktionen, die 
 dort benötigt werden, zu erstellen. Diese sind zum einen nicht vollständig und zum anderen an dieser Stelle falsch. Auch mit weiteren 
 Eingaben lassen sich die Schnittstellen nicht richtig darstellen.
 
-Bei Gemini war die erste Ausgabe sehr oberflächlich, und nach der Beschreibung der Beziehungen gibt es auch mehrere Spielserver. Die 
+Bei Gemini war die erste Ausgabe [12 Komponentenmodell (Gemini 01), S. 39] sehr oberflächlich, und nach der Beschreibung der Beziehungen gibt es auch mehrere Spielserver. Die 
 zweite Eingabe hat nichts an dem Komponentenmodell verändert, weshalb entschieden wurde, als dritte Eingabe eine genaue Beschreibung 
-mit den benötigten Komponenten zu benutzen. Daraufhin wurde dann das Komponentendiagramm gut erstellt. Es wurde allerdings nicht 
+mit den benötigten Komponenten zu benutzen [13 Komponentenmodell (Gemini 02), S. 42]. Daraufhin wurde dann das Komponentendiagramm gut erstellt. Es wurde allerdings nicht 
 beschrieben, wer welche Schnittstelle bereitstellt und wer auf diese zugreift. Auf Nachfrage, wie diese aufgebaut sind und wer auf 
-welche Schnittstelle zugreift, ist Gemini mit der Antwort wieder mehr in Richtung technische Infrastruktur gegangen. Hier wurde 
+welche Schnittstelle zugreift, ist Gemini mit der Antwort wieder mehr in Richtung technische Infrastruktur gegangen [14 Komponentenmodell (Gemini 03), S. 44]. Hier wurde 
 wieder von der Kommunikation zwischen den unterschiedlichen Systemen wie Client, Server, Datenbank und KI-Modul gesprochen.
 
 Wie zu Beginn bereits erwähnt, hatte Le Chat dasselbe Problem wie ChatGPT, dass es sich zu nah an der technischen Infrastruktur orientiert 
-hat. Allerdings hat man Le Chat auch nach mehreren Eingaben nicht davon weg bringen können. Die Beschreibung der Komponenten war eher dürftig, und 
+hat [15 Komponentenmodell (Le Chat 01), S. 46]. Allerdings hat man Le Chat auch nach mehreren Eingaben nicht davon weg bringen können [16 Komponentenmodell (Le Chat 02), S. 48]. 
+Die Beschreibung der Komponenten war eher dürftig, und 
 es wurden keine Komponenten für die RMI-Verbindung erstellt. Erst nach einer expliziten Eingabe, dass eine ``ClientCommunication''- und eine 
-``ServerCommunication''-Komponente erforderlich ist, wurden diese erstellt. Das daraufhin erstellte Diagramm war allerdings eher wieder in der 
+``ServerCommunication''-Komponente erforderlich ist, wurden diese erstellt [17 Komponentenmodell (Le Chat 03), S. 50]. Das daraufhin erstellte Diagramm war allerdings eher wieder in der 
 Form der technischen Infrastruktur. Die Komponenten besaßen Interfaces, welche allerdings nicht richtig gepasst haben. Erst nach einer 
-expliziten Eingabe, wie das Komponentendiagramm auszusehen hat, wurde dieses anständig erstellt. Allerdings haben auch hier die 
-Schnittstellen gefehlt. Auf Nachfrage diesbezüglich wurden diese sogar einigermaßen brauchbar erstellt. Allerdings werden auch hier schon die 
+expliziten Eingabe, wie das Komponentendiagramm auszusehen hat, wurde dieses anständig erstellt [18 Komponentenmodell (Le Chat 04), S. 52]. Allerdings haben auch hier die 
+Schnittstellen gefehlt. Auf Nachfrage diesbezüglich wurden diese sogar einigermaßen brauchbar erstellt [19 Komponentenmodell (Le Chat 05), S. 54]. Allerdings werden auch hier schon die 
 Methoden der Schnittstellen aufgelistet. Aber auch hier sind diese an der falschen Stelle erstellt worden und sind ebenfalls nicht 
 vollständig. Dazu wurde beschrieben, dass die ``Data''-Komponente auf andere Schnittstellen zugreift. Dies ist allerdings falsch, da die 
 Datenbank ja keine Funktionen von alleine aufruft, sondern lediglich einen Return liefern soll. Nach einem Hinweis korrigierte Le Chat dies 
-allerdings auch. Ein ähnliches Verhalten sieht man bei den anderen Komponenten auch, dass die Komponenten auf der Server-Seite in Richtung 
+allerdings auch [20 Komponentenmodell (Le Chat 61), S. 57]. Ein ähnliches Verhalten sieht man bei den anderen Komponenten auch, dass die Komponenten auf der Server-Seite in Richtung 
 Client-Seite Funktionen schicken können. Hier ist die Frage, wie zum Beispiel eine Spielfeldaktualisierung umgesetzt werden soll. Wenn der 
 Server die aktuellen Positionen der Spielfiguren von alleine an den Client schicken soll, müssen die Komponenten auf der Server-Seite Richtung 
 Client-Seite kommunizieren können. Wenn man allerdings eine Funktion wie ``Spielfeld aktualisieren()'' auf der Client-Seite hinzufügt, könnte 
@@ -989,25 +993,25 @@ kann dabei einfach gehalten werden und sieht wie folgt aus:
 Bei allen drei Tools und bei beiden Anwendungsfällen werden keine Schnittstellen in das Sequenzdiagramm mit 
 aufgenommen. Da diese allerdings auch nicht beim Komponentenmodell erstellt wurden, wundert dies hier nicht allzu sehr.
 
-Die erste Ausgabe von ChatGPT ist schon sehr gut. Die Komponenten passen soweit zum Komponentenmodell und die Übergabeparameter auch 
+Die erste Ausgabe von ChatGPT ist schon sehr gut [21 AF Nutzer Anmelden (GPT 01), S. 59]. Die Komponenten passen soweit zum Komponentenmodell und die Übergabeparameter auch 
 zu dem Aktivitätsdiagramm vom Anwendungsfall ``Anmelden''. Dennoch gibt es ein paar Kleinigkeiten, die auffallen. Zum einen wird die 
 Benutzerinteraktion, ``Anmelden klicken()'' und ``Anmeldeergebnis anzeigen(success)'', mit in das Sequenzdiagramm aufgenommen. Dies gehört 
 hier natürlich nicht mit rein. Zum anderen wird im Diagramm nicht dargestellt, dass die ``GameManagerLogic''-Komponente die 
 Anmeldedaten, die sie aus der Datenbank erhält, mit den eingegebenen Daten vergleicht. Dies wurde hier nur als Beschreibung bei der 
 Komponente angegeben. Hier kann man aber auch eine extra Funktion erstellen, die die Komponente bei sich selbst aufruft. Diese beiden 
-Sachen werden nach einem Hinweis gut korrigiert. Die Erstellung der Validierung wird sowohl mit einer genauen Beschreibung [ChatGPT02] 
-als auch mit einer ungenauen Beschreibung [ChatGPT03] richtig erstellt. Bei der ungenauen Beschreibung wird lediglich zwischen der 
+Sachen werden nach einem Hinweis gut korrigiert. Die Erstellung der Validierung wird sowohl mit einer genauen Beschreibung [22 AF Nutzer Anmelden (GPT 02), S. 61] 
+als auch mit einer ungenauen Beschreibung [23 AF Nutzer Anmelden (GPT 03), S. 63] richtig erstellt. Bei der ungenauen Beschreibung wird lediglich zwischen der 
 erfolgreichen und nicht-erfolgreichen Validierung unterschieden und je nachdem unterschiedliche Funktionen zurückgesendet. Dies muss 
 allerdings nicht gemacht werden, vor allem da ab ``ServerCommunication'' immer die gleiche Funktion/Response zurückgeht. Man könnte 
 bereits bei der ``GameManagerLogic''-Komponente z.B. ein ``true'' oder ``false'' und entweder die Daten eines Users oder ``null'' 
 zurückliefern. Grundsätzlich gilt allerdings auch hier beim Sequenzdiagramm, dass man einen eindeutigen Parameter beim Anmelden 
 benötigt, da ansonsten die Anmeldung nicht eindeutig einem User zugewiesen werden kann.
 
-Geminis erste Ausgabe verwendet nicht die Komponenten aus dem fachlichen Datenmodell. Hier wird lediglich beschrieben, was der 
+Geminis erste Ausgabe verwendet nicht die Komponenten aus dem fachlichen Datenmodell [24 AF Nutzer Anmelden (Gemini 01), S. 65]. Hier wird lediglich beschrieben, was der 
 Spieler, die Client-Anwendung, der Spielserver und eine Authentifizierungskomponente machen. Erst nach einem Hinweis, die Komponenten 
-aus dem Komponentenmodell zu verwenden, wird dies gemacht. Hier wird dann allerdings rein textuell beschrieben, was passiert, und 
-nicht mit Methoden und Übergabeparametern. Doch auch dies wird nach einem Hinweis geändert. Gemini macht hier, und auch schon vorher, 
-den gleichen Fehler wie ChatGPT und beschreibt, was der Benutzer macht. Dies wird auch mit einem Hinweis von Gemini nicht geändert. 
+aus dem Komponentenmodell zu verwenden, wird dies gemacht [25 AF Nutzer Anmelden (Gemini 02), S. 67]. Hier wird dann allerdings rein textuell beschrieben, was passiert, und 
+nicht mit Methoden und Übergabeparametern. Doch auch dies wird nach einem Hinweis geändert [26 AF Nutzer Anmelden (Gemini 03), S. 70]. Gemini macht hier, und auch schon vorher, 
+den gleichen Fehler wie ChatGPT und beschreibt, was der Benutzer macht. Dies wird auch mit einem Hinweis von Gemini nicht geändert [27 AF Nutzer Anmelden (Gemini 04), S. 73]. 
 Des Weiteren fällt auf, dass bei der Auflistung der beteiligten Komponenten auch die Spiellogik aufgeführt wird. Allerdings kommt 
 diese in der Beschreibung des Sequenzdiagramms nicht vor. Grundsätzlich passen die Beschreibungen nicht immer. Zum einen wird statt 
 ``ServerCommunication'', welche bei den beteiligten Komponenten aufgelistet wird, immer von ``Spielserver'' geschrieben. Zum anderen wird 
@@ -1016,10 +1020,10 @@ besser Daten, die mit dem Benutzernamen übereinstimmen, ausgeben lassen und die
 der Benutzername eindeutig einem Nutzer zugewiesen werden können. Des Weiteren ist auch hier wieder der Fehler mit den nicht eindeutigen 
 Anmeldedaten vorhanden.
 
-Bei Le Chat wird ein PlantUML-Code mit erstellt, welcher allerdings zu einem Syntaxfehler führt. Die dazu erstellte Beschreibung ist 
+Bei Le Chat wird ein PlantUML-Code mit erstellt, welcher allerdings zu einem Syntaxfehler führt [28 AF Nutzer Anmelden (Le Chat 01), S. 76]. Die dazu erstellte Beschreibung ist 
 nur grob und nennt keine Funktionen. Es wird nur der Ablauf beschrieben, wer an wen sendet. Dadurch, dass im Komponentenmodell keine 
 ``View''-Komponente oder Ähnliches vorhanden ist, verwendet Le Chat hier von alleine eine ``Client-Anwendung''-Komponente. Dies ist daher 
-korrekt. Nach einem Hinweis, dass Funktionen mit in der Ausgabe erstellt werden sollen, macht Le Chat das ganz gut. Ein Fehler der 
+korrekt. Nach einem Hinweis, dass Funktionen mit in der Ausgabe erstellt werden sollen, macht Le Chat das ganz gut [29 AF Nutzer Anmelden (Le Chat 02), S. 78]. Ein Fehler der 
 auffällt ist, dass als Anmeldedaten ein Benutzername und Passwort verwendet werden. In dem Dialog und auch dem Anwendungsfall wurde 
 allerdings die E-Mail-Adresse und ein Passwort verwendet. Auch hier ist aber in beiden Fällen wieder das Problem, dass keiner der 
 Attribute einzigartig ist und dadurch nicht eindeutig ein Benutzer identifiziert werden kann.
@@ -1028,18 +1032,18 @@ Der Prompt für den Anwendungsfall ``Zug machen'' ist äquivalent. Bei allen dre
 der anderen Clients stattfindet. Daher stellt sich die Frage, ob dies einfach vergessen wurde oder ob die Tools an dieser Stelle davon 
 ausgehen, dass die Aktualisierung in einem separaten Anwendungsfall geschieht.
 
-Grundsätzlich stellt man bei ChatGPT fest, dass das Sequenzdiagramm nicht zum Aktivitätsdiagramm passt. Es wird nicht mehrmals 
+Grundsätzlich stellt man bei ChatGPT fest, dass das Sequenzdiagramm [30 AF Zug Machen (GPT 01), S. 79] nicht zum Aktivitätsdiagramm [04\_Anforderungsspezifikation, S. 173 ff.] passt. Es wird nicht mehrmals 
 zwischen Client und Server hin und her gewechselt. Außerdem wird das Würfeln hier nicht betrachtet. Das Sequenzdiagramm passt 
 allerdings deutlich besser als das Aktivitätsdiagramm, weshalb diese Inkonsistenz nicht negativ ist. An dieser Stelle könnte man das 
 Anwendungsfalldiagramm noch einmal überarbeiten lassen. Negativ fällt aber trotzdem auf, dass nicht betrachtet wird, was passiert, 
-wenn das Feld bereits besetzt ist. Nach einem Hinweis wird dies allerdings hinzugefügt. Dazu ist immer noch unvollständig, dass nicht 
+wenn das Feld bereits besetzt ist. Nach einem Hinweis wird dies allerdings hinzugefügt [31 AF Zug Machen (GPT 02), S. 81]. Dazu ist immer noch unvollständig, dass nicht 
 überprüft wird, welche Farbe die Figur auf dem Feld hat. Die Figur wird einfach automatisch auf das Startfeld zurückgesetzt. 
 Zusätzlich stellt man sich die Fragen, ob und wo der Zug mit dem gewürfelten Wert verglichen und überprüft wird. 
 
-Bei Geminis Ausgabe wird unter den beteiligten Komponenten eine ``Spielfigur''- und eine ``Würfel''-Komponente aufgelistet. Dies ist nicht 
+Bei Geminis Ausgabe [32 AF Zug Machen (Gemini 01), S. 83] wird unter den beteiligten Komponenten eine ``Spielfigur''- und eine ``Würfel''-Komponente aufgelistet. Dies ist nicht 
 passend zum Komponentenmodell. Des Weiteren wird auch wieder der Spieler in die Beschreibung aufgenommen. Zusätzlich wird hier, 
 wie beim Sequenzdiagramm für ``Anmelden'', nur beschrieben, was passiert und keine Methoden erstellt. Nach einem Hinweis werden diese 
-allerdings wieder erstellt. Es wird außerdem zweimal vom Client zum Server und wieder zurückgegangen: einmal fürs Würfeln und einmal 
+allerdings wieder erstellt [33 AF Zug Machen (Gemini 02), S. 86]. Es wird außerdem zweimal vom Client zum Server und wieder zurückgegangen: einmal fürs Würfeln und einmal 
 für den Zug. Dazu fehlen bei den Funktionen die Attribute, die zum Zug dazugehören. Darüber hinaus wird hier wieder von ``Spielserver'' 
 statt ``ServerCommunication'' gesprochen. Zusätzlich gibt es keine Überprüfung, ob der Spieler würfeln darf. Erst nachdem die gewürfelte 
 Zahl wieder beim Client angekommen ist, wird überprüft, ob der Spieler am Zug ist. Dadurch könnte man zum Beispiel ganz häufig würfeln 
@@ -1048,17 +1052,17 @@ und damit den Server überlasten. Aber auch ohne böse Absicht ist es recht inef
 auf dem Server macht. Ebenfalls auffällig ist, dass die Beschreibung bei Punkt 13 einfach aufhört. Vermutlich hat Gemini hier die 
 Ausgabe einfach wieder abgebrochen.
 
-Der von Le Chat erstellte PlantUML-Code ist auch hier wieder fehlerhaft und die Beschreibung wurde nur grob erstellt. Daher wurde 
-auch hier nach einer genauen Beschreibung mit Funktionen gefragt, welche dann erstellt wurden. Bei den Funktionen fällt zum einen auf, 
+Der von Le Chat erstellte PlantUML-Code ist auch hier wieder fehlerhaft und die Beschreibung wurde nur grob erstellt [34 AF Zug Machen (Le Chat 01), S. 89]. Daher wurde 
+auch hier nach einer genauen Beschreibung mit Funktionen gefragt, welche dann erstellt wurden [35 AF Zug Machen (Le Chat 02), S. 91]. Bei den Funktionen fällt zum einen auf, 
 dass es nur ein Attribut für das ZielFeld gibt. Dies entspricht nicht dem Aktivitätsdiagramm. Dort wurden zwei Attribute, ``Figur.x'' 
 und ``Figur.y'', verwendet. Außerdem stellt sich die Frage, warum eine Spiel-ID übergeben wird. Da ``Figur'' im fachlichen Datenmodell eine 
 einzigartige Id besitzt, benötigt man die SpielId eigentlich nicht. Außerdem stellt sich hier unter anderem die Frage, wie die anderen 
-Clients das aktualisierte Spiel erhalten. Bei der Frage, ob der Punkt 10 an einen Client oder an alle gesendet wird, antwortet Le 
+Clients das aktualisierte Spiel erhalten. Bei der Frage, ob der Punkt 10 an einen Client oder an alle gesendet wird [36 AF Zug Machen (Le Chat 03), S. 93], antwortet Le 
 Chat, dass die Aktualisierung an alle Clients gesendet werden muss und erklärt, wie das umgesetzt wird. Eine weitere Sache, die 
 auffällt, ist, dass das gesamte Spiel aus der Datenbank geholt, die neue Position aktualisiert und anschließend das gesamte 
 Spiel wieder in die Datenbank geladen wird. Hier wäre es aber eigentlich effizienter, einfach den entsprechenden Wert der Spielfigur 
-zu aktualisieren. Wenn man Le Chat danach fragt, wird die Frage mit ``Ja'' beantwortet. Ein weiterer Punkt, der auffällt, ist, dass auch 
-hier nicht geprüft wird, ob das Feld bereits belegt ist. Le Chat fügt dies zwar in die Beschreibung ein, allerdings ohne Methoden, 
+zu aktualisieren. Wenn man Le Chat danach fragt, wird die Frage mit ``Ja'' beantwortet [37 AF Zug Machen (Le Chat 04), S. 94]. Ein weiterer Punkt, der ebenfalls auffällt, ist, dass auch 
+hier nicht geprüft wird, ob das Feld bereits belegt ist. Le Chat fügt dies zwar in die Beschreibung ein [38 AF Zug Machen (Le Chat 05), S. 95], allerdings ohne Methoden, 
 sondern als reine Beschreibung. Des Weiteren wird auch nicht geprüft, ob der Spieler, der den Zug durchführen will, an der Reihe ist 
 und ob der Zug dem gewürfelten Wert entspricht.
 
@@ -1076,9 +1080,9 @@ fehlende Einfügen der Methoden zum Prüfen, ob das Feld bereits belegt ist, fä
 erstellt worden, weshalb Le Chat gerade noch so mit ``Befriedigend'' bewertet wird. Man erhält aber bei allen drei Tools ein Grundgerüst 
 und eine Idee, was erstellt werden soll und wie das Sequenzdiagramm in etwa aussehen soll.
 
-\subsection*{Interfaces in Java}
+\subsection*{Interfaces in Java} \index{Interfaces in Java}
 
-Da die Erstellung mit ChatGPT bis hierhin am besten geklappt hat, wurde probiert, die Interfaces in Java zu erstellen. Dabei fällt 
+Da die Erstellung mit ChatGPT bis hierhin am besten geklappt hat, wurde probiert, die Interfaces in Java zu erstellen [siehe ``\nameref{Interfaces}'' im \nameref{Anhang}]. Dabei fällt 
 direkt auf, dass die erstellten Klassen nicht zu den Schnittstellen bzw. zu den Komponenten aus dem Komponentenmodell und damit auch 
 nicht zu den Sequenzdiagrammen passen, da hier die Klassen ``AuthenticationService.java'' und ``GameService.java'' keiner Komponente 
 zugewiesen werden können. Es könnte allerdings sein, dass ChatGPT mehrere Schnittstellen für eine Komponente erstellt hat. Doch wenn 

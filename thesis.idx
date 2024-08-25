@@ -4,9 +4,9 @@
 \indexentry{Struktur der Arbeit|hyperpage}{2}
 \indexentry{Grundlagen|hyperpage}{5}
 \indexentry{LLM Tools|hyperpage}{5}
-\indexentry{ChatGPT|hyperpage}{6}
-\indexentry{Google Gemini|hyperpage}{7}
-\indexentry{Le Chat|hyperpage}{8}
+\indexentry{Grundlagen ChatGPT|hyperpage}{6}
+\indexentry{Grundlagen Google Gemini|hyperpage}{7}
+\indexentry{Grundlagen Le Chat|hyperpage}{10}
 \indexentry{Besprechungsprotokoll|hyperpage}{13}
 \indexentry{Projekthandbuch|hyperpage}{13}
 \indexentry{Risikoliste|hyperpage}{14}
@@ -15,7 +15,7 @@
 \indexentry{Testspezifikation|hyperpage}{18}
 \indexentry{Anwendung von LLM Tools im Software Engineering|hyperpage}{19}
 \indexentry{Besprechungsprotokoll|hyperpage}{19}
-\indexentry{Projekthandbuch|hyperpage}{19}
+\indexentry{Projekthandbuch|hyperpage}{20}
 \indexentry{Risikoliste|hyperpage}{20}
 \indexentry{Anforderungsspezifikation|hyperpage}{21}
 \indexentry{Architekturdokument|hyperpage}{22}
@@ -25,8 +25,9 @@
 \indexentry{Projekthandbuch|hyperpage}{28}
 \indexentry{Risikoliste|hyperpage}{29}
 \indexentry{Anforderungsspezifikation|hyperpage}{32}
-\indexentry{Architekturdokument|hyperpage}{48}
-\indexentry{Zusammenfassung und Ausblick|hyperpage}{57}
-\indexentry{Zusammenfassung der Ergebnisse|hyperpage}{57}
-\indexentry{Kritik an der Arbeit|hyperpage}{59}
-\indexentry{Ausblick und zukünftige Entwicklungen|hyperpage}{59}
+\indexentry{Architekturdokument|hyperpage}{49}
+\indexentry{Interfaces in Java|hyperpage}{56}
+\indexentry{Zusammenfassung und Ausblick|hyperpage}{59}
+\indexentry{Zusammenfassung der Ergebnisse|hyperpage}{59}
+\indexentry{Kritik an der Arbeit|hyperpage}{61}
+\indexentry{Ausblick und zukünftige Entwicklungen|hyperpage}{61}

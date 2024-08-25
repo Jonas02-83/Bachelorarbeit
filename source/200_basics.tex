@@ -57,14 +57,14 @@ Entscheidend für die Leistungsfähigkeit und die Qualität eines Sprachmodells 
 Trainieren verwendet werden \cite{GrundlagenLLM}. Daher wird im weiteren mit drei unterschiedlichen LLM Tools gearbeitet, auf die 
 in den folgenden Abschnitten einzeln eingegangen wird. 
 
-\subsection{ChatGPT} \index{ChatGPT} \label{ChatGPT}
+\subsection{ChatGPT} \index{Grundlagen ChatGPT} \label{ChatGPT}
 
 
 ChatGPT wurde von OpenAI am 30. November 2022 veröffentlicht und entwickelte sich aufgrund seiner fortschrittlichen 
 generativen KI-Fähigkeiten rasch zu einer internationalen Sensation. Wenn man ChatGPT fragt, ob es einen Infotext 
 zu sich selbst erstellen kann, erhält man die Antwort in \autoref{InfotextChatGPT}.
 
-\begin{prompt} 
+\begin{prompt}
     \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
     \textbf{Prompt: Erstell mir einen Infotext über dich für meine Bachelorarbeit}
 
@@ -113,13 +113,13 @@ und konnte beispielsweise Bilder analysieren, Sprachansagen verarbeiten und gesp
 Im Mai 2024 kündigte OpenAI ein aktualisiertes Modell namens ChatGPT-4o an, das schnellere Ergebnisse sowie verbesserte 
 Text- und Audiofunktionen versprach. Dieses Modell umfasst auch ein neues Konversations-KI-System namens ``Sky'' \cite{GrundlagenChatGPT}.
 
-\subsection{Google Gemini} \index{Google Gemini} \label{Google Gemini}
+\subsection{Google Gemini} \index{Grundlagen Google Gemini} \label{Google Gemini}
 
 Im Dezember 2023 stellte Google eine generative Künstliche Intelligenz mit dem Namen Google Gemini vor. Sie wurde von Google DeepMind 
-entwickelt und ist laut Aussage von Google das größte, leistungsstärkste und vielseitigste große Sprachmodell (LLM), das bisher von 
-Google entwickelt und realisiert wurde. In der ursprünglichen Ankündigung wurde das KI-Sprachmodell unter dem Namen Gemini vorgestellt. 
+entwickelt und ist laut Aussage von Google das größte, leistungsstärkste und vielseitigste LLM, das bisher von 
+Google entwickelt und realisiert wurde \cite{GeminiGroeßteModell}. In der ursprünglichen Ankündigung wurde das KI-Sprachmodell unter dem Namen Gemini vorgestellt. 
 Im Februar 2024 entschied Google, auch den bisher als Bard bekannten Chatbot in Gemini umzubenennen. Damit ist Gemini mittlerweile sowohl
-der Name des Google Chatbot als auch des zugrundeliegenden Sprachmodells.
+der Name des Google Chatbot als auch des zugrundeliegenden Sprachmodells. 
 
 Bei Nachfrage an Gemini, ob es einen Infotext über sich erstellen kann, erhält man die Antwort in \autoref{InfotextGemini1} und \autoref{InfotextGemini2}.
 
@@ -209,7 +209,9 @@ Chrome-Browsers, des GMail-Services, verschiedener Entwicklungstools und anderer
 und zu erweitern. Mitte Februar 2024 stellte Google Gemini 1.5 und 1.5 Pro vor, welche bis zu eine Million Tokens 
 verarbeiten können. Diese neuen Versionen sollen die Benchmark-Ergebnisse der Vorgängerversion deutlich übertreffen \cite{GrundlagenGemini}.
 
-\subsection{Le Chat} \index{Le Chat} \label{Le Chat}
+\FloatBarrier
+
+\subsection{Le Chat} \index{Grundlagen Le Chat} \label{Le Chat}
 
 \begin{prompt}
     \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
@@ -272,15 +274,9 @@ Halluzination kommen kann.
 Grundsätzlich kann man zwischen drei Sprachmodellen auswählen: Large, Next und Small. Large bietet überlegene Denkfähigkeit,  
 Next ist ein Prototyp-Modell für erhöhte Kürze und Small arbeitet schnell und kosteneffektiv \cite{GrundlagenLeChat}.
 
+\FloatBarrier
 
 \section{Software Engineering Prozess}
-
-\begin{figure}
-    \centering
-    \includegraphics{pictures/TabelleKap2.PNG}
-    \caption{Dokumente im Software Engineering}
-    \label{Dokumente Software Engineering}
-\end{figure}
 
 Software-Engineering ist eine technische Disziplin, die sich umfassend mit der Erstellung von Software beschäftigt, 
 beginnend bei der Konzeption, über den Betrieb, bis hin zur Wartung. Die wesentlichen Aktivitäten im 
@@ -289,7 +285,17 @@ Software-Engineering umfassen die Softwarespezifikation, -entwicklung, -validier
 Diese umfassen Besprechungsprotokolle, eine Risikoliste, ein Projekthandbuch, eine Anforderungsspezifikation, 
 ein Architekturdokument und eine Testspezifikation. In der \autoref{Dokumente Software Engineering} sieht man, 
 welche Inhalte die einzelnen Dokumente umfassen. Diese werden im Folgenden etwas genauer beschrieben, um einen 
-Überblick über die Dokumente zu vermitteln.
+Überblick über die Dokumente zu vermitteln. Als Quelle hierfür wurden die Foliensätze von dem Modul ``Secure Software Engineering''
+verwendet \cite{BaumannSSE}.\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{pictures/TabelleKap2.PNG}
+    \caption{Dokumente im Software Engineering}
+    \label{Dokumente Software Engineering}
+\end{figure}
+
+\clearpage
 
 \subsection{Besprechungsprotokoll} \index{Besprechungsprotokoll} \label{Besprechungsprotokoll}
 

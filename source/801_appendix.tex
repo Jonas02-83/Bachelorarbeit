@@ -1,7 +1,7 @@
 
 \chapter{Anhang} \label{Anhang}
 
-\section*{Kundengespräch}
+\section*{Kundengespräch} \label{Kundengespräch}
 
 \begin{prompt}[H]
     \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
@@ -34,10 +34,6 @@
         **Entwickler:** Das klingt alles machbar. Wie sieht es mit dem Zeitrahmen aus? Haben Sie eine bestimmte Deadline, bis wann das Spiel fertig sein soll?
         
         **Kunde:** Ich denke, ein Zeitraum von sechs Monaten sollte machbar sein. Glauben Sie, dass das realistisch ist? Darf ich außerdem Fragen wie ihr Team aufgestellt ist?
-        
-        **Entwickler:** Ja, sechs Monate sind ein realistischer Zeitraum für dieses Projekt, vorausgesetzt, wir haben regelmäßige Feedback-Schleifen und Sie können uns zeitnah Ihre Anforderungen und Rückmeldungen geben. Wir sind ein Team aus 4 Personen. Ich bin die Projektleiterin, der Herr Schneider ist unser Anforderungsanalyst und fachlicher Chefdesigner, die Frau Fischer ist unsere Systemarchitektin und der Herr Becker ist der Testmanager.
-        
-        **Kunde:** Das klingt gut. Was wären die nächsten Schritte?
         \vfill
     \end{tcolorbox}
     \caption{Kundengespräch}
@@ -46,6 +42,10 @@
 
 \begin{prompt}[H]
     \begin{tcolorbox}[colback=gray!20, colframe=gray!20, boxrule=0pt, sharp corners] 
+        **Entwickler:** Ja, sechs Monate sind ein realistischer Zeitraum für dieses Projekt, vorausgesetzt, wir haben regelmäßige Feedback-Schleifen und Sie können uns zeitnah Ihre Anforderungen und Rückmeldungen geben. Wir sind ein Team aus 4 Personen. Ich bin die Projektleiterin, der Herr Schneider ist unser Anforderungsanalyst und fachlicher Chefdesigner, die Frau Fischer ist unsere Systemarchitektin und der Herr Becker ist der Testmanager.
+        
+        **Kunde:** Das klingt gut. Was wären die nächsten Schritte?
+
         **Entwickler:** Wir würden zunächst einen detaillierten Projektplan erstellen, der alle Funktionen und Meilensteine festlegt. Danach beginnen wir mit der Entwicklung des Prototyps. Während der gesamten Entwicklung würden wir regelmäßige Meetings abhalten, um den Fortschritt zu besprechen und eventuelle Anpassungen vorzunehmen.
         
         **Kunde:** Das klingt nach einem guten Plan. Wie sind sie eigentlich dazu gekommen, Entwickler zu werden?
@@ -73,10 +73,11 @@
     \label{Kundengespräch2}
 \end{prompt}
 
+\clearpage
 
 \section*{Tabelle der auf dem USB-Stick enthaltenen Dateien} \label{BeigelegteDateien}
 
-\begin{longtable}{|p{5cm}|p{10cm}|}
+\begin{longtable}{|p{6cm}|p{9cm}|}
     \hline
     \textbf{Datei} & \textbf{Beschreibung} \\
     \hline
@@ -99,25 +100,72 @@
 
 \end{longtable}
 
+\section*{Code der Interfaces} \label{Interfaces}
+
+\begin{Code}[H]
+    \lstinputlisting{code/UserInterface.java}
+    \vfill
+\caption{UserInterface [ChatGPT]}
+\label{Code UserInterface}
+\end{Code}
+
+\begin{Code}[H]
+    \lstinputlisting{code/ClientCommunication.java}
+    \vfill
+\caption{ClientCommunication [ChatGPT]}
+\label{Code ClientCommunication}
+\end{Code}
+
+\begin{Code}[H]
+    \lstinputlisting{code/ServerCommunication.java}
+    \vfill
+\caption{ServerCommunication [ChatGPT]}
+\label{Code ServerCommunication}
+\end{Code}
+
+\begin{Code}[H]
+    \lstinputlisting{code/AuthenticationService.java}
+    \vfill
+\caption{AuthenticationService [ChatGPT]}
+\label{Code AuthenticationService}
+\end{Code}
+
+\begin{Code}[H]
+    \lstinputlisting{code/GameManagerLogic.java}
+    \vfill
+\caption{GameManagerLogic [ChatGPT]}
+\label{Code GameManagerLogic}
+\end{Code}
+
+\begin{Code}[H]
+    \lstinputlisting{code/GameService.java}
+    \vfill
+\caption{GameService [ChatGPT]}
+\label{Code GameService}
+\end{Code}
+
+\begin{Code}[H]
+    \lstinputlisting{code/DatabaseAccess.java}
+    \vfill
+\caption{DatabaseAccess [ChatGPT]}
+\label{Code DatabaseAccess}
+\end{Code}
+
+\begin{Code}[H]
+    \lstinputlisting{code/MoveResponse.java}
+    \vfill
+\caption{MoveResponse [ChatGPT]}
+\label{Code MoveResponse}
+\end{Code}
+
+\begin{Code}[H]
+    \lstinputlisting{code/OccupancyStatus.java}
+    \vfill
+\caption{OccupancyStatus [ChatGPT]}
+\label{Code OccupancyStatus}
+\end{Code}
+
 \cleardoublepage
-
-%% Abkürzungsverzeichnis
-
-\printglossary[type=\acronymtype]
-\printglossary
-
-\listoffigures
-\cleardoublepage 
-
-%% Tabellenverzeichnis
-\listoftables
-\cleardoublepage 
-
-%% Quellcodeverzeichnis
-\renewcommand\lstlistlistingname{Quellcodeverzeichnis} 
-\lstlistoflistings 
-\renewcommand*\lstlistingname{Quellcode}
-\cleardoublepage 
 
 %% Stichwortverzeichnis, Index
 \renewcommand{\indexname}{Stichwortverzeichnis}

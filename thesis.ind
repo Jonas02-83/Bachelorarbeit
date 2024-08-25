@@ -4,8 +4,8 @@
 		\hyperpage{32}
   \item Anwendung von LLM Tools im Software Engineering, \hyperpage{19}
   \item Architekturdokument, \hyperpage{17}, \hyperpage{22}, 
-		\hyperpage{48}
-  \item Ausblick und zukünftige Entwicklungen, \hyperpage{59}
+		\hyperpage{49}
+  \item Ausblick und zukünftige Entwicklungen, \hyperpage{61}
 
   \indexspace
 
@@ -14,24 +14,25 @@
 
   \indexspace
 
-  \item ChatGPT, \hyperpage{6}
-
-  \indexspace
-
   \item Einleitung, \hyperpage{1}
 
   \indexspace
 
-  \item Google Gemini, \hyperpage{7}
   \item Grundlagen, \hyperpage{5}
+  \item Grundlagen ChatGPT, \hyperpage{6}
+  \item Grundlagen Google Gemini, \hyperpage{7}
+  \item Grundlagen Le Chat, \hyperpage{10}
 
   \indexspace
 
-  \item Kritik an der Arbeit, \hyperpage{59}
+  \item Interfaces in Java, \hyperpage{56}
 
   \indexspace
 
-  \item Le Chat, \hyperpage{8}
+  \item Kritik an der Arbeit, \hyperpage{61}
+
+  \indexspace
+
   \item LLM Tools, \hyperpage{5}
 
   \indexspace
@@ -41,7 +42,7 @@
   \indexspace
 
   \item Praxisergebnisse und Vergleich, \hyperpage{25}
-  \item Projekthandbuch, \hyperpage{13}, \hyperpage{19}, \hyperpage{28}
+  \item Projekthandbuch, \hyperpage{13}, \hyperpage{20}, \hyperpage{28}
 
   \indexspace
 
@@ -58,7 +59,7 @@
   \indexspace
 
   \item Zielsetzung der Arbeit, \hyperpage{2}
-  \item Zusammenfassung der Ergebnisse, \hyperpage{57}
-  \item Zusammenfassung und Ausblick, \hyperpage{57}
+  \item Zusammenfassung der Ergebnisse, \hyperpage{59}
+  \item Zusammenfassung und Ausblick, \hyperpage{59}
 
 \end{theindex}

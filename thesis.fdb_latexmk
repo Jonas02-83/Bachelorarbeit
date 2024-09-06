@@ -1,18 +1,18 @@
 # Fdb version 4
-["biber thesis"] 1724574927.84989 "thesis.bcf" "thesis.bbl" "thesis" 1724577497.81692 0
+["biber thesis"] 1724574927.84989 "thesis.bcf" "thesis.bbl" "thesis" 1725597459.76732 0
   "./Literatur.bib" 1724574927 3583 7edfacd9b2e4d8298f39d3f0977c9e15 ""
-  "thesis.bcf" 1724577497 108177 74ac3b137596f6392d6dc91debfdf93d "pdflatex"
+  "thesis.bcf" 1725597459 108177 74ac3b137596f6392d6dc91debfdf93d "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["makeindex thesis.idx"] 1724576108.05226 "thesis.idx" "thesis.ind" "thesis" 1724577497.81643 0
-  "thesis.idx" 1724577497 1574 1ce821212371553a58f567d5b32e98c8 "pdflatex"
+["makeindex thesis.idx"] 1724576108.05226 "thesis.idx" "thesis.ind" "thesis" 1725597459.76685 0
+  "thesis.idx" 1725597459 1574 1ce821212371553a58f567d5b32e98c8 "pdflatex"
   (generated)
   "thesis.ilg"
   "thesis.ind"
   (rewritten before read)
-["pdflatex"] 1724577491.647 "c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex" "thesis.pdf" "thesis" 1724577497.81758 0
+["pdflatex"] 1725597453.65261 "c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex" "thesis.pdf" "thesis" 1725597459.76801 0
   "ETTI6_TL_Lite.tex" 1724573168 28201 68d2a09bdfe4e14e5043ed9ceba73852 ""
   "c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex" 1724489672 4664 8e4668400f10750eb0854b69f6cc8fc0 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1715678779 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -434,32 +434,32 @@
   "images/pictures/TabelleKap2.PNG" 1724489672 69697 eabaa1cfd9a2f15673dfe4462ed42522 ""
   "images/pictures/TabelleKap3.PNG" 1724575675 40530 06be5ec7df73ae58daab8bdff6c1887d ""
   "images/pictures/TabelleKap4.PNG" 1724575699 54588 474e56075a4580d13fd2a1097e96349d ""
-  "source/000_title.aux" 1724577495 5026 eca68ab487b8324f95dbf877e6f189d7 "pdflatex"
+  "source/000_title.aux" 1725597457 5026 eca68ab487b8324f95dbf877e6f189d7 "pdflatex"
   "source/000_title.tex" 1717840897 1538 6aac40dc30afa71884463a54dd4540c1 ""
-  "source/001_declaration.aux" 1724577495 5127 d14f0533dd251145a780d1d639abbbe5 "pdflatex"
+  "source/001_declaration.aux" 1725597457 5127 d14f0533dd251145a780d1d639abbbe5 "pdflatex"
   "source/001_declaration.tex" 1717840897 1243 ccb2152fe9eb902eb5e143bc680a0808 ""
-  "source/002_abstract.aux" 1724577495 5029 a0096d08381604416c13f2727e803488 "pdflatex"
+  "source/002_abstract.aux" 1725597457 5029 a0096d08381604416c13f2727e803488 "pdflatex"
   "source/002_abstract.tex" 1724577490 2161 6ea8ee5e6801ee726e8a0c67a84ea55f ""
-  "source/100_introduction.aux" 1724577495 5941 3565313c2cefda05842c4184774c4e4b "pdflatex"
+  "source/100_introduction.aux" 1725597457 5941 3565313c2cefda05842c4184774c4e4b "pdflatex"
   "source/100_introduction.tex" 1724573691 6800 a45c0fafbd7d0a198ddcc8324ff492a0 ""
-  "source/200_basics.aux" 1724577495 8806 d2752670a13ef4d1b2bb4d4f019da5a6 "pdflatex"
+  "source/200_basics.aux" 1725597457 8806 d2752670a13ef4d1b2bb4d4f019da5a6 "pdflatex"
   "source/200_basics.tex" 1724575994 41783 f4aec4708aad3e8cc6dbf01bc811e7b7 ""
-  "source/300_usage.aux" 1724577496 6844 8e1acaff16476910814de0a6355170ce "pdflatex"
-  "source/300_usage.tex" 1724575715 11114 b34a636b0637dfa38601f75433a7780c ""
-  "source/400_comparison.aux" 1724577496 10901 73569028c1d43ca02cf1fac87f712c5a "pdflatex"
+  "source/300_usage.aux" 1725597458 6844 8e1acaff16476910814de0a6355170ce "pdflatex"
+  "source/300_usage.tex" 1725597444 11116 e7b5fd14f8d8025f1c8febf2d7ce38cc ""
+  "source/400_comparison.aux" 1725597458 10901 73569028c1d43ca02cf1fac87f712c5a "pdflatex"
   "source/400_comparison.tex" 1724576101 111787 57205d235f4749fd286b82dc9b604143 ""
-  "source/500_Conclusion.aux" 1724577496 6077 816978c0651ac9840389e82782a4ec76 "pdflatex"
+  "source/500_Conclusion.aux" 1725597458 6077 816978c0651ac9840389e82782a4ec76 "pdflatex"
   "source/500_Conclusion.tex" 1724489672 13727 e1a740736cf709621e20c636666cb2ca ""
-  "source/801_appendix.aux" 1724577497 8966 fca9a47b95332667fdf32d55363657f4 "pdflatex"
+  "source/801_appendix.aux" 1725597459 8966 fca9a47b95332667fdf32d55363657f4 "pdflatex"
   "source/801_appendix.tex" 1724575876 8567 3c6327dedfa1404280207d2bb827e5ea ""
   "source/acronym.tex" 1717840897 500 34f87832f45d809cc0df413c41bfebf5 ""
-  "thesis.aux" 1724577497 14523 8721fe52e703e5718d8f63ad6f261d67 "pdflatex"
+  "thesis.aux" 1725597459 14523 d530c10008c796238a6b875bc0832cfc "pdflatex"
   "thesis.bbl" 1724574930 11311 33d2fd459df6e63443859cdbcacc9662 "biber thesis"
   "thesis.ind" 1724576108 1412 2dc33f1984ba73989bcc0ee9537ddae8 "makeindex thesis.idx"
-  "thesis.out" 1724577495 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "thesis.run.xml" 1724577497 2350 5492f36f1d36a8f2a8b1f82455391bc0 "pdflatex"
+  "thesis.out" 1725597457 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "thesis.run.xml" 1725597459 2350 5492f36f1d36a8f2a8b1f82455391bc0 "pdflatex"
   "thesis.tex" 1724489672 4664 8e4668400f10750eb0854b69f6cc8fc0 ""
-  "thesis.toc" 1724577497 3079 745a0ec0fa4e4eeb7c88d17958e7bdb7 "pdflatex"
+  "thesis.toc" 1725597459 3079 745a0ec0fa4e4eeb7c88d17958e7bdb7 "pdflatex"
   (generated)
   "source/000_title.aux"
   "source/001_declaration.aux"

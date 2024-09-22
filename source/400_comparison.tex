@@ -21,15 +21,21 @@ mit fünf Stufen entwickelt. Diese Bewertungsstufen ermöglichen eine strukturie
 der Qualität der Ausgaben von LLM-Tools. Die fünf Bewertungsstufen sind wie folgt definiert:
 
 ``Sehr gut'' wird vergeben, wenn der Inhalt der Ausgabe fachlich korrekt ist und das Format den Vorgaben entspricht, sodass 
-die Ausgabe direkt in das entsprechende Dokument eingefügt werden kann.\\
+die Ausgabe direkt in das entsprechende Dokument eingefügt werden kann.
+
+\clearpage
+
 ``Gut'' wird vergeben, wenn der Inhalt leichte Fehler enthält, die jedoch mit wenigen Anpassungen korrigiert 
 werden können, und das Format den Vorgaben entspricht. Eine Ausgabe wird ebenfalls als ``Gut'' eingestuft, wenn der Inhalt 
 korrekt ist, das Format jedoch kleinere Fehler aufweist. In diesem Fall sollte der richtige Inhalt leicht aus der Ausgabe 
-kopiert und in das entsprechende Dokument im richtigen Format eingefügt werden können.\\
+kopiert und in das entsprechende Dokument im richtigen Format eingefügt werden können.
+
 ``Befriedigend'' wird vergeben, wenn sowohl der Inhalt als auch das Format kleinere Fehler aufweisen, die sich 
-jedoch mit wenigen Anpassungen korrigieren lassen, oder wenn der korrekte Inhalt aus der Ausgabe kopiert werden kann.\\
+jedoch mit wenigen Anpassungen korrigieren lassen, oder wenn der korrekte Inhalt aus der Ausgabe kopiert werden kann.
+
 ``Ausreichend'' wird vergeben, wenn in der Ausgabe inhaltlich Teile fehlen, diese aber durch präzisere Eingaben 
-teilweise verbessert werden können, auch wenn die Ausgabe immer noch nicht vollständig ist.\\
+teilweise verbessert werden können, auch wenn die Ausgabe immer noch nicht vollständig ist.
+
 ``Mangelhaft'' wird vergeben, wenn der Inhalt der Ausgabe falsch oder unverständlich ist und sich 
 auch nicht korrigieren lässt.
 
@@ -111,7 +117,7 @@ Besprechungsprotokoll immer wieder neu generieren lässt, kommt irgendwann ein a
 zustande. Da die Zusammenfassung des Gesprächs auf die wesentlichen Punkte die Hauptaufgabe eines Besprechungsprotokolls 
 ist, erhalten Le Chat und Gemini lediglich die Bewertung ``Ausreichend''. Dass Le Chat und Gemini nicht alle Anforderungen 
 in das Protokoll aufnehmen, kann im Nachhinein das Projekt verzögern und die Kosten in die Höhe treiben. Geminis 
-erstellte Protokolle mit etwa 30 Punkten verfehlen hingegen komplett den Sinn eines Besprechungsprotokolls.
+erstellte Protokolle mit etwa 30 Punkten verfehlen hingegen den Sinn eines Besprechungsprotokolls, nur die wichtigsten Punkte aufzulisten.
 
 \section{Projekthandbuch} \index{Projekthandbuch} \label{CompProjekthandbuch}
 
@@ -150,6 +156,8 @@ Dafür wurde nach der Ausgabe der Einleitung im Chat folgender Prompt eingegeben
     \caption{Prompt Projektdefinition Projekthandbuch}
     \label{Prompt Projektdefinition Projekthandbuch}
 \end{prompt}
+
+\clearpage
 
 Diese zweite Eingabe benötigte keine weiteren Informationen, da diese im Gespräch bereits vorgegeben waren und die 
 Tools darauf zugreifen konnten. Auch diese Abschnitte sind im Dokument ``02\_Projekthandbuch.pdf'' zu finden. Die Tools 
@@ -292,7 +300,7 @@ der Risiken und Maßnahmen nicht ankreiden kann.
 \section{Anforderungsspezifikation} \index{Anforderungsspezifikation} \label{CompAnforderungsspezifikation}
 
 Für die Anforderungsspezifikation wurde für jeden Inhalt ein eigener Prompt erstellt. Daher wird im folgenden die Erstellung der Einleitung, 
-der Systemarchitektur, des Fachliche Datenmodells, des Anwendungsfalldiagramms, der detaillierten Beschreibung von Anwendungsfällen mit Aktivitätsdiagrammen, 
+der Systemarchitektur, des fachlichen Datenmodells, des Anwendungsfalldiagramms, der detaillierten Beschreibung von Anwendungsfällen mit Aktivitätsdiagrammen, 
 der Benutzungsschnittstelle mit der Dialognavigation, der detaillierten Ausarbeitung von Dialogen und der nichtfunktionalen Anforderungen einzeln
 Beschrieben und anschließend bewertet. Die Ergebnisse der Tools für die einzelnen Eingaben sind in der Datei 04\_Anforderungsspezifikation.pdf auf 
 dem beiligenden USB-Stick zu finden.
@@ -323,7 +331,7 @@ sondern der Zweck des Dokuments. Die Kurzbeschreibung der Funktionalität wurde 
 Nachbarsysteme wurden die einzelnen Teile der Anwendung erläutert, also das Spielsystem, das Kommunikationsprotokoll für RMI und die 
 Benutzeroberfläche, und keine anderweitigen Systeme, da die Anwendung alleinstehend ist [1 Einleitung (GPT 01), S. 6].
 
-Die Erstellung der Texte mit Gemini und Le Chat hat sehr gut funktioniert [2 Einleitung (Gemini 01), S. 7 \& 3 Einleitung (Le Chat 01), S. 8].
+Die Erstellung der Texte mit Gemini und Le Chat hat ohne Schwierigkeiten funktioniert [2 Einleitung (Gemini 01), S. 7 \& 3 Einleitung (Le Chat 01), S. 8].
 
 Bewertet wird ChatGPT mit ``Gut'', da hier der Zweck des Dokuments beschrieben wurde, obwohl im Prompt explizit nach einer Beschreibung der 
 Notwendigkeit des Systems für den Kunden gefragt wurde.\\
@@ -347,12 +355,12 @@ Auch hier muss beschrieben werden, was genau erstellt werden soll. Wichtig ist, 
 Dokumente vorher schon erstellt hat. Dadurch wissen die Tools, was zu erstellen ist.
 
 Bei ChatGPT wurde sogar ein Diagramm in den Chat ``gezeichnet''. Die Beschreibung und das Diagramm sind jedoch für die Systemarchitektur 
-schon viel zu genau. Es hätte gereicht, den Client, den Server und die Datenbank darzustellen und diese richtig miteinander zu verbinden. 
+schon viel zu genau. In diesem Fall hätte es genügt, den Client, den Server und die Datenbank darzustellen und diese richtig miteinander zu verbinden. 
 Bei der ersten Erstellung wurden die Verbindungen zwischen Client und Server und Server und Datenbank unidirektional dargestellt 
 [4 Systemübersicht (GPT 01), S. 9]. Nach einer weiteren Eingabe, ob das so gewollt ist, wurde dies jedoch korrigiert und die Verbindung 
 wurde bidirektional eingezeichnet [5 Systemübersicht (GPT 02), S. 12].
 
-Gemini hatte das gleiche Problem wie ChatGPT, dass hier die Komponenten bereits zu genau beschrieben werden. Die Komponenten ähneln 
+Gemini hatte das gleiche Problem wie ChatGPT, dass hier die Komponenten bereits zu genau beschrieben wurden. Die Komponenten ähneln 
 teilweise denen, die bei dem Komponentendiagramm erstellt werden müssen, als auch den Klassen aus dem fachlichen Datenmodell. Des Weiteren 
 hat Gemini zunächst keine Datenbank erstellt [6 Systemübersicht (Gemini 01), S. 15]. Auf Nachfrage, ob eine Datenbank hinzugefügt werden 
 sollte, wurde zunächst nur erklärt, woran man dies ausmachen kann. Erst mit einer expliziten Eingabe, die Datenbank hinzuzufügen, wird 
@@ -559,7 +567,7 @@ der Anforderungsspezifikation. Nachträglich eingefügte Anforderungen sind kost
 
 \subsection*{Anwendungsfälle}
 
-Nun geht es um die Erstellung der detaillierten Beschreibung für die einzelnen Anwendungsfälle. Dazu wurden zwei Anwendungsfälle ausgesucht: 
+Der folgende Textabschnitt behandelt die Erstellung der detaillierten Beschreibung für die einzelnen Anwendungsfälle. Dazu wurden zwei Anwendungsfälle ausgesucht: 
 einmal ``Anmelden'' als leichteren Anwendungsfall und ``Zug machen'' (ChatGPT), ``Figur setzen oder schlagen'' (Le Chat) bzw. ``Spiel spielen'' (Gemini) 
 als komplexeren Anwendungsfall. Dazu wurde mit zwei Prompts gearbeitet. Für den Anwendungsfall ``Anmelden'' wurde folgende Eingabe benutzt:
 
@@ -772,6 +780,8 @@ Le Chat nur mit ``Befriedigend'' bewertet werden. Das Grundgerüst wird einigerm
 kürzen bzw. die Beschreibung um die restlichen Elemente erweitern. ChatGPT wird hier mit ``Gut'' bewertet, da das Problem hier nicht so 
 häufig auftritt.
 
+\clearpage
+
 \subsection*{Dialog}
 
 Für die Erstellung der Dialoge wurden ebenfalls zwei recht einfache Prompts verwendet, die lediglich beschreiben, wie das Dokument aufgebaut 
@@ -879,6 +889,8 @@ Infrastruktur zu erstellen:
     \caption{Prompt Technische Infrastruktur}
     \label{Prompt Technische Infrastruktur}
 \end{prompt}
+
+\clearpage
 
 ChatGPT erstellt hier wieder eine Skizze in die Ausgabe mit [1 Technische Infrastruktur (GPT 01), S. 4]. Diese ist auch ganz gut, lediglich die Datenbank ist etwas verrutscht. Negativ aufgefallen 
 ist die Beschreibung der Verbindung von der KI-Komponente. Hier wird beschrieben, dass diese in die Spiel-Logik auf der Server-Seite integriert ist und 
@@ -1082,11 +1094,12 @@ und eine Idee, was erstellt werden soll und wie das Sequenzdiagramm in etwa auss
 
 \subsection*{Interfaces in Java} \index{Interfaces in Java}
 
-Da die Erstellung mit ChatGPT bis hierhin am besten geklappt hat, wurde probiert, die Interfaces in Java zu erstellen [siehe ``\nameref{Interfaces}'' im \nameref{Anhang}]. Dabei fällt 
-direkt auf, dass die erstellten Klassen nicht zu den Schnittstellen bzw. zu den Komponenten aus dem Komponentenmodell und damit auch 
+Da ChatGPT bis hierhin die zutreffendsten Ergebnisse erbracht hatte, wurde probiert, die Interfaces in Java zu erstellen 
+[siehe ``\nameref{Interfaces}'' im \nameref{Anhang}]. Dabei fällt auf, dass die erstellten Klassen nicht zu den Schnittstellen 
+bzw. zu den Komponenten aus dem Komponentenmodell und damit auch 
 nicht zu den Sequenzdiagrammen passen, da hier die Klassen ``AuthenticationService.java'' und ``GameService.java'' keiner Komponente 
-zugewiesen werden können. Es könnte allerdings sein, dass ChatGPT mehrere Schnittstellen für eine Komponente erstellt hat. Doch wenn 
-man ChatGPT fragt, welche Klassen zu welchen Komponenten gehören, wird für jede Klasse eine Komponente aufgelistet. Dazu fällt auf, dass 
+zugewiesen werden können. Es könnte allerdings sein, dass ChatGPT mehrere Schnittstellen für eine Komponente erstellt hat. Wenn 
+man ChatGPT allerdings fragt, welche Klassen zu welchen Komponenten gehören, wird für jede Klasse eine Komponente aufgelistet. Dazu fällt auf, dass 
 auch für die Komponente ``UserInterface'' eine Klasse erstellt wurde, wobei sich die Frage stellt, wer darauf zugreifen soll. 
 Grundsätzlich sollte diese Komponente nur von ``ClientCommunication'' Funktionen aufrufen und dann einen Return erhalten. Darüber hinaus 
 passen die Namen in den Klassen nicht immer zu denen aus den Sequenzdiagrammen. Teilweise fehlen auch Funktionen bzw. sind in den 
@@ -1098,7 +1111,7 @@ könnte man nämlich noch bei der ``MoveResponse'' argumentieren. Man könnte hi
 zu aktualisieren. Doch da dies in den Dokumenten noch nicht betrachtet wurde, wird dies nicht der Hintergedanke von 
 ChatGPT gewesen sein.
 
-Grundsätzlich kann man daher sagen, dass die Erstellung der Interfaces nicht wirklich funktioniert. Man erhält hier ein grobes 
+Dies zeigt, dass die Erstellung der Interfaces nicht wirklich funktioniert. Man erhält ein grobes 
 Grundgerüst, muss dieses jedoch selbstständig anpassen, da die Beziehungen zwischen den Komponenten auf der Serverseite durch die 
 beiden extra Komponenten umgestellt wurden. Auch die Art und Weise, wie die Rückgaben umgesetzt wurden, führt dazu, dass man die 
 Interfaces noch einmal anpassen muss. Als Bewertung würde ChatGPT hier ``Ausreichend'' erhalten, da einige Sachen fehlen.

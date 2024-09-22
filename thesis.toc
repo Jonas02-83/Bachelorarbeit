@@ -29,10 +29,10 @@
 \contentsline {section}{\numberline {4.3}Risikoliste}{29}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Anforderungsspezifikation}{32}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Architekturdokument}{49}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{59}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung der Ergebnisse}{59}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Kritik an der Arbeit}{61}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Ausblick und zukünftige Entwicklungen}{61}{section.5.3}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{57}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Zusammenfassung der Ergebnisse}{57}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Kritik an der Arbeit}{59}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ausblick und zukünftige Entwicklungen}{59}{section.5.3}%
 \contentsline {chapter}{\numberline {6}Anhang}{I}{chapter.6}%
 \contentsline {chapter}{\nonumberline Stichwortverzeichnis}{XIII}{chapter*.54}%
 \contentsline {chapter}{\nonumberline Literaturverzeichnis}{XV}{chapter*.55}%

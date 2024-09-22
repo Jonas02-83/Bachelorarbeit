@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  6 SEP 2024 06:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.14)  17 SEP 2024 05:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
-(c:/Users/jonij/Desktop/Bachelorarbeit/thesis.tex
+**c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
+(c:/Users/jonas/OneDrive/Desktop/Bachelorarbeit/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -2050,33 +2050,33 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 chapter 2.
 [5]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 60.
-Package hyperref Info: bookmark level for unknown prompt defaults to 0 on input line 91.
+(Font)              scaled to size 11.39996pt on input line 64.
+Package hyperref Info: bookmark level for unknown prompt defaults to 0 on input line 95.
  [6] [7]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 135.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 139.
  (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 135.
+(Font)              scaled to size 10.40245pt on input line 139.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [8] [9]
-Underfull \hbox (badness 2253) in paragraph at lines 249--251
+Underfull \hbox (badness 2253) in paragraph at lines 253--255
 []\T1/phv/b/n/10.95 (+20) Kosteneffizienz: \T1/phv/m/n/10.95 (+20) Le Chat kann als kos-tenef-fi-zi-en-te Al-ter-na-ti-ve zu mensch-li-chen
  []
 
 [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 281--290
+Underfull \hbox (badness 10000) in paragraph at lines 285--294
 
  []
 
-<./images/pictures/TabelleKap2.PNG, id=282, 368.1253pt x 375.27704pt>
+<./images/pictures/TabelleKap2.PNG, id=292, 368.1253pt x 375.27704pt>
 File: ./images/pictures/TabelleKap2.PNG Graphic file (type png)
 <use ./images/pictures/TabelleKap2.PNG>
-Package pdftex.def Info: ./images/pictures/TabelleKap2.PNG  used on input line 293.
+Package pdftex.def Info: ./images/pictures/TabelleKap2.PNG  used on input line 297.
 (pdftex.def)             Requested size: 368.1244pt x 375.27612pt.
 [12 <./images/pictures/TabelleKap2.PNG>] [13
 
@@ -2085,7 +2085,7 @@ Package pdftex.def Info: ./images/pictures/TabelleKap2.PNG  used on input line 2
 
  (./source/300_usage.tex
 chapter 3.
-<./images/pictures/TabelleKap3.PNG, id=320, 768.62157pt x 376.40625pt>
+<./images/pictures/TabelleKap3.PNG, id=330, 768.62157pt x 376.40625pt>
 File: ./images/pictures/TabelleKap3.PNG Graphic file (type png)
 <use ./images/pictures/TabelleKap3.PNG>
 Package pdftex.def Info: ./images/pictures/TabelleKap3.PNG  used on input line 13.
@@ -2110,12 +2110,16 @@ Underfull \vbox (badness 2818) has occurred while \output is active []
 
 ]
 chapter 4.
-<./images/pictures/TabelleKap4.PNG, id=355, 978.65625pt x 477.28313pt>
+<./images/pictures/TabelleKap4.PNG, id=365, 978.65625pt x 477.28313pt>
 File: ./images/pictures/TabelleKap4.PNG Graphic file (type png)
 <use ./images/pictures/TabelleKap4.PNG>
 Package pdftex.def Info: ./images/pictures/TabelleKap4.PNG  used on input line 12.
 (pdftex.def)             Requested size: 469.47055pt x 228.9622pt.
-[25 <./images/pictures/TabelleKap4.PNG>] [26] [27] [28] [29]
+[25 <./images/pictures/TabelleKap4.PNG>] [26
+
+] [27] [28] [29
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30] [31] [32] [33
@@ -2136,31 +2140,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [44] [45]
-Overfull \hbox (0.39005pt too wide) in paragraph at lines 757--767
+Overfull \hbox (0.39005pt too wide) in paragraph at lines 765--775
 []\T1/phv/m/n/10.95 (-20) Le Chat hat bei der Erstellung der Benutzungsschnittstelle probiert, diese in die Ausgabe mit zu ``zeichnen''
  []
 
-[46] [47]
+[46] [47
+
+] [48] [49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48] [49]
+ [50
+
+] [51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50] [51]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [52] [53] [54] [55]) [56] [57]
+ [52] [53] [54] [55]) [56]
 \openout2 = `source/500_Conclusion.aux'.
 
- (./source/500_Conclusion.tex [58
-
-
-
-
-
-]
+ (./source/500_Conclusion.tex
 chapter 5.
-[59] [60] [61]) [62]
+[57
+
+
+
+
+
+] [58] [59]) [60]
 \openout2 = `source/801_appendix.aux'.
 
  (./source/801_appendix.tex
@@ -2300,18 +2305,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 72946 strings out of 474049
- 1664404 string characters out of 5746277
- 3199325 words of memory out of 5000000
- 93477 multiletter control sequences out of 15000+600000
+ 72949 strings out of 474049
+ 1664605 string characters out of 5746277
+ 3199411 words of memory out of 5000000
+ 93481 multiletter control sequences out of 15000+600000
  641889 words of font info for 271 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,22n,120p,10939b,2857s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,22n,120p,10948b,2857s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on thesis.pdf (86 pages, 472533 bytes).
+Output written on thesis.pdf (84 pages, 473410 bytes).
 PDF statistics:
- 1113 PDF objects out of 1200 (max. 8388607)
- 966 compressed objects within 10 object streams
- 381 named destinations out of 1000 (max. 500000)
+ 1121 PDF objects out of 1200 (max. 8388607)
+ 976 compressed objects within 10 object streams
+ 380 named destinations out of 1000 (max. 500000)
  64990 words of extra memory for PDF output out of 74296 (max. 10000000)
 

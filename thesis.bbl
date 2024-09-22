@@ -19,6 +19,36 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{KIInDerSchule}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=6d2bda6045b0a6081c8d5abfda86d27a}{%
+           family={Rebbel},
+           familyi={R\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d2bda6045b0a6081c8d5abfda86d27a}
+      \strng{fullhash}{6d2bda6045b0a6081c8d5abfda86d27a}
+      \strng{fullhashraw}{6d2bda6045b0a6081c8d5abfda86d27a}
+      \strng{bibnamehash}{6d2bda6045b0a6081c8d5abfda86d27a}
+      \strng{authorbibnamehash}{6d2bda6045b0a6081c8d5abfda86d27a}
+      \strng{authornamehash}{6d2bda6045b0a6081c8d5abfda86d27a}
+      \strng{authorfullhash}{6d2bda6045b0a6081c8d5abfda86d27a}
+      \strng{authorfullhashraw}{6d2bda6045b0a6081c8d5abfda86d27a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Zugriff am 07. September 2024}
+      \field{title}{KI in der Schule: Fluch oder Segen? - Einsatzmöglichkeiten, Nutzen und Gefahren}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.forum-verlag.com/blog-bes/ki-in-der-schule?srsltid=AfmBOoqjjcbPvC12IuhfiHZR0l2cl06s6wzBUxlnlrmCtSfPiqiuOeTZ
+      \endverb
+      \verb{url}
+      \verb https://www.forum-verlag.com/blog-bes/ki-in-der-schule?srsltid=AfmBOoqjjcbPvC12IuhfiHZR0l2cl06s6wzBUxlnlrmCtSfPiqiuOeTZ
+      \endverb
+    \endentry
     \entry{GrundlagenLLM}{online}{}{}
       \name{author}{1}{}{%
         {{hash=18251a1a8a9bbcb1b88ce590ff5cd073}{%
@@ -35,8 +65,8 @@
       \strng{authornamehash}{18251a1a8a9bbcb1b88ce590ff5cd073}
       \strng{authorfullhash}{18251a1a8a9bbcb1b88ce590ff5cd073}
       \strng{authorfullhashraw}{18251a1a8a9bbcb1b88ce590ff5cd073}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Zugriff am 27. Mai 2024}
@@ -65,8 +95,8 @@
       \strng{authornamehash}{869a46634aeaa7fc23920e2fe743a78c}
       \strng{authorfullhash}{869a46634aeaa7fc23920e2fe743a78c}
       \strng{authorfullhashraw}{869a46634aeaa7fc23920e2fe743a78c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Zugriff am 28. Mai 2024}
@@ -77,38 +107,6 @@
       \endverb
       \verb{url}
       \verb https://eds.p.ebscohost.com/eds/detail/detail?vid=3&sid=1983b266-2f53-4090-a0f2-1aef00f51d1f%40redis&bdata=Jmxhbmc9ZGUmc2l0ZT1lZHMtbGl2ZQ%3d%3d#AN=163030996&db=ers
-      \endverb
-    \endentry
-    \entry{GeminiGroeßteModell}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=18e62280a1a9a0dc1c51997c5880a83e}{%
-           family={Demis\bibnamedelima Hassabis},
-           familyi={D\bibinitperiod\bibinitdelim H\bibinitperiod},
-           given={Sundar\bibnamedelima Pichai},
-           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
-           prefix={und},
-           prefixi={u\bibinitperiod}}}%
-      }
-      \strng{namehash}{18e62280a1a9a0dc1c51997c5880a83e}
-      \strng{fullhash}{18e62280a1a9a0dc1c51997c5880a83e}
-      \strng{fullhashraw}{18e62280a1a9a0dc1c51997c5880a83e}
-      \strng{bibnamehash}{18e62280a1a9a0dc1c51997c5880a83e}
-      \strng{authorbibnamehash}{18e62280a1a9a0dc1c51997c5880a83e}
-      \strng{authornamehash}{18e62280a1a9a0dc1c51997c5880a83e}
-      \strng{authorfullhash}{18e62280a1a9a0dc1c51997c5880a83e}
-      \strng{authorfullhashraw}{18e62280a1a9a0dc1c51997c5880a83e}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Zugriff am 29. Mai 2024}
-      \field{title}{Gemini - unser größtes und leistungsfähigstes KI-Modell}
-      \field{year}{2023}
-      \verb{urlraw}
-      \verb https://blog.google/intl/de-de/unternehmen/technologie/gemini/
-      \endverb
-      \verb{url}
-      \verb https://blog.google/intl/de-de/unternehmen/technologie/gemini/
       \endverb
     \endentry
     \entry{GrundlagenGemini}{online}{}{}
@@ -171,6 +169,38 @@
       \verb https://www.unidigital.news/mistral-ai-franzoesisches-ki-startup-stellt-chatbot-le-chat-und-kooperation-mit-microsoft-azure-vor/
       \endverb
     \endentry
+    \entry{GeminiGroeßteModell}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=18e62280a1a9a0dc1c51997c5880a83e}{%
+           family={Demis\bibnamedelima Hassabis},
+           familyi={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Sundar\bibnamedelima Pichai},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           prefix={und},
+           prefixi={u\bibinitperiod}}}%
+      }
+      \strng{namehash}{18e62280a1a9a0dc1c51997c5880a83e}
+      \strng{fullhash}{18e62280a1a9a0dc1c51997c5880a83e}
+      \strng{fullhashraw}{18e62280a1a9a0dc1c51997c5880a83e}
+      \strng{bibnamehash}{18e62280a1a9a0dc1c51997c5880a83e}
+      \strng{authorbibnamehash}{18e62280a1a9a0dc1c51997c5880a83e}
+      \strng{authornamehash}{18e62280a1a9a0dc1c51997c5880a83e}
+      \strng{authorfullhash}{18e62280a1a9a0dc1c51997c5880a83e}
+      \strng{authorfullhashraw}{18e62280a1a9a0dc1c51997c5880a83e}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Zugriff am 29. Mai 2024}
+      \field{title}{Gemini - unser größtes und leistungsfähigstes KI-Modell}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://blog.google/intl/de-de/unternehmen/technologie/gemini/
+      \endverb
+      \verb{url}
+      \verb https://blog.google/intl/de-de/unternehmen/technologie/gemini/
+      \endverb
+    \endentry
     \entry{Sommerville10}{book}{}{}
       \name{author}{1}{}{%
         {{hash=70341b3bfcce7026902f4eb1e4111b58}{%
@@ -193,8 +223,8 @@
       \strng{authornamehash}{70341b3bfcce7026902f4eb1e4111b58}
       \strng{authorfullhash}{70341b3bfcce7026902f4eb1e4111b58}
       \strng{authorfullhashraw}{70341b3bfcce7026902f4eb1e4111b58}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The book presents a broad perspective on software systems engineering, concentrating on widely used techniques for developing large-scale systems. Building on the widely acclaimed strengths of the 8th edition, the 9th edition updates readers with the latest developments in the field while remaining the most current Software Engineering text in the market with quality trusted coverage and practical case studies. This text is structured into 6 parts: Introduction; Requirements Engineering; Design; Software Development; Verification and Validation; Management. An up-to-date reference for software engineers.}
@@ -223,8 +253,8 @@
       \strng{authornamehash}{d6ed830747fa4edcbe609cc0c6c523c6}
       \strng{authorfullhash}{d6ed830747fa4edcbe609cc0c6c523c6}
       \strng{authorfullhashraw}{d6ed830747fa4edcbe609cc0c6c523c6}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{Secure Software Engineering, Universität der Bundeswehr München}
